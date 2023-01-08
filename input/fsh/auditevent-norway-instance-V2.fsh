@@ -1,5 +1,5 @@
-Instance: ex-tokemapping-norway-V2
-InstanceOf: NorwayProfileV2
+Instance: AuditEventNorwayInstance-V2
+InstanceOf: AuditEventNorwayProfileV2
 Title: "Audit Example of with token mapping V2"
 Description: "<TODO>"
 Usage: #example
