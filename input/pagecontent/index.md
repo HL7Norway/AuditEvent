@@ -11,6 +11,5 @@ You can also download:
 * the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
 * the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
 
-{::comment}
-The source code for this Implementation Guide can be found on [GitHub](https://github.com/JohnMoehrke/NorwayAudit)
-{:/comment}
+The source code for this Implementation Guide can be found on [GitHub](https://github.com/HL7Norway/AuditEvent)
+
