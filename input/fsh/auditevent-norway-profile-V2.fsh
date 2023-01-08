@@ -1,6 +1,5 @@
-Profile:        NorwayProfileV2
+Profile:        AuditEventNorwayProfileV2
 Parent:         AuditEvent
-Id:             NorwayProfileV2.HL7Norway
 Title:          "National profile for AuditEvent V2"
 Description: "<TODO>"
 
