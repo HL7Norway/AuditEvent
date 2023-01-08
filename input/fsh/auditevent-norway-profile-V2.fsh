@@ -1,6 +1,6 @@
-Profile:        AuditEventNorwayProfileV2
+Profile:        AuditEventNorwayTokenProfile
 Parent:         AuditEvent
-Title:          "National profile for AuditEvent V2"
+Title:          "National profile for AuditEvent for security token mapping"
 Description: "<TODO>"
 
 * purposeOfEvent.coding ^short = "healthcareservice:system, :id, :name. :assigner ignoreres siden Coding-datatypen ikke har assigner."

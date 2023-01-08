@@ -1,6 +1,6 @@
-Instance: AuditEventNorwayInstance-V2
-InstanceOf: AuditEventNorwayProfileV2
-Title: "Audit Example of with token mapping V2"
+Instance: AuditEventNorwayTokenInstance
+InstanceOf: AuditEventNorwayTokenProfile
+Title: "Example of mapping a security token to Auditevent"
 Description: "<TODO>"
 Usage: #example
 
