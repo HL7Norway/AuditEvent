@@ -1,7 +1,7 @@
 Instance: AuditEventNorwayTokenInstance
 InstanceOf: AuditEventNorwayTokenProfile
 Title: "Example of mapping a security token to Auditevent"
-Description: "<TODO>"
+// Description: 
 Usage: #example
 
 * type = DCM#110100 "Application Activity"
@@ -32,15 +32,15 @@ Usage: #example
 * agent[user].extension[organization].extension[id].valueIdentifier.assigner.identifier.value = "https://www.brreg.no/"                                             // subject:organization:assigner. 
 * agent[user].extension[organization].extension[name].valueString = "Oslo universitetssykehus HF"                                                                   // subject:organization:name
 
-* agent[user].extension[child-organization].extension[id].valueIdentifier.system =  $RESHID                                                                         // subject:child-organization:system (RESH-ID)
-* agent[user].extension[child-organization].extension[id].valueIdentifier.value = "974589095"                                                                       // subject:child-organization:id
-* agent[user].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value =  "https://register.nhn.no/resh"                               // subject:child-organization:assigner NB! Feil i påstander.xlsx?.
-* agent[user].extension[child-organization].extension[name].valueString = "Hjertemedisinsk avdeling"                                                                // subject:child-organization:name
+* agent[user].extension[facility].extension[id].valueIdentifier.system =  $RESHID                                                                                   // subject:facility:system (RESH-ID)
+* agent[user].extension[facility].extension[id].valueIdentifier.value = "974589095"                                                                                 // subject:facility:id
+* agent[user].extension[facility].extension[id].valueIdentifier.assigner.identifier.value =  "https://register.nhn.no/resh"                                         // subject:facility:assigner NB! Feil i påstander.xlsx?.
+* agent[user].extension[facility].extension[name].valueString = "Hjertemedisinsk avdeling"                                                                          // subject:facility:name
 
-* agent[user].extension[facility].extension[id].valueIdentifier.system =  $ORGNR                                                                                    // subject:facility:system (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
-* agent[user].extension[facility].extension[id].valueIdentifier.value = "700386"                                                                                    // subject:facility:id
-* agent[user].extension[facility].extension[id].valueIdentifier.assigner.identifier.value =  "https://www.brreg.no/"                                                // subject:facility:assigner. 
-* agent[user].extension[facility].extension[name].valueString = "Oslo universitetssykehus HF Ullevål – somatikk"                                                    // subject:facility:name
+* agent[user].extension[child-organization].extension[id].valueIdentifier.system =  $ORGNR                                                                          // subject:child-organization:system (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
+* agent[user].extension[child-organization].extension[id].valueIdentifier.value = "700386"                                                                          // subject:child-organization:id
+* agent[user].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value =  "https://www.brreg.no/"                                      // subject:child-organization:assigner. 
+* agent[user].extension[child-organization].extension[name].valueString = "Oslo universitetssykehus HF Ullevål – somatikk"                                          // subject:child-organization:name
 
 * agent[user].purposeOfUse[+].coding[+] = urn:oid:2.16.840.1.113883.5.8#TREAT "Treatment"                                                                           // purpose:system, :id, :name.  :assigner ignoreres siden Coding-datatypen ikke har assigner
 * agent[user].purposeOfUse[=].text = ""                                                                                                                             // purpose:description
@@ -69,12 +69,12 @@ Usage: #example
 * entity[patient].what.identifier.assigner.identifier.value = "https://www.skatteetaten.no/person/folkeregister/"                                                   // resource:assigner
 * entity[patient].what.display = "Ole Olsen"                                                                                                                        // resource:name  Hva med å benytte entity[patient].name i stedet?
 
-* entity[patient].extension[child-organization].extension[id].valueIdentifier.system = $RESHID                                                                      // resource:child-organization:system (RESH-ID)
-* entity[patient].extension[child-organization].extension[id].valueIdentifier.value = "974589095"                                                                   // resource:child-organization:id
-* entity[patient].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value =  "https://register.nhn.no/resh"                           // resource:child-organization:assigner NB! Feil i påstander.xlsx?
-* entity[patient].extension[child-organization].extension[name].valueString = "Hjertemedisinsk avdeling"                                                            // resource:child-organization:name
+* entity[patient].extension[facility].extension[id].valueIdentifier.system = $RESHID                                                                                // resource:facility:system (RESH-ID)
+* entity[patient].extension[facility].extension[id].valueIdentifier.value = "974589095"                                                                             // resource:facility:id
+* entity[patient].extension[facility].extension[id].valueIdentifier.assigner.identifier.value =  "https://register.nhn.no/resh"                                     // resource:facility:assigner NB! Feil i påstander.xlsx?
+* entity[patient].extension[facility].extension[name].valueString = "Hjertemedisinsk avdeling"                                                                      // resource:facility:name
 
-* entity[patient].extension[facility].extension[id].valueIdentifier.system = $ORGNR                                                                                 // resource:facility:system (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
-* entity[patient].extension[facility].extension[id].valueIdentifier.value = "700386"                                                                                // resource:facility:id
-* entity[patient].extension[facility].extension[id].valueIdentifier.assigner.identifier.value =  "https://www.brreg.no/"                                            // resource:facility:assigner
-* entity[patient].extension[facility].extension[name].valueString = "Oslo universitetssykehus HF Ullevål – somatikk"                                                // resource:facility:name
+* entity[patient].extension[child-organization].extension[id].valueIdentifier.system = $ORGNR                                                                       // resource:child-organization:system (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
+* entity[patient].extension[child-organization].extension[id].valueIdentifier.value = "700386"                                                                      // resource:child-organization:id
+* entity[patient].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value =  "https://www.brreg.no/"                                  // resource:child-organization:assigner
+* entity[patient].extension[child-organization].extension[name].valueString = "Oslo universitetssykehus HF Ullevål – somatikk"                                      // resource:child-organization:name

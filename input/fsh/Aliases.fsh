@@ -1,6 +1,3 @@
-// Alias: SCT = http://snomed.info/sct
-// Alias: UCUM = http://unitsofmeasure.org
-// Alias: LOINC = http://loinc.org
 Alias: DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $FNR = urn:oid:2.16.578.1.12.4.1.4.1 // Assigned by Skatteetaten
 Alias: $DNR = urn:oid:2.16.578.1.12.4.1.4.2 // Assigned by Skatteetaten

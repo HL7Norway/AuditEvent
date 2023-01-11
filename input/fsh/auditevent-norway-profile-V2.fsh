@@ -1,7 +1,10 @@
 Profile:        AuditEventNorwayTokenProfile
 Parent:         AuditEvent
 Title:          "National profile for AuditEvent for security token mapping"
-Description: "<TODO>"
+Description: """
+This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a 
+token must be mapped into elements / fields of an AuditEvent if they are present.
+"""
 
 * purposeOfEvent.coding ^short = "healthcareservice:system, :id, :name. :assigner ignoreres siden Coding-datatypen ikke har assigner."
 * purposeOfEvent.coding MS // In other words: attribute exists, it must be mapped
@@ -58,13 +61,13 @@ Description: "<TODO>"
 * agent[user].extension[organization].extension[name].valueString ^short = "subject:organization:name"
 
 * agent[user].extension[child-organization] MS // In other words: attribute exists, it must be mapped
-* agent[user].extension[child-organization].extension[id].valueIdentifier.system ^short = "subject:child-organization:system" // (RESH-ID)
+* agent[user].extension[child-organization].extension[id].valueIdentifier.system ^short = "subject:child-organization:system"  //  (typisk Brønnøysund organisasjonsnummer - nivå 2 av subject:organization) 
 * agent[user].extension[child-organization].extension[id].valueIdentifier.value ^short = "subject:child-organization:id"
 * agent[user].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:child-organization:assigner"
 * agent[user].extension[child-organization].extension[name].valueString ^short = "subject:child-organization:name"
 
 * agent[user].extension[facility] MS // In other words: attribute exists, it must be mapped
-* agent[user].extension[facility].extension[id].valueIdentifier.system ^short = "subject:facility:system" //  (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
+* agent[user].extension[facility].extension[id].valueIdentifier.system ^short = "subject:facility:system" // (typisk RESH-ID)
 * agent[user].extension[facility].extension[id].valueIdentifier.value ^short = "subject:facility:id"
 * agent[user].extension[facility].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:facility:assigner"
 * agent[user].extension[facility].extension[name].valueString ^short = "subject:facility:name"
@@ -99,13 +102,13 @@ Description: "<TODO>"
 * entity[patient].what.display ^short = "resource:name"  
 
 * entity[patient].extension[child-organization] MS // In other words: attribute exists, it must be mapped
-* entity[patient].extension[child-organization].extension[id].valueIdentifier.system ^short = "resource:child-organization:system" // (RESH-ID)
+* entity[patient].extension[child-organization].extension[id].valueIdentifier.system ^short = "resource:child-organization:system"  // (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
 * entity[patient].extension[child-organization].extension[id].valueIdentifier.value ^short = "resource:child-organization:id"
 * entity[patient].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value ^short = "resource:child-organization:assigner"
 * entity[patient].extension[child-organization].extension[name].valueString ^short = "resource:child-organization:name"
 
 * entity[patient].extension[facility] MS // In other words: attribute exists, it must be mapped
-* entity[patient].extension[facility].extension[id].valueIdentifier.system ^short = "resource:facility:system" //  (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
+* entity[patient].extension[facility].extension[id].valueIdentifier.system ^short = "resource:facility:system" // (RESH-ID) 
 * entity[patient].extension[facility].extension[id].valueIdentifier.value ^short = "resource:facility:id"
 * entity[patient].extension[facility].extension[id].valueIdentifier.assigner.identifier.value ^short = "resource:facility:assigner"
 * entity[patient].extension[facility].extension[name].valueString ^short = "resource:facility:name"
