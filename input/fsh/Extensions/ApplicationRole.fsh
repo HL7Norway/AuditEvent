@@ -1,7 +1,5 @@
 Extension: ApplicationRole
 Title: "Identifier of user in system/application"
-* ^context[0].type = #element
-* ^context[=].expression = "AuditEvent"
 * extension contains
     id 1..1 and
     name 0..1 

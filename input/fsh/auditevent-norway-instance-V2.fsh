@@ -13,7 +13,7 @@ Usage: #example
 * agent[user].who.identifier.value = "ux34234234"                                                                                                                   // subject:id
 * agent[user].who.identifier.system = "urn:oid:2.16.578.1.12.4.3.1.40.25.1"                                                                                         // subject:system
 * agent[user].who.identifier.assigner.identifier.value = "https://www.helse-sorost.no"                                                                              // subject:assigner
-* agent[user].who.display = "Kari Normann"                                                                                                                          // subject:name                                                                                                                                                                   // purpose-local:reason - NB: ingen mapping av denne
+* agent[user].who.display = "BEN PSA REDDIK"                                                                                                                        // subject:name                                                                                                                                                                   // purpose-local:reason - NB: ingen mapping av denne
 * agent[user].who.extension[qualification].extension[id].valueIdentifier.system = $HPR                                                                              // subject:qualification:system
 * agent[user].who.extension[qualification].extension[id].valueIdentifier.value = "222200068"                                                                        // subject:qualification:id
 * agent[user].who.extension[qualification].extension[id].valueIdentifier.assigner.identifier.value = "https://register.helsedirektoratet.no/hpr"                    // subject:qualification:assigner. 
@@ -25,7 +25,7 @@ Usage: #example
 * agent[user].who.extension[application-role].extension[id].valueIdentifier.system = "http://dips.com/UserRoleGUID"                                                 // subject:application-role:system
 * agent[user].who.extension[application-role].extension[id].valueIdentifier.value = "f185c1ba-2372-4e7e-b601-637d25aa054c"                                          // subject:application-role:id
 * agent[user].who.extension[application-role].extension[id].valueIdentifier.assigner.identifier.value = "https://oslo-universitetssykehus.no"                       // subject:application-role:assigner. 
-* agent[user].who.extension[application-role].extension[name].valueString  = ""                                                                                     // subject:application-role:name - NB! Ikke i bruk fra DIPS. Lagt til for ordens skyld.
+* agent[user].who.extension[application-role].extension[name].valueString  = "N/A"                                                                                  // subject:application-role:name - NB! Ikke i bruk fra DIPS. Lagt til for ordens skyld.
 
 * agent[user].extension[organization].extension[id].valueIdentifier.system = $ORGNR                                                                                 // subject:organization:system
 * agent[user].extension[organization].extension[id].valueIdentifier.value = "993467049"                                                                             // subject:organization:id
@@ -42,14 +42,23 @@ Usage: #example
 * agent[user].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value =  "https://www.brreg.no/"                                      // subject:child-organization:assigner. 
 * agent[user].extension[child-organization].extension[name].valueString = "Oslo universitetssykehus HF Ullevål – somatikk"                                          // subject:child-organization:name
 
-* agent[user].purposeOfUse[+].coding[+] = urn:oid:2.16.840.1.113883.5.8#TREAT "Treatment"                                                                           // purpose:system, :id, :name.  :assigner ignoreres siden Coding-datatypen ikke har assigner
-* agent[user].purposeOfUse[=].text = ""                                                                                                                             // purpose:description
-                                                                                                                                                                    // NB! purpose:reason er ikke støttet
+* agent[user].extension[application-session].valueIdentifier.system =  "http://dips.com/session_id_hash"                                                            // subject:application-session:system -- NB! DIPS: Kan ikke garantere unikhet på tvers av alle installasjoner
+* agent[user].extension[application-session].valueIdentifier.value = "34234534542323"                                                                               // subject:application-session:id
+* agent[user].extension[application-session].valueIdentifier.assigner.identifier.value =  "OUS"                                                                     // subject:application-session:assigner 
 
-* agent[user].purposeOfUse[+].coding[+] = CareRelationCS#BELEGG "Inneliggende pasient"                                                                              // purpose-local:system, :id, :name. 
+* agent[user].purposeOfUse[+].coding[+] = urn:oid:2.16.840.1.113883.5.8#TREAT "Treatment"                                                                           // purpose:system, :id, :name.  
+* agent[user].purposeOfUse[=].text = "N/A"                                                                                                                          // purpose:description
+* agent[user].purposeOfUse[=].extension[purposeOfUse]
+  * extension[assigner].valueString = "NHN"                                                                                                                         // purpose:assigner                        
+  * extension[reason].valueString = "<Fylles ut ved behov>"                                                                                                         // purpose:reason
+
+* agent[user].purposeOfUse[+].coding[+] = CareRelationCS#BELEGG "Inneliggende pasient"                                                                              // purpose-local:system, :code, :name. 
 * agent[user].purposeOfUse[=].coding[=].userSelected = false                                                                                                        // purpose-local:userSelected
 * agent[user].purposeOfUse[=].text = "Inneliggende pasient på avdeling <X>, post <Y>, inntid 5.1.23"                                                                // purpose-local:description
-                                                                                                                                                                    // NB! purpose-local:reason er ikke støttet                                                                                                                                                                 
+* agent[user].purposeOfUse[=].extension[purposeOfUse]
+  * extension[assigner].valueString = "OUS"                                                                                                                         // purpose-local:assigner                        
+  * extension[reason].valueString = "<Fylles typisk ut hvis userSelected = True>"                                                                                   // purpose-local:reason
+  * extension[id].valueString = "aabnmm+0000001161045"                                                                                                              // purpose-local:id                                                                                                                                                                    
 
 * agent[user].extension[assurance-level].valueCodeableConcept = https://begrep.difi.no/Felles/sikkerhetsnivaa#4  "Høyeste sikkerhetsnivå"                           // subject:assurance-level:system, :code and :name.  :assigner ignoreres siden Coding-datatypen ikke har assigner
 

@@ -24,7 +24,11 @@ token must be mapped into elements / fields of an AuditEvent if they are present
 	Organization named organization 0..1 MS and
 	ChildOrganization named child-organization 0..1 MS and
 	Facility named facility 0..1 MS and
-	AssuranceLevel named assurance-level 0..1 MS
+	AssuranceLevel named assurance-level 0..1 MS and
+	ApplicationSession named application-session 0..1 MS
+
+* agent[user].purposeOfUse.extension contains
+	PurposeOfUseExt named purposeOfUse 0..1 MS
 
 * agent[user].type = UserAgentTypesCS#TokenBased
 * agent[user].who.identifier.value ^short = "subject:id"	
@@ -38,6 +42,9 @@ token must be mapped into elements / fields of an AuditEvent if they are present
 * agent[user].purposeOfUse.coding.userSelected ^short = "purpose-local:userselected"
 * agent[user].purposeOfUse.coding.userSelected ^definition = "purpose-local:userselected definition"
 * agent[user].purposeOfUse.text ^short = "purpose:description and purpose-local:description"
+* agent[user].purposeOfUse.extension[purposeOfUse].extension[assigner].valueString ^short = "purpose:assigner and purpose-local:assigner"
+* agent[user].purposeOfUse.extension[purposeOfUse].extension[reason].valueString ^short = "purpose:reason and purpose-local:reason"
+* agent[user].purposeOfUse.extension[purposeOfUse].extension[id].valueString ^short = "purpose-local:id"
 * agent[user].who.extension[qualification] MS // In other words: attribute exists, it must be mapped
 * agent[user].who.extension[qualification].extension[id].valueIdentifier.system ^short = "subject:qualification:system"
 * agent[user].who.extension[qualification].extension[id].valueIdentifier.value ^short = "subject:qualification:id"
@@ -76,6 +83,11 @@ token must be mapped into elements / fields of an AuditEvent if they are present
 * agent[user].extension[assurance-level].valueCodeableConcept.coding.code ^short = "subject:assurance-level:code"
 * agent[user].extension[assurance-level].valueCodeableConcept.coding.system ^short = "subject:assurance-level:system"
 * agent[user].extension[assurance-level].valueCodeableConcept.coding.display ^short = "subject:assurance-level:name"
+
+* agent[user].extension[application-session] MS // In other words: attribute exists, it must be mapped
+* agent[user].extension[application-session].valueIdentifier.system ^short = "subject:application-session:system" 
+* agent[user].extension[application-session].valueIdentifier.value ^short = "subject:application-session:id"
+* agent[user].extension[application-session].valueIdentifier.assigner.identifier.value ^short = "subject:application-session:assigner"
 
 * agent[user].role MS // In other words: attribute exists, it must be mapped
 * agent[user].role ^short = "subject:qualification-role:*, subject:role:* and subject:functional-role:*. :assigner is ignored"
