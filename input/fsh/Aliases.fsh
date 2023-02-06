@@ -7,3 +7,4 @@ Alias: $DUFNR = urn:oid:2.16.578.1.12.4.1.4.5 // Assigned by Utlendingsdirektora
 Alias: $ORGNR = urn:oid:2.16.578.1.12.4.1.4.101 // Assigned by Brønnøysundregistrene
 Alias: $RESHID = urn:oid:2.16.578.1.12.4.1.4.102 // Assigned by Norsk helsenett (??)
 Alias: $VOLVEN_HELSEHJELPSOMRAADE = https://volven.no/8655 // Assigned by volven.no. https://volven.no/produkt.asp?id=492338&catID=3&subID=8
+Alias: $v3.ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason

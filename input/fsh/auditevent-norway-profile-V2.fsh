@@ -36,6 +36,7 @@ token must be mapped into elements / fields of an AuditEvent if they are present
 * agent[user].who.identifier.assigner.identifier.value ^short = "subject:assigner"
 * agent[user].who.display ^short = "subject:name"
 * agent[user].purposeOfUse MS // In other words: attribute exists, it must be mapped
+* agent[user].purposeOfUse from PurposeOfUseVS (required)
 * agent[user].purposeOfUse.coding.code ^short = "purpose:id and purpose-local:id"
 * agent[user].purposeOfUse.coding.system ^short = "purpose:system and purpose-local:system"
 * agent[user].purposeOfUse.coding.display ^short = "purpose:name and purpose-local:name"

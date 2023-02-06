@@ -1,8 +1,8 @@
-CodeSystem: CareRelationCS
+CodeSystem: DIPSCareRelationCS
 Id: carerelation
-Title: "Care relation code system"
+Title: "DIPS care relation code system"
 Description: """
-Dette er beslutningsmalene som benyttes for å avgjøre om sluttbruker har tilgang, samt dokumentere begrunnelse for tilgang til pasientens journal.
+Dette er maler med ulike begrunnelser som kan benyttes som grunnlag for tilgang til pasientens journal ved sykehus som benytter DIPS som journalsystem.
 """
 * #HENV_BEH "Henvendelse fra pasientens behandler" "Henvendelse fra pasientens behandler." // ID: "aadonn+0000000000027"
 * #HENV_PAA "Henvendelse fra pasientens pårørende" "Henvendelse fra pasientens pårørende." // ID: "aadonn+0000000000028"

@@ -46,13 +46,14 @@ Usage: #example
 * agent[user].extension[application-session].valueIdentifier.value = "34234534542323"                                                                               // subject:application-session:id
 * agent[user].extension[application-session].valueIdentifier.assigner.identifier.value =  "OUS"                                                                     // subject:application-session:assigner 
 
-* agent[user].purposeOfUse[+].coding[+] = urn:oid:2.16.840.1.113883.5.8#TREAT "Treatment"                                                                           // purpose:system, :id, :name.  
+// * agent[user].purposeOfUse[+].coding[+] = urn:oid:2.16.840.1.113883.5.8#TREAT "Treatment"                                                                           // purpose:system, :id, :name.  
+* agent[user].purposeOfUse[+].coding[+] = $v3.ActReason#TREAT "Treatment"                                                                                           // purpose:system, :id, :name.  
 * agent[user].purposeOfUse[=].text = "N/A"                                                                                                                          // purpose:description
 * agent[user].purposeOfUse[=].extension[purposeOfUse]
   * extension[assigner].valueString = "NHN"                                                                                                                         // purpose:assigner                        
   * extension[reason].valueString = "<Fylles ut ved behov>"                                                                                                         // purpose:reason
 
-* agent[user].purposeOfUse[+].coding[+] = CareRelationCS#BELEGG "Inneliggende pasient"                                                                              // purpose-local:system, :code, :name. 
+* agent[user].purposeOfUse[+].coding[+] = DIPSCareRelationCS#BELEGG "Inneliggende pasient"                                                                              // purpose-local:system, :code, :name. 
 * agent[user].purposeOfUse[=].coding[=].userSelected = false                                                                                                        // purpose-local:userSelected
 * agent[user].purposeOfUse[=].text = "Inneliggende pasient på avdeling <X>, post <Y>, inntid 5.1.23"                                                                // purpose-local:description
 * agent[user].purposeOfUse[=].extension[purposeOfUse]
