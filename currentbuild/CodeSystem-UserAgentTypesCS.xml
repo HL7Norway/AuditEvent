@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="UserAgentTypesCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">TokenBased<a name="UserAgentTypesCS-TokenBased"> </a></td><td>User agent that is populated on the basis of security token</td></tr></table></div>
+  </text>
+  <url value="urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS"/>
+  <version value="0.1.0"/>
+  <name value="UserAgentTypesCS"/>
+  <title value="The code used to identifiy a User Agent"/>
+  <status value="active"/>
+  <date value="2023-02-12T11:23:40+00:00"/>
+  <publisher value="HL7 Norway"/>
+  <contact>
+    <name value="HL7 Norway"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/HL7Norway"/>
+    </telecom>
+  </contact>
+  <description value="Code used to identify the User Agent."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="TokenBased"/>
+    <display value="User agent that is populated on the basis of security token"/>
+  </concept>
+</CodeSystem>

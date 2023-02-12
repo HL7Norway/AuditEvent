@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AuditEvent xmlns="http://hl7.org/fhir">
+  <id value="AuditEventNorwayTokenInstance"/>
+  <meta>
+    <profile value="urn:AuditEventHL7Norway/StructureDefinition/AuditEventNorwayTokenProfile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AuditEvent</b><a name="AuditEventNorwayTokenInstance"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AuditEvent &quot;AuditEventNorwayTokenInstance&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AuditEventNorwayTokenProfile.html">National profile for AuditEvent for security token mapping</a></p></div><p><b>type</b>: Application Activity (Details: DICOM code 110100 = 'Application Activity', stated as 'Application Activity')</p><p><b>recorded</b>: Dec 3, 2021, 9:49:00 AM</p><p><b>purposeOfEvent</b>: Anestesiologi/smertebehandling <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (8655#S08)</span></p><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
+  </text>
+  <type>
+    <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+    <code value="110100"/>
+    <display value="Application Activity"/>
+  </type>
+  <recorded value="2021-12-03T09:49:00.000Z"/>
+  <purposeOfEvent>
+    <coding>
+      <system value="https://volven.no/8655"/>
+      <code value="S08"/>
+      <display value="Anestesiologi/smertebehandling"/>
+    </coding>
+  </purposeOfEvent>
+  <agent>
+    <extension url="urn:AuditEventHL7Norway/StructureDefinition/Organization">
+      <extension url="id">
+        <valueIdentifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+          <value value="993467049"/>
+          <assigner>
+            <identifier>
+              <value value="https://www.brreg.no/"/>
+            </identifier>
+          </assigner>
+        </valueIdentifier>
+      </extension>
+      <extension url="name">
+        <valueString value="Oslo universitetssykehus HF"/>
+      </extension>
+    </extension>
+    <extension url="urn:AuditEventHL7Norway/StructureDefinition/Facility">
+      <extension url="id">
+        <valueIdentifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+          <value value="974589095"/>
+          <assigner>
+            <identifier>
+              <value value="https://register.nhn.no/resh"/>
+            </identifier>
+          </assigner>
+        </valueIdentifier>
+      </extension>
+      <extension url="name">
+        <valueString value="Hjertemedisinsk avdeling"/>
+      </extension>
+    </extension>
+    <extension url="urn:AuditEventHL7Norway/StructureDefinition/ChildOrganization">
+      <extension url="id">
+        <valueIdentifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+          <value value="700386"/>
+          <assigner>
+            <identifier>
+              <value value="https://www.brreg.no/"/>
+            </identifier>
+          </assigner>
+        </valueIdentifier>
+      </extension>
+      <extension url="name">
+        <valueString value="Oslo universitetssykehus HF Ullevål – somatikk"/>
+      </extension>
+    </extension>
+    <extension url="urn:AuditEventHL7Norway/StructureDefinition/ApplicationSession">
+      <valueIdentifier>
+        <system value="http://dips.com/session_id_hash"/>
+        <value value="34234534542323"/>
+        <assigner>
+          <identifier>
+            <value value="OUS"/>
+          </identifier>
+        </assigner>
+      </valueIdentifier>
+    </extension>
+    <extension url="urn:AuditEventHL7Norway/StructureDefinition/AssuranceLevel">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://begrep.difi.no/Felles/sikkerhetsnivaa"/>
+          <code value="4"/>
+          <display value="Høyeste sikkerhetsnivå"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <type>
+      <coding>
+        <system value="urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS"/>
+        <code value="TokenBased"/>
+      </coding>
+    </type>
+    <role>
+      <coding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.9060"/>
+        <code value="LE"/>
+        <display value="Lege"/>
+      </coding>
+    </role>
+    <role>
+      <coding>
+        <system value="urn:oid:2.16.578.1.12.4.3.1.40.5.3"/>
+        <code value="1027"/>
+        <display value="Legespesialist"/>
+      </coding>
+    </role>
+    <role>
+      <coding>
+        <system value="urn:oid:2.16.578.1.12.4.3.1.40.5.1"/>
+        <code value="Overlege"/>
+        <display value="Overlege"/>
+      </coding>
+    </role>
+    <who>
+      <extension url="urn:AuditEventHL7Norway/StructureDefinition/Qualification">
+        <extension url="id">
+          <valueIdentifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+            <value value="222200068"/>
+            <assigner>
+              <identifier>
+                <value value="https://register.helsedirektoratet.no/hpr"/>
+              </identifier>
+            </assigner>
+          </valueIdentifier>
+        </extension>
+        <extension url="name">
+          <valueString value="BEN PSA REDDIK"/>
+        </extension>
+      </extension>
+      <extension url="urn:AuditEventHL7Norway/StructureDefinition/NationalIdentifier">
+        <extension url="id">
+          <valueIdentifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <value value="05086900124"/>
+            <assigner>
+              <identifier>
+                <value value="https://www.skatteetaten.no/person/folkeregister/"/>
+              </identifier>
+            </assigner>
+          </valueIdentifier>
+        </extension>
+        <extension url="name">
+          <valueString value="BEN PSA REDDIK"/>
+        </extension>
+      </extension>
+      <extension url="urn:AuditEventHL7Norway/StructureDefinition/ApplicationRole">
+        <extension url="id">
+          <valueIdentifier>
+            <system value="http://dips.com/UserRoleGUID"/>
+            <value value="f185c1ba-2372-4e7e-b601-637d25aa054c"/>
+            <assigner>
+              <identifier>
+                <value value="https://oslo-universitetssykehus.no"/>
+              </identifier>
+            </assigner>
+          </valueIdentifier>
+        </extension>
+        <extension url="name">
+          <valueString value="N/A"/>
+        </extension>
+      </extension>
+      <identifier>
+        <system value="urn:oid:2.16.578.1.12.4.3.1.40.25.1"/>
+        <value value="ux34234234"/>
+        <assigner>
+          <identifier>
+            <value value="https://www.helse-sorost.no"/>
+          </identifier>
+        </assigner>
+      </identifier>
+      <display value="BEN PSA REDDIK"/>
+    </who>
+    <requestor value="true"/>
+    <purposeOfUse>
+      <extension url="urn:AuditEventHL7Norway/StructureDefinition/PurposeOfUseExt">
+        <extension url="assigner">
+          <valueString value="NHN"/>
+        </extension>
+        <extension url="reason">
+          <valueString value="&lt;Fylles ut ved behov&gt;"/>
+        </extension>
+      </extension>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+        <code value="TREAT"/>
+        <display value="Treatment"/>
+      </coding>
+      <text value="N/A"/>
+    </purposeOfUse>
+    <purposeOfUse>
+      <extension url="urn:AuditEventHL7Norway/StructureDefinition/PurposeOfUseExt">
+        <extension url="assigner">
+          <valueString value="OUS"/>
+        </extension>
+        <extension url="reason">
+          <valueString value="&lt;Fylles typisk ut hvis userSelected = True&gt;"/>
+        </extension>
+        <extension url="id">
+          <valueString value="aabnmm+0000001161045"/>
+        </extension>
+      </extension>
+      <coding>
+        <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+        <code value="BELEGG"/>
+        <display value="Inneliggende pasient"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="Inneliggende pasient på avdeling &lt;X&gt;, post &lt;Y&gt;, inntid 5.1.23"/>
+    </purposeOfUse>
+  </agent>
+  <source>
+    <site value="server.example.com"/>
+    <observer>
+      <reference value="Device/ex-device"/>
+    </observer>
+    <type>
+      <system value="http://terminology.hl7.org/CodeSystem/security-source-type"/>
+      <code value="4"/>
+      <display value="Application Server"/>
+    </type>
+  </source>
+  <entity>
+    <extension url="urn:AuditEventHL7Norway/StructureDefinition/Facility">
+      <extension url="id">
+        <valueIdentifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+          <value value="974589095"/>
+          <assigner>
+            <identifier>
+              <value value="https://register.nhn.no/resh"/>
+            </identifier>
+          </assigner>
+        </valueIdentifier>
+      </extension>
+      <extension url="name">
+        <valueString value="Hjertemedisinsk avdeling"/>
+      </extension>
+    </extension>
+    <extension url="urn:AuditEventHL7Norway/StructureDefinition/ChildOrganization">
+      <extension url="id">
+        <valueIdentifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+          <value value="700386"/>
+          <assigner>
+            <identifier>
+              <value value="https://www.brreg.no/"/>
+            </identifier>
+          </assigner>
+        </valueIdentifier>
+      </extension>
+      <extension url="name">
+        <valueString value="Oslo universitetssykehus HF Ullevål – somatikk"/>
+      </extension>
+    </extension>
+    <what>
+      <type value="Patient"/>
+      <identifier>
+        <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+        <value value="12057900499"/>
+        <assigner>
+          <identifier>
+            <value value="https://www.skatteetaten.no/person/folkeregister/"/>
+          </identifier>
+        </assigner>
+      </identifier>
+      <display value="Ole Olsen"/>
+    </what>
+    <type>
+      <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
+      <code value="1"/>
+      <display value="Person"/>
+    </type>
+    <role>
+      <system value="http://terminology.hl7.org/CodeSystem/object-role"/>
+      <code value="1"/>
+      <display value="Patient"/>
+    </role>
+  </entity>
+</AuditEvent>

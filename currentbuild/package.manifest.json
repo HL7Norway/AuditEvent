@@ -1,0 +1,6 @@
+{
+  "version" : "0.1.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20230212112257",
+  "name" : "AuditEventHL7NorwayID"
+}

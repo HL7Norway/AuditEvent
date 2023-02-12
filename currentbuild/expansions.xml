@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="d79e21db-5e3c-4d69-bf94-44dcbc0d8805"/>
+  <meta>
+    <lastUpdated value="2023-02-12T11:23:40.741+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:AuditEventHL7Norway/ValueSet/PurposeOfUseVS"/>
+    <resource>
+      <ValueSet>
+        <id value="PurposeOfUseVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 104 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html">IPLOS tjenestetyper 2019 (subsett) v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-carerelation.html">DIPS care relation code system v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html">ActReason v2.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse v2.0.0 (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-HENV-BEH"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-HENV_BEH">HENV_BEH</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Henvendelse fra pasientens behandler</td>
+                <td>
+                  <div>
+                    <p>Henvendelse fra pasientens behandler.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-HENV-PAA"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-HENV_PAA">HENV_PAA</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Henvendelse fra pasientens pårørende</td>
+                <td>
+                  <div>
+                    <p>Henvendelse fra pasientens pårørende.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-MELDT"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-MELDT">MELDT</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Meldt pasient</td>
+                <td>
+                  <div>
+                    <p>Meldt pasient (for eksempel fra legevakta eller ambulansen).</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-BLAALYS"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-BLAALYS">BLAALYS</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Blålys</td>
+                <td>
+                  <div>
+                    <p>Bruk av blålys - akutt helsehjelp</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-EKSTSVAR"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-EKSTSVAR">EKSTSVAR</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Eksternt prøvesvar/notat til vurdering</td>
+                <td>
+                  <div>
+                    <p>Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-KVAL"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-KVAL">KVAL</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Internkontroll/Kvalitetssikring</td>
+                <td>
+                  <div>
+                    <p>Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-OPRPLAN"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-OPRPLAN">OPRPLAN</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Pasienten finnes på operasjonsoversikten</td>
+                <td>
+                  <div>
+                    <p>Pasienten finnes på operasjonsoversikten i DIPS</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-KONSSERIE"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-KONSSERIE">KONSSERIE</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Åpen konsultasjonsserie</td>
+                <td>
+                  <div>
+                    <p>Åpen konsultasjonsserie</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-LEDSBEL"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-LEDSBEL">LEDSBEL</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Inneliggende ledsager</td>
+                <td>
+                  <div>
+                    <p>Ledsageren er inneliggende.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-VURDHENV"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-VURDHENV">VURDHENV</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Vurdert henvisning</td>
+                <td>
+                  <div>
+                    <p>Henvisning som er vurdert</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-ITSYSARB"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-ITSYSARB">ITSYSARB</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>IT-Systemarbeid</td>
+                <td>
+                  <div>
+                    <p>IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-TILSYN"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-TILSYN">TILSYN</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Tilsyn på annen avdeling.</td>
+                <td>
+                  <div>
+                    <p>&quot;Tilsyn på annen avdeling&quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-ARBFLYT"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-ARBFLYT">ARBFLYT</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Oppgave i arbeidsflyt</td>
+                <td>
+                  <div>
+                    <p>Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-BEHANDLER"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-BEHANDLER">BEHANDLER</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Bruker har behandlingsansvar for pasienten</td>
+                <td>
+                  <div>
+                    <p>Brukeren er behandler for pasienten. Eksempler på hva som gjør at malen slår til er:
+a) Bruker er registrert som ansvarlig behandler på poliklinisk besøk.
+b) Bruker er registrert som behandler på planlagt kontakt.
+c) Bruker er registrert som ansvarlig lege på et postopphold.
+d) Bruker er registrert som ansvarlig behandler for omsorgsserie i psykiatrien.
+e) Bruker er registrert som koterapeut til en poliklinisk konsultasjon (gjelder psykiatri).
+f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasientens timebok.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-INFOANSV"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-INFOANSV">INFOANSV</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Bruker er informasjonsansvarlig for pasienten</td>
+                <td>
+                  <div>
+                    <p>Brukeren er informasjonsansvarlig for pasienten.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-JOURANSV"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-JOURANSV">JOURANSV</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Bruker er journalansvarlig for pasienten</td>
+                <td>
+                  <div>
+                    <p>Brukeren er journalansvarlig for pasienten.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-PASANSV"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-PASANSV">PASANSV</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Bruker er koordinator for pasienten</td>
+                <td>
+                  <div>
+                    <p>Brukeren er koordinator for pasienten.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-HENVISNING"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-HENVISNING">HENVISNING</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Henvisning til vurdering</td>
+                <td>
+                  <div>
+                    <p>Henvisning som enda ikke er vurdert.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-BELEGG"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-BELEGG">BELEGG</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Inneliggende pasient</td>
+                <td>
+                  <div>
+                    <p>Pasienten er inneliggende.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-PLANOPP"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-PLANOPP">PLANOPP</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Planlagt oppmøte</td>
+                <td>
+                  <div>
+                    <p>Planlagt oppmøte for pasienten.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-POLBESOK"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-POLBESOK">POLBESOK</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Poliklinisk besøk</td>
+                <td>
+                  <div>
+                    <p>Poliklinisk konsultasjon.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-TILSYN2"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-TILSYN2">TILSYN2</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Tilsyn med helsepersonellets virksomhet</td>
+                <td>
+                  <div>
+                    <p>Tilsyn med helsepersonellets virksomhet.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-INNSYN"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-INNSYN">INNSYN</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Pasientinnsyn</td>
+                <td>
+                  <div>
+                    <p>Pasientens innsyn i egen journal.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-OFFBEST"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-OFFBEST">OFFBEST</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap</td>
+                <td>
+                  <div>
+                    <p>Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-HENV-PAS"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-HENV_PAS">HENV_PAS</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Henvendelse fra pasienten</td>
+                <td>
+                  <div>
+                    <p>Henvendelse fra pasienten selv.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-HENVPER"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-HENVPER">HENVPER</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Åpen henvisningsperiode</td>
+                <td>
+                  <div>
+                    <p>Åpen henvisningsperiode.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-PLANKONT"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-PLANKONT">PLANKONT</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Ventende pasient</td>
+                <td>
+                  <div>
+                    <p>Pasienten har en planlagt kontakt som ikke er avsluttet.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-PRIMKONT"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-PRIMKONT">PRIMKONT</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Bruker er pasientens primærkontakt</td>
+                <td>
+                  <div>
+                    <p>Bruker er pasientens primærkontakt.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-DELBEHAN"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-DELBEHAN">DELBEHAN</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Deltar i behandlingen av pasienten</td>
+                <td>
+                  <div>
+                    <p>Deltar i behandlingen av pasienten.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-TILSYN3"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-TILSYN3">TILSYN3</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Statlig tilsyn</td>
+                <td>
+                  <div>
+                    <p>Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-HHJELANPAS"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-HHJELANPAS">HHJELANPAS</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Yte helsehjelp til annen pasient</td>
+                <td>
+                  <div>
+                    <p>&quot;Yte helsehjelp til annen pasient&quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-NYPAS"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-NYPAS">NYPAS</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Pasientadministrasjon</td>
+                <td>
+                  <div>
+                    <p>Pasientadministrasjon, f.eks registrering av ny pasient</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-ROLPAS"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-ROLPAS">ROLPAS</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Bruker har rolle overfor pasient</td>
+                <td>
+                  <div>
+                    <p>Bruker har rolle overfor pasient</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-carerelation-EGENLAER"> </a>  
+                  <a href="CodeSystem-carerelation.html#carerelation-EGENLAER">EGENLAER</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td>
+                <td>Egen læring/kvalitetssikring av gitt behandling</td>
+                <td>
+                  <div>
+                    <p>Begrunnelse forankret i Helsepersonellovens §29 c</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-07"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-07">07</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Avlastning - utenfor institusjon</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-08"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-08">08</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Avlastning - i institusjon</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-08.01"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-08.4601">08.01</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Avlastning i institusjon - rullerende</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-08.02"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-08.4602">08.02</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Avlastning i institusjon - ikke rullerende</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-15"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-15">15</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Helsetjenester i hjemmet</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-17"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-17">17</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Dagopphold i institusjon</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-18"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-18">18</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Tidsbegrenset opphold - utredning/behandling</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-19"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-19">19</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Tidsbegrenset opphold - habilitering/rehabilitering</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-20"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-20">20</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Tidsbegrenset opphold – annet</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-21"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-21">21</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Langtidsopphold i institusjon</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-22"> </a>  
+                  <a href="CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-22">22</a>
+                </td>
+                <td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td>
+                <td>Nattopphold i institusjon</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HMARKT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HMARKT">HMARKT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>healthcare marketing</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for marketing services and products related to health care.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HOPERAT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HOPERAT">HOPERAT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>healthcare operations</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for conducting administrative and contractual activities related to the provision of health care.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CAREMGT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-CAREMGT">CAREMGT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>care management</td>
+                <td>
+                  <div>
+                    <p>To perform analytics, evaluation and other secondary uses of treatment and healthcare related information to manage the quality, efficacy, patient safety, population health, and cost effectiveness of healthcare delivery. Explicitly excludes the use of information to organize the delivery of health care for care coordination and case management, or to provide healthcare treatment.</p>
+
+                    <p>
+                      <em>Usage Note:</em> The concept of care management is narrower than the list of activities related to more general organizational objectives such as provider profiling, education of healthcare and non-healthcare professionals; insurance underwriting, premium rating, reinsurance; organizational legal, medical review, auditing, compliance and fraud and abuse detection; business planning, development, and restructuring; fund-raising; and customer service.
+                    </p>
+
+                    <p>
+                      <em>Map:</em> Maps to ISO 14265 Classification Term &quot;Health service management and quality assurance&quot; described as &quot;To inform persons or processes responsible for determining the availability, quality, safety, equity and cost-effectiveness of health care services.&quot;
+                    </p>
+
+                    <p>There is a semantic gap in concepts. This classification term is described as activities, i.e., &quot;to inform persons&quot; or &quot;to inform processes&quot; rather than the rationale for performing actions/operations on information related to the activity.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-DONAT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-DONAT">DONAT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>donation</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for cadaveric organ, eye or tissue donation.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-FRAUD"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-FRAUD">FRAUD</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>fraud</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for fraud detection and prevention processes.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-GOV"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-GOV">GOV</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>government</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used within government processes.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HACCRED"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HACCRED">HACCRED</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>health accreditation</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting activities related to meeting accreditation criteria.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HCOMPL"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HCOMPL">HCOMPL</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>health compliance</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for conducting activities required to meet a mandate.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HDECD"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HDECD">HDECD</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>decedent</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for handling deceased patient matters.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HDIRECT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HDIRECT">HDIRECT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>directory</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operation operations on information used to manage a patient directory.</p>
+
+                    <p>
+                      <strong>Examples:</strong>
+                    </p>
+
+                    <ul>
+
+                      <li>facility</li>
+
+                      <li>enterprise</li>
+
+                      <li>payer</li>
+
+                      <li>health information exchange patient directory</li>
+
+                    </ul>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HDM"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HDM">HDM</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>healthcare delivery management</td>
+                <td>
+                  <div>
+                    <p>To perform one or more actions on information used for conducting administrative and contractual activities by or on behalf of organizational entities responsible for delivery of an individual's benefits in a healthcare program, health plan or insurance. Explicitly excludes the use of information to organize the delivery of health care for care coordination and case management, or to provide healthcare treatment.</p>
+
+                    <p>
+                      <em>Usage Note:</em> Examples of activities conducted under this purpose of use: provider profiling, risk adjustment, underwriting, fraud and abuse, quality improvement population health and care management. Aligns with HIPAA Operation POU minus coordination of care or other treatment related activities. Similar to the description in SAMHSA Confidentiality of Substance Use Disorder Patient Records Supplemental notice of proposed rulemaking.
+                    </p>
+
+                    <p>
+                      <em>Map:</em> Maps to ISO 14265 Classification Term &quot;Administration of care for an individual subject of care&quot; described as &quot;To inform persons or processes responsible for enabling the availability of resources or funding or permissions for providing health care services to the subject of care.&quot;
+                    </p>
+
+                    <p>However, this classification term is described as activities, i.e., &quot;to inform persons&quot; or &quot;to inform processes&quot; rather than the rationale for performing actions/operations on information related to the activity.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HLEGAL"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HLEGAL">HLEGAL</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>legal</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting activities required by legal proceeding.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HOUTCOMS"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HOUTCOMS">HOUTCOMS</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>health outcome measure</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for assessing results and comparative effectiveness achieved by health care practices and interventions.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HPRGRP"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HPRGRP">HPRGRP</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>health program reporting</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for conducting activities to meet program accounting requirements.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HQUALIMP"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HQUALIMP">HQUALIMP</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>health quality improvement</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for conducting administrative activities to improve health care quality.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HSYSADMIN"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HSYSADMIN">HSYSADMIN</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>health system administration</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information to administer the electronic systems used for the delivery of health care.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-LABELING"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-LABELING">LABELING</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>labeling</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information to assign, persist, and manage labels to healthcare data to characterize various aspects, such as its security classification, sensitivity, compartment, integrity, and provenance; applicable privacy, consent, security, provenance, and trust policies; and handling caveats such as purpose of use, obligations, and refrain policies.</p>
+
+                    <p>Label management includes classification of target data by constructing and binding of a label set per applicable policies, security policy information file semantics, and classification guides. Label management also includes process and procedures for subsequent revision of a label for, e.g., reclassification, downgrading classification, and declassification.</p>
+
+                    <p>Label revisions may be triggered by, e.g., expiry of classification period; changes in applicable policy, e.g., revocation of a consent directive; or changes in the governing policy domain in which the data is relocated or a copy of the data is sent. If a label is revised, an audit log should be kept and the provenance of the label changes should be tracked.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-METAMGT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-METAMGT">METAMGT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>metadata management</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information to assign, persist, and manage metadata to healthcare data to characterize various aspects used for its indexing, discovery, retrieval, and processing by systems, applications, and end users. For example, master index identifier, media type, and location.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-MEMADMIN"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-MEMADMIN">MEMADMIN</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>member administration</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information to administer health care coverage to an enrollee under a policy or program.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-MILCDM"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-MILCDM">MILCDM</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>military command</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting activities required by military processes, procedures, policies, or law.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PATADMIN"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATADMIN">PATADMIN</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>patient administration</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for operational activities conducted to administer the delivery of health care to a patient.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PATSFTY"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATSFTY">PATSFTY</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>patient safety</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information in processes related to ensuring the safety of health care.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PERFMSR"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-PERFMSR">PERFMSR</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>performance measure</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for monitoring performance of recommended health care practices and interventions.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-RECORDMGT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-RECORDMGT">RECORDMGT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>records management</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used within the health records management process.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-SYSDEV"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-SYSDEV">SYSDEV</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>system development</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information to design, develop, implement, test, or deploy a healthcare system or application.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HTEST"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HTEST">HTEST</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>test health data</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information that is simulated or synthetic health data used for testing system capabilities outside of a production or operational system environment.</p>
+
+                    <p>
+                      <em>Usage Note:</em> Data marked with a HTEST security label enables an access control system to permit interfacing systems or end users provisioned with a clearance, which includes a HTEST purpose of use attribute, to test, verify, or validate that a system or application will operate in production as intended based on design specifications.
+                    </p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-TRAIN"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-TRAIN">TRAIN</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>training</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used in training and education.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HPAYMT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HPAYMT">HPAYMT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>healthcare payment</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting financial or contractual activities related to payment for provision of health care.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLMATTCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLMATTCH">CLMATTCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>claim attachment</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for provision of additional clinical evidence in support of a request for coverage or payment for health services.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-COVAUTH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-COVAUTH">COVAUTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>coverage authorization</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting prior authorization or predetermination of coverage for services.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-COVERAGE"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-COVERAGE">COVERAGE</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>coverage under policy or program</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting activities related to coverage under a program or policy.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ELIGDTRM"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-ELIGDTRM">ELIGDTRM</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>eligibility determination</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for conducting eligibility determination for coverage in a program or policy. May entail review of financial status or disability assessment.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ELIGVER"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-ELIGVER">ELIGVER</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>eligibility verification</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for conducting eligibility verification of coverage in a program or policy. May entail provider contacting coverage source (e.g., government health program such as workers compensation or health plan) for confirmation of enrollment, eligibility for specific services, and any applicable copays.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ENROLLM"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-ENROLLM">ENROLLM</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>enrollment</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for enrolling a covered party in a program or policy. May entail recording of covered party's and any dependent's demographic information and benefit choices.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-MILDCRG"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-MILDCRG">MILDCRG</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>military discharge</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for the process of releasing military personnel from their service obligations, which may include determining service merit, discharge benefits, and disability assessment.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-REMITADV"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-REMITADV">REMITADV</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>remittance advice</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information about the amount remitted for a health care claim.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HRESCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-HRESCH">HRESCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>healthcare research</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge. Use of the data iincludes basic and applied research such as biomedical, population origin or ancestry, translational research, and disease, discipline, specialty specific healthcare research and clinical trial research.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-BIORCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-BIORCH">BIORCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>biomedical research</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge. Use of the data must be related to specified biomedical basic or applied research. For example, research on rare plants to determine whether biologic properties may be useful for pharmaceutical development. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRCH">CLINTRCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>clinical trial research</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting scientific investigations in accordance with clinical trial protocols to obtain health care knowledge.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRCHNPC"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRCHNPC">CLINTRCHNPC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>clinical trial research without patient care</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting scientific investigations in accordance with clinical trial protocols to obtain health care knowledge without provision of patient care. May be post-coordinated or used with other purposes of use such as disease, discipline, specialty, population origins or ancestry, translational healthcare research. For example, a clinical trial conducted on laboratory specimens collected from a specified patient population.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRCHPC"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRCHPC">CLINTRCHPC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>clinical trial research with patient care</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting scientific investigations with patient care in accordance with clinical trial protocols to obtain health care knowledge. May be post-coordinated or used with other purposes of use such as disease, discipline, specialty, population origins or ancestry, translational healthcare research. For example, an &quot;off-label&quot; drug used for cancer therapy administer to a specified patient population.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PRECLINTRCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-PRECLINTRCH">PRECLINTRCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>preclinical trial research</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information in preparation for conducting scientific investigation to obtain health care knowledge, such as research on animals or review of patient health records, to determine the feasibility of a clinical trial study; assist with protocol design; or in preparation for institutional review board or ethics committee approval process. May be post-coordinated or used with other purposes of use such as disease, discipline, specialty, population origins or ancestry, translational healthcare research.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-DSRCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-DSRCH">DSRCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>disease specific healthcare research</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge. Use of the data must be related to specified conditions, diagnosis, or disease healthcare research. For example, conducting cancer research by testing reaction of tumor cells to certain biologics. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-POARCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-POARCH">POARCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>population origins or ancestry healthcare research</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information, including genealogical pedigrees, historical records, surveys, family health data, health records, and genetic information, for conducting scientific investigations to obtain health care knowledge. Use of the data must be related to population origins and/or ancestry healthcare research. For example, gathering genetic specimens from a specific population in order to determine the ancestry and population origins of that group. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-TRANSRCH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-TRANSRCH">TRANSRCH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>translational healthcare research</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge related to evidence based medicine during the course of providing healthcare treatment. Sometimes referred to as &quot;bench to bedside&quot;, which is the iterative feedback loop between healthcare research and clinical trials with input from information collected in the course of routine provision of healthcare. For example, by extending a patient encounter to conduct a survey related to a research topic such as attitudes about use of a wellness device that a patient agreed to use. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PATRQT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATRQT">PATRQT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>patient requested</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information in response to a patient's request.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-FAMRQT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-FAMRQT">FAMRQT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>family requested</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information in response to a request by a family member authorized by the patient.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PWATRNY"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-PWATRNY">PWATRNY</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>power of attorney</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information in response to a request by a person appointed as the patient's legal representative.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-SUPNWK"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-SUPNWK">SUPNWK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>support network</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information in response to a request by a person authorized by the patient.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PUBHLTH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-PUBHLTH">PUBHLTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>public health</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for conducting public health activities, such as the reporting of notifiable conditions.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-DISASTER"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-DISASTER">DISASTER</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>disaster</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used for provision of immediately needed health care to a population of living subjects located in a disaster zone.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-THREAT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-THREAT">THREAT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>threat</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information used to prevent injury or disease to living subjects who may be the target of violence.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-TREAT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-TREAT">TREAT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>treatment</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for provision of health care.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRL"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRL">CLINTRL</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>clinical trial</td>
+                <td>
+                  <div>
+                    <p>To perform health care as part of the clinical trial protocol.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-COC"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-COC">COC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>coordination of care</td>
+                <td>
+                  <div>
+                    <p>To perform one or more actions on information in order to organize the provision and case management of an individualâ€™s healthcare, including: Monitoring a person's goals, needs, and preferences; acting as the communication link between two or more participants concerned with a person's health and wellness; organizing and facilitating care activities and promoting self-management by advocating for, empowering, and educating a person; and ensuring safe, appropriate, non-duplicative, and effective integrated care.</p>
+
+                    <p>
+                      <em>Usage Note:</em> Use when describing these functions: 1. Monitoring a personâ€™s goals, needs, and preferences. 2. Acting as the communication link between two or more participants concerned with a person's health and wellness. 3. Organizing and facilitating care activities and promoting self-management by advocating for, empowering, and educating a person. 4. Ensuring safe, appropriate, non-duplicative, and effective integrated care.
+                    </p>
+
+                    <p>The goal is to clearly differentiate this type of coordination of care from HIPAA Operations by specifying that these actions on information are undertaken in the provision of healthcare treatment.</p>
+
+                    <p>For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Disorder Patient Records Supplemental notice of proposed rulemaking, which differentiates concepts of care coordination and case management for the provision of treatment as specifically distinct from activities related to health care delivery management and the operations of organizational entities involved in the delivery of healthcare.</p>
+
+                    <p>
+                      <em>Map:</em> Maps to ISO 14265 Classification Terms: &quot;Support of care activities within the provider organisation for an individual subject of care&quot; described as &quot;To inform persons or processes enabling others to provide health care services to the subject of care.&quot; &quot;Subject of Care Uses&quot; described as &quot;To inform the subject of care in support of his or her own interests.&quot;
+                    </p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ETREAT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-ETREAT">ETREAT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>Emergency Treatment</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for provision of immediately needed health care for an emergent condition.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-BTG"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-BTG">BTG</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>break the glass</td>
+                <td>
+                  <div>
+                    <p>To perform policy override operations on information for provision of immediately needed health care for an emergent condition affecting potential harm, death or patient safety by end users who are not provisioned for this purpose of use. Includes override of organizational provisioning policies and may include override of subject of care consent directive restricting access.</p>
+
+                    <p>
+                      <em>Map:</em> Partially Maps to ISO 14265 Classification Term &quot;Emergency care provision to an individual subject of care&quot; described as &quot;To inform persons needing to provide health care services to the subject of care urgently, possibly needing to over-ride the policies and consents pertaining to Purpose 1 above.&quot; Purpose 1 is equivalent to HL7 treatment purpose of use: &quot;Clinical care provision to an individual subject of care&quot; described as &quot;To inform persons or processes responsible for providing health care services to the subject of care.&quot; The ISO description conflates both of the proposed specializations of HL7 ETREAT: break the glass and the typically broader access to health information normally available to providers who are provisioned for emergency workflows on a regular basis, e.g., Emergency Room providers. Examples of greater access than is normally accessible by providers based on the need to know are access to sensitive information for which access typically requires a patient's consent. This is not an override of a patient's dissent to disclose sensitive information in cases where the applicable policy waives the need for that consent to access this information. In US, Title 38 Section 7332 and 42 CFR Part 2 both permit emergency access without the need to override a patient's consent directive; rather, this access is a limitation to the patient's right to dissent from disclosure.
+                    </p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ERTREAT"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-ERTREAT">ERTREAT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>emergency room treatment</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for provision of immediately needed health care for an emergent condition in an emergency room or similar emergent care context by end users provisioned for this purpose, which does not constitute as policy override such as in a &quot;Break the Glass&quot; purpose of use.</p>
+
+                    <p>Map:Partially Maps to ISO 14265 Classification Term &quot;Emergency care provision to an individual subject of care&quot; described as &quot;To inform persons needing to provide health care services to the subject of care urgently, possibly needing to over-ride the policies and consents pertaining to Purpose 1 above.&quot; Purpose 1 is equivalent to HL7 treatment purpose of use: &quot;Clinical care provision to an individual subject of care&quot; described as &quot;To inform persons or processes responsible for providing health care services to the subject of care.&quot;</p>
+
+                    <p>The ISO description conflates both of the proposed specializations of HL7 ETREAT: break the glass and the typically broader access to health information normally available to providers who are provisioned for emergency workflows on a regular basis, e.g., Emergency Room providers. Examples of greater access than is normally accessible by providers based on the need to know are access to sensitive information for which access typically requires a patient's consent. This is not an override of a patient's dissent to disclose sensitive information in cases where the applicable policy waives the need for that consent to access this information. In US, Title 38 Section 7332 and 42 CFR Part 2 both permit emergency access without the need to override a patient's consent directive; rather, this access is a limitation to the patient's right to dissent from disclosure.</p>
+
+                    <p>There is a semantic gap in concepts. This classification term is described as activities â€œto inform personsâ€? rather than the rationale for performing actions/operations on information related to the activity.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-POPHLTH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html#v3-ActReason-POPHLTH">POPHLTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>population health</td>
+                <td>
+                  <div>
+                    <p>To perform one or more operations on information for provision of health care to a population of living subjects, e.g., needle exchange program.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="urn:AuditEventHL7Norway/ValueSet/PurposeOfUseVS"/>
+        <version value="0.1.0"/>
+        <name value="PurposeOfUseVS"/>
+        <title value="Valueset used for purpose and purpose-local"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2023-02-12T11:23:40+00:00"/>
+        <publisher value="HL7 Norway"/>
+        <contact>
+          <name value="HL7 Norway"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://github.com/HL7Norway"/>
+          </telecom>
+        </contact>
+        <description value="This valueset is used for coding purpose and purpose-local."/>
+        <expansion>
+          <identifier value="urn:uuid:1b062928-68f4-4ca2-9d2b-cfaff3dd66a7"/>
+          <timestamp value="2023-02-12T11:24:06+00:00"/>
+          <total value="104"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:AuditEventHL7Norway/CodeSystem/carerelation|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActReason|2.1.0"/>
+          </parameter>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="HENV_BEH"/>
+            <display value="Henvendelse fra pasientens behandler"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="HENV_PAA"/>
+            <display value="Henvendelse fra pasientens pårørende"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="MELDT"/>
+            <display value="Meldt pasient"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="BLAALYS"/>
+            <display value="Blålys"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="EKSTSVAR"/>
+            <display value="Eksternt prøvesvar/notat til vurdering"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="KVAL"/>
+            <display value="Internkontroll/Kvalitetssikring"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="OPRPLAN"/>
+            <display value="Pasienten finnes på operasjonsoversikten"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="KONSSERIE"/>
+            <display value="Åpen konsultasjonsserie"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="LEDSBEL"/>
+            <display value="Inneliggende ledsager"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="VURDHENV"/>
+            <display value="Vurdert henvisning"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="ITSYSARB"/>
+            <display value="IT-Systemarbeid"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="TILSYN"/>
+            <display value="Tilsyn på annen avdeling."/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="ARBFLYT"/>
+            <display value="Oppgave i arbeidsflyt"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="BEHANDLER"/>
+            <display value="Bruker har behandlingsansvar for pasienten"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="INFOANSV"/>
+            <display value="Bruker er informasjonsansvarlig for pasienten"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="JOURANSV"/>
+            <display value="Bruker er journalansvarlig for pasienten"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="PASANSV"/>
+            <display value="Bruker er koordinator for pasienten"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="HENVISNING"/>
+            <display value="Henvisning til vurdering"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="BELEGG"/>
+            <display value="Inneliggende pasient"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="PLANOPP"/>
+            <display value="Planlagt oppmøte"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="POLBESOK"/>
+            <display value="Poliklinisk besøk"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="TILSYN2"/>
+            <display value="Tilsyn med helsepersonellets virksomhet"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="INNSYN"/>
+            <display value="Pasientinnsyn"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="OFFBEST"/>
+            <display value="Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="HENV_PAS"/>
+            <display value="Henvendelse fra pasienten"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="HENVPER"/>
+            <display value="Åpen henvisningsperiode"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="PLANKONT"/>
+            <display value="Ventende pasient"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="PRIMKONT"/>
+            <display value="Bruker er pasientens primærkontakt"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="DELBEHAN"/>
+            <display value="Deltar i behandlingen av pasienten"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="TILSYN3"/>
+            <display value="Statlig tilsyn"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="HHJELANPAS"/>
+            <display value="Yte helsehjelp til annen pasient"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="NYPAS"/>
+            <display value="Pasientadministrasjon"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="ROLPAS"/>
+            <display value="Bruker har rolle overfor pasient"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+            <code value="EGENLAER"/>
+            <display value="Egen læring/kvalitetssikring av gitt behandling"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="07"/>
+            <display value="Avlastning - utenfor institusjon"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="08"/>
+            <display value="Avlastning - i institusjon"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="08.01"/>
+            <display value="Avlastning i institusjon - rullerende"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="08.02"/>
+            <display value="Avlastning i institusjon - ikke rullerende"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="15"/>
+            <display value="Helsetjenester i hjemmet"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="17"/>
+            <display value="Dagopphold i institusjon"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="18"/>
+            <display value="Tidsbegrenset opphold - utredning/behandling"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="19"/>
+            <display value="Tidsbegrenset opphold - habilitering/rehabilitering"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="20"/>
+            <display value="Tidsbegrenset opphold – annet"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="21"/>
+            <display value="Langtidsopphold i institusjon"/>
+          </contains>
+          <contains>
+            <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+            <code value="22"/>
+            <display value="Nattopphold i institusjon"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HMARKT"/>
+            <display value="healthcare marketing"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HOPERAT"/>
+            <display value="healthcare operations"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="CAREMGT"/>
+            <display value="care management"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="DONAT"/>
+            <display value="donation"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="FRAUD"/>
+            <display value="fraud"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="GOV"/>
+            <display value="government"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HACCRED"/>
+            <display value="health accreditation"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HCOMPL"/>
+            <display value="health compliance"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HDECD"/>
+            <display value="decedent"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HDIRECT"/>
+            <display value="directory"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HDM"/>
+            <display value="healthcare delivery management"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HLEGAL"/>
+            <display value="legal"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HOUTCOMS"/>
+            <display value="health outcome measure"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HPRGRP"/>
+            <display value="health program reporting"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HQUALIMP"/>
+            <display value="health quality improvement"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HSYSADMIN"/>
+            <display value="health system administration"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="LABELING"/>
+            <display value="labeling"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="METAMGT"/>
+            <display value="metadata management"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="MEMADMIN"/>
+            <display value="member administration"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="MILCDM"/>
+            <display value="military command"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PATADMIN"/>
+            <display value="patient administration"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PATSFTY"/>
+            <display value="patient safety"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PERFMSR"/>
+            <display value="performance measure"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="RECORDMGT"/>
+            <display value="records management"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="SYSDEV"/>
+            <display value="system development"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HTEST"/>
+            <display value="test health data"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="TRAIN"/>
+            <display value="training"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HPAYMT"/>
+            <display value="healthcare payment"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="CLMATTCH"/>
+            <display value="claim attachment"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="COVAUTH"/>
+            <display value="coverage authorization"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="COVERAGE"/>
+            <display value="coverage under policy or program"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="ELIGDTRM"/>
+            <display value="eligibility determination"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="ELIGVER"/>
+            <display value="eligibility verification"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="ENROLLM"/>
+            <display value="enrollment"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="MILDCRG"/>
+            <display value="military discharge"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="REMITADV"/>
+            <display value="remittance advice"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HRESCH"/>
+            <display value="healthcare research"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="BIORCH"/>
+            <display value="biomedical research"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="CLINTRCH"/>
+            <display value="clinical trial research"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="CLINTRCHNPC"/>
+            <display value="clinical trial research without patient care"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="CLINTRCHPC"/>
+            <display value="clinical trial research with patient care"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PRECLINTRCH"/>
+            <display value="preclinical trial research"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="DSRCH"/>
+            <display value="disease specific healthcare research"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="POARCH"/>
+            <display value="population origins or ancestry healthcare research"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="TRANSRCH"/>
+            <display value="translational healthcare research"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PATRQT"/>
+            <display value="patient requested"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="FAMRQT"/>
+            <display value="family requested"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PWATRNY"/>
+            <display value="power of attorney"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="SUPNWK"/>
+            <display value="support network"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PUBHLTH"/>
+            <display value="public health"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="DISASTER"/>
+            <display value="disaster"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="THREAT"/>
+            <display value="threat"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="TREAT"/>
+            <display value="treatment"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="CLINTRL"/>
+            <display value="clinical trial"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="COC"/>
+            <display value="coordination of care"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="ETREAT"/>
+            <display value="Emergency Treatment"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="BTG"/>
+            <display value="break the glass"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="ERTREAT"/>
+            <display value="emergency room treatment"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="POPHLTH"/>
+            <display value="population health"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
