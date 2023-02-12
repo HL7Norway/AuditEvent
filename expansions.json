@@ -1,0 +1,277 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "36b7dba5-e2e9-4085-b946-ca3db61c32e0",
+  "meta" : {
+    "lastUpdated" : "2023-02-06T08:16:02.247+01:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:AuditEventHL7Norway/ValueSet/PurposeOfUseVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "PurposeOfUseVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 45 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-IPLOStjenestetyper2019CS.html\">IPLOS tjenestetyper 2019 (subsett) v0.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-carerelation.html\">DIPS care relation code system v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-HENV-BEH\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-HENV_BEH\">HENV_BEH</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Henvendelse fra pasientens behandler</td><td><div><p>Henvendelse fra pasientens behandler.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-HENV-PAA\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-HENV_PAA\">HENV_PAA</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Henvendelse fra pasientens pårørende</td><td><div><p>Henvendelse fra pasientens pårørende.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-MELDT\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-MELDT\">MELDT</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Meldt pasient</td><td><div><p>Meldt pasient (for eksempel fra legevakta eller ambulansen).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-BLAALYS\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-BLAALYS\">BLAALYS</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Blålys</td><td><div><p>Bruk av blålys - akutt helsehjelp</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-EKSTSVAR\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-EKSTSVAR\">EKSTSVAR</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Eksternt prøvesvar/notat til vurdering</td><td><div><p>Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-KVAL\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-KVAL\">KVAL</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Internkontroll/Kvalitetssikring</td><td><div><p>Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-OPRPLAN\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-OPRPLAN\">OPRPLAN</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Pasienten finnes på operasjonsoversikten</td><td><div><p>Pasienten finnes på operasjonsoversikten i DIPS</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-KONSSERIE\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-KONSSERIE\">KONSSERIE</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Åpen konsultasjonsserie</td><td><div><p>Åpen konsultasjonsserie</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-LEDSBEL\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-LEDSBEL\">LEDSBEL</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Inneliggende ledsager</td><td><div><p>Ledsageren er inneliggende.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-VURDHENV\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-VURDHENV\">VURDHENV</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Vurdert henvisning</td><td><div><p>Henvisning som er vurdert</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-ITSYSARB\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-ITSYSARB\">ITSYSARB</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>IT-Systemarbeid</td><td><div><p>IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-TILSYN\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-TILSYN\">TILSYN</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Tilsyn på annen avdeling.</td><td><div><p>&quot;Tilsyn på annen avdeling&quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-ARBFLYT\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-ARBFLYT\">ARBFLYT</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Oppgave i arbeidsflyt</td><td><div><p>Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-BEHANDLER\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-BEHANDLER\">BEHANDLER</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Bruker har behandlingsansvar for pasienten</td><td><div><p>Brukeren er behandler for pasienten. Eksempler på hva som gjør at malen slår til er:\na) Bruker er registrert som ansvarlig behandler på poliklinisk besøk.\nb) Bruker er registrert som behandler på planlagt kontakt.\nc) Bruker er registrert som ansvarlig lege på et postopphold.\nd) Bruker er registrert som ansvarlig behandler for omsorgsserie i psykiatrien.\ne) Bruker er registrert som koterapeut til en poliklinisk konsultasjon (gjelder psykiatri).\nf) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasientens timebok.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-INFOANSV\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-INFOANSV\">INFOANSV</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Bruker er informasjonsansvarlig for pasienten</td><td><div><p>Brukeren er informasjonsansvarlig for pasienten.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-JOURANSV\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-JOURANSV\">JOURANSV</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Bruker er journalansvarlig for pasienten</td><td><div><p>Brukeren er journalansvarlig for pasienten.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-PASANSV\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-PASANSV\">PASANSV</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Bruker er koordinator for pasienten</td><td><div><p>Brukeren er koordinator for pasienten.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-HENVISNING\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-HENVISNING\">HENVISNING</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Henvisning til vurdering</td><td><div><p>Henvisning som enda ikke er vurdert.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-BELEGG\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-BELEGG\">BELEGG</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Inneliggende pasient</td><td><div><p>Pasienten er inneliggende.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-PLANOPP\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-PLANOPP\">PLANOPP</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Planlagt oppmøte</td><td><div><p>Planlagt oppmøte for pasienten.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-POLBESOK\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-POLBESOK\">POLBESOK</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Poliklinisk besøk</td><td><div><p>Poliklinisk konsultasjon.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-TILSYN2\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-TILSYN2\">TILSYN2</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Tilsyn med helsepersonellets virksomhet</td><td><div><p>Tilsyn med helsepersonellets virksomhet.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-INNSYN\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-INNSYN\">INNSYN</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Pasientinnsyn</td><td><div><p>Pasientens innsyn i egen journal.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-OFFBEST\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-OFFBEST\">OFFBEST</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap</td><td><div><p>Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-HENV-PAS\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-HENV_PAS\">HENV_PAS</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Henvendelse fra pasienten</td><td><div><p>Henvendelse fra pasienten selv.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-HENVPER\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-HENVPER\">HENVPER</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Åpen henvisningsperiode</td><td><div><p>Åpen henvisningsperiode.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-PLANKONT\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-PLANKONT\">PLANKONT</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Ventende pasient</td><td><div><p>Pasienten har en planlagt kontakt som ikke er avsluttet.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-PRIMKONT\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-PRIMKONT\">PRIMKONT</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Bruker er pasientens primærkontakt</td><td><div><p>Bruker er pasientens primærkontakt.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-DELBEHAN\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-DELBEHAN\">DELBEHAN</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Deltar i behandlingen av pasienten</td><td><div><p>Deltar i behandlingen av pasienten.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-TILSYN3\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-TILSYN3\">TILSYN3</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Statlig tilsyn</td><td><div><p>Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-HHJELANPAS\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-HHJELANPAS\">HHJELANPAS</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Yte helsehjelp til annen pasient</td><td><div><p>&quot;Yte helsehjelp til annen pasient&quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-NYPAS\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-NYPAS\">NYPAS</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Pasientadministrasjon</td><td><div><p>Pasientadministrasjon, f.eks registrering av ny pasient</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-ROLPAS\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-ROLPAS\">ROLPAS</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Bruker har rolle overfor pasient</td><td><div><p>Bruker har rolle overfor pasient</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-carerelation-EGENLAER\"> </a>  <a href=\"CodeSystem-carerelation.html#carerelation-EGENLAER\">EGENLAER</a></td><td>urn:AuditEventHL7Norway/CodeSystem/carerelation</td><td>Egen læring/kvalitetssikring av gitt behandling</td><td><div><p>Begrunnelse forankret i Helsepersonellovens §29 c</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-07\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-07\">07</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Avlastning - utenfor institusjon</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-08\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-08\">08</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Avlastning - i institusjon</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-08.01\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-08.4601\">08.01</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Avlastning i institusjon - rullerende</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-08.02\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-08.4602\">08.02</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Avlastning i institusjon - ikke rullerende</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-15\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-15\">15</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Helsetjenester i hjemmet</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-17\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-17\">17</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Dagopphold i institusjon</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-18\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-18\">18</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Tidsbegrenset opphold - utredning/behandling</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-19\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-19\">19</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Tidsbegrenset opphold - habilitering/rehabilitering</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-20\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-20\">20</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Tidsbegrenset opphold – annet</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-21\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-21\">21</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Langtidsopphold i institusjon</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-AuditEventHL7Norway-CodeSystem-IPLOStjenestetyper2019CS-22\"> </a>  <a href=\"CodeSystem-IPLOStjenestetyper2019CS.html#IPLOStjenestetyper2019CS-22\">22</a></td><td>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</td><td>Nattopphold i institusjon</td><td><div></div></td></tr></table></div>"
+      },
+      "url" : "urn:AuditEventHL7Norway/ValueSet/PurposeOfUseVS",
+      "version" : "0.1.0",
+      "name" : "PurposeOfUseVS",
+      "title" : "Valueset used for purpose and purpose-local",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-02-06T08:16:02+01:00",
+      "publisher" : "HL7 Norway",
+      "contact" : [{
+        "name" : "HL7 Norway",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://github.com/HL7Norway"
+        }]
+      }],
+      "description" : "This valueset is used for coding purpose and purpose-local.",
+      "expansion" : {
+        "identifier" : "urn:uuid:4cb1e250-b6af-4f8f-84d6-acdb70e4f8ff",
+        "timestamp" : "2023-02-06T08:16:50+01:00",
+        "total" : 45,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:AuditEventHL7Norway/CodeSystem/carerelation|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "HENV_BEH",
+          "display" : "Henvendelse fra pasientens behandler"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "HENV_PAA",
+          "display" : "Henvendelse fra pasientens pårørende"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "MELDT",
+          "display" : "Meldt pasient"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "BLAALYS",
+          "display" : "Blålys"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "EKSTSVAR",
+          "display" : "Eksternt prøvesvar/notat til vurdering"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "KVAL",
+          "display" : "Internkontroll/Kvalitetssikring"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "OPRPLAN",
+          "display" : "Pasienten finnes på operasjonsoversikten"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "KONSSERIE",
+          "display" : "Åpen konsultasjonsserie"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "LEDSBEL",
+          "display" : "Inneliggende ledsager"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "VURDHENV",
+          "display" : "Vurdert henvisning"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "ITSYSARB",
+          "display" : "IT-Systemarbeid"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "TILSYN",
+          "display" : "Tilsyn på annen avdeling."
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "ARBFLYT",
+          "display" : "Oppgave i arbeidsflyt"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "BEHANDLER",
+          "display" : "Bruker har behandlingsansvar for pasienten"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "INFOANSV",
+          "display" : "Bruker er informasjonsansvarlig for pasienten"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "JOURANSV",
+          "display" : "Bruker er journalansvarlig for pasienten"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "PASANSV",
+          "display" : "Bruker er koordinator for pasienten"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "HENVISNING",
+          "display" : "Henvisning til vurdering"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "BELEGG",
+          "display" : "Inneliggende pasient"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "PLANOPP",
+          "display" : "Planlagt oppmøte"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "POLBESOK",
+          "display" : "Poliklinisk besøk"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "TILSYN2",
+          "display" : "Tilsyn med helsepersonellets virksomhet"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "INNSYN",
+          "display" : "Pasientinnsyn"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "OFFBEST",
+          "display" : "Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "HENV_PAS",
+          "display" : "Henvendelse fra pasienten"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "HENVPER",
+          "display" : "Åpen henvisningsperiode"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "PLANKONT",
+          "display" : "Ventende pasient"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "PRIMKONT",
+          "display" : "Bruker er pasientens primærkontakt"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "DELBEHAN",
+          "display" : "Deltar i behandlingen av pasienten"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "TILSYN3",
+          "display" : "Statlig tilsyn"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "HHJELANPAS",
+          "display" : "Yte helsehjelp til annen pasient"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "NYPAS",
+          "display" : "Pasientadministrasjon"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "ROLPAS",
+          "display" : "Bruker har rolle overfor pasient"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
+          "code" : "EGENLAER",
+          "display" : "Egen læring/kvalitetssikring av gitt behandling"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "07",
+          "display" : "Avlastning - utenfor institusjon"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "08",
+          "display" : "Avlastning - i institusjon"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "08.01",
+          "display" : "Avlastning i institusjon - rullerende"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "08.02",
+          "display" : "Avlastning i institusjon - ikke rullerende"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "15",
+          "display" : "Helsetjenester i hjemmet"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "17",
+          "display" : "Dagopphold i institusjon"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "18",
+          "display" : "Tidsbegrenset opphold - utredning/behandling"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "19",
+          "display" : "Tidsbegrenset opphold - habilitering/rehabilitering"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "20",
+          "display" : "Tidsbegrenset opphold – annet"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "21",
+          "display" : "Langtidsopphold i institusjon"
+        },
+        {
+          "system" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
+          "code" : "22",
+          "display" : "Nattopphold i institusjon"
+        }]
+      }
+    }
+  }]
+}

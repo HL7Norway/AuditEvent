@@ -1,0 +1,367 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<urn:AuditEventHL7Norway/AuditEvent/AuditEventNorwayTokenInstance> a fhir:AuditEvent;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "AuditEventNorwayTokenInstance"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "urn:AuditEventHL7Norway/StructureDefinition/AuditEventNorwayTokenProfile";
+       fhir:index 0;
+       fhir:link <urn:AuditEventHL7Norway/urn:AuditEventHL7Norway/StructureDefinition/AuditEventNorwayTokenProfile>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AuditEvent</b><a name=\"AuditEventNorwayTokenInstance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AuditEvent &quot;AuditEventNorwayTokenInstance&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AuditEventNorwayTokenProfile.html\">National profile for AuditEvent for security token mapping</a></p></div><p><b>type</b>: Application Activity (Details: DICOM code 110100 = 'Application Activity', stated as 'Application Activity')</p><p><b>recorded</b>: Dec 3, 2021, 10:49:00 AM</p><p><b>purposeOfEvent</b>: Anestesiologi/smertebehandling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (8655#S08)</span></p><p><b style=\"color: maroon\">Exception generating Narrative: Cannot invoke &quot;org.hl7.fhir.r5.model.DataType.isPrimitive()&quot; because the return value of &quot;org.hl7.fhir.r5.model.Extension.getValue()&quot; is null</b></p></div>"
+  ]; # 
+  fhir:AuditEvent.type [
+     fhir:Coding.system [ fhir:value "http://dicom.nema.org/resources/ontology/DCM" ];
+     fhir:Coding.code [ fhir:value "110100" ];
+     fhir:Coding.display [ fhir:value "Application Activity" ]
+  ]; # 
+  fhir:AuditEvent.recorded [ fhir:value "2021-12-03T09:49:00.000Z"^^xsd:dateTime]; # 
+  fhir:AuditEvent.purposeOfEvent [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://volven.no/8655" ];
+       fhir:Coding.code [ fhir:value "S08" ];
+       fhir:Coding.display [ fhir:value "Anestesiologi/smertebehandling" ]
+     ]
+  ]; # 
+  fhir:AuditEvent.agent [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "id" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.101" ];
+           fhir:Identifier.value [ fhir:value "993467049" ];
+           fhir:Identifier.assigner [
+             fhir:Reference.identifier [
+               fhir:Identifier.value [ fhir:value "https://www.brreg.no/" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "Oslo universitetssykehus HF" ]
+       ];
+       fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/Organization" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "id" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.102" ];
+           fhir:Identifier.value [ fhir:value "974589095" ];
+           fhir:Identifier.assigner [
+             fhir:Reference.identifier [
+               fhir:Identifier.value [ fhir:value "https://register.nhn.no/resh" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "Hjertemedisinsk avdeling" ]
+       ];
+       fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/Facility" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "id" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.101" ];
+           fhir:Identifier.value [ fhir:value "700386" ];
+           fhir:Identifier.assigner [
+             fhir:Reference.identifier [
+               fhir:Identifier.value [ fhir:value "https://www.brreg.no/" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "Oslo universitetssykehus HF Ullevål – somatikk" ]
+       ];
+       fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/ChildOrganization" ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/ApplicationSession" ];
+       fhir:Extension.valueIdentifier [
+         fhir:Identifier.system [ fhir:value "http://dips.com/session_id_hash" ];
+         fhir:Identifier.value [ fhir:value "34234534542323" ];
+         fhir:Identifier.assigner [
+           fhir:Reference.identifier [
+             fhir:Identifier.value [ fhir:value "OUS" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/AssuranceLevel" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://begrep.difi.no/Felles/sikkerhetsnivaa" ];
+           fhir:Coding.code [ fhir:value "4" ];
+           fhir:Coding.display [ fhir:value "Høyeste sikkerhetsnivå" ]
+         ]
+       ]
+     ];
+     fhir:AuditEvent.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS" ];
+         fhir:Coding.code [ fhir:value "TokenBased" ]
+       ]
+     ];
+     fhir:AuditEvent.agent.role [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.1.9060" ];
+         fhir:Coding.code [ fhir:value "LE" ];
+         fhir:Coding.display [ fhir:value "Lege" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.3.1.40.5.3" ];
+         fhir:Coding.code [ fhir:value "1027" ];
+         fhir:Coding.display [ fhir:value "Legespesialist" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.578.1.12.4.3.1.40.5.1" ];
+         fhir:Coding.code [ fhir:value "Overlege" ];
+         fhir:Coding.display [ fhir:value "Overlege" ]
+       ]
+     ];
+     fhir:AuditEvent.agent.who [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "id" ];
+           fhir:Extension.valueIdentifier [
+             fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.4" ];
+             fhir:Identifier.value [ fhir:value "222200068" ];
+             fhir:Identifier.assigner [
+               fhir:Reference.identifier [
+                 fhir:Identifier.value [ fhir:value "https://register.helsedirektoratet.no/hpr" ]
+               ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "name" ];
+           fhir:Extension.valueString [ fhir:value "BEN PSA REDDIK" ]
+         ];
+         fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/Qualification" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "id" ];
+           fhir:Extension.valueIdentifier [
+             fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.1" ];
+             fhir:Identifier.value [ fhir:value "05086900124" ];
+             fhir:Identifier.assigner [
+               fhir:Reference.identifier [
+                 fhir:Identifier.value [ fhir:value "https://www.skatteetaten.no/person/folkeregister/" ]
+               ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "name" ];
+           fhir:Extension.valueString [ fhir:value "BEN PSA REDDIK" ]
+         ];
+         fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/NationalIdentifier" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "id" ];
+           fhir:Extension.valueIdentifier [
+             fhir:Identifier.system [ fhir:value "http://dips.com/UserRoleGUID" ];
+             fhir:Identifier.value [ fhir:value "f185c1ba-2372-4e7e-b601-637d25aa054c" ];
+             fhir:Identifier.assigner [
+               fhir:Reference.identifier [
+                 fhir:Identifier.value [ fhir:value "https://oslo-universitetssykehus.no" ]
+               ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "name" ];
+           fhir:Extension.valueString [ fhir:value "N/A" ]
+         ];
+         fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/ApplicationRole" ]
+       ];
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.3.1.40.25.1" ];
+         fhir:Identifier.value [ fhir:value "ux34234234" ];
+         fhir:Identifier.assigner [
+           fhir:Reference.identifier [
+             fhir:Identifier.value [ fhir:value "https://www.helse-sorost.no" ]
+           ]
+         ]
+       ];
+       fhir:Reference.display [ fhir:value "BEN PSA REDDIK" ]
+     ];
+     fhir:AuditEvent.agent.requestor [ fhir:value "true"^^xsd:boolean ];
+     fhir:AuditEvent.agent.purposeOfUse [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "assigner" ];
+           fhir:Extension.valueString [ fhir:value "NHN" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "reason" ];
+           fhir:Extension.valueString [ fhir:value "<Fylles ut ved behov>" ]
+         ];
+         fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/PurposeOfUseExt" ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.5.8" ];
+         fhir:Coding.code [ fhir:value "TREAT" ];
+         fhir:Coding.display [ fhir:value "Treatment" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "N/A" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "assigner" ];
+           fhir:Extension.valueString [ fhir:value "OUS" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "reason" ];
+           fhir:Extension.valueString [ fhir:value "<Fylles typisk ut hvis userSelected = True>" ]
+         ], [
+           fhir:index 2;
+           fhir:Extension.url [ fhir:value "id" ];
+           fhir:Extension.valueString [ fhir:value "aabnmm+0000001161045" ]
+         ];
+         fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/PurposeOfUseExt" ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:AuditEventHL7Norway/CodeSystem/carerelation" ];
+         fhir:Coding.code [ fhir:value "BELEGG" ];
+         fhir:Coding.display [ fhir:value "Inneliggende pasient" ];
+         fhir:Coding.userSelected [ fhir:value "false"^^xsd:boolean ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Inneliggende pasient på avdeling <X>, post <Y>, inntid 5.1.23" ]
+     ]
+  ]; # 
+  fhir:AuditEvent.source [
+     fhir:AuditEvent.source.site [ fhir:value "server.example.com" ];
+     fhir:AuditEvent.source.observer [
+       fhir:link <urn:AuditEventHL7Norway/Device/ex-device>;
+       fhir:Reference.reference [ fhir:value "Device/ex-device" ]
+     ];
+     fhir:AuditEvent.source.type [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/security-source-type" ];
+       fhir:Coding.code [ fhir:value "4" ];
+       fhir:Coding.display [ fhir:value "Application Server" ]
+     ]
+  ]; # 
+  fhir:AuditEvent.entity [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "id" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.102" ];
+           fhir:Identifier.value [ fhir:value "974589095" ];
+           fhir:Identifier.assigner [
+             fhir:Reference.identifier [
+               fhir:Identifier.value [ fhir:value "https://register.nhn.no/resh" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "Hjertemedisinsk avdeling" ]
+       ];
+       fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/Facility" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "id" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.101" ];
+           fhir:Identifier.value [ fhir:value "700386" ];
+           fhir:Identifier.assigner [
+             fhir:Reference.identifier [
+               fhir:Identifier.value [ fhir:value "https://www.brreg.no/" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "Oslo universitetssykehus HF Ullevål – somatikk" ]
+       ];
+       fhir:Extension.url [ fhir:value "urn:AuditEventHL7Norway/StructureDefinition/ChildOrganization" ]
+     ];
+     fhir:AuditEvent.entity.what [
+       fhir:Reference.type [ fhir:value "Patient" ];
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.1" ];
+         fhir:Identifier.value [ fhir:value "12057900499" ];
+         fhir:Identifier.assigner [
+           fhir:Reference.identifier [
+             fhir:Identifier.value [ fhir:value "https://www.skatteetaten.no/person/folkeregister/" ]
+           ]
+         ]
+       ];
+       fhir:Reference.display [ fhir:value "Ole Olsen" ]
+     ];
+     fhir:AuditEvent.entity.type [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/audit-entity-type" ];
+       fhir:Coding.code [ fhir:value "1" ];
+       fhir:Coding.display [ fhir:value "Person" ]
+     ];
+     fhir:AuditEvent.entity.role [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/object-role" ];
+       fhir:Coding.code [ fhir:value "1" ];
+       fhir:Coding.display [ fhir:value "Patient" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<urn:AuditEventHL7Norway/AuditEvent/AuditEventNorwayTokenInstance.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

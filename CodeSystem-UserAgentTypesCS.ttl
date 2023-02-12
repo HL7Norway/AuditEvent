@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "UserAgentTypesCS"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">TokenBased<a name=\"UserAgentTypesCS-TokenBased\"> </a></td><td>User agent that is populated on the basis of security token</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "UserAgentTypesCS"]; # 
+  fhir:CodeSystem.title [ fhir:value "The code used to identifiy a User Agent"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-06T08:16:02+01:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Norway"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Norway" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/HL7Norway" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Code used to identify the User Agent."]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "TokenBased" ];
+     fhir:CodeSystem.concept.display [ fhir:value "User agent that is populated on the basis of security token" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

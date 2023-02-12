@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PurposeOfUseVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-carerelation.html"><code>urn:AuditEventHL7Norway/CodeSystem/carerelation</code></a></li><li>Include all codes defined in <a href="CodeSystem-IPLOStjenestetyper2019CS.html"><code>urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS</code></a></li></ul></div>
+  </text>
+  <url value="urn:AuditEventHL7Norway/ValueSet/PurposeOfUseVS"/>
+  <version value="0.1.0"/>
+  <name value="PurposeOfUseVS"/>
+  <title value="Valueset used for purpose and purpose-local"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-02-06T08:16:02+01:00"/>
+  <publisher value="HL7 Norway"/>
+  <contact>
+    <name value="HL7 Norway"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/HL7Norway"/>
+    </telecom>
+  </contact>
+  <description value="This valueset is used for coding purpose and purpose-local."/>
+  <compose>
+    <include>
+      <system value="urn:AuditEventHL7Norway/CodeSystem/carerelation"/>
+    </include>
+    <include>
+      <system value="urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS"/>
+    </include>
+  </compose>
+</ValueSet>
