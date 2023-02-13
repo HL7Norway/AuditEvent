@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d79e21db-5e3c-4d69-bf94-44dcbc0d8805",
+  "id" : "120a9fae-e149-4e6d-9e2b-d1226e348772",
   "meta" : {
-    "lastUpdated" : "2023-02-12T11:23:40.741+00:00"
+    "lastUpdated" : "2023-02-13T09:41:44.002+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "Valueset used for purpose and purpose-local",
       "status" : "active",
       "experimental" : true,
-      "date" : "2023-02-12T11:23:40+00:00",
+      "date" : "2023-02-13T09:41:44+00:00",
       "publisher" : "HL7 Norway",
       "contact" : [{
         "name" : "HL7 Norway",
@@ -31,8 +31,8 @@
       }],
       "description" : "This valueset is used for coding purpose and purpose-local.",
       "expansion" : {
-        "identifier" : "urn:uuid:1b062928-68f4-4ca2-9d2b-cfaff3dd66a7",
-        "timestamp" : "2023-02-12T11:24:06+00:00",
+        "identifier" : "urn:uuid:47253690-3d27-463e-a080-1661eda9098c",
+        "timestamp" : "2023-02-13T09:42:12+00:00",
         "total" : 104,
         "parameter" : [{
           "name" : "excludeNested",

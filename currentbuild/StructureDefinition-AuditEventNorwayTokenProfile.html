@@ -217,7 +217,7 @@
         
           Active
           
-            as of 2023-02-12
+            as of 2023-02-13
           
         
       </td>
@@ -241,6 +241,394 @@ token must be mapped into elements / fields of an AuditEvent if they are present
 
 
 <!-- insert intro if present -->
+
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>NB! Tabellen under er under arbeid, og foreløpig ikke nasjonalt forankret.NB</p>
+
+<p>Denne profilen spesifiserer hvordan attributter i et sikkerhetsbevis mappes til felter i AuditEvent. Se kolonnen “Description &amp; Constraints” for selve mappingen.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Teknisk attributtnavn (logisk)</th>
+      <th>Attributtnavn</th>
+      <th>Attributtbeskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>subject</td>
+      <td>Personinformasjon</td>
+      <td>Abstrakt gruppe med informasjonslementer om personen (eller IT-løsningen) som sikkerhetsbeviset representerer</td>
+    </tr>
+    <tr>
+      <td>subject:id subject (for SAML) eller  sub (for JWT)</td>
+      <td>Personidentifikator</td>
+      <td>Identifiserer pålogget person som individ</td>
+    </tr>
+    <tr>
+      <td>subject:name</td>
+      <td>Person navn</td>
+      <td>Navn på pålogget person</td>
+    </tr>
+    <tr>
+      <td>subject:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>subject:organization:id</td>
+      <td>Person organisasjon ID</td>
+      <td>Identifiserer organisasjon pålogget person representerer ved oppslaget</td>
+    </tr>
+    <tr>
+      <td>subject:organization:name</td>
+      <td>Person organisasjon navn</td>
+      <td>Navn på organisasjonen som pålogget person opptrer på vegne av</td>
+    </tr>
+    <tr>
+      <td>subject:organization:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:organization:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>subject:child-organization:id</td>
+      <td>Person arbeidssted ID</td>
+      <td>Identifikasjon av geografisk organisasjonstilhørighet for den påloggede personen, dette skal bidra til å sikre entydig identifisering av ansvar</td>
+    </tr>
+    <tr>
+      <td>subject:child-organization:name</td>
+      <td>Person arbeidssted navn</td>
+      <td>Navn på geografisk organisasjonstilhørighet som pålogget person representerer i organisasjonen som vedkommende opptrer på vegne av</td>
+    </tr>
+    <tr>
+      <td>subject:child-organization:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:child-organization:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhærende system.</td>
+    </tr>
+    <tr>
+      <td>subject:facility:id</td>
+      <td>Person detaljert organisasjon ID</td>
+      <td>Identifiserer tilhørigheten på det mest detaljerte/spesifikke formelle nivået i organisasjonen, som den påloggede personen representerer ved oppslaget. Gir entydig identifisering av personalansvaret i den oppsøkende virksomheten.</td>
+    </tr>
+    <tr>
+      <td>subject:facility:name</td>
+      <td>Person detaljert organisasjon navn</td>
+      <td>Navn på den mest detaljerte/spesifikke formelle organisasjonstilhørigheten som pålogget person representerer i organisasjonen vedkommende opptrer på vegne av</td>
+    </tr>
+    <tr>
+      <td>subject:facility:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:facility:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedformålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>subject:role:id</td>
+      <td>Person formell rolle ID</td>
+      <td>Identifikasjon av formell rolle/stilling som pålogget person har i egen organisasjon ved oppslaget</td>
+    </tr>
+    <tr>
+      <td>subject:role:name</td>
+      <td>Person formell rolle navn</td>
+      <td>Navn på formell rolle/stilling som pålogget person opptrer i kraft av</td>
+    </tr>
+    <tr>
+      <td>subject:role:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:functional-role:id</td>
+      <td>Person funksjon ID</td>
+      <td>Identifikasjon av funksjon pålogget person utøver i egen organisasjon ved oppslaget</td>
+    </tr>
+    <tr>
+      <td>subject:functional-role:name</td>
+      <td>Person funksjon navn</td>
+      <td>Navn på funksjon som pålogget person utøver i organisasjonen vedkommende representerer</td>
+    </tr>
+    <tr>
+      <td>subject:functional-role:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:application-role:id</td>
+      <td>Person tilgang ID</td>
+      <td>Identifikasjon av eventuell fagsystemspesifikk tilgangsrolle som benyttes av pålogget person ved oppslaget</td>
+    </tr>
+    <tr>
+      <td>subject:application-role:name</td>
+      <td>Person tilgang navn</td>
+      <td>Navn på eventuell tilgangsrolle i fagsystem som pålogget person benytter ved oppslaget</td>
+    </tr>
+    <tr>
+      <td>subject:application-role:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:application-role:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>subject:assurance-level:id</td>
+      <td>Person autentiseringsstyrke ID</td>
+      <td>Identifiserer grad av sikkerhet ved autentisering av pålogget person for at det er den fysiske personen som sikkerhetsbeviset tilsier at det er som har fått utstedt sikkerhetsbeviset</td>
+    </tr>
+    <tr>
+      <td>subject:assurance-level:name</td>
+      <td>Person autentiseringsstyrke navn</td>
+      <td>Ikke i bruk, men vil eventuelt være navn på grad av sikkerhet ved autentisering</td>
+    </tr>
+    <tr>
+      <td>subject:assurance-level:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:national-identifier:id</td>
+      <td>Person fødselsnummer/D-nummer</td>
+      <td>Identifiserer pålogget person med nasjonal identifikator (FNR/DNR)</td>
+    </tr>
+    <tr>
+      <td>subject:national-identifier:name</td>
+      <td>Person navn</td>
+      <td>Ikke i bruk, men ville eventuelt være navn hentet fra nasjonalt folkeregister</td>
+    </tr>
+    <tr>
+      <td>subject:national-identifier:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:national-identifier:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>subject:application-session:id</td>
+      <td>Person sesjon ID</td>
+      <td>Identifikator av sesjon i lokalt fagsystem som oppsøkende person initierer oppslaget fra</td>
+    </tr>
+    <tr>
+      <td>subject:application-session:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:application-session:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>resource:id</td>
+      <td>Pasient fødselsnummer/D-nummer</td>
+      <td>Identifiserer ressursen som sikkerhetsbeviset gjelder for, som oftest vil dette være en pasient, men det kan også være andre ressurser som sikkerhetsbeviset er avgrenset til å gjelde for</td>
+    </tr>
+    <tr>
+      <td>resource:name</td>
+      <td>Pasient navn</td>
+      <td>Ikke i bruk, eksisterer kun for konsistent attributtstruktur</td>
+    </tr>
+    <tr>
+      <td>resource:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>resource:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>resource:child-organization:id</td>
+      <td>Pasient behandlingssted ID</td>
+      <td>Identifikasjon av ressursens geografiske organisasjons-tilhørighet i oppsøkende virksomhet</td>
+    </tr>
+    <tr>
+      <td>resource:child-organization:name</td>
+      <td>Pasient behandlingssted navn</td>
+      <td>Navn på ressursens geografiske organisasjons-tilhørighet i oppsøkende virksomhet</td>
+    </tr>
+    <tr>
+      <td>resource:child-organization:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>resource:child-organization:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>resource:facility:id</td>
+      <td>Pasient detaljert organisasjon ID</td>
+      <td>Identifiserer tilhørigheten på det mest detaljerte/spesifikke formelle nivået i organisasjonen fra oppsøkende virksomhet, som ressursen er knyttet til ved oppslaget</td>
+    </tr>
+    <tr>
+      <td>resource:facility:name</td>
+      <td>Pasient detaljert organisasjon navn</td>
+      <td>Navn på det mest detaljerte/spesifikke formelle nivået i organisasjon fra oppsøkende virksomhet, som ressursen er knyttet til ved oppslaget</td>
+    </tr>
+    <tr>
+      <td>resource:facility:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>resource:facility:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>purpose:id</td>
+      <td>Hjemmel ID</td>
+      <td>Identifiserer overordnet beslutningen om tilgang til ressursen</td>
+    </tr>
+    <tr>
+      <td>purpose:name</td>
+      <td>Hjemmel navn</td>
+      <td>Navn på overordnet beslutning om tilgang til ressursen</td>
+    </tr>
+    <tr>
+      <td>purpose:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>purpose:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>purpose:description</td>
+      <td>Hjemmel beskrivelse</td>
+      <td>Beskrivelse av overordnet beslutning om tilgang til ressursen</td>
+    </tr>
+    <tr>
+      <td>purpose:reason</td>
+      <td>Hjemmel kommentar</td>
+      <td>Fritekst angitt av pålogget bruker for å forklare overordnet beslutning om tilgang til ressursen</td>
+    </tr>
+    <tr>
+      <td>purpose-local:id</td>
+      <td>Beslutning ID</td>
+      <td>Identifiserer den spesifikke beslutningen som ligger til grunn for tilgang til ressursen (ikke bare eventuell kode i kodeverk for beslutningsmaler)</td>
+    </tr>
+    <tr>
+      <td>purpose-local:name</td>
+      <td>Beslutning navn</td>
+      <td>Navn på beslutningen om tilgang til ressursen</td>
+    </tr>
+    <tr>
+      <td>purpose-local:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>purpose-local:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>purpose-local:description</td>
+      <td>Beslutning beskrivelse</td>
+      <td>Beskrivelse av den spesifikke beslutningen om tilgang til ressursen. Sammenkobling av flere pasientadministrative opplysninger.</td>
+    </tr>
+    <tr>
+      <td>purpose-local:reason</td>
+      <td>Beslutning kommentar</td>
+      <td>Eventuell fritekst angitt av pålogget bruker for utdypende forklaring av tilgangen til ressursen</td>
+    </tr>
+    <tr>
+      <td>purpose-local:userSelected</td>
+      <td>Beslutning selvautorisering</td>
+      <td>Angir om beslutning av tilgang til ressursen er gjort implisitt eller eksplisitt</td>
+    </tr>
+    <tr>
+      <td>purpose-local:code</td>
+      <td>Beslutning kode</td>
+      <td>Kortnavn/kode på beslutningen som ligger til grunn for tilgangen til ressursen</td>
+    </tr>
+    <tr>
+      <td>healthcareservice:name</td>
+      <td>Helsehjelpstjeneste navn</td>
+      <td>Navn på helsehjelpstjenesten som er knyttet til ressursen</td>
+    </tr>
+    <tr>
+      <td>healthcareservice:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>healthcareservice:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>subject:qualification:id</td>
+      <td>HPR-nummer</td>
+      <td>Identifiserer kvalifikasjoner som pålogget person har (typisk HPR-nummer for autorisasjon i helsepersonellregisteret for helsepersonell)</td>
+    </tr>
+    <tr>
+      <td>subject:qualification:name</td>
+      <td>Navn på kvalifikasjon</td>
+      <td>Ikke i bruk, men ville ved HPR-nummer som kvalifikasjonsidentifikator typisk kunne hatt verdien “Helsepersonell”, “HPR” eller tilsvarende.</td>
+    </tr>
+    <tr>
+      <td>subject:qualification:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+    <tr>
+      <td>subject:qualification:assigner</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvem som har utstedt ID-en som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og system-attributtene for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av utstederen/kilden den kommer fra. Selv når det handler om samme grunnleggende type identifikator utstedt basert på felles algoritme og med felles oppbygning og for det samme hovedfomålet kan ID i enkelte tilfeller være overlappende når det ikke er felles utstedelse av ID for alle som bruker denne ID-typen. Et eksempel er lokale hjelpenumme på pasienter i helsevesenet. Som hovedregel skal imidlertid slike ID-er få en unik verdi i system-attributtet, slik at man ikke er avhengig av at også utsteder/kilde alltid er angitt i kombinasjon med ID og tilhørende system.</td>
+    </tr>
+    <tr>
+      <td>subject:qualification:role:id</td>
+      <td>HPR-autorisasjon ID</td>
+      <td>Identifikasjon av rolle man har kvalifikasjon til å opptre som</td>
+    </tr>
+    <tr>
+      <td>subject:qualification:role:name</td>
+      <td>HPR-autorisasjon navn</td>
+      <td>Navn på rolle man har kvalifikasjon til å opptre som</td>
+    </tr>
+    <tr>
+      <td>subject:qualification:role:system</td>
+      <td>Teknisk støtteattributt som sorterer inn under ID-begrepet</td>
+      <td>Angir hvilken type ID som er oppgitt i ID-attributtet. Brukes i kombinasjon med ID- og i noen tilfeller også assigner-attributtet for å sikre at verdien i ID-attributtet er entydig når ID kan inneholde verdier som kan være overlappende avhengig av registeret eller kodeverket den kommer fra, og i noen tilfller også hvilken kilde som har utstedt verdien oppgitt i ID-attributtet.</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 
 
@@ -3033,7 +3421,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventHL7NorwayID#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 12, 2023 11:23+0000">2023-02-12</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventHL7NorwayID#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 13, 2023 09:41+0000">2023-02-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

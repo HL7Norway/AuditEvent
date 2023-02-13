@@ -3,7 +3,7 @@
 
 err = 1, warn = 19, info = 8
 IG Publisher Version: 1.2.35
-Generated Sun Feb 12 11:24:23 UTC 2023. FHIR version 4.0.1 for AuditEventHL7NorwayID#0.1.0 (canonical = urn:AuditEventHL7Norway)
+Generated Mon Feb 13 09:42:33 UTC 2023. FHIR version 4.0.1 for AuditEventHL7NorwayID#0.1.0 (canonical = urn:AuditEventHL7Norway)
  Build Errors : 7 / 12 / 0
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance : 1 / 0 / 7
  /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-IPLOStjenestetyper2019CS : 0 / 2 / 2

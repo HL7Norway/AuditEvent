@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d79e21db-5e3c-4d69-bf94-44dcbc0d8805"/>
+  <id value="120a9fae-e149-4e6d-9e2b-d1226e348772"/>
   <meta>
-    <lastUpdated value="2023-02-12T11:23:40.741+00:00"/>
+    <lastUpdated value="2023-02-13T09:41:44.002+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1551,7 +1551,7 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
         <title value="Valueset used for purpose and purpose-local"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2023-02-12T11:23:40+00:00"/>
+        <date value="2023-02-13T09:41:44+00:00"/>
         <publisher value="HL7 Norway"/>
         <contact>
           <name value="HL7 Norway"/>
@@ -1562,8 +1562,8 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
         </contact>
         <description value="This valueset is used for coding purpose and purpose-local."/>
         <expansion>
-          <identifier value="urn:uuid:1b062928-68f4-4ca2-9d2b-cfaff3dd66a7"/>
-          <timestamp value="2023-02-12T11:24:06+00:00"/>
+          <identifier value="urn:uuid:47253690-3d27-463e-a080-1661eda9098c"/>
+          <timestamp value="2023-02-13T09:42:12+00:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
