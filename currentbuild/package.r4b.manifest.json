@@ -1,6 +1,6 @@
 {
-  "version" : "0.1.0",
-  "date" : "20230213094057",
+  "version" : "0.2.0",
+  "date" : "20240108201621",
   "notForPublication" : true,
-  "name" : "AuditEventHL7NorwayID.r4b"
+  "name" : "AuditEventTokenMappingNorwayID.r4b"
 }

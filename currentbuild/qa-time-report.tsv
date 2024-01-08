@@ -1,0 +1,8 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-AuditEventTokenMappingNorwayID.json	3380	-	0	0	0	0	0	0	4	69	0	0	0	0	0	0	0	0	0	0	90	80	0	0	0	9	0	1
+fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance1.json	6209	20	0	0	0	0	0	0	0	595	0	0	0	0	0	0	0	0	0	0	35	32	0	0	0	0	0	0
+fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance2.json	7420	23	0	0	0	0	0	0	1	160	0	0	0	0	0	0	0	0	0	0	34	30	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfile.json	23855	39	0	0	0	0	0	885	0	876	0	0	1	0	0	0	0	6	0	0	2324	4872	0	1	0	47	0	4
+fsh-generated/resources/StructureDefinition-CareRelationMetaData.json	3234	14	0	0	0	0	0	67	0	63	0	0	0	0	0	0	0	0	0	0	152	222	0	0	0	3	0	1
+fsh-generated/resources/StructureDefinition-CodeWithAssigner.json	2606	12	1	0	0	0	0	43	0	37	0	0	0	0	0	0	0	0	0	0	119	165	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-IdentifierWithName.json	2590	12	0	0	0	0	0	35	0	48	0	0	0	0	0	0	0	1	0	0	117	177	0	0	0	3	0	0

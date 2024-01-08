@@ -1,107 +1,37 @@
 [
   {
-    "id" : "IPLOStjenestetyper2019CS",
-    "type" : "CodeSystem",
-    "url" : "urn:AuditEventHL7Norway/CodeSystem/IPLOStjenestetyper2019CS",
-    "version" : "0.1.0",
-    "name" : "IPLOStjenestetyper2019CS"
-  },
-  {
-    "id" : "UserAgentTypesCS",
-    "type" : "CodeSystem",
-    "url" : "urn:AuditEventHL7Norway/CodeSystem/UserAgentTypesCS",
-    "version" : "0.1.0",
-    "name" : "UserAgentTypesCS"
-  },
-  {
-    "id" : "carerelation",
-    "type" : "CodeSystem",
-    "url" : "urn:AuditEventHL7Norway/CodeSystem/carerelation",
-    "version" : "0.1.0",
-    "name" : "DIPSCareRelationCS"
-  },
-  {
-    "id" : "AuditEventHL7NorwayID",
+    "id" : "AuditEventTokenMappingNorwayID",
     "type" : "ImplementationGuide",
-    "url" : "urn:AuditEventHL7Norway/ImplementationGuide/AuditEventHL7NorwayID",
-    "version" : "0.1.0",
-    "name" : "AuditEventHL7Norway"
-  },
-  {
-    "id" : "ApplicationRole",
-    "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/ApplicationRole",
-    "version" : "0.1.0",
-    "name" : "ApplicationRole"
-  },
-  {
-    "id" : "ApplicationSession",
-    "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/ApplicationSession",
-    "version" : "0.1.0",
-    "name" : "ApplicationSession"
-  },
-  {
-    "id" : "AssuranceLevel",
-    "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/AssuranceLevel",
-    "version" : "0.1.0",
-    "name" : "AssuranceLevel"
+    "url" : "urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID",
+    "version" : "0.2.0",
+    "name" : "AuditEventTokenMappingNorway"
   },
   {
     "id" : "AuditEventNorwayTokenProfile",
     "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/AuditEventNorwayTokenProfile",
-    "version" : "0.1.0",
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile",
+    "version" : "0.2.0",
     "name" : "AuditEventNorwayTokenProfile"
   },
   {
-    "id" : "ChildOrganization",
+    "id" : "CareRelationMetaData",
     "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/ChildOrganization",
-    "version" : "0.1.0",
-    "name" : "ChildOrganization"
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/CareRelationMetaData",
+    "version" : "0.2.0",
+    "name" : "CareRelationMetaData"
   },
   {
-    "id" : "Facility",
+    "id" : "CodeWithAssigner",
     "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/Facility",
-    "version" : "0.1.0",
-    "name" : "Facility"
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/CodeWithAssigner",
+    "version" : "0.2.0",
+    "name" : "CodeWithAssigner"
   },
   {
-    "id" : "NationalIdentifier",
+    "id" : "IdentifierWithName",
     "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/NationalIdentifier",
-    "version" : "0.1.0",
-    "name" : "NationalIdentifier"
-  },
-  {
-    "id" : "Organization",
-    "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/Organization",
-    "version" : "0.1.0",
-    "name" : "Organization"
-  },
-  {
-    "id" : "PurposeOfUseExt",
-    "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/PurposeOfUseExt",
-    "version" : "0.1.0",
-    "name" : "PurposeOfUseExt"
-  },
-  {
-    "id" : "Qualification",
-    "type" : "StructureDefinition",
-    "url" : "urn:AuditEventHL7Norway/StructureDefinition/Qualification",
-    "version" : "0.1.0",
-    "name" : "Qualification"
-  },
-  {
-    "id" : "PurposeOfUseVS",
-    "type" : "ValueSet",
-    "url" : "urn:AuditEventHL7Norway/ValueSet/PurposeOfUseVS",
-    "version" : "0.1.0",
-    "name" : "PurposeOfUseVS"
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/IdentifierWithName",
+    "version" : "0.2.0",
+    "name" : "IdentifierWithName"
   }
 ]
