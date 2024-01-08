@@ -6,122 +6,102 @@ This profile should be used in all use cases where the request to an API involve
 token must be mapped into elements / fields of an AuditEvent if they are present.
 """
 
-* purposeOfEvent.coding ^short = "healthcareservice:system, :id, :name. :assigner ignoreres siden Coding-datatypen ikke har assigner."
-* purposeOfEvent.coding MS // In other words: attribute exists, it must be mapped
-* agent ^slicing.discriminator.type = #pattern
-* agent ^slicing.discriminator.path = "type"
-* agent ^slicing.rules = #open
-* agent ^slicing.description = "Slices on agent[*].type"
-* agent contains 
-    user 1..
+* agent.who.extension contains 
+	IdentifierWithName named _HPRNumber 0..1 MS 
 
-* agent[user].who.extension contains 
-	Qualification named qualification 0..1 MS and	
-	NationalIdentifier named national-identifier 0..1 MS and
-	ApplicationRole named application-role 0..1 MS
+* agent.extension contains 
+	IdentifierWithName named _legal-entity 0..1 MS and
+	IdentifierWithName named _point-of-care 0..1 MS and
+	IdentifierWithName named _department 0..1 MS and
+	CodeWithAssigner named _authorization 0..1 MS 
 
-* agent[user].extension contains 
-	Organization named organization 0..1 MS and
-	ChildOrganization named child-organization 0..1 MS and
-	Facility named facility 0..1 MS and
-	AssuranceLevel named assurance-level 0..1 MS and
-	ApplicationSession named application-session 0..1 MS
+* extension contains
+	CodeWithAssigner named _purpose-of-use 0..1 MS and
+	CodeWithAssigner named _purpose-of-use-details 0..1 MS and
+	CareRelationMetaData named _careRelationMetaData 0..1 MS and
+  CodeWithAssigner named _health-care-service 0..1 MS  
 
-* agent[user].purposeOfUse.extension contains
-	PurposeOfUseExt named purposeOfUse 0..1 MS
+* agent.who.identifier.value ^short = "practitioner:identifier:id"	
+* agent.who.identifier.system ^short = "practitioner:identifier:system"
+* agent.who.identifier.assigner.display ^short = "practitioner:identifier:authority"
+* agent.who.display ^short = "practitioner:identifier:name"
+* agent.who.extension[_HPRNumber] MS // In other words: attribute exists, it must be mapped
+  * extension[id].valueIdentifier.system ^short = "practitioner:hpr-nr:system"
+  * extension[id].valueIdentifier.value ^short = "practitioner:hpr-nr:id"
+  * extension[id].valueIdentifier.assigner.display ^short = "practitioner:hpr-nr:authority"
+* agent.extension[_authorization]  MS // In other words: attribute exists, it must be mapped
+  * extension[code].valueCoding.code ^short = "practitioner:authorization:code"
+  * extension[code].valueCoding.system ^short = "practitioner:authorization:system"
+  * extension[code].valueCoding.display ^short = "practitioner:authorization:text"
+  * extension[assigner].valueString ^short = "practitioner:authorization:assigner"
+* agent.extension[_legal-entity] MS // In other words: attribute exists, it must be mapped
+  * extension[id].valueIdentifier.system ^short = "practitioner:legal-entity:system"
+  * extension[id].valueIdentifier.value ^short = "practitioner:legal-entity:id"
+  * extension[id].valueIdentifier.assigner.display ^short = "practitioner:legal-entity:authority"
+  * extension[name].valueString ^short = "practitioner:legal-entity:name"
+* agent.extension[_point-of-care] MS // In other words: attribute exists, it must be mapped
+  * extension[id].valueIdentifier.system ^short = "practitioner:point-of-care:system"  //  (typisk Brønnøysund organisasjonsnummer - nivå 2 av subject:organization) 
+  * extension[id].valueIdentifier.value ^short = "practitioner:point-of-care:id"
+  * extension[id].valueIdentifier.assigner.display ^short = "practitioner:point-of-care:authority"
+  * extension[name].valueString ^short = "practitioner:point-of-care:name"
+* agent.extension[_department] MS // In other words: attribute exists, it must be mapped
+  * extension[id].valueIdentifier.system ^short = "practitioner:department:system" // (typisk RESH-ID)
+  * extension[id].valueIdentifier.value ^short = "practitioner:department:id"
+  * extension[id].valueIdentifier.assigner.display ^short = "practitioner:department:authority"
+  * extension[name].valueString ^short = "practitioner:department:name"
 
-* agent[user].type = UserAgentTypesCS#TokenBased
-* agent[user].who.identifier.value ^short = "subject:id"	
-* agent[user].who.identifier.system ^short = "subject:system"
-* agent[user].who.identifier.assigner.identifier.value ^short = "subject:assigner"
-* agent[user].who.display ^short = "subject:name"
-* agent[user].purposeOfUse MS // In other words: attribute exists, it must be mapped
-* agent[user].purposeOfUse from PurposeOfUseVS (required)
-* agent[user].purposeOfUse.coding.code ^short = "purpose:id and purpose-local:id"
-* agent[user].purposeOfUse.coding.system ^short = "purpose:system and purpose-local:system"
-* agent[user].purposeOfUse.coding.display ^short = "purpose:name and purpose-local:name"
-* agent[user].purposeOfUse.coding.userSelected ^short = "purpose-local:userselected"
-* agent[user].purposeOfUse.coding.userSelected ^definition = "purpose-local:userselected definition"
-* agent[user].purposeOfUse.text ^short = "purpose:description and purpose-local:description"
-* agent[user].purposeOfUse.extension[purposeOfUse].extension[assigner].valueString ^short = "purpose:assigner and purpose-local:assigner"
-* agent[user].purposeOfUse.extension[purposeOfUse].extension[reason].valueString ^short = "purpose:reason and purpose-local:reason"
-* agent[user].purposeOfUse.extension[purposeOfUse].extension[id].valueString ^short = "purpose-local:id"
-* agent[user].who.extension[qualification] MS // In other words: attribute exists, it must be mapped
-* agent[user].who.extension[qualification].extension[id].valueIdentifier.system ^short = "subject:qualification:system"
-* agent[user].who.extension[qualification].extension[id].valueIdentifier.value ^short = "subject:qualification:id"
-* agent[user].who.extension[qualification].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:qualification:assigner"
-* agent[user].who.extension[qualification].extension[name].valueString ^short = "subject:qualification:name"
-* agent[user].who.extension[national-identifier] MS // In other words: attribute exists, it must be mapped
-* agent[user].who.extension[national-identifier].extension[id].valueIdentifier.system ^short = "subject:national-identifier:system"
-* agent[user].who.extension[national-identifier].extension[id].valueIdentifier.value ^short = "subject:national-identifier:id"
-* agent[user].who.extension[national-identifier].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:national-identifier:assigner"
-* agent[user].who.extension[national-identifier].extension[name].valueString ^short = "subject:national-identifier:name"
-* agent[user].who.extension[application-role] MS // In other words: attribute exists, it must be mapped
-* agent[user].who.extension[application-role].extension[id].valueIdentifier.system ^short = "subject:application-role:system"
-* agent[user].who.extension[application-role].extension[id].valueIdentifier.value ^short = "subject:application-role:id"
-* agent[user].who.extension[application-role].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:application-role:assigner"
-* agent[user].who.extension[application-role].extension[name].valueString  ^short = "subject:application-role:name" // NB! Ikke i bruk fra DIPS. Lagt til for ordens skyld.
-
-* agent[user].extension[organization] MS // In other words: attribute exists, it must be mapped
-* agent[user].extension[organization].extension[id].valueIdentifier.system ^short = "subject:organization:system"
-* agent[user].extension[organization].extension[id].valueIdentifier.value ^short = "subject:organization:id"
-* agent[user].extension[organization].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:organization:assigner"
-* agent[user].extension[organization].extension[name].valueString ^short = "subject:organization:name"
-
-* agent[user].extension[child-organization] MS // In other words: attribute exists, it must be mapped
-* agent[user].extension[child-organization].extension[id].valueIdentifier.system ^short = "subject:child-organization:system"  //  (typisk Brønnøysund organisasjonsnummer - nivå 2 av subject:organization) 
-* agent[user].extension[child-organization].extension[id].valueIdentifier.value ^short = "subject:child-organization:id"
-* agent[user].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:child-organization:assigner"
-* agent[user].extension[child-organization].extension[name].valueString ^short = "subject:child-organization:name"
-
-* agent[user].extension[facility] MS // In other words: attribute exists, it must be mapped
-* agent[user].extension[facility].extension[id].valueIdentifier.system ^short = "subject:facility:system" // (typisk RESH-ID)
-* agent[user].extension[facility].extension[id].valueIdentifier.value ^short = "subject:facility:id"
-* agent[user].extension[facility].extension[id].valueIdentifier.assigner.identifier.value ^short = "subject:facility:assigner"
-* agent[user].extension[facility].extension[name].valueString ^short = "subject:facility:name"
-
-* agent[user].extension[assurance-level]  MS // In other words: attribute exists, it must be mapped
-* agent[user].extension[assurance-level].valueCodeableConcept.coding.code ^short = "subject:assurance-level:code"
-* agent[user].extension[assurance-level].valueCodeableConcept.coding.system ^short = "subject:assurance-level:system"
-* agent[user].extension[assurance-level].valueCodeableConcept.coding.display ^short = "subject:assurance-level:name"
-
-* agent[user].extension[application-session] MS // In other words: attribute exists, it must be mapped
-* agent[user].extension[application-session].valueIdentifier.system ^short = "subject:application-session:system" 
-* agent[user].extension[application-session].valueIdentifier.value ^short = "subject:application-session:id"
-* agent[user].extension[application-session].valueIdentifier.assigner.identifier.value ^short = "subject:application-session:assigner"
-
-* agent[user].role MS // In other words: attribute exists, it must be mapped
-* agent[user].role ^short = "subject:qualification-role:*, subject:role:* and subject:functional-role:*. :assigner is ignored"
-
+// care-relation
+* extension[_purpose-of-use] MS
+  * extension[code].valueCoding.code ^short = "care-relationship:purpose-of-use:code"
+  * extension[code].valueCoding.system ^short = "care-relationship:purpose-of-use:system" 
+  * extension[code].valueCoding.display ^short = "care-relationship:purpose-of-use:text" 
+  * extension[assigner].valueString ^short = "care-relationship:purpose-of-use:assigner"
+* extension[_purpose-of-use-details] MS
+  * extension[code].valueCoding.code ^short = "care-relationship:purpose-of-use-details:code"
+  * extension[code].valueCoding.system ^short = "care-relationship:purpose-of-use-details:system" 
+  * extension[code].valueCoding.display ^short = "care-relationship:purpose-of-use-details:text" 
+  * extension[assigner].valueString ^short = "care-relationship:purpose-of-use-details:assigner"
+* extension[_careRelationMetaData] MS
+  * extension[id].valueString ^short = "care-relationship:decision-ref:id"
+  * extension[description].valueString ^short = "care-relationship:decision-ref:description"
+  * extension[user-selected].valueBoolean ^short = "care-relationship:decision-ref:user-selected"
+* extension[_health-care-service] MS
+  * extension[code].valueCoding.code ^short = "care-relationship:health-care-service:code"
+  * extension[code].valueCoding.display ^short = "care-relationship:health-care-service:text"
+  * extension[code].valueCoding.system ^short = "care-relationship:health-care-service:system"
+  * extension[assigner].valueString ^short = "care-relationship:health-care-service:assigner"
+	  
 * entity ^slicing.discriminator[0].type = #pattern
 * entity ^slicing.discriminator[=].path = "type"
 * entity ^slicing.discriminator[+].type = #pattern
 * entity ^slicing.discriminator[=].path = "role"
 * entity ^slicing.rules = #open
 * entity contains 
-    patient 0..1 
+    patient 0..1 // Only one patient per auditevent. Remember to document.
 
 * entity[patient].extension contains 	
-	ChildOrganization named child-organization 0..1 MS and
-	Facility named facility 0..1 MS
+	IdentifierWithName named _point-of-care 0..1 MS and
+	IdentifierWithName named _department 0..1 MS 
+
 * entity[patient] MS // In other words: attribute exists, it must be mapped	
 * entity[patient].type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person" // Slice part 1
 * entity[patient].role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"  // Slice part 2
 * entity[patient].what 1..1
 * entity[patient].what only Reference(Patient)
-* entity[patient].what.identifier.value ^short = "resource:id" // (FNR/DNR)
-* entity[patient].what.identifier.system ^short = "resource:system"
-* entity[patient].what.identifier.assigner.identifier.value ^short = "resource:assigner"
-* entity[patient].what.display ^short = "resource:name"  
+* entity[patient].what.identifier.value ^short = "patients[*]:identifier:id" 
+* entity[patient].what.identifier.system ^short = "patients[*]:identifier:system"
+* entity[patient].what.identifier.assigner.display ^short = "patients[*]:identifier:authority"
+* entity[patient].what.display ^short = "patients[*]:identifier:name"  
 
-* entity[patient].extension[child-organization] MS // In other words: attribute exists, it must be mapped
-* entity[patient].extension[child-organization].extension[id].valueIdentifier.system ^short = "resource:child-organization:system"  // (Brønnøysund organisasjonsnummer - nivå 2 av subject:organization)
-* entity[patient].extension[child-organization].extension[id].valueIdentifier.value ^short = "resource:child-organization:id"
-* entity[patient].extension[child-organization].extension[id].valueIdentifier.assigner.identifier.value ^short = "resource:child-organization:assigner"
-* entity[patient].extension[child-organization].extension[name].valueString ^short = "resource:child-organization:name"
+* entity[patient].extension[_point-of-care] MS // In other words: attribute exists, it must be mapped
+  * extension[id].valueIdentifier.system ^short = "patients[*]:point-of-care:system"  
+  * extension[id].valueIdentifier.value ^short = "patients[*]:point-of-care:id"
+  * extension[id].valueIdentifier.assigner.display ^short = "patients[*]:point-of-care:authority"
+  * extension[name].valueString ^short = "patients[*]:point-of-care:name"
 
-* entity[patient].extension[facility] MS // In other words: attribute exists, it must be mapped
-* entity[patient].extension[facility].extension[id].valueIdentifier.system ^short = "resource:facility:system" // (RESH-ID) 
-* entity[patient].extension[facility].extension[id].valueIdentifier.value ^short = "resource:facility:id"
-* entity[patient].extension[facility].extension[id].valueIdentifier.assigner.identifier.value ^short = "resource:facility:assigner"
-* entity[patient].extension[facility].extension[name].valueString ^short = "resource:facility:name"
+* entity[patient].extension[_department] MS // In other words: attribute exists, it must be mapped
+  * extension[id].valueIdentifier.system ^short = "patients[*]:department:system" 
+  * extension[id].valueIdentifier.value ^short = "patients[*]:department:id"
+  * extension[id].valueIdentifier.assigner.display ^short = "patients[*]:department:authority"
+  * extension[name].valueString ^short = "patients[*]:department:name"
+
