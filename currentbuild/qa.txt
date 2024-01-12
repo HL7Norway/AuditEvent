@@ -3,7 +3,7 @@
 
 err = 35, warn = 22, info = 12
 IG Publisher Version: 1.5.11
-Generated Fri Jan 12 11:47:32 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.3.1 (canonical = urn:AuditEventTokenMappingNorway)
+Generated Fri Jan 12 11:55:09 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.3.1 (canonical = urn:AuditEventTokenMappingNorway)
  Build Errors : 2 / 13 / 0
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance1 : 16 / 0 / 5
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance2 : 19 / 0 / 5

@@ -29,8 +29,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.458"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-event-action",
@@ -44,8 +44,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.452"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-event-outcome",
@@ -59,8 +59,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.454"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-event-sub-type",
@@ -77,8 +77,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.464"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-event-type",
@@ -96,8 +96,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.462"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-source-type",
@@ -111,8 +111,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.466"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -140,8 +140,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayOrganization.html" : "AuditEventNorwayOrganization",
-      "StructureDefinition-AuditEventNorwayPractitionerLocationOrganization.html" : "AuditEventNorwayPractitionerLocationOrganization"
+      "StructureDefinition-AuditEventNorwayPractitionerLocationOrganization.html" : "AuditEventNorwayPractitionerLocationOrganization",
+      "StructureDefinition-AuditEventNorwayOrganization.html" : "AuditEventNorwayOrganization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -170,8 +170,8 @@
       "sources" : ["1.2.840.10008.6.​1.​908"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -185,7 +185,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -199,7 +200,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -213,13 +215,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
       "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "AuditEventNorwayPractitionerRole",
-      "StructureDefinition-AuditEventNorwayOrganization.html" : "AuditEventNorwayOrganization",
-      "StructureDefinition-AuditEventNorwayPractitionerLocation.html" : "AuditEventNorwayPractitionerLocation",
       "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayPractitioner.html" : "AuditEventNorwayPractitioner",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
       "StructureDefinition-AuditEventNorwayPractitionerLocationOrganization.html" : "AuditEventNorwayPractitionerLocationOrganization",
-      "StructureDefinition-AuditEventNorwayPractitioner.html" : "AuditEventNorwayPractitioner"
+      "StructureDefinition-AuditEventNorwayPractitionerLocation.html" : "AuditEventNorwayPractitionerLocation",
+      "StructureDefinition-AuditEventNorwayOrganization.html" : "AuditEventNorwayOrganization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -277,8 +279,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.456"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/object-lifecycle-events",
@@ -293,8 +295,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/object-role",
@@ -308,8 +310,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.460"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -323,8 +325,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.414"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayOrganization.html" : "AuditEventNorwayOrganization",
-      "StructureDefinition-AuditEventNorwayPractitionerLocationOrganization.html" : "AuditEventNorwayPractitionerLocationOrganization"
+      "StructureDefinition-AuditEventNorwayPractitionerLocationOrganization.html" : "AuditEventNorwayPractitionerLocationOrganization",
+      "StructureDefinition-AuditEventNorwayOrganization.html" : "AuditEventNorwayOrganization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participation-role-type",
@@ -346,8 +348,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.54"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -378,7 +380,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -398,8 +401,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -421,8 +424,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.978"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -462,8 +465,8 @@
       "sources" : ["2.16.840.1.113883.1.11.20448"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective",
-      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective"
+      "StructureDefinition-AuditEventNorwayTokenProfile.html" : "Audit from a API service organization perspective",
+      "StructureDefinition-AuditEventNorwayTokenProfileConsumer.html" : "Audit from a consumer organization perspective"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
