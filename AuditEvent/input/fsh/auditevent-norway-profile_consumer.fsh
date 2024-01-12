@@ -49,6 +49,7 @@ from the consumer (requestor) perspective.
 	CareRelationMetaData named _careRelationMetaData 0..1 MS and
   CodeWithAssigner named _health-care-service 0..1 MS  
 
+/*
 // care-relation
 * extension[_health-care-service] MS
   * extension[code].valueCoding.code ^short = "care-relationship:health-care-service:code"
@@ -122,3 +123,5 @@ from the consumer (requestor) perspective.
   * extension[id].valueIdentifier.value ^short = "patients[*]:department:id"
   * extension[id].valueIdentifier.assigner.display ^short = "patients[*]:department:authority"
   * extension[name].valueString ^short = "patients[*]:department:name"
+
+*/
