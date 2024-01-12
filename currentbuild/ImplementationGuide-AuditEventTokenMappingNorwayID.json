@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventTokenMappingNorway</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   },
   "url" : "urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID",
-  "version" : "0.3.0",
+  "version" : "0.3.1",
   "name" : "AuditEventTokenMappingNorway",
   "title" : "AuditEvent Implementation Guide (Norway)",
   "status" : "draft",
-  "date" : "2024-01-12T06:41:33+00:00",
+  "date" : "2024-01-12T11:46:53+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",

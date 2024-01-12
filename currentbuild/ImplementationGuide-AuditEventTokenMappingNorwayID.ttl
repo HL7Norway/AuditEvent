@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventTokenMappingNorway</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:version [ fhir:v "0.3.1"] ; # 
   fhir:name [ fhir:v "AuditEventTokenMappingNorway"] ; # 
   fhir:title [ fhir:v "AuditEvent Implementation Guide (Norway)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-12T06:41:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-12T11:46:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;

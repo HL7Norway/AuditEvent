@@ -1,9 +1,9 @@
 ﻿AuditEventTokenMappingNorway : Validation Results
 =========================================
 
-err = 35, warn = 22, info = 16
+err = 35, warn = 22, info = 12
 IG Publisher Version: 1.5.11
-Generated Fri Jan 12 06:42:18 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.3.0 (canonical = urn:AuditEventTokenMappingNorway)
+Generated Fri Jan 12 11:47:32 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.3.1 (canonical = urn:AuditEventTokenMappingNorway)
  Build Errors : 2 / 13 / 0
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance1 : 16 / 0 / 5
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance2 : 19 / 0 / 5
@@ -14,7 +14,7 @@ Generated Fri Jan 12 06:42:18 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMa
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerLocationOrganization : 0 / 1 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerRole : 0 / 1 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfile : 0 / 0 / 5
- /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfileConsumer : 0 / 1 / 5
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfileConsumer : 0 / 1 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-CareRelationMetaData : 0 / 1 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-CodeWithAssigner : 0 / 1 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-IdentifierWithName : 0 / 1 / 1
@@ -36,50 +36,50 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance1.json ==
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _health-care-service
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _health-care-service
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _health-care-service
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent: AuditEvent.extension:_purpose-of-use: max allowed = 1, but found 3 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0)
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _health-care-service
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _health-care-service
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _health-care-service
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent: AuditEvent.extension:_purpose-of-use: max allowed = 1, but found 3 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1)
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.840.1.113883.1.11.20448' could not be found, so the code cannot be validated
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[1].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:x.x.x.x.x.9151' could not be found, so the code cannot be validated
 ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[1].extension[0].value.ofType(Coding).system: OIDs must be valid (x.x.x.x.x.9151)
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.extension[3].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8663' could not be found, so the code cannot be validated
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _point-of-care
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _point-of-care
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _department
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _department
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0]: AuditEvent.agent.extension:_legal-entity: max allowed = 1, but found 2 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0)
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _point-of-care
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _point-of-care
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0]: AuditEvent.agent.extension:_legal-entity: max allowed = 1, but found 2 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1)
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].extension[2].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9060' could not be found, so the code cannot be validated
 ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.agent[0].who.extension[0].extension[1]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.source.observer: Unable to resolve resource with reference 'Device/ex-device'
-ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.entity[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _point-of-care, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance1: AuditEvent.entity[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _point-of-care, _department
 == fsh-generated/resources/AuditEvent-AuditEventNorwayTokenInstance2.json ==
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _health-care-service
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _health-care-service
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _purpose-of-use, _health-care-service
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent: AuditEvent.extension:_purpose-of-use: max allowed = 1, but found 3 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0)
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _purpose-of-use-details
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _health-care-service
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _health-care-service
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[3]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _purpose-of-use, _health-care-service
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent: AuditEvent.extension:_purpose-of-use: max allowed = 1, but found 3 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1)
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.840.1.113883.1.11.20448' could not be found, so the code cannot be validated
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[1].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:AuditEventHL7Norway/CodeSystem/carerelation' could not be found, so the code cannot be validated
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.extension[3].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8451' could not be found, so the code cannot be validated
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _point-of-care
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _point-of-care
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[2]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _point-of-care
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _department
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _department
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[2]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _legal-entity, _department
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0]: AuditEvent.agent.extension:_legal-entity: max allowed = 1, but found 3 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0)
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _point-of-care
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _point-of-care
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[2]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _point-of-care
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[2]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _legal-entity, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0]: AuditEvent.agent.extension:_legal-entity: max allowed = 1, but found 3 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1)
 INFORMATION: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].extension[3].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9060' could not be found, so the code cannot be validated
 ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.agent[0].who.extension[0].extension[1]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.source.observer: Unable to resolve resource with reference 'Device/ex-device'
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.entity[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _point-of-care, _department
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.entity[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0, Element matches more than one slice - _point-of-care, _department
-ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.entity[0]: AuditEvent.entity:patient.extension:_point-of-care: max allowed = 1, but found 2 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.0)
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.entity[0].extension[0]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _point-of-care, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.entity[0].extension[1]: Profile urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1, Element matches more than one slice - _point-of-care, _department
+ERROR: AuditEvent/AuditEventNorwayTokenInstance2: AuditEvent.entity[0]: AuditEvent.entity:patient.extension:_point-of-care: max allowed = 1, but found 2 (from urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile|0.3.1)
 == fsh-generated/resources/ImplementationGuide-AuditEventTokenMappingNorwayID.json ==
 == fsh-generated/resources/StructureDefinition-AuditEventNorwayOrganization.json ==
 WARNING: StructureDefinition.where(url = 'urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayOrganization'): The Implementation Guide contains no examples for this profile
@@ -97,10 +97,6 @@ INFORMATION: StructureDefinition/AuditEventNorwayTokenProfile: StructureDefiniti
 INFORMATION: StructureDefinition/AuditEventNorwayTokenProfile: StructureDefinition.differential.element[90].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/audit-entity-type|0.5.0
 INFORMATION: StructureDefinition/AuditEventNorwayTokenProfile: StructureDefinition.differential.element[91].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/object-role|0.5.0
 == fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfileConsumer.json ==
-INFORMATION: StructureDefinition/AuditEventNorwayTokenProfileConsumer: StructureDefinition.snapshot.element[288].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/audit-entity-type|0.5.0
-INFORMATION: StructureDefinition/AuditEventNorwayTokenProfileConsumer: StructureDefinition.snapshot.element[289].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/object-role|0.5.0
-INFORMATION: StructureDefinition/AuditEventNorwayTokenProfileConsumer: StructureDefinition.differential.element[66].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/audit-entity-type|0.5.0
-INFORMATION: StructureDefinition/AuditEventNorwayTokenProfileConsumer: StructureDefinition.differential.element[67].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/object-role|0.5.0
 WARNING: StructureDefinition.where(url = 'urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfileConsumer'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CareRelationMetaData.json ==
 WARNING: StructureDefinition/CareRelationMetaData: StructureDefinition.context[0]: Review the extension type for CareRelationMetaData: extensions should not have a context of Element unless it's really intended that they can be used anywhere
