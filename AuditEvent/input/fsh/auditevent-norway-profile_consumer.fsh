@@ -71,6 +71,8 @@ from the consumer (requestor) perspective.
   * extension[description].valueString ^short = "care-relationship:decision-ref:description"
   * extension[user-selected].valueBoolean ^short = "care-relationship:decision-ref:user-selected"
 
+*/
+
 * agent.extension contains 
 	CodeWithAssigner named _authorization 0..1 MS 
 
@@ -88,7 +90,7 @@ from the consumer (requestor) perspective.
   * extension[id].valueIdentifier.value ^short = "practitioner:hpr-nr:id"
   * extension[id].valueIdentifier.assigner.display ^short = "practitioner:hpr-nr:authority"
 
-
+/*
   
 * entity ^slicing.discriminator[0].type = #pattern
 * entity ^slicing.discriminator[=].path = "type"
