@@ -4,10 +4,9 @@ In a scenario where a healthcare organization (such as a hospital or GP) needs t
 
 When audit logs are analyzed, the FHIR AuditEvent is a recommended resource to be used in Norway. AuditEvents, typically retrieved from a consumer system, often contain bundles of references to other FHIR Resources such as PractitionerRole, Practitioner, Patient, and Encounter that exist within the consumer system. However, since these resources are not available on the service provider’s side, the AuditEvent must rely solely on the attributes contained within a security token. These attributes within the security token are described in [Tillitsrammeverk](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#42-datamodell). 
 
-
 This implementation guide contains two profiles:
-1. Logging at consumer side with bundles to other FHIR Resources (TODO: https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#621-attributter-koblet-mot-hl7-fhir-auditevent-med-knytning-til-no-basis-profiler)
-2. Logging at service provider side where attributes of security tokens (SAML/JWT) are mapped to fields in AuditEvent
+1. [AuditEvent from a consumer organization perspective](StructureDefinition-AuditEventNorwayTokenProfileConsumer.html). 
+2. [AuditEvent from a API service organization perspective](StructureDefinition-AuditEventNorwayTokenProfile.html).
 
 
 You can also download:

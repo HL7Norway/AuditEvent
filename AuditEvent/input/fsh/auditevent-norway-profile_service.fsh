@@ -1,6 +1,6 @@
 Profile:        AuditEventNorwayTokenProfile
 Parent:         AuditEvent
-Title:          "National profile for AuditEvent for security token mapping"
+Title:          "Audit from a API service organization perspective"
 Description: """
 This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a 
 token must be mapped into elements / fields of an AuditEvent if they are present.
