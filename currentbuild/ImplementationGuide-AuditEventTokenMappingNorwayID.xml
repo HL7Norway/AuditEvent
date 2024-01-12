@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AuditEventTokenMappingNorway</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>
   </text>
   <url value="urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="AuditEventTokenMappingNorway"/>
   <title value="AuditEvent Implementation Guide (Norway)"/>
   <status value="draft"/>
-  <date value="2024-01-12T06:32:37+00:00"/>
+  <date value="2024-01-12T06:41:33+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -444,6 +444,78 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayTokenProfile"/>
+      </reference>
+      <name value="Audit from a API service organization perspective"/>
+      <description value="This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a &#xA;token must be mapped into elements / fields of an AuditEvent if they are present."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayTokenProfileConsumer"/>
+      </reference>
+      <name value="Audit from a consumer organization perspective"/>
+      <description value="This profile describes where to find the attributes in auditevent that are a part of the security context in cross organizational API access&#xA;from the consumer (requestor) perspective."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayOrganization"/>
+      </reference>
+      <name value="AuditEventNorwayOrganization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitioner"/>
+      </reference>
+      <name value="AuditEventNorwayPractitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerLocation"/>
+      </reference>
+      <name value="AuditEventNorwayPractitionerLocation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerLocationOrganization"/>
+      </reference>
+      <name value="AuditEventNorwayPractitionerLocationOrganization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerRole"/>
+      </reference>
+      <name value="AuditEventNorwayPractitionerRole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -492,17 +564,6 @@
       <name value="Healthcare professionals in the enterprise request access to the document"/>
       <description value="In this example, an anesthesiologist who formally belongs to Rikshospitalet is preparing to administer anesthesia to a patient who is in for an eye operation at Ullevål Hospital, and the anesthesiologist therefore needs access to read documents from previous caregivers in other enterprises to find out which active substances were used during previous anesthesia that the patient reports caused allergic reactions"/>
       <exampleCanonical value="urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayTokenProfile"/>
-      </reference>
-      <name value="National profile for AuditEvent for security token mapping"/>
-      <description value="This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a &#xA;token must be mapped into elements / fields of an AuditEvent if they are present."/>
-      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

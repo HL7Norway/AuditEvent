@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventTokenMappingNorway</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
   fhir:name [ fhir:v "AuditEventTokenMappingNorway"] ; # 
   fhir:title [ fhir:v "AuditEvent Implementation Guide (Norway)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-12T06:32:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-12T06:41:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -512,6 +512,85 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayTokenProfile" ]
+       ] ;
+       fhir:name [ fhir:v "Audit from a API service organization perspective" ] ;
+       fhir:description [ fhir:v "This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a \ntoken must be mapped into elements / fields of an AuditEvent if they are present." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfileConsumer> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayTokenProfileConsumer" ]
+       ] ;
+       fhir:name [ fhir:v "Audit from a consumer organization perspective" ] ;
+       fhir:description [ fhir:v "This profile describes where to find the attributes in auditevent that are a part of the security context in cross organizational API access\nfrom the consumer (requestor) perspective." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayOrganization" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitioner" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitioner" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocation> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerLocation" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitionerLocation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocationOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerLocationOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitionerLocationOrganization" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerRole> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerRole" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitionerRole" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -571,18 +650,6 @@
          fhir:v "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile"^^xsd:anyURI ;
          fhir:link <urn:AuditEventTokenMappingNorway/urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile>
        ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile> ;
-         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayTokenProfile" ]
-       ] ;
-       fhir:name [ fhir:v "National profile for AuditEvent for security token mapping" ] ;
-       fhir:description [ fhir:v "This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a \ntoken must be mapped into elements / fields of an AuditEvent if they are present." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

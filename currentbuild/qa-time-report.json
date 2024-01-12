@@ -1,60 +1,50 @@
 {
-  "date" : "Fri, 12 Jan, 2024 06:32:37 +0000",
+  "date" : "Fri, 12 Jan, 2024 06:41:33 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-AuditEventTokenMappingNorwayID.json",
-      "size" : 3380,
+      "size" : 4902,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 40,
-          "length" : 42
+          "start" : 46,
+          "length" : 37
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 41,
-          "length" : 4
+          "start" : 47,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 41,
-          "length" : 48
+          "start" : 47,
+          "length" : 43
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 525
+          "start" : 54,
+          "length" : 603
         },
         {
-          "activity" : "scanForUsageStats",
-          "start" : 47,
+          "activity" : "validate",
+          "start" : 55,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 103
+          "start" : 55,
+          "length" : 104
         },
         {
           "activity" : "generate2",
-          "start" : 51,
-          "length" : 112
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 64,
-          "length" : 1
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 64,
-          "length" : 1
+          "start" : 62,
+          "length" : 75
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 2
+          "start" : 78,
+          "length" : 3
         }
       ]
     },
@@ -64,38 +54,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 40,
-          "length" : 28
+          "start" : 45,
+          "length" : 19
         },
         {
           "activity" : "load-configure",
-          "start" : 40,
-          "length" : 1
-        },
-        {
-          "activity" : "loadInfo",
-          "start" : 40,
+          "start" : 45,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 41,
-          "length" : 829
+          "start" : 47,
+          "length" : 1081
         },
         {
           "activity" : "validate",
-          "start" : 47,
-          "length" : 266
+          "start" : 55,
+          "length" : 230
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 41
+          "start" : 55,
+          "length" : 29
         },
         {
           "activity" : "generate2",
-          "start" : 51,
-          "length" : 31
+          "start" : 62,
+          "length" : 27
         }
       ]
     },
@@ -105,114 +90,420 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 40,
-          "length" : 28
+          "start" : 45,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 372
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 198
+        },
+        {
+          "activity" : "generate1",
+          "start" : 55,
+          "length" : 33
+        },
+        {
+          "activity" : "generate2",
+          "start" : 62,
+          "length" : 24
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayOrganization.json",
+      "size" : 1294,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 14
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 82
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 41,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 42,
-          "length" : 187
+          "start" : 49,
+          "length" : 65
         },
         {
           "activity" : "validate",
-          "start" : 47,
-          "length" : 234
+          "start" : 50,
+          "length" : 262
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 44
+          "start" : 56,
+          "length" : 156
         },
         {
           "activity" : "generate2",
-          "start" : 51,
-          "length" : 19
+          "start" : 62,
+          "length" : 1360
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 73,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 78,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 72,
+          "start" : 91,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfile.json",
-      "size" : 23855,
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitioner.json",
+      "size" : 1290,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 40,
-          "length" : 39
-        },
-        {
-          "activity" : "load",
-          "start" : 40,
-          "length" : 50
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 40,
-          "length" : 824
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 42,
-          "length" : 856
-        },
-        {
-          "activity" : "validate",
-          "start" : 43,
-          "length" : 2397
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 47,
-          "length" : 2
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 47,
+          "start" : 45,
           "length" : 8
         },
         {
-          "activity" : "processProvenanceDetails",
-          "start" : 47,
+          "activity" : "load",
+          "start" : 45,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 84
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 50
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 166
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 2418
+          "start" : 56,
+          "length" : 160
         },
         {
           "activity" : "generate2",
-          "start" : 51,
-          "length" : 4389
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 60,
-          "length" : 1
+          "start" : 63,
+          "length" : 450
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 60
+          "start" : 78,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerLocation.json",
+      "size" : 1155,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 45,
+          "length" : 7
         },
         {
-          "activity" : "scanProfilesForR5",
-          "start" : 72,
+          "activity" : "load",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 98
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 183
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
           "length" : 1
         },
         {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 170
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 413
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 78,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerLocationOrganization.json",
+      "size" : 1376,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 45,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 50
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 120
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 129
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 274
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 78,
+          "length" : 4
+        },
+        {
           "activity" : "scanExamplesForR5",
-          "start" : 72,
-          "length" : 3
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerRole.json",
+      "size" : 3244,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 101
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 94
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 231
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 236
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 369
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 78,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfile.json",
+      "size" : 23846,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 45,
+          "length" : 26
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 30
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 698
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 659
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 1579
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 2148
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 2814
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 78,
+          "length" : 52
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 91,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayTokenProfileConsumer.json",
+      "size" : 18331,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 45,
+          "length" : 22
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 23
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 47,
+          "length" : 500
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 427
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 1149
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 1594
+        },
+        {
+          "activity" : "generate2",
+          "start" : 68,
+          "length" : 1339
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 78,
+          "length" : 40
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 91,
+          "length" : 1
         }
       ]
     },
@@ -222,43 +513,48 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 40,
-          "length" : 13
+          "start" : 45,
+          "length" : 10
         },
         {
           "activity" : "load",
-          "start" : 40,
-          "length" : 16
+          "start" : 45,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 41,
-          "length" : 55
+          "start" : 47,
+          "length" : 33
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 43
+          "start" : 50,
+          "length" : 33
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 106
+          "start" : 54,
+          "length" : 89
         },
         {
           "activity" : "generate1",
-          "start" : 50,
-          "length" : 158
+          "start" : 60,
+          "length" : 138
         },
         {
           "activity" : "generate2",
-          "start" : 56,
-          "length" : 242
+          "start" : 69,
+          "length" : 105
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 64,
+          "start" : 78,
           "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 91,
+          "length" : 1
         }
       ]
     },
@@ -268,48 +564,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 40,
-          "length" : 12
+          "start" : 45,
+          "length" : 26
         },
         {
           "activity" : "load",
-          "start" : 40,
-          "length" : 15
+          "start" : 46,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 41,
-          "length" : 32
+          "start" : 47,
+          "length" : 27
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 29
+          "start" : 50,
+          "length" : 27
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 86
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 47,
-          "length" : 1
+          "start" : 54,
+          "length" : 71
         },
         {
           "activity" : "generate1",
-          "start" : 50,
-          "length" : 131
+          "start" : 60,
+          "length" : 109
         },
         {
           "activity" : "generate2",
-          "start" : 56,
-          "length" : 161
+          "start" : 69,
+          "length" : 81
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 78,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 3
+          "start" : 78,
+          "length" : 2
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 91,
+          "length" : 1
         }
       ]
     },
@@ -319,43 +620,48 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 40,
-          "length" : 12
+          "start" : 45,
+          "length" : 16
         },
         {
           "activity" : "load",
-          "start" : 40,
-          "length" : 11
+          "start" : 46,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 41,
-          "length" : 30
+          "start" : 47,
+          "length" : 27
         },
         {
           "activity" : "generateNarratives",
-          "start" : 43,
-          "length" : 29
+          "start" : 50,
+          "length" : 28
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 104
+          "start" : 54,
+          "length" : 70
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 55,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 50,
-          "length" : 134
+          "start" : 60,
+          "length" : 109
         },
         {
           "activity" : "generate2",
-          "start" : 56,
-          "length" : 145
+          "start" : 69,
+          "length" : 87
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 3
+          "start" : 78,
+          "length" : 2
         }
       ]
     }

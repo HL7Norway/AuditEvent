@@ -3,35 +3,77 @@
     "id" : "AuditEventTokenMappingNorwayID",
     "type" : "ImplementationGuide",
     "url" : "urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID",
-    "version" : "0.2.0",
+    "version" : "0.3.0",
     "name" : "AuditEventTokenMappingNorway"
+  },
+  {
+    "id" : "AuditEventNorwayOrganization",
+    "type" : "StructureDefinition",
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayOrganization",
+    "version" : "0.3.0",
+    "name" : "AuditEventNorwayOrganization"
+  },
+  {
+    "id" : "AuditEventNorwayPractitioner",
+    "type" : "StructureDefinition",
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitioner",
+    "version" : "0.3.0",
+    "name" : "AuditEventNorwayPractitioner"
+  },
+  {
+    "id" : "AuditEventNorwayPractitionerLocation",
+    "type" : "StructureDefinition",
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocation",
+    "version" : "0.3.0",
+    "name" : "AuditEventNorwayPractitionerLocation"
+  },
+  {
+    "id" : "AuditEventNorwayPractitionerLocationOrganization",
+    "type" : "StructureDefinition",
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocationOrganization",
+    "version" : "0.3.0",
+    "name" : "AuditEventNorwayPractitionerLocationOrganization"
+  },
+  {
+    "id" : "AuditEventNorwayPractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerRole",
+    "version" : "0.3.0",
+    "name" : "AuditEventNorwayPractitionerRole"
   },
   {
     "id" : "AuditEventNorwayTokenProfile",
     "type" : "StructureDefinition",
     "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile",
-    "version" : "0.2.0",
+    "version" : "0.3.0",
     "name" : "AuditEventNorwayTokenProfile"
+  },
+  {
+    "id" : "AuditEventNorwayTokenProfileConsumer",
+    "type" : "StructureDefinition",
+    "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfileConsumer",
+    "version" : "0.3.0",
+    "name" : "AuditEventNorwayTokenProfileConsumer"
   },
   {
     "id" : "CareRelationMetaData",
     "type" : "StructureDefinition",
     "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/CareRelationMetaData",
-    "version" : "0.2.0",
+    "version" : "0.3.0",
     "name" : "CareRelationMetaData"
   },
   {
     "id" : "CodeWithAssigner",
     "type" : "StructureDefinition",
     "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/CodeWithAssigner",
-    "version" : "0.2.0",
+    "version" : "0.3.0",
     "name" : "CodeWithAssigner"
   },
   {
     "id" : "IdentifierWithName",
     "type" : "StructureDefinition",
     "url" : "urn:AuditEventTokenMappingNorway/StructureDefinition/IdentifierWithName",
-    "version" : "0.2.0",
+    "version" : "0.3.0",
     "name" : "IdentifierWithName"
   }
 ]
