@@ -10,7 +10,7 @@
   "name" : "AuditEventTokenMappingNorway",
   "title" : "AuditEvent Implementation Guide (Norway)",
   "status" : "draft",
-  "date" : "2024-01-08T20:17:08+00:00",
+  "date" : "2024-01-12T06:32:37+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",
@@ -320,7 +320,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "IdentifierWithName"] ; # 
   fhir:title [ fhir:v "Extension that extends the complex type Identifier with an additional name attribute."] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-08T20:17:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-12T06:32:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
