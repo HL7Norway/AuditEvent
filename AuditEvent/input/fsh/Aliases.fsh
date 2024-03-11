@@ -10,3 +10,4 @@ Alias: $VOLVEN_HELSEHJELPSOMRAADE = https://volven.no/8655 // Assigned by volven
 Alias: $v3.ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 Alias: $KAT_HELSEPERSONELL = urn:oid:2.16.578.1.12.4.1.1.9060 // Kategori helsepersonell 
 Alias: $TJENESTETYPE = urn:oid:x.x.x.x.x.9151 // tjenestetype i helse- og omsorgstjenesten (
+Alias: $DIPS_CARERELATION = http://dips.com/carerelation

@@ -1,0 +1,112 @@
+classDiagram
+   direction RL
+   class AuditEvent { <<resource>>  }
+   style AuditEvent fill:#7CB9E8
+   class Practitioner { <<resource>> }
+   style Practitioner fill:#7CB9E8   
+   class PractitionerRole { <<resource>> }
+   style PractitionerRole fill:#7CB9E8      
+   class Organization { <<resource>> }
+   style Organization fill:#7CB9E8         
+   class Location { <<resource>> }
+   style Location fill:#7CB9E8        
+   class Patient { <<resource>> }
+   style Patient fill:#7CB9E8           
+   class Encounter { <<resource>> }
+   style Encounter fill:#7CB9E8              
+  
+   class AuditEventNorwayCommonTrustFramework {
+     <<profile>>
+     care-relation.purpose-of-use
+     care-relation.purpose-of-use-details
+     care-relation.decision-ref     
+   }
+   class AuditEventNorwayPractitionerRole {<<profile>>}
+   class AuditEventNorwayPractitionerDepartment { 
+     <<profile>>
+     practitioner.department
+   }   
+   class AuditEventNorwayPractitioner  {
+     <<profile>>
+     practitioner.identifier
+     practitioner.hpr-nr
+     practitioner.authorization
+   }
+
+   class AuditEventNorwayPractitionerLegalEntity {
+     <<profile>>
+     practitioner.legal-entity
+   }
+   class AuditEventNorwayPractitionerPointOfCare {<<profile>>}
+   class AuditEventNorwayPractitionerPointOfCareOrganization {
+     <<profile>>
+     practitioner.point-of-care
+   }
+   class AuditEventNorwayEncounter {
+     <<profile>>
+     care-relation.healthcare-service
+   }
+   class AuditEventNorwayPatient {
+     <<profile>>
+     patient.identifier
+   }
+   class AuditEventNorwayEncounterPointOfCare {<<profile>>}
+   class AuditEventNorwayEncounterPointOfCareOrganization {
+     <<profile>>
+     patient.point-of-care     
+   }
+   class AuditEventNorwayEncounterServiceProviderOrganization {
+     <<profile>>
+     patient.department
+   }
+
+   AuditEvent <|-- AuditEventNorwayCommonTrustFramework 
+   PractitionerRole <|-- AuditEventNorwayPractitionerRole
+   Practitioner <|-- AuditEventNorwayPractitioner
+   Organization <|-- AuditEventNorwayPractitionerDepartment   
+   Organization <|-- AuditEventNorwayPractitionerLegalEntity
+   Organization <|-- AuditEventNorwayEncounterPointOfCareOrganization
+   Organization <|-- AuditEventNorwayPractitionerPointOfCareOrganization
+   Organization <|-- AuditEventNorwayEncounterServiceProviderOrganization
+   Location <|-- AuditEventNorwayEncounterPointOfCare
+   Location <|-- AuditEventNorwayPractitionerPointOfCare
+   Patient <|-- AuditEventNorwayPatient
+   Encounter <|-- AuditEventNorwayEncounter
+
+
+    AuditEventNorwayPractitionerPointOfCareOrganization *-- AuditEventNorwayPractitionerPointOfCare : managingOrganization
+    AuditEventNorwayPractitionerLegalEntity *-- AuditEventNorwayPractitionerDepartment : partOf
+    AuditEventNorwayEncounterPointOfCare *-- AuditEventNorwayEncounter : location.location
+    AuditEventNorwayEncounterServiceProviderOrganization *-- AuditEventNorwayEncounter: serviceProvider
+    AuditEventNorwayEncounterPointOfCareOrganization *-- AuditEventNorwayEncounterPointOfCare : managingOrganization
+    AuditEventNorwayPractitionerPointOfCare *-- AuditEventNorwayPractitionerRole : location
+    AuditEventNorwayPractitionerDepartment *-- AuditEventNorwayPractitionerRole : organization
+    AuditEventNorwayPractitioner *-- AuditEventNorwayPractitionerRole : practitioner
+    AuditEventNorwayPatient *-- AuditEventNorwayCommonTrustFramework  : _patient
+    AuditEventNorwayEncounter *-- AuditEventNorwayCommonTrustFramework  : _encounter
+    AuditEventNorwayPractitionerRole *-- AuditEventNorwayCommonTrustFramework  : agent.who
+    
+   
+
+    link AuditEvent "https://hl7.org/fhir/R4/auditevent.html" 
+    link Practitioner "https://hl7.org/fhir/R4/practitioner.html" 
+    link PractitionerRole "https://hl7.org/fhir/R4/practitionerrole.html" 
+    link Organization "https://hl7.org/fhir/R4/organization.html" 
+    link Location "https://hl7.org/fhir/R4/location.html" 
+    link Patient  "https://hl7.org/fhir/R4/patient.html" 
+    link Encounter "https://hl7.org/fhir/R4/encounter.html" 
+
+    link AuditEventNorwayCommonTrustFramework "StructureDefinition-auditevent-norway-profile.html"
+    link AuditEventNorwayPractitionerRole "StructureDefinition-AuditEventNorwayPractitionerRole.html"
+    link AuditEventNorwayPractitionerDepartment "StructureDefinition-AuditEventNorwayPractitionerDepartment.html"
+    link AuditEventNorwayPractitioner "StructureDefinition-AuditEventNorwayPractitioner.html"
+    link AuditEventNorwayPractitionerLegalEntity "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html"
+    link AuditEventNorwayPractitionerPointOfCare "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html"
+    link AuditEventNorwayPractitionerPointOfCareOrganization "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html"
+    link AuditEventNorwayEncounter "StructureDefinition-AuditEventNorwayEncounter.html"
+    link AuditEventNorwayPatient "StructureDefinition-AuditEventNorwayPatient.html"
+    link AuditEventNorwayEncounterPointOfCare "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html"
+    link AuditEventNorwayEncounterPointOfCareOrganization "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html"
+    link AuditEventNorwayEncounterServiceProviderOrganization "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html"
+
+
