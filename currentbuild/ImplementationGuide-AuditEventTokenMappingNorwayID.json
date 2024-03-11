@@ -3,14 +3,14 @@
   "id" : "AuditEventTokenMappingNorwayID",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventTokenMappingNorway</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventNorwayCommonTrustFramework</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   },
-  "url" : "urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID",
-  "version" : "0.3.1",
-  "name" : "AuditEventTokenMappingNorway",
-  "title" : "AuditEvent Implementation Guide (Norway)",
+  "url" : "urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID",
+  "version" : "0.8.0",
+  "name" : "AuditEventNorwayCommonTrustFramework",
+  "title" : "AuditEvent Implementation Guide Trust Framework (Norway)",
   "status" : "draft",
-  "date" : "2024-01-12T11:54:28+00:00",
+  "date" : "2024-03-11T18:58:49+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",
@@ -149,7 +149,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "urn:AuditEventTokenMappingNorway/history.html"
+        "valueString" : "urn:AuditEventNorwayCommonTrustFramework/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -428,7 +428,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "urn:AuditEventTokenMappingNorway/history.html"
+        "valueString" : "urn:AuditEventNorwayCommonTrustFramework/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -600,13 +600,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayTokenProfile"
+        "reference" : "StructureDefinition/AuditEventEncounterExtension"
       },
-      "name" : "Audit from a API service organization perspective",
-      "description" : "This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a \ntoken must be mapped into elements / fields of an AuditEvent if they are present.",
+      "name" : "AuditEventEncounterExtension",
+      "description" : "Extension that extends FHIR AuditEvent R4 with Encounter reference which was introduced in FHIR AuditEvent R5",
       "exampleBoolean" : false
     },
     {
@@ -615,10 +615,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayTokenProfileConsumer"
+        "reference" : "StructureDefinition/auditevent-norway-profile"
       },
-      "name" : "Audit from a consumer organization perspective",
-      "description" : "This profile describes where to find the attributes in auditevent that are a part of the security context in cross organizational API access\nfrom the consumer (requestor) perspective.",
+      "name" : "AuditEventNorwayCommonTrustFramework",
+      "description" : "This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (\"NHN felles tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.",
       "exampleBoolean" : false
     },
     {
@@ -627,9 +627,58 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayOrganization"
+        "reference" : "StructureDefinition/AuditEventNorwayEncounter"
       },
-      "name" : "AuditEventNorwayOrganization",
+      "name" : "AuditEventNorwayEncounter",
+      "description" : "The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayEncounterPointOfCare"
+      },
+      "name" : "AuditEventNorwayEncounterPointOfCare",
+      "description" : "The encounter location with patients:point_of_care_patient:* mapping.\n\nPasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasienten behandles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization"
+      },
+      "name" : "AuditEventNorwayEncounterPointOfCareOrganization",
+      "description" : "The encounter location organization for AuditEventNorway profile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization"
+      },
+      "name" : "AuditEventNorwayEncounterServiceProviderOrganization  ",
+      "description" : "The service provider organization of auditevent encounter for AuditEventNorway profile.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPatient"
+      },
+      "name" : "AuditEventNorwayPatient",
+      "description" : "The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity\n\nNOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.",
       "exampleBoolean" : false
     },
     {
@@ -641,6 +690,7 @@
         "reference" : "StructureDefinition/AuditEventNorwayPractitioner"
       },
       "name" : "AuditEventNorwayPractitioner",
+      "description" : "The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional.",
       "exampleBoolean" : false
     },
     {
@@ -649,9 +699,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitionerLocation"
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerDepartment"
       },
-      "name" : "AuditEventNorwayPractitionerLocation",
+      "name" : "AuditEventNorwayPractitionerDepartment",
+      "description" : "The health care department (practitioner:department) of the health care practitioner.",
       "exampleBoolean" : false
     },
     {
@@ -660,9 +711,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitionerLocationOrganization"
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerLegalEntity"
       },
-      "name" : "AuditEventNorwayPractitionerLocationOrganization",
+      "name" : "AuditEventNorwayPractitionerLegalEntity",
+      "description" : "The health care organization (practitioner:legal-entity) of the health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerPointOfCare"
+      },
+      "name" : "AuditEventNorwayPractitionerPointOfCare",
+      "description" : "The point of care location (practitioner:point-of-care) of health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization"
+      },
+      "name" : "AuditEventNorwayPractitionerPointOfCareOrganization",
+      "description" : "The point of care organization (practitioner:point-of-care) of health care practitioner.",
       "exampleBoolean" : false
     },
     {
@@ -674,6 +750,19 @@
         "reference" : "StructureDefinition/AuditEventNorwayPractitionerRole"
       },
       "name" : "AuditEventNorwayPractitionerRole",
+      "description" : "The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventPatientExtension"
+      },
+      "name" : "AuditEventPatientExtension",
+      "description" : "Extension that extends FHIR AuditEvent R4 with en Patient reference which was introduced in FHIR AuditEvent R5",
       "exampleBoolean" : false
     },
     {
@@ -693,44 +782,11 @@
         "valueString" : "AuditEvent"
       }],
       "reference" : {
-        "reference" : "AuditEvent/AuditEventNorwayTokenInstance1"
+        "reference" : "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1"
       },
-      "name" : "Example of mapping a security token to Auditevent",
-      "exampleCanonical" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/CodeWithAssigner"
-      },
-      "name" : "Extension that extends complex type Coding with an additional assigner attribute.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/IdentifierWithName"
-      },
-      "name" : "Extension that extends the complex type Identifier with an additional name attribute.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "AuditEvent"
-      }],
-      "reference" : {
-        "reference" : "AuditEvent/AuditEventNorwayTokenInstance2"
-      },
-      "name" : "Healthcare professionals in the enterprise request access to the document",
-      "description" : "In this example, an anesthesiologist who formally belongs to Rikshospitalet is preparing to administer anesthesia to a patient who is in for an eye operation at Ullevål Hospital, and the anesthesiologist therefore needs access to read documents from previous caregivers in other enterprises to find out which active substances were used during previous anesthesia that the patient reports caused allergic reactions",
-      "exampleCanonical" : "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile"
+      "name" : "Healthcare personnel within the organization request access to document list",
+      "description" : "ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.\nNO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner",
+      "exampleCanonical" : "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"
     }],
     "page" : {
       "extension" : [{

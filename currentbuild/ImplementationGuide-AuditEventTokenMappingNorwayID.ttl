@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID> a fhir:ImplementationGuide ;
+<urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "AuditEventTokenMappingNorwayID"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventTokenMappingNorway</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventNorwayCommonTrustFramework</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   ] ; # 
-  fhir:url [ fhir:v "urn:AuditEventTokenMappingNorway/ImplementationGuide/AuditEventTokenMappingNorwayID"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.3.1"] ; # 
-  fhir:name [ fhir:v "AuditEventTokenMappingNorway"] ; # 
-  fhir:title [ fhir:v "AuditEvent Implementation Guide (Norway)"] ; # 
+  fhir:url [ fhir:v "urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.8.0"] ; # 
+  fhir:name [ fhir:v "AuditEventNorwayCommonTrustFramework"] ; # 
+  fhir:title [ fhir:v "AuditEvent Implementation Guide Trust Framework (Norway)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-12T11:54:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-11T18:58:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -142,7 +142,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:AuditEventTokenMappingNorway/history.html" ]
+         fhir:value [ fhir:v "urn:AuditEventNorwayCommonTrustFramework/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -370,7 +370,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:AuditEventTokenMappingNorway/history.html" ]
+         fhir:value [ fhir:v "urn:AuditEventNorwayCommonTrustFramework/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -512,14 +512,14 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile> ;
-         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayTokenProfile" ]
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventEncounterExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventEncounterExtension" ]
        ] ;
-       fhir:name [ fhir:v "Audit from a API service organization perspective" ] ;
-       fhir:description [ fhir:v "This profile should be used in all use cases where the request to an API involves a security token (JWT/SAML). The profile describes how the attributes / claims of a \ntoken must be mapped into elements / fields of an AuditEvent if they are present." ] ;
+       fhir:name [ fhir:v "AuditEventEncounterExtension" ] ;
+       fhir:description [ fhir:v "Extension that extends FHIR AuditEvent R4 with Encounter reference which was introduced in FHIR AuditEvent R5" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -527,11 +527,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfileConsumer> ;
-         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayTokenProfileConsumer" ]
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/auditevent-norway-profile" ]
        ] ;
-       fhir:name [ fhir:v "Audit from a consumer organization perspective" ] ;
-       fhir:description [ fhir:v "This profile describes where to find the attributes in auditevent that are a part of the security context in cross organizational API access\nfrom the consumer (requestor) perspective." ] ;
+       fhir:name [ fhir:v "AuditEventNorwayCommonTrustFramework" ] ;
+       fhir:description [ fhir:v "This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (\"NHN felles tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -539,10 +539,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayOrganization> ;
-         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayOrganization" ]
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayEncounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayEncounter" ]
        ] ;
-       fhir:name [ fhir:v "AuditEventNorwayOrganization" ] ;
+       fhir:name [ fhir:v "AuditEventNorwayEncounter" ] ;
+       fhir:description [ fhir:v "The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -550,10 +551,59 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitioner> ;
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayEncounterPointOfCare> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayEncounterPointOfCare" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayEncounterPointOfCare" ] ;
+       fhir:description [ fhir:v "The encounter location with patients:point_of_care_patient:* mapping.\n\nPasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasienten behandles" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayEncounterPointOfCareOrganization" ] ;
+       fhir:description [ fhir:v "The encounter location organization for AuditEventNorway profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayEncounterServiceProviderOrganization  " ] ;
+       fhir:description [ fhir:v "The service provider organization of auditevent encounter for AuditEventNorway profile." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPatient" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPatient" ] ;
+       fhir:description [ fhir:v "The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity\n\nNOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitioner> ;
          fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitioner" ]
        ] ;
        fhir:name [ fhir:v "AuditEventNorwayPractitioner" ] ;
+       fhir:description [ fhir:v "The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -561,10 +611,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocation> ;
-         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerLocation" ]
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerDepartment> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerDepartment" ]
        ] ;
-       fhir:name [ fhir:v "AuditEventNorwayPractitionerLocation" ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitionerDepartment" ] ;
+       fhir:description [ fhir:v "The health care department (practitioner:department) of the health care practitioner." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -572,10 +623,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocationOrganization> ;
-         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerLocationOrganization" ]
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerLegalEntity> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerLegalEntity" ]
        ] ;
-       fhir:name [ fhir:v "AuditEventNorwayPractitionerLocationOrganization" ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitionerLegalEntity" ] ;
+       fhir:description [ fhir:v "The health care organization (practitioner:legal-entity) of the health care practitioner." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -583,10 +635,35 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerRole> ;
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerPointOfCare> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerPointOfCare" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitionerPointOfCare" ] ;
+       fhir:description [ fhir:v "The point of care location (practitioner:point-of-care) of health care practitioner." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventNorwayPractitionerPointOfCareOrganization" ] ;
+       fhir:description [ fhir:v "The point of care organization (practitioner:point-of-care) of health care practitioner." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerRole> ;
          fhir:reference [ fhir:v "StructureDefinition/AuditEventNorwayPractitionerRole" ]
        ] ;
        fhir:name [ fhir:v "AuditEventNorwayPractitionerRole" ] ;
+       fhir:description [ fhir:v "The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -594,7 +671,19 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/CareRelationMetaData> ;
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventPatientExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEventPatientExtension" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventPatientExtension" ] ;
+       fhir:description [ fhir:v "Extension that extends FHIR AuditEvent R4 with en Patient reference which was introduced in FHIR AuditEvent R5" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/CareRelationMetaData> ;
          fhir:reference [ fhir:v "StructureDefinition/CareRelationMetaData" ]
        ] ;
        fhir:name [ fhir:v "En extension for care relation meta data." ] ;
@@ -605,50 +694,14 @@
          fhir:value [ fhir:v "AuditEvent" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/AuditEvent/AuditEventNorwayTokenInstance1> ;
-         fhir:reference [ fhir:v "AuditEvent/AuditEventNorwayTokenInstance1" ]
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1> ;
+         fhir:reference [ fhir:v "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1" ]
        ] ;
-       fhir:name [ fhir:v "Example of mapping a security token to Auditevent" ] ;
+       fhir:name [ fhir:v "Healthcare personnel within the organization request access to document list" ] ;
+       fhir:description [ fhir:v "ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.\nNO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner" ] ;
        fhir:example [
-         fhir:v "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile"^^xsd:anyURI ;
-         fhir:link <urn:AuditEventTokenMappingNorway/urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/CodeWithAssigner> ;
-         fhir:reference [ fhir:v "StructureDefinition/CodeWithAssigner" ]
-       ] ;
-       fhir:name [ fhir:v "Extension that extends complex type Coding with an additional assigner attribute." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/StructureDefinition/IdentifierWithName> ;
-         fhir:reference [ fhir:v "StructureDefinition/IdentifierWithName" ]
-       ] ;
-       fhir:name [ fhir:v "Extension that extends the complex type Identifier with an additional name attribute." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "AuditEvent" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <urn:AuditEventTokenMappingNorway/AuditEvent/AuditEventNorwayTokenInstance2> ;
-         fhir:reference [ fhir:v "AuditEvent/AuditEventNorwayTokenInstance2" ]
-       ] ;
-       fhir:name [ fhir:v "Healthcare professionals in the enterprise request access to the document" ] ;
-       fhir:description [ fhir:v "In this example, an anesthesiologist who formally belongs to Rikshospitalet is preparing to administer anesthesia to a patient who is in for an eye operation at Ullevål Hospital, and the anesthesiologist therefore needs access to read documents from previous caregivers in other enterprises to find out which active substances were used during previous anesthesia that the patient reports caused allergic reactions" ] ;
-       fhir:example [
-         fhir:v "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile"^^xsd:anyURI ;
-         fhir:link <urn:AuditEventTokenMappingNorway/urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile>
+         fhir:v "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"^^xsd:anyURI ;
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile>
        ]
      ] ) ;
      fhir:page [

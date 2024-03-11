@@ -1,10 +1,24 @@
 {
   "package": "AuditEventTokenMappingNorwayID",
-  "version": "0.3.1",
+  "version": "0.8.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/CareRelationMetaData",
+      "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventEncounterExtension",
+      "title": "AuditEventEncounterExtension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventPatientExtension",
+      "title": "AuditEventPatientExtension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/CareRelationMetaData",
       "title": "En extension for care relation meta data.",
       "types": [
         "string",
@@ -61,157 +75,49 @@
         "Dosage",
         "Meta"
       ]
-    },
-    {
-      "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/CodeWithAssigner",
-      "title": "Extension that extends complex type Coding with an additional assigner attribute.",
-      "types": [
-        "Coding",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/IdentifierWithName",
-      "title": "Extension that extends the complex type Identifier with an additional name attribute.",
-      "types": [
-        "Identifier",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
     }
   ],
   "profiles": {
-    "Organization": [
+    "Encounter": [
       {
-        "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocationOrganization",
-        "title": "AuditEventNorwayPractitionerLocationOrganization"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitioner",
-        "title": "AuditEventNorwayPractitioner"
+        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayEncounter",
+        "title": "AuditEventNorwayEncounter"
       }
     ],
     "Location": [
       {
-        "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerLocation",
-        "title": "AuditEventNorwayPractitionerLocation"
+        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerPointOfCare",
+        "title": "AuditEventNorwayPractitionerPointOfCare"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization",
+        "title": "AuditEventNorwayPractitionerPointOfCareOrganization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPatient",
+        "title": "AuditEventNorwayPatient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitioner",
+        "title": "AuditEventNorwayPractitioner"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayPractitionerRole",
+        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerRole",
         "title": "AuditEventNorwayPractitionerRole"
       }
     ],
     "AuditEvent": [
       {
-        "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfile",
-        "title": "Audit from a API service organization perspective"
-      },
-      {
-        "url": "urn:AuditEventTokenMappingNorway/StructureDefinition/AuditEventNorwayTokenProfileConsumer",
-        "title": "Audit from a consumer organization perspective"
+        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile",
+        "title": "AuditEventNorwayCommonTrustFramework"
       }
     ]
   },
@@ -225,6 +131,10 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
+      "AuditEvent.contained.contained",
+      "Practitioner"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -235,6 +145,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
@@ -253,18 +164,14 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "urn:AuditEventTokenMappingNorway/StructureDefinition/CareRelationMetaData": [
+    "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventEncounterExtension": [
       "AuditEvent"
     ],
-    "urn:AuditEventTokenMappingNorway/StructureDefinition/CodeWithAssigner": [
-      "AuditEvent",
-      "AuditEvent.agent"
+    "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventPatientExtension": [
+      "AuditEvent"
     ],
-    "urn:AuditEventTokenMappingNorway/StructureDefinition/IdentifierWithName": [
-      "AuditEvent.agent",
-      "AuditEvent.agent.who",
-      "AuditEvent.entity",
-      "PractitionerRole"
+    "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/CareRelationMetaData": [
+      "AuditEvent"
     ]
   }
 }
