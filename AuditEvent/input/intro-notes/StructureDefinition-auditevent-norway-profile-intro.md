@@ -18,15 +18,14 @@ From versjon -6:
 | patient          | "point-of-care"  	      | Virksomheten hvor pasienten mottar behandling <br>Kan være lik verdi som i "legal-entity"             | [Organization](https://hl7.org/fhir/R4/organization.html)               | [AuditEventNorwayEncounterPointOfCareOrganization](StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html)                |
 | patient          | "department"             | Avdeling/org.enhet hvor pasienten mottar helsehjelp                                        	          | [Organization](https://hl7.org/fhir/R4/organization.html)               | [AuditEventNorwayEncounterServiceProviderOrganization](StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html)|
 
-The mappings to AuditEvent fields are described in the "Description & Constraint" column. 
 
 This implementation guide is based on R4, but adds two extentions to be forward compatible with R5:
 - [_encounter](https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.encounter)
 - [_patient](https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.patient) 
 
-NOTE! Since data type [Coding](https://hl7.org/fhir/R4/datatypes.html#Coding) does not have the assigner/authority, the ``kodeverk-attributt.assigner`` is ignored by design. See [conventions](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#4221-konvensjoner-brukt-i-datamodellen)
+> NOTE! Since data type [Coding](https://hl7.org/fhir/R4/datatypes.html#Coding) does not have the assigner/authority, the ``kodeverk-attributt.assigner`` is ignored by design. See [conventions](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#4221-konvensjoner-brukt-i-datamodellen)
 
 ![AuditEventNorwayUML](AuditEvent-ClassDiagram.svg)
 It is possible to navigate by clicking directly on entities by opening the diagram in its own window by clicking [here](AuditEvent-ClassDiagram.svg).
 
-See [here](artifacts.html#example-example-instances) for examples.
+The mappings to AuditEvent fields are described in the "Description & Constraint" column. 

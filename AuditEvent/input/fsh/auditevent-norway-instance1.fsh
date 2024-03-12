@@ -49,11 +49,6 @@ Description: "AuditEventNorwayPractitionerRoleInstance1"
 * organization = Reference(AuditEventNorwayPractitionerLegalEntityInstance1)
 * contained[+] = AuditEventNorwayPractitionerPointOfCareInstance1
 * location = Reference(AuditEventNorwayPractitionerPointOfCareInstance1)
-//* extension[_department] 
-//  * extension[id].valueIdentifier.system = $RESHID
-//  * extension[id].valueIdentifier.value = "705592"
-//  * extension[id].valueIdentifier.assigner.display = "https://www.nhn.no"
-//  * extension[name].valueString = "Anestesiologi Seksjon RH"    
 
 Instance: AuditEventNorwayEncounterPointOfCareOrganizationInstance1
 InstanceOf: AuditEventNorwayEncounterPointOfCareOrganization
@@ -90,6 +85,10 @@ Usage: #inline
 * location.location = Reference(AuditEventNorwayEncounterPointOfCareInstance1)
 * contained[+] = AuditEventNorwayEncounterServiceProviderOrganizationInstance1
 * serviceProvider = Reference(AuditEventNorwayEncounterServiceProviderOrganizationInstance1)
+* serviceType.coding.system = "urn:oid:2.16.578.1.12.4.1.1.8655"
+* serviceType.coding.code = #S03
+* serviceType.coding.display = "Indremedisin"
+
 
 Instance: AuditEventNorwayPatientInstance1
 InstanceOf: AuditEventNorwayPatient
@@ -100,7 +99,7 @@ Usage: #inline
 
 Instance: AuditEventNorwayCommonTrustFrameworkInstance1
 InstanceOf: AuditEventNorwayCommonTrustFramework
-Title: "Healthcare personnel within the organization request access to document list"
+Title: "Hospital example"
 Description: """
 ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.
 NO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner
@@ -109,6 +108,7 @@ Usage: #example
 
 * type = DCM#110110 "Patient Record"
 * recorded = 2021-03-15T09:49:00.000Z
+* action = #R
 
 * agent[0].requestor = true
 * contained[+] = AuditEventNorwayPractitionerRoleInstance1
