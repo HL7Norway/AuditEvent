@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventNorwayCommonTrustFramework</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   },
   "url" : "urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "AuditEventNorwayCommonTrustFramework",
   "title" : "AuditEvent Implementation Guide Trust Framework (Norway)",
   "status" : "draft",
-  "date" : "2024-03-11T18:58:49+00:00",
+  "date" : "2024-03-12T11:58:51+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",
@@ -782,10 +782,34 @@
         "valueString" : "AuditEvent"
       }],
       "reference" : {
+        "reference" : "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance2"
+      },
+      "name" : "GP example",
+      "description" : "ENG: Example of GP as open document content.\nNO: Eksempelet hvor en fastlege åpner dokumentinnhold.",
+      "exampleCanonical" : "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AuditEvent"
+      }],
+      "reference" : {
         "reference" : "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1"
       },
-      "name" : "Healthcare personnel within the organization request access to document list",
+      "name" : "Hospital example",
       "description" : "ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.\nNO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner",
+      "exampleCanonical" : "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AuditEvent"
+      }],
+      "reference" : {
+        "reference" : "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance3"
+      },
+      "name" : "Municipality example",
+      "description" : "ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.\nNO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgang til et dokument i en annen virksomhet for å planlegge videre oppfølging av en pasient som mottar hjemmehjelpstjenester fra kommunen",
       "exampleCanonical" : "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"
     }],
     "page" : {

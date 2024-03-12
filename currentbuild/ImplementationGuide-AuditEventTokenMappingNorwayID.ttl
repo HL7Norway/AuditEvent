@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventNorwayCommonTrustFramework</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.8.0"] ; # 
+  fhir:version [ fhir:v "0.8.1"] ; # 
   fhir:name [ fhir:v "AuditEventNorwayCommonTrustFramework"] ; # 
   fhir:title [ fhir:v "AuditEvent Implementation Guide Trust Framework (Norway)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-11T18:58:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-12T11:58:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -694,11 +694,41 @@
          fhir:value [ fhir:v "AuditEvent" ]
        ] ) ;
        fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance2> ;
+         fhir:reference [ fhir:v "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance2" ]
+       ] ;
+       fhir:name [ fhir:v "GP example" ] ;
+       fhir:description [ fhir:v "ENG: Example of GP as open document content.\nNO: Eksempelet hvor en fastlege åpner dokumentinnhold." ] ;
+       fhir:example [
+         fhir:v "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"^^xsd:anyURI ;
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "AuditEvent" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <urn:AuditEventNorwayCommonTrustFramework/AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1> ;
          fhir:reference [ fhir:v "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1" ]
        ] ;
-       fhir:name [ fhir:v "Healthcare personnel within the organization request access to document list" ] ;
+       fhir:name [ fhir:v "Hospital example" ] ;
        fhir:description [ fhir:v "ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.\nNO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner" ] ;
+       fhir:example [
+         fhir:v "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"^^xsd:anyURI ;
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "AuditEvent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:AuditEventNorwayCommonTrustFramework/AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance3> ;
+         fhir:reference [ fhir:v "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance3" ]
+       ] ;
+       fhir:name [ fhir:v "Municipality example" ] ;
+       fhir:description [ fhir:v "ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.\nNO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgang til et dokument i en annen virksomhet for å planlegge videre oppfølging av en pasient som mottar hjemmehjelpstjenester fra kommunen" ] ;
        fhir:example [
          fhir:v "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"^^xsd:anyURI ;
          fhir:link <urn:AuditEventNorwayCommonTrustFramework/urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile>

@@ -1,6 +1,6 @@
 {
   "package": "AuditEventTokenMappingNorwayID",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
