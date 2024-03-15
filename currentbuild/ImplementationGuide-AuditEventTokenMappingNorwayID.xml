@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>urnnobasisauditevent</h2><p>The official URL for this implementation guide is: </p><pre>urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>
   </text>
   <url value="urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID"/>
-  <version value="0.8.2"/>
+  <version value="0.8.3"/>
   <name value="urnnobasisauditevent"/>
   <title value="NO Basis AuditEvent IG Trust Framework"/>
   <status value="draft"/>
-  <date value="2024-03-15T06:42:57+00:00"/>
+  <date value="2024-03-15T09:00:42+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -515,7 +515,7 @@
         <reference value="StructureDefinition/no-basis-auditevent"/>
       </reference>
       <name value="no-basis-auditevent"/>
-      <description value="This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (&quot;NHN felles tillitsrammeverk&quot;)](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource."/>
+      <description value="This is the main profile that describes the mapping [Norwegian Trust Framework attributes (&quot;Tillitsrammeverk&quot;)](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -622,9 +622,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/no-basis-encounter"/>
+        <reference value="StructureDefinition/no-basis-encounter-auditevent"/>
       </reference>
-      <name value="no-basis-encounter"/>
+      <name value="no-basis-encounter-auditevent"/>
       <description value="The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*"/>
       <exampleBoolean value="false"/>
     </resource>

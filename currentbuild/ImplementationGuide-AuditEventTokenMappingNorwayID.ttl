@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>urnnobasisauditevent</h2><p>The official URL for this implementation guide is: </p><pre>urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.8.2"] ; # 
+  fhir:version [ fhir:v "0.8.3"] ; # 
   fhir:name [ fhir:v "urnnobasisauditevent"] ; # 
   fhir:title [ fhir:v "NO Basis AuditEvent IG Trust Framework"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-15T06:42:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-15T09:00:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -599,7 +599,7 @@
          fhir:reference [ fhir:v "StructureDefinition/no-basis-auditevent" ]
        ] ;
        fhir:name [ fhir:v "no-basis-auditevent" ] ;
-       fhir:description [ fhir:v "This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (\"NHN felles tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource." ] ;
+       fhir:description [ fhir:v "This is the main profile that describes the mapping [Norwegian Trust Framework attributes (\"Tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -715,10 +715,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:no-basis-auditevent/StructureDefinition/no-basis-encounter> ;
-         fhir:reference [ fhir:v "StructureDefinition/no-basis-encounter" ]
+         fhir:link <urn:no-basis-auditevent/StructureDefinition/no-basis-encounter-auditevent> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-encounter-auditevent" ]
        ] ;
-       fhir:name [ fhir:v "no-basis-encounter" ] ;
+       fhir:name [ fhir:v "no-basis-encounter-auditevent" ] ;
        fhir:description [ fhir:v "The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

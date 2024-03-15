@@ -140,10 +140,10 @@
       },
       "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
       "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
-      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -158,9 +158,9 @@
       "uses" : {
       },
       "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
+      "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "no-basis-auditevent-practitionerrole",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
       "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "no-basis-auditevent-practitionerrole",
       "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)"
     },
     {
@@ -175,7 +175,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/dicm-405-mediatype",
@@ -203,7 +203,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.257"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -217,7 +217,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -233,7 +233,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
@@ -247,7 +247,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -264,7 +264,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -278,7 +278,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -294,7 +294,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -311,7 +311,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -325,7 +325,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
@@ -339,7 +339,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -355,11 +355,11 @@
       },
       "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
-      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
       "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -375,11 +375,11 @@
       },
       "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
-      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
       "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -393,23 +393,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
       "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
-      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
-      "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
-      "StructureDefinition-no-basis-auditevent.html" : "no-basis-auditevent",
-      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
-      "StructureDefinition-NoBasisPractitioner.html" : "no-basis-Practitioner (shadow)",
-      "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
       "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "no-basis-auditevent-practitionerrole",
+      "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent",
+      "StructureDefinition-no-basis-patient.html" : "no-basis-Patient (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
+      "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
+      "StructureDefinition-no-basis-auditevent.html" : "no-basis-auditevent",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter",
-      "StructureDefinition-no-basis-patient.html" : "no-basis-Patient (shadow)"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent",
+      "StructureDefinition-NoBasisPractitioner.html" : "no-basis-Practitioner (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -458,8 +458,8 @@
       },
       "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -566,10 +566,10 @@
       },
       "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
       "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
-      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participation-role-type",
@@ -640,11 +640,11 @@
       },
       "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
-      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
       "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -700,7 +700,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -714,7 +714,7 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -757,7 +757,7 @@
       "sources" : ["2.16.840.1.113883.1.11.13955"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
@@ -771,7 +771,7 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-encounter.html" : "no-basis-encounter"
+      "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",

@@ -1,6 +1,6 @@
 {
   "package": "AuditEventTokenMappingNorwayID",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -110,8 +110,8 @@
     ],
     "Encounter": [
       {
-        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-encounter",
-        "title": "no-basis-encounter"
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-encounter-auditevent",
+        "title": "no-basis-encounter-auditevent"
       }
     ],
     "Patient": [
@@ -134,10 +134,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
-      "AuditEvent.contained.contained",
-      "Practitioner"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"

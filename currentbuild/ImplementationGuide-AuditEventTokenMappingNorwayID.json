@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>urnnobasisauditevent</h2><p>The official URL for this implementation guide is: </p><pre>urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   },
   "url" : "urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID",
-  "version" : "0.8.2",
+  "version" : "0.8.3",
   "name" : "urnnobasisauditevent",
   "title" : "NO Basis AuditEvent IG Trust Framework",
   "status" : "draft",
-  "date" : "2024-03-15T06:42:57+00:00",
+  "date" : "2024-03-15T09:00:42+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",
@@ -677,7 +677,7 @@
         "reference" : "StructureDefinition/no-basis-auditevent"
       },
       "name" : "no-basis-auditevent",
-      "description" : "This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (\"NHN felles tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.",
+      "description" : "This is the main profile that describes the mapping [Norwegian Trust Framework attributes (\"Tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.",
       "exampleBoolean" : false
     },
     {
@@ -794,9 +794,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/no-basis-encounter"
+        "reference" : "StructureDefinition/no-basis-encounter-auditevent"
       },
-      "name" : "no-basis-encounter",
+      "name" : "no-basis-encounter-auditevent",
       "description" : "The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*",
       "exampleBoolean" : false
     },

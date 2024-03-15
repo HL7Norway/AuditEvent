@@ -50,7 +50,7 @@ classDiagram
      <<profile>>
      practitioner.point-of-care
    }
-   class no-basis-encounter {
+   class no-basis-encounter-auditevent {
      <<profile>>
      care-relation.healthcare-service
    }
@@ -68,6 +68,7 @@ classDiagram
      patient.department
    }
 
+
    AuditEvent <|-- no-basis-auditevent 
    no-basis-PractitionerRole <|-- no-basis-auditevent-practitionerrole 
    no-basis-Practitioner <|-- no-basis-auditevent-practitioner
@@ -81,22 +82,24 @@ classDiagram
    Location <|-- no-basis-Location
    no-basis-Patient <|-- no-basis-patient-auditevent
    Patient <|-- no-basis-Patient
-   Encounter <|-- no-basis-encounter
+   Encounter <|-- no-basis-encounter-auditevent
    PractitionerRole <|-- no-basis-PractitionerRole
    Organization <|-- no-basis-Organization
    Practitioner <|--  no-basis-Practitioner
+  
+   
 
 
     no-basis-auditevent-practitioner-pointofcare-organization *-- no-basis-auditevent-practitioner-pointofcare : managingOrganization
     no-basis-auditevent-practitioner-legalentity *-- no-basis-auditevent-department : partOf
-    no-basis-auditevent-encounter-pointofcare *-- no-basis-encounter : location.location
-    no-basis-auditevent-encounter-serviceprovider-organization *-- no-basis-encounter: serviceProvider
+    no-basis-auditevent-encounter-pointofcare *-- no-basis-encounter-auditevent : location.location
+    no-basis-auditevent-encounter-serviceprovider-organization *-- no-basis-encounter-auditevent: serviceProvider
     no-basis-auditevent-encounter-pointofcare-organization *-- no-basis-auditevent-encounter-pointofcare : managingOrganization
     no-basis-auditevent-practitioner-pointofcare *-- no-basis-auditevent-practitionerrole  : location
     no-basis-auditevent-department *-- no-basis-auditevent-practitionerrole  : organization
     no-basis-auditevent-practitioner *-- no-basis-auditevent-practitionerrole  : practitioner
     no-basis-patient-auditevent *-- no-basis-auditevent  : _patient
-    no-basis-encounter *-- no-basis-auditevent  : _encounter
+    no-basis-encounter-auditevent *-- no-basis-auditevent  : _encounter
     no-basis-auditevent-practitionerrole  *-- no-basis-auditevent  : agent.who
     
    
@@ -116,8 +119,8 @@ classDiagram
     link no-basis-auditevent-practitioner-legalentity "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html"
     link no-basis-auditevent-practitioner-pointofcare "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html"
     link no-basis-auditevent-practitioner-pointofcare-organization "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html"
-    link no-basis-encounter "StructureDefinition-AuditEventNorwayEncounter.html"
-    link no-basis-patient-auditevent "StructureDefinition-AuditEventNorwayPatient.html"
+    link no-basis-encounter-auditevent "StructureDefinition-no-basis-encounter-auditevent.html"
+    link no-basis-patient-auditevent "StructureDefinition-no-basis-patient-auditevent.html"
     link no-basis-auditevent-encounter-pointofcare "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html"
     link no-basis-auditevent-encounter-pointofcare-organization "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html"
     link no-basis-auditevent-encounter-serviceprovider-organization "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html"
