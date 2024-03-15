@@ -9,18 +9,19 @@ Usage: #inline
 Instance: AuditEventNorwayPractitionerInstance2
 InstanceOf: AuditEventNorwayPractitioner
 Usage: #inline
-* identifier.system  = $FNR // practitioner:identifier:system"  // TODO: Norwegian national identity number or D number - constrain?
-* identifier.value  = "20086600138" //  "practitioner:identifier:id"
-* identifier.assigner.display = "https://www.skatteetaten.no"  // "practitioner:identifier:authority"
+* identifier[+].system  = $FNR // practitioner:identifier:system"  // TODO: Norwegian national identity number or D number - constrain?
+* identifier[=].value  = "20086600138" //  "practitioner:identifier:id"
+* identifier[=].assigner.display = "https://www.skatteetaten.no"  // "practitioner:identifier:authority"
+* identifier[=].type = #FNR
 * name.text = "August September" // "practitioner:identifier:name"
+* identifier[+].system = $HPR // practitioner:hpr-nr:system"
+* identifier[=].value =  "9144897" // "practitioner:hpr-nr:id"
+* identifier[=].assigner.display = "https://www.helsedirektoratet.no/" // "practitioner:hpr-nr:authority"
+* identifier[=].type = #HPR
 * qualification.code.coding.code = #LE //  "practitioner:authorization:code"
 * qualification.code.coding.system =   $KAT_HELSEPERSONELL // "practitioner:authorization:system"
 * qualification.code.coding.display = "Lege" // "practitioner:authorization:text"
 // * qualification.code.extension[_assigner].valueString = "https://www.helsedirektoratet.no/"  // "practitioner:authorization:assigner"  
-* extension[_HPRNumber]  // In other words: attribute exists, it must be mapped
-  * valueIdentifier.system =  $HPR // practitioner:hpr-nr:system"
-  * valueIdentifier.value =  "9144897" // "practitioner:hpr-nr:id"
-  * valueIdentifier.assigner.display = "https://www.helsedirektoratet.no/" // "practitioner:hpr-nr:authority"
 
 Instance: AuditEventNorwayPractitionerLegalEntityInstance2
 InstanceOf: AuditEventNorwayPractitionerLegalEntity

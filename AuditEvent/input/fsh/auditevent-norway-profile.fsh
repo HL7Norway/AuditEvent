@@ -56,8 +56,8 @@ NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each 
 
 Profile: AuditEventNorwayEncounter
 Parent: Encounter
-Id: no-basis-encounter
-Title: "no-basis-encounter"
+Id: no-basis-encounter-auditevent
+Title: "no-basis-encounter-auditevent"
 Description: """
 The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*
 """
@@ -150,9 +150,10 @@ Title: "no-basis-auditevent-practitioner"
 Description: """
 The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional.  
 """
-* identifier.system ^short = "practitioner:identifier:system"  // TODO: Norwegian national identity number or D number - constrain?
-* identifier.value ^short = "practitioner:identifier:id"
-* identifier.assigner.display  ^short = "practitioner:identifier:authority"
+* identifier ^short = "practitioner:identifier and practitioner:hpr-nr"
+* identifier.system ^short = "practitioner:identifier:system and practitioner:hpr-nr:system" 
+* identifier.value ^short = "practitioner:identifier:id and practitioner:hpr-nr:id"
+* identifier.assigner.display  ^short = "practitioner:identifier:authority and practitioner:hpr-nr:authority"
 * name.text ^short = "practitioner:identifier:name"
 * qualification.code.coding.code ^short = "practitioner:authorization:code"
 * qualification.code.coding.system ^short = "practitioner:authorization:system"
@@ -160,12 +161,12 @@ The national identity (practitioner:identifier and :name), HPR-number (practitio
 // * qualification.code.extension contains 
 //  CodeWithAssigner2 named _assigner 0..1 MS
 // * qualification.code.extension[_assigner].valueString ^short = "practitioner:authorization:assigner"  
-* extension contains
-    Identifier named _HPRNumber 0..1 MS 
-* extension[_HPRNumber] MS // In other words: attribute exists, it must be mapped
-  * valueIdentifier.system ^short = "practitioner:hpr-nr:system"
-  * valueIdentifier.value ^short = "practitioner:hpr-nr:id"
-  * valueIdentifier.assigner.display ^short = "practitioner:hpr-nr:authority"
+//* extension contains
+//    Identifier named _HPRNumber 0..1 MS 
+//* extension[_HPRNumber] MS // In other words: attribute exists, it must be mapped
+//  * valueIdentifier.system ^short = "practitioner:hpr-nr:system"
+//  * valueIdentifier.value ^short = "practitioner:hpr-nr:id"
+//  * valueIdentifier.assigner.display ^short = "practitioner:hpr-nr:authority"
 
 Profile: NoBasisPractitionerRole
 Parent: PractitionerRole
@@ -198,7 +199,7 @@ Parent:         AuditEvent
 Id: no-basis-auditevent
 Title:          "no-basis-auditevent"
 Description: """
-This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes ("NHN felles tillitsrammeverk")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.
+This is the main profile that describes the mapping [Norwegian Trust Framework attributes ("Tillitsrammeverk")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.
 """
 * agent.who only Reference(AuditEventNorwayPractitionerRole)
 * purposeOfEvent ^short = "care-relationship:purpose-of-use:code, :system and :text and care-relationship:purpose-of-use-details:code, :system and :text"
