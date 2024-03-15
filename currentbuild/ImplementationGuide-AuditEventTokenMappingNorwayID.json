@@ -3,14 +3,14 @@
   "id" : "AuditEventTokenMappingNorwayID",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AuditEventNorwayCommonTrustFramework</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>urnnobasisauditevent</h2><p>The official URL for this implementation guide is: </p><pre>urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   },
-  "url" : "urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID",
-  "version" : "0.8.1",
-  "name" : "AuditEventNorwayCommonTrustFramework",
-  "title" : "AuditEvent Implementation Guide Trust Framework (Norway)",
+  "url" : "urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID",
+  "version" : "0.8.2",
+  "name" : "urnnobasisauditevent",
+  "title" : "NO Basis AuditEvent IG Trust Framework",
   "status" : "draft",
-  "date" : "2024-03-12T11:58:51+00:00",
+  "date" : "2024-03-15T06:42:57+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",
@@ -149,7 +149,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "urn:AuditEventNorwayCommonTrustFramework/history.html"
+        "valueString" : "urn:no-basis-auditevent/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -428,7 +428,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "urn:AuditEventNorwayCommonTrustFramework/history.html"
+        "valueString" : "urn:no-basis-auditevent/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -612,150 +612,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/auditevent-norway-profile"
-      },
-      "name" : "AuditEventNorwayCommonTrustFramework",
-      "description" : "This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (\"NHN felles tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayEncounter"
-      },
-      "name" : "AuditEventNorwayEncounter",
-      "description" : "The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayEncounterPointOfCare"
-      },
-      "name" : "AuditEventNorwayEncounterPointOfCare",
-      "description" : "The encounter location with patients:point_of_care_patient:* mapping.\n\nPasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasienten behandles",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization"
-      },
-      "name" : "AuditEventNorwayEncounterPointOfCareOrganization",
-      "description" : "The encounter location organization for AuditEventNorway profile",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization"
-      },
-      "name" : "AuditEventNorwayEncounterServiceProviderOrganization  ",
-      "description" : "The service provider organization of auditevent encounter for AuditEventNorway profile.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPatient"
-      },
-      "name" : "AuditEventNorwayPatient",
-      "description" : "The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity\n\nNOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitioner"
-      },
-      "name" : "AuditEventNorwayPractitioner",
-      "description" : "The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitionerDepartment"
-      },
-      "name" : "AuditEventNorwayPractitionerDepartment",
-      "description" : "The health care department (practitioner:department) of the health care practitioner.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitionerLegalEntity"
-      },
-      "name" : "AuditEventNorwayPractitionerLegalEntity",
-      "description" : "The health care organization (practitioner:legal-entity) of the health care practitioner.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitionerPointOfCare"
-      },
-      "name" : "AuditEventNorwayPractitionerPointOfCare",
-      "description" : "The point of care location (practitioner:point-of-care) of health care practitioner.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization"
-      },
-      "name" : "AuditEventNorwayPractitionerPointOfCareOrganization",
-      "description" : "The point of care organization (practitioner:point-of-care) of health care practitioner.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AuditEventNorwayPractitionerRole"
-      },
-      "name" : "AuditEventNorwayPractitionerRole",
-      "description" : "The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -782,11 +638,11 @@
         "valueString" : "AuditEvent"
       }],
       "reference" : {
-        "reference" : "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance2"
+        "reference" : "AuditEvent/NOBasisAuditeventInstance2"
       },
       "name" : "GP example",
       "description" : "ENG: Example of GP as open document content.\nNO: Eksempelet hvor en fastlege åpner dokumentinnhold.",
-      "exampleCanonical" : "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"
+      "exampleCanonical" : "urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"
     },
     {
       "extension" : [{
@@ -794,11 +650,11 @@
         "valueString" : "AuditEvent"
       }],
       "reference" : {
-        "reference" : "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1"
+        "reference" : "AuditEvent/NOBasisAuditeventInstance1"
       },
       "name" : "Hospital example",
       "description" : "ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.\nNO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner",
-      "exampleCanonical" : "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"
+      "exampleCanonical" : "urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"
     },
     {
       "extension" : [{
@@ -806,11 +662,215 @@
         "valueString" : "AuditEvent"
       }],
       "reference" : {
-        "reference" : "AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance3"
+        "reference" : "AuditEvent/NOBasisAuditeventInstance3"
       },
       "name" : "Municipality example",
       "description" : "ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.\nNO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgang til et dokument i en annen virksomhet for å planlegge videre oppfølging av en pasient som mottar hjemmehjelpstjenester fra kommunen",
-      "exampleCanonical" : "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"
+      "exampleCanonical" : "urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-auditevent"
+      },
+      "name" : "no-basis-auditevent",
+      "description" : "This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (\"NHN felles tillitsrammeverk\")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerDepartment"
+      },
+      "name" : "no-basis-auditevent-department",
+      "description" : "The health care department (practitioner:department) of the health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayEncounterPointOfCare"
+      },
+      "name" : "no-basis-auditevent-encounter-pointofcare",
+      "description" : "The encounter location with patients:point_of_care_patient:* mapping.\n\nPasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasienten behandles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization"
+      },
+      "name" : "no-basis-auditevent-encounter-pointofcare-organization",
+      "description" : "The encounter location organization for AuditEventNorway profile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization"
+      },
+      "name" : "no-basis-auditevent-encounter-serviceprovider-organization",
+      "description" : "The service provider organization of auditevent encounter for AuditEventNorway profile.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitioner"
+      },
+      "name" : "no-basis-auditevent-practitioner",
+      "description" : "The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerLegalEntity"
+      },
+      "name" : "no-basis-auditevent-practitioner-legalentity",
+      "description" : "The health care organization (practitioner:legal-entity) of the health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerPointOfCare"
+      },
+      "name" : "no-basis-auditevent-practitioner-pointofcare",
+      "description" : "The point of care location (practitioner:point-of-care) of health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization"
+      },
+      "name" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "description" : "The point of care organization (practitioner:point-of-care) of health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AuditEventNorwayPractitionerRole"
+      },
+      "name" : "no-basis-auditevent-practitionerrole",
+      "description" : "The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-encounter"
+      },
+      "name" : "no-basis-encounter",
+      "description" : "The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-Location"
+      },
+      "name" : "no-basis-Location (shadow)",
+      "description" : "This is a shadow profile that will be replace by [no-basis-Location](https://simplifier.net/hl7norwayno-basis/nobasislocation)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-Organization"
+      },
+      "name" : "no-basis-Organization (shadow)",
+      "description" : "This is a shadow profile that will be replaced by [no-basis-Organization](https://simplifier.net/hl7norwayno-basis/nobasisorganization)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-patient"
+      },
+      "name" : "no-basis-Patient (shadow)",
+      "description" : "This should be replaced by [no-basis-Patient](https://simplifier.net/hl7norwayno-basis/nobasispatient)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-patient-auditevent"
+      },
+      "name" : "no-basis-patient-auditevent",
+      "description" : "The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity\n\nNOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NoBasisPractitioner"
+      },
+      "name" : "no-basis-Practitioner (shadow)",
+      "description" : "This is a shadow profile that should be replaced by [no-basis-Practitioner](https://simplifier.net/hl7norwayno-basis/nobasispractitioner)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-PractitionerRole"
+      },
+      "name" : "no-basis-PractitionerRole (shadow)",
+      "description" : "Shadow profile of no-basis-PractitionerRole that will be replaced by [no-basis-PractitionerRole](https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole)",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

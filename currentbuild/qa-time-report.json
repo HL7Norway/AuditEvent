@@ -1,387 +1,336 @@
 {
-  "date" : "Tue, 12 Mar, 2024 11:58:51 +0000",
+  "date" : "Fri, 15 Mar, 2024 06:42:57 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-AuditEventTokenMappingNorwayID.json",
-      "size" : 8919,
+      "size" : 10529,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 38,
+          "start" : 40,
           "length" : 11
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 38,
-          "length" : 4
+          "start" : 41,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 29
+          "start" : 41,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 597
-        },
-        {
-          "activity" : "generate1",
           "start" : 44,
-          "length" : 111
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 65
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 3
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/AuditEvent-AuditEventNorwayCommonTrustFrameworkInstance1.json",
-      "size" : 9346,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 38,
-          "length" : 20
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 38,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 485
-        },
-        {
-          "activity" : "validate",
-          "start" : 43,
-          "length" : 317
-        },
-        {
-          "activity" : "generate1",
-          "start" : 44,
-          "length" : 104
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 60
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/AuditEvent-AuditEventNorwayCommonTrustFrameworkInstance2.json",
-      "size" : 7836,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 38,
-          "length" : 11
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 38,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 164
+          "length" : 488
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 43,
+          "start" : 45,
           "length" : 1
         },
         {
-          "activity" : "validate",
-          "start" : 43,
-          "length" : 52
-        },
-        {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 89
+          "start" : 46,
+          "length" : 115
         },
         {
           "activity" : "generate2",
-          "start" : 48,
-          "length" : 39
+          "start" : 51,
+          "length" : 79
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 76,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/AuditEvent-AuditEventNorwayCommonTrustFrameworkInstance3.json",
-      "size" : 7161,
+      "name" : "fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1.json",
+      "size" : 9080,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 3
+          "start" : 40,
+          "length" : 8
         },
         {
           "activity" : "load-configure",
-          "start" : 38,
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 40,
           "length" : 1
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 38,
+          "start" : 41,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 115
+          "start" : 41,
+          "length" : 432
         },
         {
           "activity" : "validate",
-          "start" : 43,
-          "length" : 175
+          "start" : 45,
+          "length" : 361
         },
         {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 76
+          "start" : 46,
+          "length" : 100
         },
         {
           "activity" : "generate2",
-          "start" : 48,
-          "length" : 32
+          "start" : 51,
+          "length" : 78
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance2.json",
+      "size" : 7604,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 126
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 47
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 80
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 45
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance3.json",
+      "size" : 6946,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 101
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 203
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 66
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 41
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventEncounterExtension.json",
-      "size" : 1762,
+      "size" : 1704,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 38,
-          "length" : 11
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 10
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 31
-        },
-        {
-          "activity" : "validate",
           "start" : 40,
-          "length" : 167
-        },
-        {
-          "activity" : "generate1",
-          "start" : 44,
-          "length" : 72
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 923
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 59,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayEncounter.json",
-      "size" : 2638,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 38,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 38,
           "length" : 5
         },
         {
+          "activity" : "load-configure",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 12
+        },
+        {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 153
+          "start" : 40,
+          "length" : 11
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 31
+          "start" : 41,
+          "length" : 23
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 559
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 43,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 43,
-          "length" : 2
+          "start" : 42,
+          "length" : 156
         },
         {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 482
+          "start" : 46,
+          "length" : 54
         },
         {
           "activity" : "generate2",
-          "start" : 49,
-          "length" : 1180
+          "start" : 51,
+          "length" : 902
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 10
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 70,
-          "length" : 1
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
+          "start" : 67,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayEncounterPointOfCare.json",
-      "size" : 1413,
+      "size" : 1397,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
+          "start" : 40,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 38,
-          "length" : 2
+          "start" : 40,
+          "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 30
+          "start" : 40,
+          "length" : 116
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 15
+          "start" : 41,
+          "length" : 9
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 166
+          "start" : 42,
+          "length" : 300
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 181
+          "start" : 46,
+          "length" : 195
         },
         {
           "activity" : "generate2",
-          "start" : 51,
-          "length" : 318
+          "start" : 52,
+          "length" : 733
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 5
+          "start" : 67,
+          "length" : 3
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 70,
+          "start" : 76,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.json",
-      "size" : 2007,
+      "size" : 2009,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 2
+          "start" : 40,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 38,
+          "start" : 40,
           "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 32
+          "start" : 40,
+          "length" : 55
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 18
+          "start" : 41,
+          "length" : 12
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 212
+          "start" : 42,
+          "length" : 231
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 43,
+          "start" : 45,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 45,
-          "length" : 250
+          "start" : 46,
+          "length" : 268
         },
         {
           "activity" : "generate2",
-          "start" : 51,
-          "length" : 412
+          "start" : 53,
+          "length" : 564
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 6
+          "start" : 67,
+          "length" : 4
         }
       ]
     },
@@ -391,563 +340,889 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 3
+          "start" : 40,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 38,
+          "start" : 40,
           "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 29
+          "start" : 40,
+          "length" : 39
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 18
+          "start" : 41,
+          "length" : 11
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 162
-        },
-        {
-          "activity" : "generate1",
-          "start" : 45,
-          "length" : 207
-        },
-        {
-          "activity" : "generate2",
-          "start" : 51,
-          "length" : 427
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 6
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPatient.json",
-      "size" : 2046,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 38,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 38,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 61
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 20
-        },
-        {
-          "activity" : "validate",
-          "start" : 41,
-          "length" : 221
+          "start" : 42,
+          "length" : 168
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 43,
+          "start" : 45,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 45,
-          "length" : 266
+          "start" : 47,
+          "length" : 249
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 314
+          "start" : 53,
+          "length" : 418
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 9
+          "start" : 67,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 76,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitioner.json",
-      "size" : 3749,
+      "size" : 3747,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 2
+          "start" : 40,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 38,
-          "length" : 5
+          "start" : 40,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 67
+          "start" : 40,
+          "length" : 97
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 64
+          "start" : 41,
+          "length" : 47
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 289
+          "start" : 43,
+          "length" : 305
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 45,
-          "length" : 409
+          "start" : 47,
+          "length" : 405
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 559
+          "start" : 54,
+          "length" : 729
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 12
+          "start" : 67,
+          "length" : 8
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 70,
+          "start" : 76,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerDepartment.json",
-      "size" : 2545,
+      "size" : 2516,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 2
+          "start" : 40,
+          "length" : 4
         },
         {
           "activity" : "load-configure",
-          "start" : 38,
+          "start" : 40,
           "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 38,
+          "start" : 40,
           "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 60
+          "start" : 40,
+          "length" : 50
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 15
+          "start" : 42,
+          "length" : 19
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 139
+          "start" : 43,
+          "length" : 219
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 43,
+          "start" : 45,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 196
-        },
-        {
-          "activity" : "generate2",
-          "start" : 53,
+          "start" : 47,
           "length" : 287
         },
         {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 350
+        },
+        {
           "activity" : "generateValidationPack",
-          "start" : 63,
+          "start" : 67,
           "length" : 4
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerLegalEntity.json",
-      "size" : 1968,
+      "size" : 1969,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 38,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 26
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 16
-        },
-        {
-          "activity" : "validate",
-          "start" : 41,
-          "length" : 116
-        },
-        {
-          "activity" : "generate1",
-          "start" : 46,
-          "length" : 210
-        },
-        {
-          "activity" : "generate2",
-          "start" : 53,
-          "length" : 309
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 7
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerPointOfCare.json",
-      "size" : 1338,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 38,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 38,
+          "start" : 40,
           "length" : 4
         },
         {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 5
+        },
+        {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 50
+          "start" : 40,
+          "length" : 26
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 38,
+          "start" : 41,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 39,
-          "length" : 12
+          "start" : 42,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 76
+          "start" : 43,
+          "length" : 107
         },
         {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 145
+          "start" : 48,
+          "length" : 207
         },
         {
           "activity" : "generate2",
-          "start" : 53,
-          "length" : 240
+          "start" : 55,
+          "length" : 364
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
+          "start" : 67,
           "length" : 5
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.json",
-      "size" : 2020,
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerPointOfCare.json",
+      "size" : 1322,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 4
+          "start" : 40,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 38,
-          "length" : 4
+          "start" : 40,
+          "length" : 3
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 26
+          "start" : 40,
+          "length" : 37
         },
         {
           "activity" : "generateNarratives",
-          "start" : 40,
-          "length" : 15
+          "start" : 42,
+          "length" : 11
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 79
+          "start" : 43,
+          "length" : 89
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 43,
+          "start" : 45,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 191
+          "start" : 48,
+          "length" : 179
         },
         {
           "activity" : "generate2",
-          "start" : 53,
-          "length" : 274
+          "start" : 55,
+          "length" : 256
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 12
+          "start" : 68,
+          "length" : 2
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 70,
+          "start" : 76,
           "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.json",
+      "size" : 2022,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 89
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 194
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 286
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 5
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventNorwayPractitionerRole.json",
-      "size" : 2431,
+      "size" : 2380,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 38,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 29
-        },
-        {
-          "activity" : "generateNarratives",
           "start" : 40,
-          "length" : 11
+          "length" : 4
         },
         {
-          "activity" : "validate",
-          "start" : 42,
-          "length" : 70
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 43,
+          "activity" : "scan",
+          "start" : 40,
           "length" : 1
         },
         {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 62
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 73
+        },
+        {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 149
+          "start" : 48,
+          "length" : 150
         },
         {
           "activity" : "generate2",
-          "start" : 54,
-          "length" : 333
+          "start" : 56,
+          "length" : 238
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
-          "length" : 3
+          "start" : 68,
+          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-AuditEventPatientExtension.json",
-      "size" : 1750,
+      "size" : 1703,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
-          "length" : 3
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 38,
-          "length" : 1
+          "start" : 40,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 38,
+          "start" : 40,
           "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 18
+          "start" : 41,
+          "length" : 17
         },
         {
           "activity" : "generateNarratives",
-          "start" : 40,
-          "length" : 7
+          "start" : 42,
+          "length" : 5
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 14
+          "start" : 43,
+          "length" : 17
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 50
+          "start" : 48,
+          "length" : 48
         },
         {
           "activity" : "generate2",
-          "start" : 54,
-          "length" : 104
+          "start" : 56,
+          "length" : 83
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
+          "start" : 68,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-CareRelationMetaData.json",
-      "size" : 3250,
+      "size" : 3216,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
+          "start" : 40,
           "length" : 4
         },
         {
+          "activity" : "load-configure",
+          "start" : 40,
+          "length" : 1
+        },
+        {
           "activity" : "load",
-          "start" : 38,
+          "start" : 40,
           "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 13
+          "start" : 41,
+          "length" : 9
         },
         {
           "activity" : "generateNarratives",
-          "start" : 40,
-          "length" : 14
+          "start" : 42,
+          "length" : 9
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 122
+          "start" : 43,
+          "length" : 65
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 130
+          "start" : 48,
+          "length" : 132
         },
         {
           "activity" : "generate2",
-          "start" : 54,
-          "length" : 190
+          "start" : 56,
+          "length" : 147
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 63,
+          "start" : 68,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-NoBasisPractitioner.json",
+      "size" : 1187,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 52
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 112
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 176
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-Location.json",
+      "size" : 933,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 74
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 142
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 277
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
           "length" : 3
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-auditevent-norway-profile.json",
-      "size" : 5812,
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-Organization.json",
+      "size" : 1189,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 38,
+          "start" : 40,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 38,
-          "length" : 5
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 68
+          "start" : 40,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 40,
-          "length" : 33
+          "start" : 42,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 315
+          "start" : 44,
+          "length" : 54
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 43,
+          "start" : 45,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 421
+          "start" : 49,
+          "length" : 116
         },
         {
           "activity" : "generate2",
-          "start" : 54,
-          "length" : 611
+          "start" : 57,
+          "length" : 192
         },
         {
           "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-PractitionerRole.json",
+      "size" : 1248,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 66
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 134
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 212
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-auditevent.json",
+      "size" : 5679,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 76
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 212
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 428
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 718
+        },
+        {
+          "activity" : "makeDependencies",
           "start" : 63,
-          "length" : 8
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 9
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 76,
+          "length" : 1
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 70,
+          "start" : 76,
           "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-encounter.json",
+      "size" : 2566,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 32
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 210
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 331
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 491
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-patient-auditevent.json",
+      "size" : 2055,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 31
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 158
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 50,
+          "length" : 262
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 403
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-patient.json",
+      "size" : 1220,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 117
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 50,
+          "length" : 195
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 266
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 68,
+          "length" : 4
         }
       ]
     }

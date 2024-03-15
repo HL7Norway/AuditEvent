@@ -1,24 +1,24 @@
 {
   "package": "AuditEventTokenMappingNorwayID",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventEncounterExtension",
+      "url": "urn:no-basis-auditevent/StructureDefinition/AuditEventEncounterExtension",
       "title": "AuditEventEncounterExtension",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventPatientExtension",
+      "url": "urn:no-basis-auditevent/StructureDefinition/AuditEventPatientExtension",
       "title": "AuditEventPatientExtension",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/CareRelationMetaData",
+      "url": "urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData",
       "title": "En extension for care relation meta data.",
       "types": [
         "string",
@@ -78,46 +78,50 @@
     }
   ],
   "profiles": {
-    "Encounter": [
-      {
-        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayEncounter",
-        "title": "AuditEventNorwayEncounter"
-      }
-    ],
     "Location": [
       {
-        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerPointOfCare",
-        "title": "AuditEventNorwayPractitionerPointOfCare"
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-Location",
+        "title": "no-basis-Location (shadow)"
       }
     ],
     "Organization": [
       {
-        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization",
-        "title": "AuditEventNorwayPractitionerPointOfCareOrganization"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPatient",
-        "title": "AuditEventNorwayPatient"
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-Organization",
+        "title": "no-basis-Organization (shadow)"
       }
     ],
     "Practitioner": [
       {
-        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitioner",
-        "title": "AuditEventNorwayPractitioner"
+        "url": "urn:no-basis-auditevent/StructureDefinition/NoBasisPractitioner",
+        "title": "no-basis-Practitioner (shadow)"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerRole",
-        "title": "AuditEventNorwayPractitionerRole"
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-PractitionerRole",
+        "title": "no-basis-PractitionerRole (shadow)"
       }
     ],
     "AuditEvent": [
       {
-        "url": "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile",
-        "title": "AuditEventNorwayCommonTrustFramework"
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent",
+        "title": "no-basis-auditevent"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-encounter",
+        "title": "no-basis-encounter"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-patient",
+        "title": "no-basis-Patient (shadow)"
+      },
+      {
+        "url": "urn:no-basis-auditevent/StructureDefinition/no-basis-patient-auditevent",
+        "title": "no-basis-patient-auditevent"
       }
     ]
   },
@@ -164,13 +168,13 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventEncounterExtension": [
+    "urn:no-basis-auditevent/StructureDefinition/AuditEventEncounterExtension": [
       "AuditEvent"
     ],
-    "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventPatientExtension": [
+    "urn:no-basis-auditevent/StructureDefinition/AuditEventPatientExtension": [
       "AuditEvent"
     ],
-    "urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/CareRelationMetaData": [
+    "urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData": [
       "AuditEvent"
     ]
   }

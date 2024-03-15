@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - AuditEvent Implementation Guide Trust Framework (Norway) v0.8.1</title>
+    <title>Artifacts Summary - NO Basis AuditEvent IG Trust Framework v0.8.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,9 +47,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">AuditEvent Implementation Guide Trust Framework (Norway)</span>
+          <p><span style="font-size:12pt;font-weight:bold">NO Basis AuditEvent IG Trust Framework</span>
             <br/>
-            <span style="display:inline-block;">0.8.1 - ci-build
+            <span style="display:inline-block;">0.8.2 - ci-build
 
 
             </span>
@@ -114,7 +114,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">AuditEvent Implementation Guide Trust Framework (Norway) - Local Development build (v0.8.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="urn:AuditEventNorwayCommonTrustFramework/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">NO Basis AuditEvent IG Trust Framework - Local Development build (v0.8.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="urn:no-basis-auditevent/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -148,8 +148,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-auditevent-norway-profile.html"
-                  title="StructureDefinition/auditevent-norway-profile">AuditEventNorwayCommonTrustFramework</a>
+               <a href="StructureDefinition-no-basis-Location.html"
+                  title="StructureDefinition/no-basis-Location">no-basis-Location (shadow)</a>
+            </td>
+            <td>
+<p>This is a shadow profile that will be replace by <a href="https://simplifier.net/hl7norwayno-basis/nobasislocation">no-basis-Location</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-basis-Organization.html"
+                  title="StructureDefinition/no-basis-Organization">no-basis-Organization (shadow)</a>
+            </td>
+            <td>
+<p>This is a shadow profile that will be replaced by <a href="https://simplifier.net/hl7norwayno-basis/nobasisorganization">no-basis-Organization</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-basis-patient.html"
+                  title="StructureDefinition/no-basis-patient">no-basis-Patient (shadow)</a>
+            </td>
+            <td>
+<p>This should be replaced by <a href="https://simplifier.net/hl7norwayno-basis/nobasispatient">no-basis-Patient</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoBasisPractitioner.html"
+                  title="StructureDefinition/NoBasisPractitioner">no-basis-Practitioner (shadow)</a>
+            </td>
+            <td>
+<p>This is a shadow profile that should be replaced by <a href="https://simplifier.net/hl7norwayno-basis/nobasispractitioner">no-basis-Practitioner</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-basis-PractitionerRole.html"
+                  title="StructureDefinition/no-basis-PractitionerRole">no-basis-PractitionerRole (shadow)</a>
+            </td>
+            <td>
+<p>Shadow profile of no-basis-PractitionerRole that will be replaced by <a href="https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole">no-basis-PractitionerRole</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-basis-auditevent.html"
+                  title="StructureDefinition/no-basis-auditevent">no-basis-auditevent</a>
             </td>
             <td>
 <p>This is the main profile that describes the mapping <a href="https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer">Norwegian Common Trust Framework attributes (“NHN felles tillitsrammeverk”)</a> to AuditEvent Resource.</p>
@@ -157,17 +202,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayEncounter.html"
-                  title="StructureDefinition/AuditEventNorwayEncounter">AuditEventNorwayEncounter</a>
+               <a href="StructureDefinition-AuditEventNorwayPractitionerDepartment.html"
+                  title="StructureDefinition/AuditEventNorwayPractitionerDepartment">no-basis-auditevent-department</a>
             </td>
             <td>
-<p>The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*</p>
+<p>The health care department (practitioner:department) of the health care practitioner.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayEncounterPointOfCare.html"
-                  title="StructureDefinition/AuditEventNorwayEncounterPointOfCare">AuditEventNorwayEncounterPointOfCare</a>
+                  title="StructureDefinition/AuditEventNorwayEncounterPointOfCare">no-basis-auditevent-encounter-pointofcare</a>
             </td>
             <td>
 <p>The encounter location with patients:point_of_care_patient:* mapping.</p>
@@ -178,7 +223,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html"
-                  title="StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization">AuditEventNorwayEncounterPointOfCareOrganization</a>
+                  title="StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization">no-basis-auditevent-encounter-pointofcare-organization</a>
             </td>
             <td>
 <p>The encounter location organization for AuditEventNorway profile</p>
@@ -187,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html"
-                  title="StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization">AuditEventNorwayEncounterServiceProviderOrganization  </a>
+                  title="StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization">no-basis-auditevent-encounter-serviceprovider-organization</a>
             </td>
             <td>
 <p>The service provider organization of auditevent encounter for AuditEventNorway profile.</p>
@@ -195,19 +240,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPatient.html"
-                  title="StructureDefinition/AuditEventNorwayPatient">AuditEventNorwayPatient</a>
-            </td>
-            <td>
-<p>The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity</p>
-
-<p>NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayPractitioner.html"
-                  title="StructureDefinition/AuditEventNorwayPractitioner">AuditEventNorwayPractitioner</a>
+                  title="StructureDefinition/AuditEventNorwayPractitioner">no-basis-auditevent-practitioner</a>
             </td>
             <td>
 <p>The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional.</p>
@@ -215,17 +249,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPractitionerDepartment.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerDepartment">AuditEventNorwayPractitionerDepartment</a>
-            </td>
-            <td>
-<p>The health care department (practitioner:department) of the health care practitioner.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerLegalEntity">AuditEventNorwayPractitionerLegalEntity</a>
+                  title="StructureDefinition/AuditEventNorwayPractitionerLegalEntity">no-basis-auditevent-practitioner-legalentity</a>
             </td>
             <td>
 <p>The health care organization (practitioner:legal-entity) of the health care practitioner.</p>
@@ -234,7 +259,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerPointOfCare">AuditEventNorwayPractitionerPointOfCare</a>
+                  title="StructureDefinition/AuditEventNorwayPractitionerPointOfCare">no-basis-auditevent-practitioner-pointofcare</a>
             </td>
             <td>
 <p>The point of care location (practitioner:point-of-care) of health care practitioner.</p>
@@ -243,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization">AuditEventNorwayPractitionerPointOfCareOrganization</a>
+                  title="StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization">no-basis-auditevent-practitioner-pointofcare-organization</a>
             </td>
             <td>
 <p>The point of care organization (practitioner:point-of-care) of health care practitioner.</p>
@@ -252,10 +277,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-AuditEventNorwayPractitionerRole.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerRole">AuditEventNorwayPractitionerRole</a>
+                  title="StructureDefinition/AuditEventNorwayPractitionerRole">no-basis-auditevent-practitionerrole</a>
             </td>
             <td>
 <p>The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-basis-encounter.html"
+                  title="StructureDefinition/no-basis-encounter">no-basis-encounter</a>
+            </td>
+            <td>
+<p>The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-basis-patient-auditevent.html"
+                  title="StructureDefinition/no-basis-patient-auditevent">no-basis-patient-auditevent</a>
+            </td>
+            <td>
+<p>The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity</p>
+
+<p>NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.</p>
 </td>
          </tr>
       </tbody>
@@ -303,8 +348,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="AuditEvent-AuditEventNorwayCommonTrustFrameworkInstance2.html"
-                  title="AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance2">GP example</a>
+               <a href="AuditEvent-NOBasisAuditeventInstance2.html"
+                  title="AuditEvent/NOBasisAuditeventInstance2">GP example</a>
             </td>
             <td>
 <p>ENG: Example of GP as open document content.
@@ -313,8 +358,8 @@ NO: Eksempelet hvor en fastlege åpner dokumentinnhold.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="AuditEvent-AuditEventNorwayCommonTrustFrameworkInstance1.html"
-                  title="AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1">Hospital example</a>
+               <a href="AuditEvent-NOBasisAuditeventInstance1.html"
+                  title="AuditEvent/NOBasisAuditeventInstance1">Hospital example</a>
             </td>
             <td>
 <p>ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.
@@ -323,8 +368,8 @@ NO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="AuditEvent-AuditEventNorwayCommonTrustFrameworkInstance3.html"
-                  title="AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance3">Municipality example</a>
+               <a href="AuditEvent-NOBasisAuditeventInstance3.html"
+                  title="AuditEvent/NOBasisAuditeventInstance3">Municipality example</a>
             </td>
             <td>
 <p>ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.
@@ -357,7 +402,7 @@ NO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgan
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventTokenMappingNorwayID#0.8.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 12, 2024 11:58+0000">2024-03-12</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventTokenMappingNorwayID#0.8.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 15, 2024 06:42+0000">2024-03-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

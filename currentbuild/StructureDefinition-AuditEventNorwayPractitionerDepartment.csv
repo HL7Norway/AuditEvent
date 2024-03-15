@@ -116,7 +116,7 @@ org-3:The telecom of an organization can never be of use 'home' {where(use = 'ho
 ","An address for the organization","An address for the organization.","Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.","May need to keep track of the organization's addresses for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.address",0,*,"org-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 org-2:An address of an organization can never be of use 'home' {where(use = 'home').empty()}","ORC-23?",".address","./PrimaryAddress and ./OtherAddresses"
-"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/AuditEventNorwayPractitionerLegalEntity]]}
+"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerLegalEntity]]}
 ","practitioner:legal-entity:*","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No equivalent in HL7 v2",".playedBy[classCode=Part].scoper","n/a"
 "Organization.contact","Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}

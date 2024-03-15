@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="AuditEventTokenMappingNorwayID"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AuditEventNorwayCommonTrustFramework</h2><p>The official URL for this implementation guide is: </p><pre>urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>urnnobasisauditevent</h2><p>The official URL for this implementation guide is: </p><pre>urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>
   </text>
-  <url value="urn:AuditEventNorwayCommonTrustFramework/ImplementationGuide/AuditEventTokenMappingNorwayID"/>
-  <version value="0.8.1"/>
-  <name value="AuditEventNorwayCommonTrustFramework"/>
-  <title value="AuditEvent Implementation Guide Trust Framework (Norway)"/>
+  <url value="urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID"/>
+  <version value="0.8.2"/>
+  <name value="urnnobasisauditevent"/>
+  <title value="NO Basis AuditEvent IG Trust Framework"/>
   <status value="draft"/>
-  <date value="2024-03-12T11:58:51+00:00"/>
+  <date value="2024-03-15T06:42:57+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -116,7 +116,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="urn:AuditEventNorwayCommonTrustFramework/history.html"/>
+        <valueString value="urn:no-basis-auditevent/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -319,7 +319,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="urn:AuditEventNorwayCommonTrustFramework/history.html"/>
+        <valueString value="urn:no-basis-auditevent/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -455,138 +455,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/auditevent-norway-profile"/>
-      </reference>
-      <name value="AuditEventNorwayCommonTrustFramework"/>
-      <description value="This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (&quot;NHN felles tillitsrammeverk&quot;)](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayEncounter"/>
-      </reference>
-      <name value="AuditEventNorwayEncounter"/>
-      <description value="The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayEncounterPointOfCare"/>
-      </reference>
-      <name value="AuditEventNorwayEncounterPointOfCare"/>
-      <description value="The encounter location with patients:point_of_care_patient:* mapping.&#xA;&#xA;Pasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasienten behandles"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization"/>
-      </reference>
-      <name value="AuditEventNorwayEncounterPointOfCareOrganization"/>
-      <description value="The encounter location organization for AuditEventNorway profile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization"/>
-      </reference>
-      <name value="AuditEventNorwayEncounterServiceProviderOrganization  "/>
-      <description value="The service provider organization of auditevent encounter for AuditEventNorway profile."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayPatient"/>
-      </reference>
-      <name value="AuditEventNorwayPatient"/>
-      <description value="The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity&#xA;&#xA;NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayPractitioner"/>
-      </reference>
-      <name value="AuditEventNorwayPractitioner"/>
-      <description value="The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayPractitionerDepartment"/>
-      </reference>
-      <name value="AuditEventNorwayPractitionerDepartment"/>
-      <description value="The health care department (practitioner:department) of the health care practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayPractitionerLegalEntity"/>
-      </reference>
-      <name value="AuditEventNorwayPractitionerLegalEntity"/>
-      <description value="The health care organization (practitioner:legal-entity) of the health care practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayPractitionerPointOfCare"/>
-      </reference>
-      <name value="AuditEventNorwayPractitionerPointOfCare"/>
-      <description value="The point of care location (practitioner:point-of-care) of health care practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization"/>
-      </reference>
-      <name value="AuditEventNorwayPractitionerPointOfCareOrganization"/>
-      <description value="The point of care organization (practitioner:point-of-care) of health care practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AuditEventNorwayPractitionerRole"/>
-      </reference>
-      <name value="AuditEventNorwayPractitionerRole"/>
-      <description value="The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -611,33 +479,220 @@
         <valueString value="AuditEvent"/>
       </extension>
       <reference>
-        <reference value="AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance2"/>
+        <reference value="AuditEvent/NOBasisAuditeventInstance2"/>
       </reference>
       <name value="GP example"/>
       <description value="ENG: Example of GP as open document content.&#xA;NO: Eksempelet hvor en fastlege åpner dokumentinnhold."/>
-      <exampleCanonical value="urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"/>
+      <exampleCanonical value="urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="AuditEvent"/>
       </extension>
       <reference>
-        <reference value="AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance1"/>
+        <reference value="AuditEvent/NOBasisAuditeventInstance1"/>
       </reference>
       <name value="Hospital example"/>
       <description value="ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.&#xA;NO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner"/>
-      <exampleCanonical value="urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"/>
+      <exampleCanonical value="urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="AuditEvent"/>
       </extension>
       <reference>
-        <reference value="AuditEvent/AuditEventNorwayCommonTrustFrameworkInstance3"/>
+        <reference value="AuditEvent/NOBasisAuditeventInstance3"/>
       </reference>
       <name value="Municipality example"/>
       <description value="ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.&#xA;NO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgang til et dokument i en annen virksomhet for å planlegge videre oppfølging av en pasient som mottar hjemmehjelpstjenester fra kommunen"/>
-      <exampleCanonical value="urn:AuditEventNorwayCommonTrustFramework/StructureDefinition/auditevent-norway-profile"/>
+      <exampleCanonical value="urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-auditevent"/>
+      </reference>
+      <name value="no-basis-auditevent"/>
+      <description value="This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes (&quot;NHN felles tillitsrammeverk&quot;)](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerDepartment"/>
+      </reference>
+      <name value="no-basis-auditevent-department"/>
+      <description value="The health care department (practitioner:department) of the health care practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayEncounterPointOfCare"/>
+      </reference>
+      <name value="no-basis-auditevent-encounter-pointofcare"/>
+      <description value="The encounter location with patients:point_of_care_patient:* mapping.&#xA;&#xA;Pasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasienten behandles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization"/>
+      </reference>
+      <name value="no-basis-auditevent-encounter-pointofcare-organization"/>
+      <description value="The encounter location organization for AuditEventNorway profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization"/>
+      </reference>
+      <name value="no-basis-auditevent-encounter-serviceprovider-organization"/>
+      <description value="The service provider organization of auditevent encounter for AuditEventNorway profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitioner"/>
+      </reference>
+      <name value="no-basis-auditevent-practitioner"/>
+      <description value="The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerLegalEntity"/>
+      </reference>
+      <name value="no-basis-auditevent-practitioner-legalentity"/>
+      <description value="The health care organization (practitioner:legal-entity) of the health care practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerPointOfCare"/>
+      </reference>
+      <name value="no-basis-auditevent-practitioner-pointofcare"/>
+      <description value="The point of care location (practitioner:point-of-care) of health care practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization"/>
+      </reference>
+      <name value="no-basis-auditevent-practitioner-pointofcare-organization"/>
+      <description value="The point of care organization (practitioner:point-of-care) of health care practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEventNorwayPractitionerRole"/>
+      </reference>
+      <name value="no-basis-auditevent-practitionerrole"/>
+      <description value="The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-encounter"/>
+      </reference>
+      <name value="no-basis-encounter"/>
+      <description value="The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-Location"/>
+      </reference>
+      <name value="no-basis-Location (shadow)"/>
+      <description value="This is a shadow profile that will be replace by [no-basis-Location](https://simplifier.net/hl7norwayno-basis/nobasislocation)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-Organization"/>
+      </reference>
+      <name value="no-basis-Organization (shadow)"/>
+      <description value="This is a shadow profile that will be replaced by [no-basis-Organization](https://simplifier.net/hl7norwayno-basis/nobasisorganization)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-patient"/>
+      </reference>
+      <name value="no-basis-Patient (shadow)"/>
+      <description value="This should be replaced by [no-basis-Patient](https://simplifier.net/hl7norwayno-basis/nobasispatient)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-patient-auditevent"/>
+      </reference>
+      <name value="no-basis-patient-auditevent"/>
+      <description value="The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity&#xA;&#xA;NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NoBasisPractitioner"/>
+      </reference>
+      <name value="no-basis-Practitioner (shadow)"/>
+      <description value="This is a shadow profile that should be replaced by [no-basis-Practitioner](https://simplifier.net/hl7norwayno-basis/nobasispractitioner)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-PractitionerRole"/>
+      </reference>
+      <name value="no-basis-PractitionerRole (shadow)"/>
+      <description value="Shadow profile of no-basis-PractitionerRole that will be replaced by [no-basis-PractitionerRole](https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole)"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

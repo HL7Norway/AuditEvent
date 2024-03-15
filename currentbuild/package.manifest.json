@@ -1,6 +1,6 @@
 {
-  "version" : "0.8.1",
+  "version" : "0.8.2",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240312115812",
+  "date" : "20240315064216",
   "name" : "AuditEventTokenMappingNorwayID"
 }
