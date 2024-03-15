@@ -1,7 +1,7 @@
-# Implementation guide for AuditEvent for common trust framework in Norway ("felles tillitsrammeverk")
+# Implementation guide for AuditEvent for trust framework in Norway ("Tillitsrammeverk")
 
 ## Introduction
-This implementation guide describes the relationship between elements of HL7 FHIR AuditEvent and attributes defined in [Felles tillitsrammeverk](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#42-datamodell) in cross organization data sharing use cases, i.e. the mapping of attributes described in Felles tillitsrammeverk into HL7 FHIR AuditEvent elements. The guide is meant to complement other implementation guides that describes the actual audit event transactions (e.g. document read, referral created, etc.). 
+This implementation guide describes the relationship between elements of HL7 FHIR AuditEvent and attributes defined in [Tillitsrammeverk](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#42-datamodell) in cross organization data sharing use cases, i.e. the mapping of attributes described in Tillitsrammeverk into HL7 FHIR AuditEvent elements. The guide is meant to complement other implementation guides that describes the actual audit event transactions (e.g. document read, referral created, etc.). 
 
 ## Background
 In a scenario where a healthcare organization (such as a hospital, GPs, etc.) needs to access patient health data from another healthcare organization or national service, both the consumer and service provider organizations are legally required to maintain proper audit logs for future analysis. 
@@ -11,8 +11,7 @@ These audit logs necessitate some contextual information that describes the pati
 Only a small portion of the contextual information is transferred to the service provider in the form of attributes in a security token described in [Felles tillitsrammeverk](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#42-datamodell), typically JWT or SAML. That means the referenced resources metioned above need to be constructed based solely on the contents of a security token at the service provide side, and hence will be partially populated compared to the consumer provider side. In such scenarios the referenced resources will typically appear as contained resources within an AuditEvent Resource. 
 
 ## Next step
-Navigate to [AuditEventNorwayCommonTrustFramework](StructureDefinition-auditevent-norway-profile.html) profile.
-
+Navigate to [no-basis-auditevent](StructureDefinition-no-basis-auditevent.html) profile.
 
 ## You can also download:
 

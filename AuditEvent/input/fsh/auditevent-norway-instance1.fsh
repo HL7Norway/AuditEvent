@@ -91,14 +91,14 @@ Usage: #inline
 
 
 Instance: AuditEventNorwayPatientInstance1
-InstanceOf: AuditEventNorwayPatient
+InstanceOf: NOBasisAuditeventPatient
 Usage: #inline
 * identifier.id = "05076600324" // "patients:identifier:id"
 * identifier.system = $FNR // "patients:identifier:system"
 * identifier.assigner.display =  "https://www.skatteetaten.no" // "patients:identifier:authority"
 
-Instance: AuditEventNorwayCommonTrustFrameworkInstance1
-InstanceOf: AuditEventNorwayCommonTrustFramework
+Instance: NOBasisAuditeventInstance1
+InstanceOf: NOBasisAuditevent
 Title: "Hospital example"
 Description: """
 ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.

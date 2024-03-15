@@ -65,14 +65,14 @@ Usage: #inline
   
 
 Instance: AuditEventNorwayPatientInstance3
-InstanceOf: AuditEventNorwayPatient
+InstanceOf: NOBasisAuditeventPatient
 Usage: #inline
 * identifier.id = "05076600324" // "patients:identifier:id"
 * identifier.system = $FNR // "patients:identifier:system"
 * identifier.assigner.display =  "https://www.skatteetaten.no" // "patients:identifier:authority"
 
-Instance: AuditEventNorwayCommonTrustFrameworkInstance3
-InstanceOf: AuditEventNorwayCommonTrustFramework
+Instance: NOBasisAuditeventInstance3
+InstanceOf: NOBasisAuditevent
 Title: "Municipality example"
 Description: """
 ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.

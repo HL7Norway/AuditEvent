@@ -1,6 +1,6 @@
 Profile: AuditEventNorwayEncounterServiceProviderOrganization
-Parent: Organization
-Title: "AuditEventNorwayEncounterServiceProviderOrganization  "
+Parent: NoBasisOrganization
+Title: "no-basis-auditevent-encounter-serviceprovider-organization"
 Description: "The service provider organization of auditevent encounter for AuditEventNorway profile."
 * identifier ^short = "patients:department:id, :system and :authority"
 * identifier.id ^short = "patients:department:id"
@@ -10,8 +10,8 @@ Description: "The service provider organization of auditevent encounter for Audi
 
 
 Profile: AuditEventNorwayEncounterPointOfCareOrganization
-Parent: Organization
-Title: "AuditEventNorwayEncounterPointOfCareOrganization"
+Parent: NoBasisOrganization
+Title: "no-basis-auditevent-encounter-pointofcare-organization"
 Description: "The encounter location organization for AuditEventNorway profile"
 * identifier ^short = "patients:point_of_care_patient:id, :system and :authority"
 * identifier.id ^short = "patients:point_of_care_patient:id"
@@ -20,8 +20,8 @@ Description: "The encounter location organization for AuditEventNorway profile"
 * name ^short = "patients:point_of_care_patient:name"
 
 Profile: AuditEventNorwayEncounterPointOfCare
-Parent: Location
-Title: "AuditEventNorwayEncounterPointOfCare"
+Parent: NOBasisLocation
+Title: "no-basis-auditevent-encounter-pointofcare"
 Description: """
 The encounter location with patients:point_of_care_patient:* mapping.
 
@@ -30,9 +30,19 @@ Pasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasi
 * managingOrganization ^short = "patients:point_of_care_patient:*"
 * managingOrganization only Reference(AuditEventNorwayEncounterPointOfCareOrganization)
 
-Profile: AuditEventNorwayPatient
+
+Profile: NOBasisPatient
 Parent: Patient
-Title: "AuditEventNorwayPatient"
+Id: no-basis-patient
+Title: "no-basis-Patient (shadow)"
+Description: """
+This should be replaced by [no-basis-Patient](https://simplifier.net/hl7norwayno-basis/nobasispatient)
+"""
+
+Profile: NOBasisAuditeventPatient
+Parent: NOBasisPatient
+Id: no-basis-patient-auditevent
+Title: "no-basis-patient-auditevent"
 Description: """
 The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity
 
@@ -46,7 +56,8 @@ NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each 
 
 Profile: AuditEventNorwayEncounter
 Parent: Encounter
-Title: "AuditEventNorwayEncounter"
+Id: no-basis-encounter
+Title: "no-basis-encounter"
 Description: """
 The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*
 """
@@ -64,8 +75,8 @@ The encounter associated with audit event mapping of care-relation:healthcare-se
 
 
 Profile: AuditEventNorwayPractitionerPointOfCareOrganization
-Parent: Organization
-Title: "AuditEventNorwayPractitionerPointOfCareOrganization"
+Parent: NoBasisOrganization
+Title: "no-basis-auditevent-practitioner-pointofcare-organization"
 Description: """
 The point of care organization (practitioner:point-of-care) of health care practitioner.
 """
@@ -75,9 +86,17 @@ The point of care organization (practitioner:point-of-care) of health care pract
 * identifier.assigner.display ^short = "practitioner:point-of-care:authority"
 * name ^short = "practitioner:point-of-care:name"
 
-Profile: AuditEventNorwayPractitionerPointOfCare
+Profile: NOBasisLocation
 Parent: Location
-Title: "AuditEventNorwayPractitionerPointOfCare"
+Id: no-basis-Location
+Title: "no-basis-Location (shadow)"
+Description: """
+This is a shadow profile that will be replace by [no-basis-Location](https://simplifier.net/hl7norwayno-basis/nobasislocation)
+"""
+
+Profile: AuditEventNorwayPractitionerPointOfCare
+Parent: NOBasisLocation
+Title: "no-basis-auditevent-practitioner-pointofcare"
 Description: """
 The point of care location (practitioner:point-of-care) of health care practitioner.
 """
@@ -85,8 +104,8 @@ The point of care location (practitioner:point-of-care) of health care practitio
 * managingOrganization ^short = "practitioner:point-of-care"
 
 Profile: AuditEventNorwayPractitionerLegalEntity
-Parent: Organization
-Title: "AuditEventNorwayPractitionerLegalEntity"
+Parent: NoBasisOrganization
+Title: "no-basis-auditevent-practitioner-legalentity"
 Description: """
 The health care organization (practitioner:legal-entity) of the health care practitioner.
 """
@@ -96,9 +115,17 @@ The health care organization (practitioner:legal-entity) of the health care prac
 * identifier.assigner.display ^short = "practitioner:legal-entity:authority"
 * name ^short = "practitioner:legal-entity:name"
 
-Profile: AuditEventNorwayPractitionerDepartment
+Profile: NoBasisOrganization
 Parent: Organization
-Title: "AuditEventNorwayPractitionerDepartment"
+Id: no-basis-Organization
+Title: "no-basis-Organization (shadow)"
+Description: """
+This is a shadow profile that will be replaced by [no-basis-Organization](https://simplifier.net/hl7norwayno-basis/nobasisorganization)
+"""
+
+Profile: AuditEventNorwayPractitionerDepartment
+Parent: NoBasisOrganization
+Title: "no-basis-auditevent-department"
 Description: """
 The health care department (practitioner:department) of the health care practitioner.
 """
@@ -110,9 +137,16 @@ The health care department (practitioner:department) of the health care practiti
 * partOf only Reference(AuditEventNorwayPractitionerLegalEntity)
 * partOf ^short = "practitioner:legal-entity:*"
 
-Profile: AuditEventNorwayPractitioner
+Profile: NoBasisPractitioner
 Parent: Practitioner
-Title: "AuditEventNorwayPractitioner"
+Title: "no-basis-Practitioner (shadow)"
+Description: """
+This is a shadow profile that should be replaced by [no-basis-Practitioner](https://simplifier.net/hl7norwayno-basis/nobasispractitioner)
+"""
+
+Profile: AuditEventNorwayPractitioner
+Parent: NoBasisPractitioner
+Title: "no-basis-auditevent-practitioner"
 Description: """
 The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional.  
 """
@@ -133,9 +167,17 @@ The national identity (practitioner:identifier and :name), HPR-number (practitio
   * valueIdentifier.value ^short = "practitioner:hpr-nr:id"
   * valueIdentifier.assigner.display ^short = "practitioner:hpr-nr:authority"
 
-Profile: AuditEventNorwayPractitionerRole
+Profile: NoBasisPractitionerRole
 Parent: PractitionerRole
-Title: "AuditEventNorwayPractitionerRole"
+Id: no-basis-PractitionerRole
+Title: "no-basis-PractitionerRole (shadow)"
+Description: """
+Shadow profile of no-basis-PractitionerRole that will be replaced by [no-basis-PractitionerRole](https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole)
+"""
+
+Profile: AuditEventNorwayPractitionerRole
+Parent: NoBasisPractitionerRole
+Title: "no-basis-auditevent-practitionerrole"
 Description: """
 The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner.
 """
@@ -151,10 +193,10 @@ The consumer health organization (practitioner:legal-entity) and department affi
 //  * extension[id] ^short = "practitioner:department:id, :system, :authority"
 //  * extension[name] ^short = "practitioner:department:name"
 
-Profile:        AuditEventNorwayCommonTrustFramework
+Profile:        NOBasisAuditevent
 Parent:         AuditEvent
-Id: auditevent-norway-profile
-Title:          "AuditEventNorwayCommonTrustFramework"
+Id: no-basis-auditevent
+Title:          "no-basis-auditevent"
 Description: """
 This is the main profile that describes the mapping [Norwegian Common Trust Framework attributes ("NHN felles tillitsrammeverk")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.
 """
@@ -173,7 +215,6 @@ This is the main profile that describes the mapping [Norwegian Common Trust Fram
 	CareRelationMetaData named _careRelationMetaData 0..1 MS 
 //  CodeWithAssigner named _purpose-of-use 0..1 MS and
 //   AuditEventAuthorizationExtension named _authorization 0..* MS
-
 
 
 /*

@@ -57,14 +57,14 @@ Usage: #inline
 //* serviceProvider = Reference(AuditEventNorwayEncounterServiceProviderOrganizationInstance1)
 
 Instance: AuditEventNorwayPatientInstance2
-InstanceOf: AuditEventNorwayPatient
+InstanceOf: NOBasisAuditeventPatient
 Usage: #inline
 * identifier.id = "05076600324" // "patients:identifier:id"
 * identifier.system = $FNR // "patients:identifier:system"
 * identifier.assigner.display =  "https://www.skatteetaten.no" // "patients:identifier:authority"
 
-Instance: AuditEventNorwayCommonTrustFrameworkInstance2
-InstanceOf: AuditEventNorwayCommonTrustFramework
+Instance: NOBasisAuditeventInstance2
+InstanceOf: NOBasisAuditevent
 Title: "GP example"
 Description: """
 ENG: Example of GP as open document content.

@@ -13,78 +13,91 @@ classDiagram
    class Patient { <<resource>> }
    style Patient fill:#7CB9E8           
    class Encounter { <<resource>> }
-   style Encounter fill:#7CB9E8              
+   style Encounter fill:#7CB9E8 
+
+   class no-basis-Patient  {<<profile>>}
+   class no-basis-Location {<<profile>>}
+   class no-basis-PractitionerRole {<<profile>>}
+   class no-basis-Organization {<<profile>>}
+   class no-basis-Practitioner {<<profile>>}
   
-   class AuditEventNorwayCommonTrustFramework {
+               
+   class no-basis-auditevent {
      <<profile>>
      care-relation.purpose-of-use
      care-relation.purpose-of-use-details
      care-relation.decision-ref     
    }
-   class AuditEventNorwayPractitionerRole {<<profile>>}
-   class AuditEventNorwayPractitionerDepartment { 
+
+   class no-basis-auditevent-practitionerrole  {<<profile>>}
+   class no-basis-auditevent-department { 
      <<profile>>
      practitioner.department
    }   
-   class AuditEventNorwayPractitioner  {
+   class no-basis-auditevent-practitioner  {
      <<profile>>
      practitioner.identifier
      practitioner.hpr-nr
      practitioner.authorization
    }
 
-   class AuditEventNorwayPractitionerLegalEntity {
+   class no-basis-auditevent-practitioner-legalentity {
      <<profile>>
      practitioner.legal-entity
    }
-   class AuditEventNorwayPractitionerPointOfCare {<<profile>>}
-   class AuditEventNorwayPractitionerPointOfCareOrganization {
+   class no-basis-auditevent-practitioner-pointofcare {<<profile>>}
+   class no-basis-auditevent-practitioner-pointofcare-organization {
      <<profile>>
      practitioner.point-of-care
    }
-   class AuditEventNorwayEncounter {
+   class no-basis-encounter {
      <<profile>>
      care-relation.healthcare-service
    }
-   class AuditEventNorwayPatient {
+   class no-basis-patient-auditevent {
      <<profile>>
      patient.identifier
    }
-   class AuditEventNorwayEncounterPointOfCare {<<profile>>}
-   class AuditEventNorwayEncounterPointOfCareOrganization {
+   class no-basis-auditevent-encounter-pointofcare {<<profile>>}
+   class no-basis-auditevent-encounter-pointofcare-organization {
      <<profile>>
      patient.point-of-care     
    }
-   class AuditEventNorwayEncounterServiceProviderOrganization {
+   class no-basis-auditevent-encounter-serviceprovider-organization {
      <<profile>>
      patient.department
    }
 
-   AuditEvent <|-- AuditEventNorwayCommonTrustFramework 
-   PractitionerRole <|-- AuditEventNorwayPractitionerRole
-   Practitioner <|-- AuditEventNorwayPractitioner
-   Organization <|-- AuditEventNorwayPractitionerDepartment   
-   Organization <|-- AuditEventNorwayPractitionerLegalEntity
-   Organization <|-- AuditEventNorwayEncounterPointOfCareOrganization
-   Organization <|-- AuditEventNorwayPractitionerPointOfCareOrganization
-   Organization <|-- AuditEventNorwayEncounterServiceProviderOrganization
-   Location <|-- AuditEventNorwayEncounterPointOfCare
-   Location <|-- AuditEventNorwayPractitionerPointOfCare
-   Patient <|-- AuditEventNorwayPatient
-   Encounter <|-- AuditEventNorwayEncounter
+   AuditEvent <|-- no-basis-auditevent 
+   no-basis-PractitionerRole <|-- no-basis-auditevent-practitionerrole 
+   no-basis-Practitioner <|-- no-basis-auditevent-practitioner
+   no-basis-Organization <|-- no-basis-auditevent-department   
+   no-basis-Organization <|-- no-basis-auditevent-practitioner-legalentity
+   no-basis-Organization <|-- no-basis-auditevent-encounter-pointofcare-organization
+   no-basis-Organization <|-- no-basis-auditevent-practitioner-pointofcare-organization
+   no-basis-Organization <|-- no-basis-auditevent-encounter-serviceprovider-organization
+   no-basis-Location <|-- no-basis-auditevent-encounter-pointofcare
+   no-basis-Location <|-- no-basis-auditevent-practitioner-pointofcare
+   Location <|-- no-basis-Location
+   no-basis-Patient <|-- no-basis-patient-auditevent
+   Patient <|-- no-basis-Patient
+   Encounter <|-- no-basis-encounter
+   PractitionerRole <|-- no-basis-PractitionerRole
+   Organization <|-- no-basis-Organization
+   Practitioner <|--  no-basis-Practitioner
 
 
-    AuditEventNorwayPractitionerPointOfCareOrganization *-- AuditEventNorwayPractitionerPointOfCare : managingOrganization
-    AuditEventNorwayPractitionerLegalEntity *-- AuditEventNorwayPractitionerDepartment : partOf
-    AuditEventNorwayEncounterPointOfCare *-- AuditEventNorwayEncounter : location.location
-    AuditEventNorwayEncounterServiceProviderOrganization *-- AuditEventNorwayEncounter: serviceProvider
-    AuditEventNorwayEncounterPointOfCareOrganization *-- AuditEventNorwayEncounterPointOfCare : managingOrganization
-    AuditEventNorwayPractitionerPointOfCare *-- AuditEventNorwayPractitionerRole : location
-    AuditEventNorwayPractitionerDepartment *-- AuditEventNorwayPractitionerRole : organization
-    AuditEventNorwayPractitioner *-- AuditEventNorwayPractitionerRole : practitioner
-    AuditEventNorwayPatient *-- AuditEventNorwayCommonTrustFramework  : _patient
-    AuditEventNorwayEncounter *-- AuditEventNorwayCommonTrustFramework  : _encounter
-    AuditEventNorwayPractitionerRole *-- AuditEventNorwayCommonTrustFramework  : agent.who
+    no-basis-auditevent-practitioner-pointofcare-organization *-- no-basis-auditevent-practitioner-pointofcare : managingOrganization
+    no-basis-auditevent-practitioner-legalentity *-- no-basis-auditevent-department : partOf
+    no-basis-auditevent-encounter-pointofcare *-- no-basis-encounter : location.location
+    no-basis-auditevent-encounter-serviceprovider-organization *-- no-basis-encounter: serviceProvider
+    no-basis-auditevent-encounter-pointofcare-organization *-- no-basis-auditevent-encounter-pointofcare : managingOrganization
+    no-basis-auditevent-practitioner-pointofcare *-- no-basis-auditevent-practitionerrole  : location
+    no-basis-auditevent-department *-- no-basis-auditevent-practitionerrole  : organization
+    no-basis-auditevent-practitioner *-- no-basis-auditevent-practitionerrole  : practitioner
+    no-basis-patient-auditevent *-- no-basis-auditevent  : _patient
+    no-basis-encounter *-- no-basis-auditevent  : _encounter
+    no-basis-auditevent-practitionerrole  *-- no-basis-auditevent  : agent.who
     
    
 
@@ -96,17 +109,26 @@ classDiagram
     link Patient  "https://hl7.org/fhir/R4/patient.html" 
     link Encounter "https://hl7.org/fhir/R4/encounter.html" 
 
-    link AuditEventNorwayCommonTrustFramework "StructureDefinition-auditevent-norway-profile.html"
-    link AuditEventNorwayPractitionerRole "StructureDefinition-AuditEventNorwayPractitionerRole.html"
-    link AuditEventNorwayPractitionerDepartment "StructureDefinition-AuditEventNorwayPractitionerDepartment.html"
-    link AuditEventNorwayPractitioner "StructureDefinition-AuditEventNorwayPractitioner.html"
-    link AuditEventNorwayPractitionerLegalEntity "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html"
-    link AuditEventNorwayPractitionerPointOfCare "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html"
-    link AuditEventNorwayPractitionerPointOfCareOrganization "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html"
-    link AuditEventNorwayEncounter "StructureDefinition-AuditEventNorwayEncounter.html"
-    link AuditEventNorwayPatient "StructureDefinition-AuditEventNorwayPatient.html"
-    link AuditEventNorwayEncounterPointOfCare "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html"
-    link AuditEventNorwayEncounterPointOfCareOrganization "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html"
-    link AuditEventNorwayEncounterServiceProviderOrganization "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html"
+    link no-basis-auditevent "StructureDefinition-no-basis-auditevent.html"
+    link no-basis-auditevent-practitionerrole  "StructureDefinition-AuditEventNorwayPractitionerRole.html"
+    link no-basis-auditevent-department "StructureDefinition-AuditEventNorwayPractitionerDepartment.html"
+    link no-basis-auditevent-practitioner "StructureDefinition-AuditEventNorwayPractitioner.html"
+    link no-basis-auditevent-practitioner-legalentity "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html"
+    link no-basis-auditevent-practitioner-pointofcare "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html"
+    link no-basis-auditevent-practitioner-pointofcare-organization "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html"
+    link no-basis-encounter "StructureDefinition-AuditEventNorwayEncounter.html"
+    link no-basis-patient-auditevent "StructureDefinition-AuditEventNorwayPatient.html"
+    link no-basis-auditevent-encounter-pointofcare "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html"
+    link no-basis-auditevent-encounter-pointofcare-organization "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html"
+    link no-basis-auditevent-encounter-serviceprovider-organization "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html"
+    link no-basis-Patient "https://simplifier.net/hl7norwayno-basis/nobasispatient"
+    link no-basis-Location "https://simplifier.net/hl7norwayno-basis/nobasislocation"
+    link no-basis-PractitionerRole "https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole"
+    link no-basis-Organization "https://simplifier.net/hl7norwayno-basis/nobasisorganization"
+    link no-basis-Practitioner "https://simplifier.net/hl7norwayno-basis/nobasispractitioner"
+
+  
+  
+  
 
 
