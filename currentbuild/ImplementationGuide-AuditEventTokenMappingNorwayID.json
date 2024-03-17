@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>urnnobasisauditevent</h2><p>The official URL for this implementation guide is: </p><pre>urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   },
   "url" : "urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID",
-  "version" : "0.8.3",
+  "version" : "0.9.0",
   "name" : "urnnobasisauditevent",
-  "title" : "NO Basis AuditEvent IG Trust Framework",
+  "title" : "NO Basis AuditEvent IG Trust Framework (\"Nasjonalt tillitsrammeverk\")",
   "status" : "draft",
-  "date" : "2024-03-15T09:00:42+00:00",
+  "date" : "2024-03-17T09:59:20+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",
@@ -600,6 +600,30 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/no-basis-encounter-auditevent-servicetype"
+      },
+      "name" : "AuditEvent Encounter.servicetype valueset",
+      "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CareRelationMetaData"
+      },
+      "name" : "AuditEventCareRelationMetaData",
+      "description" : "This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -624,12 +648,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CareRelationMetaData"
+        "reference" : "CodeSystem/decisiontemplate"
       },
-      "name" : "En extension for care relation meta data.",
+      "name" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",
+      "description" : "Dette er maler med ulike begrunnelser som kan benyttes som grunnlag for tilgang til pasientens journal ved sykehus som benytter DIPS som journalsystem.\n\nEr definert her kun midlertidig. Vil bli flyttet til annen ala https://terminology.dips.com/decisiontemplate (under arbeid).",
       "exampleBoolean" : false
     },
     {
@@ -870,6 +895,18 @@
       },
       "name" : "no-basis-PractitionerRole (shadow)",
       "description" : "Shadow profile of no-basis-PractitionerRole that will be replaced by [no-basis-PractitionerRole](https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/no-basis-auditevent-purpose-of-event"
+      },
+      "name" : "PurposeOfEvent valueset",
+      "description" : "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/)",
       "exampleBoolean" : false
     }],
     "page" : {

@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "no-basis-encounter-auditevent-servicetype"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8655</code></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8663</code></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8451</code></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
+  fhir:name [ fhir:v "NO_basis_encounter_auditevent_servicetype"] ; # 
+  fhir:title [ fhir:v "AuditEvent Encounter.servicetype valueset"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-03-17T09:59:20+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Norway"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Norway" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/HL7Norway" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.8655"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.8663"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.8451"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

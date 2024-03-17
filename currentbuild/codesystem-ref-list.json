@@ -1,3 +1,15 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "urn:no-basis-auditevent/CodeSystem/decisiontemplate",
+      "version" : "0.9.0",
+      "status" : "draft",
+      "name" : "DIPSDecisionTemplate",
+      "title" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",
+      "description" : "Dette er maler med ulike begrunnelser som kan benyttes som grunnlag for tilgang til pasientens journal ved sykehus som benytter DIPS som journalsystem.\n\nEr definert her kun midlertidig. Vil bli flyttet til annen ala https://terminology.dips.com/decisiontemplate (under arbeid).",
+      "uses" : {
+      },
+      "ValueSet-no-basis-auditevent-purpose-of-event.html" : "PurposeOfEvent valueset"
+    }
+  ]
 }

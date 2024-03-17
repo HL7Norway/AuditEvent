@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "no-basis-encounter-auditevent-servicetype",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8655</code></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8663</code></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8451</code></li></ul></div>"
+  },
+  "url" : "urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype",
+  "version" : "0.9.0",
+  "name" : "NO_basis_encounter_auditevent_servicetype",
+  "title" : "AuditEvent Encounter.servicetype valueset",
+  "status" : "draft",
+  "date" : "2024-03-17T09:59:20+00:00",
+  "publisher" : "HL7 Norway",
+  "contact" : [{
+    "name" : "HL7 Norway",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/HL7Norway"
+    }]
+  }],
+  "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition.",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8655"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8663"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8451"
+    }]
+  }
+}

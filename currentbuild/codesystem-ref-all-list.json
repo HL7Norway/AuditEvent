@@ -11,10 +11,10 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
       "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-      "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code"
+      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -169,8 +169,8 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
-      "http://hl7.org/fhir/R4/valueset-audit-entity-type.html" : "Audit event entity type"
+      "http://hl7.org/fhir/R4/valueset-audit-entity-type.html" : "Audit event entity type",
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://hl7.org/fhir/restful-interaction",
@@ -350,8 +350,8 @@
       "description" : "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents",
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
+      "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -555,8 +555,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
@@ -609,8 +609,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://terminology.hl7.org/5.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "http://terminology.hl7.org/5.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "urn:ietf:bcp:47",
@@ -623,6 +623,17 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:no-basis-auditevent/CodeSystem/decisiontemplate",
+      "version" : "0.9.0",
+      "status" : "draft",
+      "name" : "DIPSDecisionTemplate",
+      "title" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",
+      "description" : "Dette er maler med ulike begrunnelser som kan benyttes som grunnlag for tilgang til pasientens journal ved sykehus som benytter DIPS som journalsystem.\n\nEr definert her kun midlertidig. Vil bli flyttet til annen ala https://terminology.dips.com/decisiontemplate (under arbeid).",
+      "uses" : {
+      },
+      "ValueSet-no-basis-auditevent-purpose-of-event.html" : "PurposeOfEvent valueset"
     }
   ]
 }

@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>urnnobasisauditevent</h2><p>The official URL for this implementation guide is: </p><pre>urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.8.3"] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
   fhir:name [ fhir:v "urnnobasisauditevent"] ; # 
-  fhir:title [ fhir:v "NO Basis AuditEvent IG Trust Framework"] ; # 
+  fhir:title [ fhir:v "NO Basis AuditEvent IG Trust Framework (\"Nasjonalt tillitsrammeverk\")"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-15T09:00:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-17T09:59:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -512,6 +512,30 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype> ;
+         fhir:reference [ fhir:v "ValueSet/no-basis-encounter-auditevent-servicetype" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEvent Encounter.servicetype valueset" ] ;
+       fhir:description [ fhir:v "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData> ;
+         fhir:reference [ fhir:v "StructureDefinition/CareRelationMetaData" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEventCareRelationMetaData" ] ;
+       fhir:description [ fhir:v "This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -536,13 +560,14 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData> ;
-         fhir:reference [ fhir:v "StructureDefinition/CareRelationMetaData" ]
+         fhir:link <urn:no-basis-auditevent/CodeSystem/decisiontemplate> ;
+         fhir:reference [ fhir:v "CodeSystem/decisiontemplate" ]
        ] ;
-       fhir:name [ fhir:v "En extension for care relation meta data." ] ;
+       fhir:name [ fhir:v "DIPS decision template codes used as basis of care relation between health care personel and patient." ] ;
+       fhir:description [ fhir:v "Dette er maler med ulike begrunnelser som kan benyttes som grunnlag for tilgang til pasientens journal ved sykehus som benytter DIPS som journalsystem.\n\nEr definert her kun midlertidig. Vil bli flyttet til annen ala https://terminology.dips.com/decisiontemplate (under arbeid)." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -792,6 +817,18 @@
        ] ;
        fhir:name [ fhir:v "no-basis-PractitionerRole (shadow)" ] ;
        fhir:description [ fhir:v "Shadow profile of no-basis-PractitionerRole that will be replaced by [no-basis-PractitionerRole](https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event> ;
+         fhir:reference [ fhir:v "ValueSet/no-basis-auditevent-purpose-of-event" ]
+       ] ;
+       fhir:name [ fhir:v "PurposeOfEvent valueset" ] ;
+       fhir:description [ fhir:v "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

@@ -33,56 +33,70 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AuditEvent.extension:_careRelationMetaData","AuditEvent.extension","_careRelationMetaData","","",0,1,"Y","","","Extension {[CanonicalType[urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData]]} {[]}
-","care-relationship:decision-ref:id, :description, :user-selected","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","toa, care-relationship:decision-ref:id, :description, :user-selected","This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AuditEvent.extension:_careRelationMetaData.id","AuditEvent.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"AuditEvent.extension:_careRelationMetaData.extension","AuditEvent.extension.extension","","","",3,*,"","","","Extension {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension","AuditEvent.extension.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AuditEvent.extension:_careRelationMetaData.extension:id","AuditEvent.extension.extension","id","","",1,1,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-id","AuditEvent.extension.extension","decision-ref-id","","",0,1,"","","","Extension {[]} {[]}
+","care-relationship:decision-ref:id","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AuditEvent.extension:_careRelationMetaData.extension:id.id","AuditEvent.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-id.id","AuditEvent.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"AuditEvent.extension:_careRelationMetaData.extension:id.extension","AuditEvent.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-id.extension","AuditEvent.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AuditEvent.extension:_careRelationMetaData.extension:id.url","AuditEvent.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""id""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"AuditEvent.extension:_careRelationMetaData.extension:id.value[x]","AuditEvent.extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-id.url","AuditEvent.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""decision-ref-id""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-id.value[x]","AuditEvent.extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
 ","care-relationship:decision-ref:id","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"AuditEvent.extension:_careRelationMetaData.extension:description","AuditEvent.extension.extension","description","","",1,1,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-description","AuditEvent.extension.extension","decision-ref-description","","",0,1,"","","","Extension {[]} {[]}
+","care-relationship:decision-ref:description","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AuditEvent.extension:_careRelationMetaData.extension:description.id","AuditEvent.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-description.id","AuditEvent.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"AuditEvent.extension:_careRelationMetaData.extension:description.extension","AuditEvent.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-description.extension","AuditEvent.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AuditEvent.extension:_careRelationMetaData.extension:description.url","AuditEvent.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""description""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"AuditEvent.extension:_careRelationMetaData.extension:description.value[x]","AuditEvent.extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-description.url","AuditEvent.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""decision-ref-description""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-description.value[x]","AuditEvent.extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
 ","care-relationship:decision-ref:description","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"AuditEvent.extension:_careRelationMetaData.extension:user-selected","AuditEvent.extension.extension","user-selected","","",1,1,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-user-selected","AuditEvent.extension.extension","decision-ref-user-selected","","",0,1,"","","","Extension {[]} {[]}
+","care-relationship:decision-ref:user-selected","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AuditEvent.extension:_careRelationMetaData.extension:user-selected.id","AuditEvent.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-user-selected.id","AuditEvent.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"AuditEvent.extension:_careRelationMetaData.extension:user-selected.extension","AuditEvent.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-user-selected.extension","AuditEvent.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AuditEvent.extension:_careRelationMetaData.extension:user-selected.url","AuditEvent.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""user-selected""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"AuditEvent.extension:_careRelationMetaData.extension:user-selected.value[x]","AuditEvent.extension.extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-user-selected.url","AuditEvent.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""decision-ref-user-selected""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"AuditEvent.extension:_careRelationMetaData.extension:decision-ref-user-selected.value[x]","AuditEvent.extension.extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
 ","care-relationship:decision-ref:user-selected","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"AuditEvent.extension:_careRelationMetaData.extension:toa","AuditEvent.extension.extension","toa","","",1,1,"","","","Extension {[]} {[]}
+","toa","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"AuditEvent.extension:_careRelationMetaData.extension:toa.id","AuditEvent.extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"AuditEvent.extension:_careRelationMetaData.extension:toa.extension","AuditEvent.extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"AuditEvent.extension:_careRelationMetaData.extension:toa.url","AuditEvent.extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""toa""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"AuditEvent.extension:_careRelationMetaData.extension:toa.value[x]","AuditEvent.extension.extension.value[x]","","","",0,1,"","","","unsignedInt {[]} {[]}
+","toa","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "AuditEvent.extension:_careRelationMetaData.url","AuditEvent.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
@@ -117,7 +131,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Description of the event outcome","A free text description of the outcome of the event.","","","","","","","","","",,,,,"",,,,"AuditEvent.outcomeDesc",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=OUT].target.text","EventOutcomeDescription","FiveWs.what[x]"
 "AuditEvent.purposeOfEvent","AuditEvent.purposeOfEvent","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","care-relationship:purpose-of-use:code, :system and :text and care-relationship:purpose-of-use-details:code, :system and :text","The purposeOfUse (reason) that was used during the event being recorded.","Use AuditEvent.agent.purposeOfUse when you know that it is specific to the agent, otherwise use AuditEvent.purposeOfEvent. For example, during a machine-to-machine transfer it might not be obvious to the audit system who caused the event, but it does know why.","","","","","","","","",,"extensible","The reason the activity took place.","http://terminology.hl7.org/ValueSet/v3-PurposeOfUse","",,,,"AuditEvent.purposeOfEvent",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","care-relationship:purpose-of-use:code, :system and :text and care-relationship:purpose-of-use-details:code, :system and :text","The purposeOfUse (reason) that was used during the event being recorded.","Use AuditEvent.agent.purposeOfUse when you know that it is specific to the agent, otherwise use AuditEvent.purposeOfEvent. For example, during a machine-to-machine transfer it might not be obvious to the audit system who caused the event, but it does know why.","","","","","","","","",,"extensible","","urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event","",,,,"AuditEvent.purposeOfEvent",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.reasonCode","* .reasonCode [ControlActReason when Act.class = CACT Control Act]
 *.outboundRelationship[typeCode=RSON].target","EventPurposeOfUse","FiveWs.why[x]","Activity.Activity","Provenance.reason, Provenance.activity"
 "AuditEvent.purposeOfEvent.id","AuditEvent.purposeOfEvent.id","","","",0,1,"","","","string {[]} {[]}

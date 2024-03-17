@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for urnnobasisauditevent</h1>
- <p>Generated Fri Mar 15 09:01:17 UTC 2024, FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.8.3 (canonical = <a href="urn:no-basis-auditevent">urn:no-basis-auditevent</a> (<a href="urn:no-basis-auditevent/history.html">history</a>))</p>
+ <p>Generated Sun Mar 17 10:00:01 UTC 2024, FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.9.0 (canonical = <a href="urn:no-basis-auditevent">urn:no-basis-auditevent</a> (<a href="urn:no-basis-auditevent/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -25,12 +25,16 @@
   <li>Request for system [urn:oid:2.16.578.1.12.4.1.1.9060] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [urn:oid:2.16.578.1.12.4.1.1.8655] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [urn:oid:2.16.840.1.113883.1.11.20448] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>Request for system [http://dips.com/carerelation] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>Request for system [https://terminology.dips.com/decisiontemplate] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [urn:oid:2.16.578.1.12.4.1.1.8663] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [urn:oid:2.16.578.1.12.4.1.1.9151] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>null uses the system [urn:oid:2.16.578.1.12.4.1.1.9151] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event|0.9.0 includes multiple systems [http://terminology.hl7.org/CodeSystem/v3-ActReason, urn:no-basis-auditevent/CodeSystem/decisiontemplate, urn:oid:2.16.578.1.12.4.1.1.9151] best handled by multiple servers: [auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir, auth = , candidates=, auth = , candidates=]. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>null uses the system [urn:oid:2.16.578.1.12.4.1.1.8655] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype|0.9.0 includes multiple systems [urn:oid:2.16.578.1.12.4.1.1.8655, urn:oid:2.16.578.1.12.4.1.1.8451, urn:oid:2.16.578.1.12.4.1.1.8663] best handled by multiple servers: [auth = , candidates=, auth = , candidates=, auth = , candidates=]. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 6. Code Systems used: </p>
+<p>Use Count: 10. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -47,20 +51,42 @@
     </th>
   </tr>
   <tr>
-    <td>http://dips.com/carerelation</td>
+    <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActReason.html">ActReason</a>
+    </td>
+  </tr>
+  <tr>
+    <td>https://terminology.dips.com/decisiontemplate</td>
     <td>0</td>
     <td>1</td>
     <td></td>
   </tr>
   <tr>
-    <td>urn:oid:2.16.578.1.12.4.1.1.8655</td>
+    <td>urn:no-basis-auditevent/CodeSystem/decisiontemplate</td>
+    <td>1</td>
     <td>0</td>
+    <td>
+      <a href="CodeSystem-decisiontemplate.html">DIPS decision template codes used as basis of care relation between health care personel and patient.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8451</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8655</td>
+    <td>2</td>
     <td>1</td>
     <td></td>
   </tr>
   <tr>
     <td>urn:oid:2.16.578.1.12.4.1.1.8663</td>
-    <td>0</td>
+    <td>1</td>
     <td>1</td>
     <td></td>
   </tr>
@@ -72,7 +98,7 @@
   </tr>
   <tr>
     <td>urn:oid:2.16.578.1.12.4.1.1.9151</td>
-    <td>0</td>
+    <td>2</td>
     <td>1</td>
     <td></td>
   </tr>
