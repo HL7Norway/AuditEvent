@@ -6,8 +6,10 @@ Alias: $HPR = urn:oid:2.16.578.1.12.4.1.4.4 // Assigned by Helsedirektoratet
 Alias: $DUFNR = urn:oid:2.16.578.1.12.4.1.4.5 // Assigned by Utlendingsdirektoratet
 Alias: $ORGNR = urn:oid:2.16.578.1.12.4.1.4.101 // Assigned by Brønnøysundregistrene
 Alias: $RESHID = urn:oid:2.16.578.1.12.4.1.4.102 // Assigned by Norsk helsenett (??)
-Alias: $VOLVEN_HELSEHJELPSOMRAADE = https://volven.no/8655 // Assigned by volven.no. https://volven.no/produkt.asp?id=492338&catID=3&subID=8
-Alias: $v3.ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
-Alias: $KAT_HELSEPERSONELL = urn:oid:2.16.578.1.12.4.1.1.9060 // Kategori helsepersonell 
-Alias: $TJENESTETYPE = urn:oid:x.x.x.x.x.9151 // tjenestetype i helse- og omsorgstjenesten (
-Alias: $DIPS_CARERELATION = http://dips.com/carerelation
+Alias: $VOLVEN_9060 = urn:oid:2.16.578.1.12.4.1.1.9060 // Kategori helsepersonell (volven)
+Alias: $VOLVEN_9151 = urn:oid:2.16.578.1.12.4.1.1.9151 // Tjenestetype i helse- og omsorgstjenesten (volven)
+Alias: $VOLVEN_8663 = urn:oid:2.16.578.1.12.4.1.1.8663 // https://volven.no/produkt.asp?id=516047&catID=3&subID=8
+Alias: $VOLVEN_8451 = urn:oid:2.16.578.1.12.4.1.1.8451 // Dette kodeverket benyttes for å kode fagområde i NPR data.
+Alias: $VOLVEN_8655 = urn:oid:2.16.578.1.12.4.1.1.8655 // https://volven.no/produkt.asp?id=515539&catID=3&subID=8
+Alias: $VOLVEN_9151 = urn:oid:2.16.578.1.12.4.1.1.9151 // https://volven.no/produkt.asp?id=515221&catID=3&subID=8
+Alias: $DIPS_DECISIONTEMPLATE = https://terminology.dips.com/decisiontemplate

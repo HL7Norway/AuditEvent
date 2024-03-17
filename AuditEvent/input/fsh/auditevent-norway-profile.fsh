@@ -54,6 +54,16 @@ NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each 
 * identifier.assigner.display ^short = "patients:identifier:authority"
 * name ^short = "patients:identifier:name"
 
+ValueSet: NO_basis_encounter_auditevent_servicetype
+Id: no-basis-encounter-auditevent-servicetype
+Title: "AuditEvent Encounter.servicetype valueset"
+Description: """
+Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition.
+"""
+* include codes from system $VOLVEN_8655
+* include codes from system $VOLVEN_8663
+* include codes from system $VOLVEN_8451
+
 Profile: AuditEventNorwayEncounter
 Parent: Encounter
 Id: no-basis-encounter-auditevent
@@ -65,6 +75,7 @@ The encounter associated with audit event mapping of care-relation:healthcare-se
 * serviceType.coding.code ^short = "care-relation:healthcare-service:code"
 * serviceType.coding.system ^short = "care-relation:healthcare-service:system"
 * serviceType.coding.display ^short = "care-relation:healthcare-service:text"
+* serviceType.coding from NO_basis_encounter_auditevent_servicetype (preferred)
 //* serviceType.extension contains 
 //  CodeWithAssigner2 named _assigner 0..1 MS
 // * serviceType.extension[_assigner].valueString ^short = "care-relation:healthcare-service:assigner"  
@@ -184,7 +195,7 @@ The consumer health organization (practitioner:legal-entity) and department affi
 """
 * practitioner only Reference(AuditEventNorwayPractitioner) 
 * practitioner ^short = "practitioner:identifier, practitioner:hpr-nr and practitioner:authorization"
-* organization only Reference(AuditEventNorwayPractitionerDepartment) 
+* organization only Reference(AuditEventNorwayPractitionerDepartment or AuditEventNorwayPractitionerLegalEntity) 
 * organization ^short = "practitioner:department"
 * location only Reference(AuditEventNorwayPractitionerPointOfCare) 
 * location ^short = "practitioner:point-of-care"
@@ -193,6 +204,52 @@ The consumer health organization (practitioner:legal-entity) and department affi
 //* extension[_department] MS  
 //  * extension[id] ^short = "practitioner:department:id, :system, :authority"
 //  * extension[name] ^short = "practitioner:department:name"
+
+
+ValueSet: NO_basis_auditevent_purpose_of_event
+Id: no-basis-auditevent-purpose-of-event
+Title: "PurposeOfEvent valueset"
+Description: """
+Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/)
+"""
+* include codes from valueset http://terminology.hl7.org/ValueSet/v3-PurposeOfUse
+* include codes from system DIPSDecisionTemplate
+* include codes from system $VOLVEN_9151
+
+Extension: AuditEventEncounterExtension
+Title: "AuditEventEncounterExtension"
+Description: "Extension that extends FHIR AuditEvent R4 with Encounter reference which was introduced in FHIR AuditEvent R5"
+* ^context.type = #element
+* ^context.expression = "AuditEvent"
+* value[x] only Reference(AuditEventNorwayEncounter)
+
+Extension: AuditEventPatientExtension
+Title: "AuditEventPatientExtension"
+Description: "Extension that extends FHIR AuditEvent R4 with en Patient reference which was introduced in FHIR AuditEvent R5"
+* ^context.type = #element
+* ^context.expression = "AuditEvent"
+* value[x] only Reference(NOBasisAuditeventPatient)
+
+Extension: CareRelationMetaData
+Title: "AuditEventCareRelationMetaData"
+Description: """
+This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for.
+"""
+* ^context.type = #element
+* ^context.expression = "AuditEvent"
+* extension contains
+    decision-ref-id 0..1 and
+    decision-ref-description 0..1 and
+    decision-ref-user-selected 0..1 and
+    toa 1..1
+* extension[decision-ref-id].value[x] only string
+* extension[decision-ref-id].value[x] ^short = "care-relationship:decision-ref:id"
+* extension[decision-ref-description].value[x] only string
+* extension[decision-ref-description].value[x] ^short = "care-relationship:decision-ref:description"
+* extension[decision-ref-user-selected].value[x] only boolean
+* extension[decision-ref-user-selected].value[x] ^short = "care-relationship:decision-ref:user-selected"
+* extension[toa].value[x] only unsignedInt // valueInteger64 only in R5
+* extension[toa].value[x] ^short = "toa"
 
 Profile:        NOBasisAuditevent
 Parent:         AuditEvent
@@ -206,6 +263,7 @@ This is the main profile that describes the mapping [Norwegian Trust Framework a
 * purposeOfEvent.coding.code ^short = "care-relationship:purpose-of-use:code and care-relationship:purpose-of-use-details:code"
 * purposeOfEvent.coding.system ^short = "care-relationship:purpose-of-use:system and care-relationship:purpose-of-use-details:system"
 * purposeOfEvent.coding.display ^short = "care-relationship:purpose-of-use:text and care-relationship:purpose-of-use-details:text"
+* purposeOfEvent from NO_basis_auditevent_purpose_of_event (extensible)
 // * purposeOfEvent.coding.extension contains CodeWithAssigner2 named _purposeOfEvent_assigner 0..1 MS
 // * purposeOfEvent.coding.extension[_purposeOfEvent_assigner].valueString ^short = "care-relationship:purpose-of-use:assigner and care-relationship:purpose-of-use-details:assigner"
  
@@ -216,24 +274,10 @@ This is the main profile that describes the mapping [Norwegian Trust Framework a
 	CareRelationMetaData named _careRelationMetaData 0..1 MS 
 //  CodeWithAssigner named _purpose-of-use 0..1 MS and
 //   AuditEventAuthorizationExtension named _authorization 0..* MS
-
-
-/*
-* extension[_purpose-of-use] MS
-  * extension[code].valueCoding.code ^short = "care-relationship:purpose-of-use:code"
-  * extension[code].valueCoding.system ^short = "care-relationship:purpose-of-use:system" 
-  * extension[code].valueCoding.display ^short = "care-relationship:purpose-of-use:text" 
-  * extension[assigner].valueString ^short = "care-relationship:purpose-of-use:assigner"
-
-* extension[_purpose-of-use-details] MS
-  * extension[code].valueCoding.code ^short = "care-relationship:purpose-of-use-details:code"
-  * extension[code].valueCoding.system ^short = "care-relationship:purpose-of-use-details:system" 
-  * extension[code].valueCoding.display ^short = "care-relationship:purpose-of-use-details:text" 
-  * extension[assigner].valueString ^short = "care-relationship:purpose-of-use-details:assigner"
-*/    
-
+ 
 * extension[_careRelationMetaData] MS  
-  * ^short = "care-relationship:decision-ref:id, :description, :user-selected"
-  * extension[id].valueString ^short = "care-relationship:decision-ref:id"
-  * extension[description].valueString ^short = "care-relationship:decision-ref:description"
-  * extension[user-selected].valueBoolean ^short = "care-relationship:decision-ref:user-selected"  
+  * ^short = "toa, care-relationship:decision-ref:id, :description, :user-selected"
+  * extension[decision-ref-id] ^short = "care-relationship:decision-ref:id"
+  * extension[decision-ref-description] ^short = "care-relationship:decision-ref:description"
+  * extension[decision-ref-user-selected] ^short = "care-relationship:decision-ref:user-selected"  
+  * extension[toa] ^short = "toa"
