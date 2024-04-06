@@ -58,7 +58,7 @@ ValueSet: NO_basis_encounter_auditevent_servicetype
 Id: no-basis-encounter-auditevent-servicetype
 Title: "AuditEvent Encounter.servicetype valueset"
 Description: """
-Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition.
+Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition.
 """
 * include codes from system $VOLVEN_8655
 * include codes from system $VOLVEN_8663
@@ -76,9 +76,6 @@ The encounter associated with audit event mapping of care-relation:healthcare-se
 * serviceType.coding.system ^short = "care-relation:healthcare-service:system"
 * serviceType.coding.display ^short = "care-relation:healthcare-service:text"
 * serviceType.coding from NO_basis_encounter_auditevent_servicetype (preferred)
-//* serviceType.extension contains 
-//  CodeWithAssigner2 named _assigner 0..1 MS
-// * serviceType.extension[_assigner].valueString ^short = "care-relation:healthcare-service:assigner"  
 * location.location only Reference(AuditEventNorwayEncounterPointOfCare)
 * location.location ^short = "patients:point_of_care_patient:*"
 * serviceProvider ^short = "patients:department:*"
@@ -169,15 +166,6 @@ The national identity (practitioner:identifier and :name), HPR-number (practitio
 * qualification.code.coding.code ^short = "practitioner:authorization:code"
 * qualification.code.coding.system ^short = "practitioner:authorization:system"
 * qualification.code.coding.display ^short = "practitioner:authorization:text"
-// * qualification.code.extension contains 
-//  CodeWithAssigner2 named _assigner 0..1 MS
-// * qualification.code.extension[_assigner].valueString ^short = "practitioner:authorization:assigner"  
-//* extension contains
-//    Identifier named _HPRNumber 0..1 MS 
-//* extension[_HPRNumber] MS // In other words: attribute exists, it must be mapped
-//  * valueIdentifier.system ^short = "practitioner:hpr-nr:system"
-//  * valueIdentifier.value ^short = "practitioner:hpr-nr:id"
-//  * valueIdentifier.assigner.display ^short = "practitioner:hpr-nr:authority"
 
 Profile: NoBasisPractitionerRole
 Parent: PractitionerRole
@@ -199,18 +187,13 @@ The consumer health organization (practitioner:legal-entity) and department affi
 * organization ^short = "practitioner:department"
 * location only Reference(AuditEventNorwayPractitionerPointOfCare) 
 * location ^short = "practitioner:point-of-care"
-//* extension contains
-//  IdentifierWithName named _department 0..1 MS 
-//* extension[_department] MS  
-//  * extension[id] ^short = "practitioner:department:id, :system, :authority"
-//  * extension[name] ^short = "practitioner:department:name"
 
 
 ValueSet: NO_basis_auditevent_purpose_of_event
 Id: no-basis-auditevent-purpose-of-event
 Title: "PurposeOfEvent valueset"
 Description: """
-Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/)
+Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)
 """
 * include codes from valueset http://terminology.hl7.org/ValueSet/v3-PurposeOfUse
 * include codes from system DIPSDecisionTemplate
@@ -264,17 +247,10 @@ This is the main profile that describes the mapping [Norwegian Trust Framework a
 * purposeOfEvent.coding.system ^short = "care-relationship:purpose-of-use:system and care-relationship:purpose-of-use-details:system"
 * purposeOfEvent.coding.display ^short = "care-relationship:purpose-of-use:text and care-relationship:purpose-of-use-details:text"
 * purposeOfEvent from NO_basis_auditevent_purpose_of_event (extensible)
-// * purposeOfEvent.coding.extension contains CodeWithAssigner2 named _purposeOfEvent_assigner 0..1 MS
-// * purposeOfEvent.coding.extension[_purposeOfEvent_assigner].valueString ^short = "care-relationship:purpose-of-use:assigner and care-relationship:purpose-of-use-details:assigner"
- 
 * extension contains 
   AuditEventEncounterExtension named _encounter 0..1 MS and
   AuditEventPatientExtension named _patient 0..1 MS and 
-  //CodeWithAssigner named _purpose-of-use-details 0..1 MS and  
 	CareRelationMetaData named _careRelationMetaData 0..1 MS 
-//  CodeWithAssigner named _purpose-of-use 0..1 MS and
-//   AuditEventAuthorizationExtension named _authorization 0..* MS
- 
 * extension[_careRelationMetaData] MS  
   * ^short = "toa, care-relationship:decision-ref:id, :description, :user-selected"
   * extension[decision-ref-id] ^short = "care-relationship:decision-ref:id"
