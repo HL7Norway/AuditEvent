@@ -14,8 +14,8 @@
       },
       "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
       "StructureDefinition-no-basis-patient.html" : "no-basis-Patient (shadow)",
-      "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent",
-      "StructureDefinition-NoBasisPractitioner.html" : "no-basis-Practitioner (shadow)"
+      "StructureDefinition-NoBasisPractitioner.html" : "no-basis-Practitioner (shadow)",
+      "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-entity-type",
@@ -138,12 +138,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
-      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
+      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -157,11 +157,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
       "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
+      "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "no-basis-auditevent-practitionerrole",
+      "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
       "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "no-basis-auditevent-practitionerrole"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -353,12 +353,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
-      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
+      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent"
     },
     {
@@ -373,12 +373,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
-      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
+      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent"
     },
     {
@@ -393,23 +393,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)",
       "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "no-basis-auditevent-practitionerrole",
+      "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
       "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
       "StructureDefinition-NoBasisPractitioner.html" : "no-basis-Practitioner (shadow)",
-      "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
+      "StructureDefinition-no-basis-auditevent.html" : "no-basis-auditevent",
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)",
+      "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
       "StructureDefinition-no-basis-patient.html" : "no-basis-Patient (shadow)",
       "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
-      "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
-      "StructureDefinition-no-basis-auditevent.html" : "no-basis-auditevent",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent",
-      "StructureDefinition-AuditEventNorwayPractitionerRole.html" : "no-basis-auditevent-practitionerrole"
+      "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -439,8 +439,8 @@
       "uses" : {
       },
       "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)"
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -457,9 +457,9 @@
       "uses" : {
       },
       "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
       "StructureDefinition-no-basis-encounter-auditevent.html" : "no-basis-encounter-auditevent",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -474,8 +474,8 @@
       "uses" : {
       },
       "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)"
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -564,12 +564,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.414"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
-      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department"
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
+      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participation-role-type",
@@ -638,12 +638,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
-      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html" : "no-basis-auditevent-practitioner-legalentity",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html" : "no-basis-auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html" : "no-basis-auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-AuditEventNorwayPractitioner.html" : "no-basis-auditevent-practitioner",
       "StructureDefinition-AuditEventNorwayPractitionerDepartment.html" : "no-basis-auditevent-department",
+      "StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html" : "no-basis-auditevent-encounter-serviceprovider-organization",
       "StructureDefinition-no-basis-patient-auditevent.html" : "no-basis-patient-auditevent"
     },
     {
@@ -729,8 +729,8 @@
       "uses" : {
       },
       "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)"
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -801,20 +801,20 @@
       "uses" : {
       },
       "StructureDefinition-AuditEventNorwayEncounterPointOfCare.html" : "no-basis-auditevent-encounter-pointofcare",
-      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)"
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
+      "StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html" : "no-basis-auditevent-practitioner-pointofcare"
     },
     {
       "url" : "urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event",
-      "version" : "0.9.0",
+      "version" : "0.9.1",
       "status" : "draft",
       "name" : "NO_basis_auditevent_purpose_of_event",
       "title" : "PurposeOfEvent valueset",
-      "description" : "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/)",
+      "description" : "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-        "urn:no-basis-auditevent/CodeSystem/decisiontemplate",
-        "urn:oid:2.16.578.1.12.4.1.1.9151"
+        "urn:oid:2.16.578.1.12.4.1.1.9151",
+        "https://terminology.dips.com/decisiontemplate"
       ],
       "uses" : {
       },
@@ -822,11 +822,11 @@
     },
     {
       "url" : "urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype",
-      "version" : "0.9.0",
+      "version" : "0.9.1",
       "status" : "draft",
       "name" : "NO_basis_encounter_auditevent_servicetype",
       "title" : "AuditEvent Encounter.servicetype valueset",
-      "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition.",
+      "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition.",
       "systems" : [
         "urn:oid:2.16.578.1.12.4.1.1.8655",
         "urn:oid:2.16.578.1.12.4.1.1.8451",

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>DIPS decision template codes used as basis of care relation between health care personel and patient. - XML Representation - NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) v0.9.0</title>
+    <title>DIPS decision template codes used as basis of care relation between health care personel and patient. - XML Representation - NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) v0.9.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,7 +51,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;)</span>
             <br/>
-            <span style="display:inline-block;">0.9.0 - ci-build
+            <span style="display:inline-block;">0.9.1 - ci-build
 
 
             </span>
@@ -109,7 +109,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="urn:no-basis-auditevent/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) - Local Development build (v0.9.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="urn:no-basis-auditevent/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -164,7 +164,7 @@
         
           Draft
           
-            as of 2024-03-17
+            as of 2024-04-06
           
         
       </td>
@@ -180,24 +180,17 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
 
 &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;decisiontemplate&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This  code system &lt;code&gt;urn:no-basis-auditevent/CodeSystem/decisiontemplate&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENV_BEH&lt;a name=&quot;decisiontemplate-HENV_BEH&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Henvendelse fra pasientens behandler&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvendelse fra pasientens behandler.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENV_PAA&lt;a name=&quot;decisiontemplate-HENV_PAA&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Henvendelse fra pasientens pårørende&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvendelse fra pasientens pårørende.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;MELDT&lt;a name=&quot;decisiontemplate-MELDT&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meldt pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Meldt pasient (for eksempel fra legevakta eller ambulansen).&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;BLAALYS&lt;a name=&quot;decisiontemplate-BLAALYS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blålys&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bruk av blålys - akutt helsehjelp&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;EKSTSVAR&lt;a name=&quot;decisiontemplate-EKSTSVAR&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eksternt prøvesvar/notat til vurdering&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;KVAL&lt;a name=&quot;decisiontemplate-KVAL&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Internkontroll/Kvalitetssikring&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;OPRPLAN&lt;a name=&quot;decisiontemplate-OPRPLAN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pasienten finnes på operasjonsoversikten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasienten finnes på operasjonsoversikten i DIPS&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;KONSSERIE&lt;a name=&quot;decisiontemplate-KONSSERIE&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Åpen konsultasjonsserie&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Åpen konsultasjonsserie&lt;/p&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://terminology.dips.com/decisiontemplate&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;KONSSERIE&lt;a name=&quot;decisiontemplate-KONSSERIE&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Åpen konsultasjonsserie&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Åpen konsultasjonsserie&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;LEDSBEL&lt;a name=&quot;decisiontemplate-LEDSBEL&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inneliggende ledsager&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Ledsageren er inneliggende.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;VURDHENV&lt;a name=&quot;decisiontemplate-VURDHENV&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vurdert henvisning&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvisning som er vurdert&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ITSYSARB&lt;a name=&quot;decisiontemplate-ITSYSARB&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IT-Systemarbeid&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;TILSYN&lt;a name=&quot;decisiontemplate-TILSYN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tilsyn på annen avdeling.&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;&amp;quot;Tilsyn på annen avdeling&amp;quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ITSYSARB&lt;a name=&quot;decisiontemplate-ITSYSARB&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IT-Systemarbeid&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;TILSYN&lt;a name=&quot;decisiontemplate-TILSYN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tilsyn på annen avdeling.&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;&amp;quot;Tilsyn på annen avdeling&amp;quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas. (Eksplisitt mal)&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ARBFLYT&lt;a name=&quot;decisiontemplate-ARBFLYT&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oppgave i arbeidsflyt&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;BEHANDLER&lt;a name=&quot;decisiontemplate-BEHANDLER&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bruker har behandlingsansvar for pasienten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Brukeren er behandler for pasienten. Eksempler på hva som gjør at malen slår til er:
 a) Bruker er registrert som ansvarlig behandler på poliklinisk besøk.
@@ -210,31 +203,43 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;JOURANSV&lt;a name=&quot;decisiontemplate-JOURANSV&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bruker er journalansvarlig for pasienten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Brukeren er journalansvarlig for pasienten.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;PASANSV&lt;a name=&quot;decisiontemplate-PASANSV&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bruker er koordinator for pasienten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Brukeren er koordinator for pasienten.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENVISNING&lt;a name=&quot;decisiontemplate-HENVISNING&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Henvisning til vurdering&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvisning som enda ikke er vurdert.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;BELEGG&lt;a name=&quot;decisiontemplate-BELEGG&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inneliggende pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasienten er inneliggende.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;BELEGG&lt;a name=&quot;decisiontemplate-BELEGG&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Innlagt pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasienten er innlagt.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;PLANOPP&lt;a name=&quot;decisiontemplate-PLANOPP&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Planlagt oppmøte&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Planlagt oppmøte for pasienten.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;POLBESOK&lt;a name=&quot;decisiontemplate-POLBESOK&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poliklinisk besøk&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Poliklinisk konsultasjon.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;TILSYN2&lt;a name=&quot;decisiontemplate-TILSYN2&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tilsyn med helsepersonellets virksomhet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Tilsyn med helsepersonellets virksomhet.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;INNSYN&lt;a name=&quot;decisiontemplate-INNSYN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pasientinnsyn&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasientens innsyn i egen journal.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;OFFBEST&lt;a name=&quot;decisiontemplate-OFFBEST&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENV_PAS&lt;a name=&quot;decisiontemplate-HENV_PAS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Henvendelse fra pasienten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvendelse fra pasienten selv.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;TILSYN2&lt;a name=&quot;decisiontemplate-TILSYN2&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tilsyn med helsepersonellets virksomhet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Tilsyn med helsepersonellets virksomhet. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;INNSYN&lt;a name=&quot;decisiontemplate-INNSYN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pasientinnsyn&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasientens innsyn i egen journal. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;OFFBEST&lt;a name=&quot;decisiontemplate-OFFBEST&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENV_PAS&lt;a name=&quot;decisiontemplate-HENV_PAS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Henvendelse fra pasienten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvendelse fra pasienten selv. (Eksplisitt mal)&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENVPER&lt;a name=&quot;decisiontemplate-HENVPER&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Åpen henvisningsperiode&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Åpen henvisningsperiode.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;PLANKONT&lt;a name=&quot;decisiontemplate-PLANKONT&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ventende pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasienten har en planlagt kontakt som ikke er avsluttet.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;PRIMKONT&lt;a name=&quot;decisiontemplate-PRIMKONT&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bruker er pasientens primærkontakt&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bruker er pasientens primærkontakt.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;DELBEHAN&lt;a name=&quot;decisiontemplate-DELBEHAN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deltar i behandlingen av pasienten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Deltar i behandlingen av pasienten.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;TILSYN3&lt;a name=&quot;decisiontemplate-TILSYN3&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Statlig tilsyn&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HHJELANPAS&lt;a name=&quot;decisiontemplate-HHJELANPAS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yte helsehjelp til annen pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;&amp;quot;Yte helsehjelp til annen pasient&amp;quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENV_BEH&lt;a name=&quot;decisiontemplate-HENV_BEH&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Henvendelse fra pasientens behandler&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvendelse fra pasientens behandler. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HENV_PAA&lt;a name=&quot;decisiontemplate-HENV_PAA&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Henvendelse fra pasientens pårørende&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Henvendelse fra pasientens pårørende. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;MELDT&lt;a name=&quot;decisiontemplate-MELDT&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meldt pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Meldt pasient (for eksempel fra legevakta eller ambulansen). (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;EKSTSVAR&lt;a name=&quot;decisiontemplate-EKSTSVAR&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eksternt prøvesvar/notat til vurdering&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;OPRPLAN&lt;a name=&quot;decisiontemplate-OPRPLAN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pasienten finnes på operasjonsoversikten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasienten finnes på operasjonsoversikten i DIPS&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;EGENLAER&lt;a name=&quot;decisiontemplate-EGENLAER&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Egen læring/kvalitetssikring av gitt behandling&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Begrunnelse forankret i Helsepersonellovens §29 c (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;DELBEHAN&lt;a name=&quot;decisiontemplate-DELBEHAN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deltar i behandlingen av pasienten&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Deltar i behandlingen av pasienten. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;TILSYN3&lt;a name=&quot;decisiontemplate-TILSYN3&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Statlig tilsyn&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;BLAALYS&lt;a name=&quot;decisiontemplate-BLAALYS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blålys&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bruk av blålys - akutt helsehjelp (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;KVAL&lt;a name=&quot;decisiontemplate-KVAL&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Internkontroll/Kvalitetssikring&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;FORSK&lt;a name=&quot;decisiontemplate-FORSK&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Forskning&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;&amp;quot;Forskning&amp;quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Forskning. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ETTERARB&lt;a name=&quot;decisiontemplate-ETTERARB&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Etterarbeide&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;&amp;quot;Etterarbeide&amp;quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Etterarbeide. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;UNDERVISN&lt;a name=&quot;decisiontemplate-UNDERVISN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Undervisning&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;&amp;quot;Undervisning&amp;quot; er en besluttningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med undervisning. (Eksplisitt mal)&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;NYPAS&lt;a name=&quot;decisiontemplate-NYPAS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pasientadministrasjon&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pasientadministrasjon, f.eks registrering av ny pasient&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ROLPAS&lt;a name=&quot;decisiontemplate-ROLPAS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bruker har rolle overfor pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bruker har rolle overfor pasient&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;EGENLAER&lt;a name=&quot;decisiontemplate-EGENLAER&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Egen læring/kvalitetssikring av gitt behandling&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Begrunnelse forankret i Helsepersonellovens §29 c&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;HHJELANPAS&lt;a name=&quot;decisiontemplate-HHJELANPAS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yte helsehjelp til annen pasient&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;&amp;quot;Yte helsehjelp til annen pasient&amp;quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b. (Eksplisitt mal)&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;PASADM&lt;a name=&quot;decisiontemplate-PASADM&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Administrasjon&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;For administrative oppgaver som feks skanning av dokumenter, endring av pasientopplysninger, kodekontroll o.l.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:no-basis-auditevent/CodeSystem/decisiontemplate&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.9.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.dips.com/decisiontemplate&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.9.1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DIPSDecisionTemplate&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>
          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DIPS decision template codes used as basis of care relation between health care personel and patient.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-03-17T09:59:20+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-04-06T16:49:55+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Norway&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Norway&quot;/&gt;
@@ -244,49 +249,13 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Dette er maler med ulike begrunnelser som kan benyttes som grunnlag for tilgang til pasientens journal ved sykehus som benytter DIPS som journalsystem.
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.
 
-Er definert her kun midlertidig. Vil bli flyttet til annen ala https://terminology.dips.com/decisiontemplate (under arbeid).&quot;/&gt;
+Templates that user can select manually are marked as '(Eksplisitt mal)'.
+&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;34&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HENV_BEH&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens behandler&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens behandler.&quot;/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HENV_PAA&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens pårørende&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens pårørende.&quot;/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MELDT&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Meldt pasient&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Meldt pasient (for eksempel fra legevakta eller ambulansen).&quot;/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;BLAALYS&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Blålys&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bruk av blålys - akutt helsehjelp&quot;/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;EKSTSVAR&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eksternt prøvesvar/notat til vurdering&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten&quot;/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;KVAL&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Internkontroll/Kvalitetssikring&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes.&quot;/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OPRPLAN&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasienten finnes på operasjonsoversikten&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasienten finnes på operasjonsoversikten i DIPS&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;38&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;KONSSERIE&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Åpen konsultasjonsserie&quot;/&gt;
@@ -306,19 +275,19 @@ Er definert her kun midlertidig. Vil bli flyttet til annen ala https://terminolo
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ITSYSARB&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IT-Systemarbeid&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene.&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TILSYN&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Tilsyn på annen avdeling.&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;quot;Tilsyn på annen avdeling&amp;quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas.&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;quot;Tilsyn på annen avdeling&amp;quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ARBFLYT&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oppgave i arbeidsflyt&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.  &quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;BEHANDLER&quot;/&gt;
@@ -354,8 +323,8 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;BELEGG&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Inneliggende pasient&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasienten er inneliggende.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Innlagt pasient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasienten er innlagt.&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PLANOPP&quot;/&gt;
@@ -370,24 +339,25 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TILSYN2&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Tilsyn med helsepersonellets virksomhet&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Tilsyn med helsepersonellets virksomhet.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Tilsyn med helsepersonellets virksomhet. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;INNSYN&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasientinnsyn&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasientens innsyn i egen journal.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasientens innsyn i egen journal. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OFFBEST&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap.&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HENV_PAS&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasienten&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasienten selv.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasienten selv. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HENVPER&quot;/&gt;
@@ -406,21 +376,79 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bruker er pasientens primærkontakt.&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HENV_BEH&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens behandler&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens behandler. (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HENV_PAA&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens pårørende&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Henvendelse fra pasientens pårørende. (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MELDT&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Meldt pasient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Meldt pasient (for eksempel fra legevakta eller ambulansen). (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;EKSTSVAR&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eksternt prøvesvar/notat til vurdering&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OPRPLAN&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasienten finnes på operasjonsoversikten&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pasienten finnes på operasjonsoversikten i DIPS&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;EGENLAER&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Egen læring/kvalitetssikring av gitt behandling&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Begrunnelse forankret i Helsepersonellovens §29 c (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;DELBEHAN&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Deltar i behandlingen av pasienten&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Deltar i behandlingen av pasienten.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Deltar i behandlingen av pasienten. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TILSYN3&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Statlig tilsyn&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26.&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HHJELANPAS&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Yte helsehjelp til annen pasient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;BLAALYS&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Blålys&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bruk av blålys - akutt helsehjelp (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;KVAL&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Internkontroll/Kvalitetssikring&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;quot;Yte helsehjelp til annen pasient&amp;quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b.&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes. (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;FORSK&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Forskning&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;quot;Forskning&amp;quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Forskning. (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ETTERARB&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Etterarbeide&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;quot;Etterarbeide&amp;quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Etterarbeide. (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;UNDERVISN&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Undervisning&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;quot;Undervisning&amp;quot; er en besluttningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med undervisning. (Eksplisitt mal)&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NYPAS&quot;/&gt;
@@ -434,9 +462,16 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bruker har rolle overfor pasient&quot;/&gt;
   &lt;/concept&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;EGENLAER&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Egen læring/kvalitetssikring av gitt behandling&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Begrunnelse forankret i Helsepersonellovens §29 c&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HHJELANPAS&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Yte helsehjelp til annen pasient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;quot;Yte helsehjelp til annen pasient&amp;quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b. (Eksplisitt mal)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PASADM&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Administrasjon&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For administrative oppgaver som feks skanning av dokumenter, endring av pasientopplysninger, kodekontroll o.l.&quot;/&gt;
   &lt;/concept&gt;
 &lt;/CodeSystem&gt;</code></pre>
 
@@ -468,7 +503,7 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventTokenMappingNorwayID#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 17, 2024 09:59+0000">2024-03-17</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventTokenMappingNorwayID#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Apr 6, 2024 16:49+0000">2024-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

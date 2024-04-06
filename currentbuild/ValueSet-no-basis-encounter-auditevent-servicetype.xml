@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8655</code></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8663</code></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8451</code></li></ul></div>
   </text>
   <url value="urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype"/>
-  <version value="0.9.0"/>
+  <version value="0.9.1"/>
   <name value="NO_basis_encounter_auditevent_servicetype"/>
   <title value="AuditEvent Encounter.servicetype valueset"/>
   <status value="draft"/>
-  <date value="2024-03-17T09:59:20+00:00"/>
+  <date value="2024-04-06T16:49:55+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -19,7 +19,7 @@
       <value value="https://github.com/HL7Norway"/>
     </telecom>
   </contact>
-  <description value="Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition."/>
+  <description value="Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition."/>
   <compose>
     <include>
       <system value="urn:oid:2.16.578.1.12.4.1.1.8655"/>

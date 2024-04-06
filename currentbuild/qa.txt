@@ -1,14 +1,14 @@
 urnnobasisauditevent : Validation Results
 =========================================
 
-err = 12, warn = 31, info = 18
-IG Publisher Version: 1.6.1
-Generated Sun Mar 17 10:00:01 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.9.0 (canonical = urn:no-basis-auditevent)
+err = 14, warn = 28, info = 18
+IG Publisher Version: 1.6.4
+Generated Sat Apr 06 16:50:39 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMappingNorwayID#0.9.1 (canonical = urn:no-basis-auditevent)
  Build Errors : 7 / 4 / 0
- /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1 : 4 / 5 / 25
+ /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1 : 4 / 3 / 26
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance2 : 4 / 4 / 15
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance3 : 4 / 6 / 17
- /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-decisiontemplate : 0 / 2 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-decisiontemplate : 2 / 1 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/ImplementationGuide-AuditEventTokenMappingNorwayID : 0 / 1 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-AuditEventEncounterExtension : 0 / 0 / 1
  /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-AuditEventNorwayEncounterPointOfCare : 0 / 0 / 2
@@ -35,12 +35,12 @@ Generated Sun Mar 17 10:00:01 UTC 2024. FHIR version 4.0.1 for AuditEventTokenMa
 </table>
 == n/a ==
 ERROR: /github/workspace/AuditEvent/output/searchform.html: Unable to read attribute 'tillitsrammeverk' value on <iframe> at line 92 column 184
-ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3403: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
-ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3805: The link 'Bundle/Documentlist' for "Bundle/Documentlist" cannot be resolved
-ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 2704: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
-ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3106: The link 'StructureDefinition/DocumentReference' for "StructureDefinition/DocumentReference" cannot be resolved
-ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance3.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3040: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
-ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance3.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3442: The link 'StructureDefinition/DocumentReference' for "StructureDefinition/DocumentReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3456: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3858: The link 'Bundle/Documentlist' for "Bundle/Documentlist" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 2565: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 2967: The link 'StructureDefinition/DocumentReference' for "StructureDefinition/DocumentReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance3.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3079: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance3.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3481: The link 'StructureDefinition/DocumentReference' for "StructureDefinition/DocumentReference" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -50,8 +50,7 @@ INFORMATION: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[0]/*Pra
 WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[1]/*PractitionerRole/PractitionerRoleInstance1*/.organization: Found multiple matching profiles for #PractitionerDepartment1 among choices: urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerDepartment, urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerLegalEntity
 WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[6]/*Encounter/EncounterInstance1*/.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 INFORMATION: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[6]/*Encounter/EncounterInstance1*/.serviceType.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8655' could not be found, so the code cannot be validated
-WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.purposeOfEvent[0].coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.1.11.20448' could not be found, so the code cannot be validated
-WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.purposeOfEvent[0].coding[1].system: A definition for CodeSystem 'https://terminology.dips.com/decisiontemplate' could not be found, so the code cannot be validated
+INFORMATION: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.purposeOfEvent[1]: Reference to experimental CodeSystem https://terminology.dips.com/decisiontemplate|0.9.1
 ERROR: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.source.observer: Unable to resolve resource with reference 'Device/ex-device'
 ERROR: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.entity[0].what: Unable to resolve resource with reference 'Bundle/Documentlist'
 WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.entity[0].type: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -73,18 +72,18 @@ WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[0]/*Practit
 INFORMATION: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[1]/*AuditEvent/null*/.qualification[0].code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9060' could not be found, so the code cannot be validated
 WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[5]/*Encounter/EncounterInstance3*/.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 INFORMATION: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[5]/*Encounter/EncounterInstance3*/.serviceType.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8663' could not be found, so the code cannot be validated
-WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.1.11.20448' could not be found, so the code cannot be validated
-WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[0].coding[1].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9151' could not be found, so the code cannot be validated
-WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[0]: Unable to check whether the code is in the value set 'urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event|0.9.0' because the code system urn:oid:2.16.840.1.113883.1.11.20448, urn:oid:2.16.578.1.12.4.1.1.9151 was not found
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[1].coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9151' could not be found, so the code cannot be validated
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[1]: Unable to check whether the code is in the value set 'urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event|0.9.1' because the code system urn:oid:2.16.578.1.12.4.1.1.9151 was not found
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[1]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9151' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event|0.9.1' because the code system urn:oid:2.16.578.1.12.4.1.1.9151 was not found
 ERROR: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.source.observer: Unable to resolve resource with reference 'Device/ex-device'
 ERROR: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.entity[0].what: Unable to resolve resource with reference 'StructureDefinition/DocumentReference'
 WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.entity[0].type: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 ERROR: AuditEvent.text.div: Hyperlink 'Device/ex-device' at 'div/table/tr/td/a' for 'Device/ex-device' does not resolve
 ERROR: AuditEvent.text.div: Hyperlink 'StructureDefinition/DocumentReference' at 'div/table/tr/td/a' for 'StructureDefinition/DocumentReference' does not resolve
 == fsh-generated/resources/CodeSystem-decisiontemplate.json ==
-INFORMATION: CodeSystem/decisiontemplate: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/decisiontemplate: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/decisiontemplate: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: CodeSystem.where(url = 'https://terminology.dips.com/decisiontemplate'): Conformance resource /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-decisiontemplate.json - the canonical URL (urn:no-basis-auditevent/CodeSystem/decisiontemplate) does not match the URL (https://terminology.dips.com/decisiontemplate)
+WARNING: CodeSystem/decisiontemplate: CodeSystem.concept[5].definition: value should not start or finish with whitespace 'Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.  '
+ERROR: /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-decisiontemplate: URL Mismatch urn:no-basis-auditevent/CodeSystem/decisiontemplate vs https://terminology.dips.com/decisiontemplate
 == fsh-generated/resources/ImplementationGuide-AuditEventTokenMappingNorwayID.json ==
 WARNING: ImplementationGuide/AuditEventTokenMappingNorwayID: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/StructureDefinition-AuditEventEncounterExtension.json ==

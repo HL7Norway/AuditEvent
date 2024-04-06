@@ -16,15 +16,15 @@
     },
     {
       "url" : "urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event",
-      "version" : "0.9.0",
+      "version" : "0.9.1",
       "status" : "draft",
       "name" : "NO_basis_auditevent_purpose_of_event",
       "title" : "PurposeOfEvent valueset",
-      "description" : "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/)",
+      "description" : "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-        "urn:no-basis-auditevent/CodeSystem/decisiontemplate",
-        "urn:oid:2.16.578.1.12.4.1.1.9151"
+        "urn:oid:2.16.578.1.12.4.1.1.9151",
+        "https://terminology.dips.com/decisiontemplate"
       ],
       "uses" : {
       },
@@ -32,11 +32,11 @@
     },
     {
       "url" : "urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype",
-      "version" : "0.9.0",
+      "version" : "0.9.1",
       "status" : "draft",
       "name" : "NO_basis_encounter_auditevent_servicetype",
       "title" : "AuditEvent Encounter.servicetype valueset",
-      "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) for definition.",
+      "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition.",
       "systems" : [
         "urn:oid:2.16.578.1.12.4.1.1.8655",
         "urn:oid:2.16.578.1.12.4.1.1.8451",

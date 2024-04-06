@@ -2,169 +2,169 @@
   {
     "id" : "decisiontemplate",
     "type" : "CodeSystem",
-    "url" : "urn:no-basis-auditevent/CodeSystem/decisiontemplate",
-    "version" : "0.9.0",
+    "url" : "https://terminology.dips.com/decisiontemplate",
+    "version" : "0.9.1",
     "name" : "DIPSDecisionTemplate"
   },
   {
     "id" : "AuditEventTokenMappingNorwayID",
     "type" : "ImplementationGuide",
     "url" : "urn:no-basis-auditevent/ImplementationGuide/AuditEventTokenMappingNorwayID",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "urnnobasisauditevent"
   },
   {
     "id" : "AuditEventEncounterExtension",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventEncounterExtension",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventEncounterExtension"
   },
   {
     "id" : "AuditEventNorwayEncounterPointOfCare",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayEncounterPointOfCare",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayEncounterPointOfCare"
   },
   {
     "id" : "AuditEventNorwayEncounterPointOfCareOrganization",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayEncounterPointOfCareOrganization"
   },
   {
     "id" : "AuditEventNorwayEncounterServiceProviderOrganization",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayEncounterServiceProviderOrganization"
   },
   {
     "id" : "AuditEventNorwayPractitioner",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitioner",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayPractitioner"
   },
   {
     "id" : "AuditEventNorwayPractitionerDepartment",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerDepartment",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayPractitionerDepartment"
   },
   {
     "id" : "AuditEventNorwayPractitionerLegalEntity",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerLegalEntity",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayPractitionerLegalEntity"
   },
   {
     "id" : "AuditEventNorwayPractitionerPointOfCare",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerPointOfCare",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayPractitionerPointOfCare"
   },
   {
     "id" : "AuditEventNorwayPractitionerPointOfCareOrganization",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayPractitionerPointOfCareOrganization"
   },
   {
     "id" : "AuditEventNorwayPractitionerRole",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerRole",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayPractitionerRole"
   },
   {
     "id" : "AuditEventPatientExtension",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/AuditEventPatientExtension",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventPatientExtension"
   },
   {
     "id" : "CareRelationMetaData",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "CareRelationMetaData"
   },
   {
     "id" : "NoBasisPractitioner",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/NoBasisPractitioner",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NoBasisPractitioner"
   },
   {
     "id" : "no-basis-Location",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/no-basis-Location",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NOBasisLocation"
   },
   {
     "id" : "no-basis-Organization",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/no-basis-Organization",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NoBasisOrganization"
   },
   {
     "id" : "no-basis-PractitionerRole",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/no-basis-PractitionerRole",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NoBasisPractitionerRole"
   },
   {
     "id" : "no-basis-auditevent",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NOBasisAuditevent"
   },
   {
     "id" : "no-basis-encounter-auditevent",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/no-basis-encounter-auditevent",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "AuditEventNorwayEncounter"
   },
   {
     "id" : "no-basis-patient",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/no-basis-patient",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NOBasisPatient"
   },
   {
     "id" : "no-basis-patient-auditevent",
     "type" : "StructureDefinition",
     "url" : "urn:no-basis-auditevent/StructureDefinition/no-basis-patient-auditevent",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NOBasisAuditeventPatient"
   },
   {
     "id" : "no-basis-auditevent-purpose-of-event",
     "type" : "ValueSet",
     "url" : "urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NO_basis_auditevent_purpose_of_event"
   },
   {
     "id" : "no-basis-encounter-auditevent-servicetype",
     "type" : "ValueSet",
     "url" : "urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype",
-    "version" : "0.9.0",
+    "version" : "0.9.1",
     "name" : "NO_basis_encounter_auditevent_servicetype"
   }
 ]
