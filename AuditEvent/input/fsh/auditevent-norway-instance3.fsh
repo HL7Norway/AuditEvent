@@ -23,10 +23,7 @@ Usage: #inline
 * identifier[+].system = $HPR // practitioner:hpr-nr:system"
 * identifier[=].value =  "9144900" // "practitioner:hpr-nr:id"
 * identifier[=].assigner.display = "https://www.helsedirektoratet.no/" // "practitioner:hpr-nr:authority"
-* qualification.code.coding.code = #LE //  "practitioner:authorization:code"
-* qualification.code.coding.system =   $VOLVEN_9060 // "practitioner:authorization:system"
-* qualification.code.coding.display = "Lege" // "practitioner:authorization:text"
-// * qualification.code.extension[_assigner].valueString = "https://www.helsedirektoratet.no/"  // "practitioner:authorization:assigner"  
+* qualification.code = $VOLVEN_9060#LE "Lege" //  "practitioner:authorization:*
 
 Instance: PractitionerLegalEntityInstance3
 InstanceOf: AuditEventNorwayPractitionerLegalEntity
@@ -54,10 +51,8 @@ Usage: #inline
 //"""
 * status = #unknown
 * class = #unknown // Not in valueset - extensible valueset
-* serviceType.coding.system = "urn:oid:2.16.578.1.12.4.1.1.8663"
-* serviceType.coding.code = #KP1
-* serviceType.coding.display = "Legetjeneste ved sykehjem"
-  
+* serviceType = $VOLVEN_8663#KP1 "Legetjeneste ved sykehjem"
+ 
 
 Instance: PatientInstance3
 InstanceOf: NOBasisAuditeventPatient
@@ -84,7 +79,7 @@ Usage: #example
 * contained[+] = PatientInstance3
 
 * type = DCM#110110 "Patient Record"
-* recorded = 2021-03-15T09:49:00.000Z
+* recorded = 2024-03-19T06:45:00.000Z
 * action = #R
 * agent[0].requestor = true
 * agent[0].who = Reference(PractitionerRoleInstance3)
@@ -94,16 +89,12 @@ Usage: #example
   * extension[decision-ref-id].valueString  =  "23423255" // "care-relationship:decision-ref:id"
   * extension[decision-ref-description].valueString = "Innlagt pasient"  // "care-relationship:decision-ref:description"
   * extension[decision-ref-user-selected].valueBoolean = false // "care-relationship:decision-ref:user-selected"
-  * extension[toa].valueUnsignedInt = 1700121037 // toa  
+  * extension[toa].valueUnsignedInt = 1710830705 // toa  
 * source.site = "server.example.com"
 * source.type = http://terminology.hl7.org/CodeSystem/security-source-type#4 "Application Server"
 * source.observer = Reference(Device/ex-device)
-* purposeOfEvent.coding[+].code = #COC  // "care-relationship:purpose-of-use:code" 
-* purposeOfEvent.coding[=].system = "urn:oid:2.16.840.1.113883.1.11.20448" // "care-relationship:purpose-of-use:system"
-* purposeOfEvent.coding[=].display = "COC"  // "care-relationship:purpose-of-use:text"
-* purposeOfEvent.coding[+].code = #15  // "care-relationship:purpose-of-use-details:code"
-* purposeOfEvent.coding[=].system = "urn:oid:2.16.578.1.12.4.1.1.9151" // "care-relationship:purpose-of-use-details:system"
-* purposeOfEvent.coding[=].display = "Helsetjenester i hjemmet"  // "care-relationship:purpose-of-use-details:text"
+* purposeOfEvent[+].coding  = http://terminology.hl7.org/CodeSystem/v3-ActReason#COC "coordination of care"  // "care-relationship:purpose-of-use:*
+* purposeOfEvent[+].coding =  $VOLVEN_9151#15 "Helsetjenester i hjemmet" // "care-relationship:purpose-of-use-details:*
 * entity
   * what = Reference(DocumentReference)
   * type = #DocumentReference

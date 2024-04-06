@@ -23,14 +23,7 @@ Usage: #inline
 * identifier[+].system = $HPR // practitioner:hpr-nr:system"
 * identifier[=].value =  "9144897" // "practitioner:hpr-nr:id"
 * identifier[=].assigner.display = "https://www.helsedirektoratet.no/" // "practitioner:hpr-nr:authority"
-* qualification.code.coding.code = #LE //  "practitioner:authorization:code"
-* qualification.code.coding.system =   $VOLVEN_9060 // "practitioner:authorization:system"
-* qualification.code.coding.display = "Lege" // "practitioner:authorization:text"
-// * qualification.code.extension[_assigner].valueString = "https://www.helsedirektoratet.no/"  // "practitioner:authorization:assigner"  
-//* extension[_HPRNumber]  // In other words: attribute exists, it must be mapped
-//  * valueIdentifier.system =  $HPR // practitioner:hpr-nr:system"
-//  * valueIdentifier.value =  "9144897" // "practitioner:hpr-nr:id"
-//  * valueIdentifier.assigner.display = "https://www.helsedirektoratet.no/" // "practitioner:hpr-nr:authority"
+* qualification.code = $VOLVEN_9060#LE "Lege" //  "practitioner:authorization:*"
 
 Instance: PractitionerLegalEntityInstance1
 InstanceOf: AuditEventNorwayPractitionerLegalEntity
@@ -90,9 +83,7 @@ Usage: #inline
 * class = #unknown // Not in valueset - extensible valueset
 * location.location = Reference(EncounterPointOfCareInstance1)
 * serviceProvider = Reference(EncounterServiceProviderOrganizationInstance1)
-* serviceType.coding.system = "urn:oid:2.16.578.1.12.4.1.1.8655"
-* serviceType.coding.code = #S03
-* serviceType.coding.display = "Indremedisin"
+* serviceType.coding = $VOLVEN_8655#S03 "Indremedisin"
 
 
 Instance: PatientInstance1
@@ -124,7 +115,7 @@ Usage: #example
 * contained[+] = PatientInstance1
 
 * type = DCM#110110 "Patient Record"
-* recorded = 2021-03-15T09:49:00.000Z
+* recorded = 2024-03-19T06:45:00.000Z
 * action = #R
 * agent[0].requestor = true
 * agent[0].who = Reference(PractitionerRoleInstance1)
@@ -134,16 +125,12 @@ Usage: #example
   * extension[decision-ref-id].valueString  =  "23423255" // "care-relationship:decision-ref:id"
   * extension[decision-ref-description].valueString = "Innlagt pasient"  // "care-relationship:decision-ref:description"
   * extension[decision-ref-user-selected].valueBoolean = false // "care-relationship:decision-ref:user-selected"
-  * extension[toa].valueUnsignedInt = 1700121037 // toa
+  * extension[toa].valueUnsignedInt = 1710830705 // toa
 * source.site = "server.example.com"
 * source.type = http://terminology.hl7.org/CodeSystem/security-source-type#4 "Application Server"
 * source.observer = Reference(Device/ex-device)
-* purposeOfEvent.coding[+].code = #TREAT  // "care-relationship:purpose-of-use:code" 
-* purposeOfEvent.coding[=].system = "urn:oid:2.16.840.1.113883.1.11.20448" // "care-relationship:purpose-of-use:system"
-* purposeOfEvent.coding[=].display = "Treatment"  // "care-relationship:purpose-of-use:text"
-* purposeOfEvent.coding[+].code = #POLBESOK  // "care-relationship:purpose-of-use-details:code"
-* purposeOfEvent.coding[=].system = $DIPS_DECISIONTEMPLATE // "care-relationship:purpose-of-use-details:system"
-* purposeOfEvent.coding[=].display = "Poliklinisk besøk"  // "care-relationship:purpose-of-use-details:text"
+* purposeOfEvent[+].coding = http://terminology.hl7.org/CodeSystem/v3-ActReason#TREAT "Treatment"    // "care-relationship:purpose-of-use:*
+* purposeOfEvent[+].coding = $DIPS_DECISIONTEMPLATE#POLBESOK "Poliklinisk besøk" // "care-relationship:purpose-of-use-details:*
 * entity
   * what = Reference(Bundle/Documentlist)
   * type = #Bundle

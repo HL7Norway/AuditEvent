@@ -15,10 +15,7 @@ Usage: #inline
 * identifier[+].system = $HPR // practitioner:hpr-nr:system"
 * identifier[=].value =  "9144897" // "practitioner:hpr-nr:id"
 * identifier[=].assigner.display = "https://www.helsedirektoratet.no/" // "practitioner:hpr-nr:authority"
-* qualification.code.coding.code = #LE //  "practitioner:authorization:code"
-* qualification.code.coding.system =   $VOLVEN_9060 // "practitioner:authorization:system"
-* qualification.code.coding.display = "Lege" // "practitioner:authorization:text"
-// * qualification.code.extension[_assigner].valueString = "https://www.helsedirektoratet.no/"  // "practitioner:authorization:assigner"  
+* qualification.code = $VOLVEN_9060#LE "Lege" //  "practitioner:authorization:*"
 
 Instance: PractitionerLegalEntityInstance2
 InstanceOf: AuditEventNorwayPractitionerLegalEntity
@@ -46,9 +43,7 @@ Usage: #inline
 //"""
 * status = #unknown
 * class = #unknown // Not in valueset - extensible valueset
-* serviceType.coding.code = #KX17 // "care-relation:healthcare-service:code"
-* serviceType.coding.system = "urn:oid:2.16.578.1.12.4.1.1.8655"  //"care-relation:healthcare-service:system"
-* serviceType.coding.display = "Fastlege, liste uten fast lege"  //"care-relation:healthcare-service:text"
+* serviceType = $VOLVEN_8655#KX17 "Fastlege, liste uten fast lege" 
 
 //* location.location = Reference(AuditEventNorwayEncounterPointOfCareInstance2)
 //* contained[+] = AuditEventNorwayEncounterServiceProviderOrganizationInstance1
@@ -77,18 +72,18 @@ Usage: #example
 * contained[+] = EncounterInstance2
 * contained[+] = PatientInstance2
 * type = DCM#110110 "Patient Record"
-* recorded = 2021-03-15T09:49:00.000Z
+* recorded = 2024-03-19T06:45:00.000Z
 * action = #R
 * agent[0].requestor = true
 * agent[0].who = Reference(PractitionerRoleInstance2)
 * extension[_encounter].valueReference = Reference(EncounterInstance2)
 * extension[_patient].valueReference = Reference(PatientInstance2)
+* extension[_careRelationMetaData]   
+  * extension[toa].valueUnsignedInt = 1710830705 // toa  
 * source.site = "server.example.com"
 * source.type = http://terminology.hl7.org/CodeSystem/security-source-type#4 "Application Server"
 * source.observer = Reference(Device/ex-device)
-* purposeOfEvent.coding[+].code = #KX17  // "care-relationship:purpose-of-use:code" 
-* purposeOfEvent.coding[=].system = "urn:oid:2.16.578.1.12.4.1.1.8655" // "care-relationship:purpose-of-use:system"
-* purposeOfEvent.coding[=].display = "Fastlege, liste uten fast lege"  // "care-relationship:purpose-of-use:text"
+* purposeOfEvent[+].coding = $VOLVEN_8655#KX17 "Fastlege, liste uten fast lege"  // "care-relationship:purpose-of-use:*
 * extension[_careRelationMetaData]   
   * extension[toa].valueUnsignedInt = 1700121037 // toa
 * entity
