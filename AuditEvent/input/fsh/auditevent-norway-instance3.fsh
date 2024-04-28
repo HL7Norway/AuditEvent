@@ -1,7 +1,7 @@
 // Example input: https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#82-eksempel-2---ansatt-i-kommune-ber-om-tilgang-til-dokument
 
 Instance: PractitionerPointOfCareOrganizationInstance3
-InstanceOf: AuditEventNorwayPractitionerPointOfCareOrganization
+InstanceOf: AuditeventPractitionerPointofcareOrganization
 Usage: #inline
 * identifier.id = "875300342" // "practitioner:point-of-care:id"
 * identifier.system = $ORGNR  //  "practitioner:point-of-care:system"
@@ -9,7 +9,7 @@ Usage: #inline
 * name = "MADSERUDHJEMMET" // "practitioner:point-of-care:name"
 
 Instance: PractitionerPointOfCareInstance3
-InstanceOf: AuditEventNorwayPractitionerPointOfCare
+InstanceOf: AuditeventPractitionerPointofcare
 Usage: #inline
 * managingOrganization = Reference(PractitionerPointOfCareOrganizationInstance3)
 
@@ -26,7 +26,7 @@ Usage: #inline
 * qualification.code = $VOLVEN_9060#LE "Lege" //  "practitioner:authorization:*
 
 Instance: PractitionerLegalEntityInstance3
-InstanceOf: AuditEventNorwayPractitionerLegalEntity
+InstanceOf: AuditeventPractitionerLegalentity
 Usage: #inline
 * identifier.system =  $ORGNR // "practitioner:legal-entity:system"
 * identifier.id = "997506499" // "practitioner:legal-entity:id"
@@ -34,7 +34,7 @@ Usage: #inline
 * name = "OSLO KOMMUNE HELSEETATEN" // "practitioner:legal-entity:name"
 
 Instance: PractitionerRoleInstance3
-InstanceOf: AuditEventNorwayPractitionerRole
+InstanceOf: AuditeventPractitionerrole
 Usage: #inline
 Description: "PractitionerRoleInstance3"
 * active = true
@@ -43,7 +43,7 @@ Description: "PractitionerRoleInstance3"
 * location = Reference(PractitionerPointOfCareInstance3)
 
 Instance: EncounterInstance3
-InstanceOf: AuditEventNorwayEncounter
+InstanceOf: AuditeventEncounter
 Usage: #inline
 //Description: 
 //"""
@@ -55,7 +55,7 @@ Usage: #inline
  
 
 Instance: PatientInstance3
-InstanceOf: NOBasisAuditeventPatient
+InstanceOf: AuditeventPatient
 Usage: #inline
 * identifier.id = "05076600324" // "patients:identifier:id"
 * identifier.system = $FNR // "patients:identifier:system"

@@ -4,7 +4,7 @@ Title: "DIPS decision template codes used as basis of care relation between heal
 Description: """
 These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.
 
-Templates that user can select manually are marked as '(Eksplisitt mal)'.
+Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.
 
 """
 * ^url = "https://terminology.dips.com/decisiontemplate"

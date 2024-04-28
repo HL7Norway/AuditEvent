@@ -1,7 +1,7 @@
 // Example input: https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#81-eksempel-1---fastlege-ber-om-tilgang-til-dokument
 
 Instance: PractitionerPointOfCareInstance2
-InstanceOf: AuditEventNorwayPractitionerPointOfCare
+InstanceOf: AuditeventPractitionerPointofcare
 Usage: #inline
 * managingOrganization = Reference(PractitionerLegalEntityInstance2)
 
@@ -18,7 +18,7 @@ Usage: #inline
 * qualification.code = $VOLVEN_9060#LE "Lege" //  "practitioner:authorization:*"
 
 Instance: PractitionerLegalEntityInstance2
-InstanceOf: AuditEventNorwayPractitionerLegalEntity
+InstanceOf: AuditeventPractitionerLegalentity
 Usage: #inline
 * identifier.system =  $ORGNR // "practitioner:legal-entity:system"
 * identifier.id = "100100673" // "practitioner:legal-entity:id"
@@ -26,7 +26,7 @@ Usage: #inline
 * name = "Norsk Helsenett SF Fagersta Testlegekontor" // "practitioner:legal-entity:name"
 
 Instance: PractitionerRoleInstance2
-InstanceOf: AuditEventNorwayPractitionerRole
+InstanceOf: AuditeventPractitionerrole
 Usage: #inline
 Description: "PractitionerRoleInstance1"
 * active = true
@@ -35,7 +35,7 @@ Description: "PractitionerRoleInstance1"
 * location = Reference(PractitionerPointOfCareInstance2)
 
 Instance: EncounterInstance2
-InstanceOf: AuditEventNorwayEncounter
+InstanceOf: AuditeventEncounter
 Usage: #inline
 //Description: 
 //"""
@@ -50,7 +50,7 @@ Usage: #inline
 //* serviceProvider = Reference(AuditEventNorwayEncounterServiceProviderOrganizationInstance1)
 
 Instance: PatientInstance2
-InstanceOf: NOBasisAuditeventPatient
+InstanceOf: AuditeventPatient
 Usage: #inline
 * identifier.id = "05076600324" // "patients:identifier:id"
 * identifier.system = $FNR // "patients:identifier:system"

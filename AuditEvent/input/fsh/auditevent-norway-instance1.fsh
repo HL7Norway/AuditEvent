@@ -1,7 +1,7 @@
 // Example input: https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#83-eksempel-3---helsepersonell-i-foretak-ber-om-tilgang-til-dokument
 
 Instance: PractitionerPointOfCareOrganizationInstance1
-InstanceOf: AuditEventNorwayPractitionerPointOfCareOrganization
+InstanceOf: AuditeventPractitionerPointofcareOrganization
 Usage: #inline
 * identifier.id = "874716782" // "practitioner:point-of-care:id"
 * identifier.system = $ORGNR  //  "practitioner:point-of-care:system"
@@ -9,7 +9,7 @@ Usage: #inline
 * name = "OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK" // "practitioner:point-of-care:name"
 
 Instance: PractitionerPointOfCareInstance1
-InstanceOf: AuditEventNorwayPractitionerPointOfCare
+InstanceOf: AuditeventPractitionerPointofcare
 Usage: #inline
 * managingOrganization = Reference(PractitionerPointOfCareOrganizationInstance1)
 
@@ -26,7 +26,7 @@ Usage: #inline
 * qualification.code = $VOLVEN_9060#LE "Lege" //  "practitioner:authorization:*"
 
 Instance: PractitionerLegalEntityInstance1
-InstanceOf: AuditEventNorwayPractitionerLegalEntity
+InstanceOf: AuditeventPractitionerLegalentity
 Usage: #inline
 * identifier.system =  $ORGNR // "practitioner:legal-entity:system"
 * identifier.id = "993467049" // "practitioner:legal-entity:id"
@@ -34,7 +34,7 @@ Usage: #inline
 * name = "Oslo universitetssykehus HF" // "practitioner:legal-entity:name"
 
 Instance: PractitionerDepartment1
-InstanceOf: AuditEventNorwayPractitionerDepartment
+InstanceOf: AuditeventDepartment
 Usage: #inline
 * identifier.system = $RESHID // "practitioner:department:system"
 * identifier.id = "705592" // "practitioner:department:id"
@@ -43,7 +43,7 @@ Usage: #inline
 * partOf = Reference(PractitionerLegalEntityInstance1)
 
 Instance: PractitionerRoleInstance1
-InstanceOf: AuditEventNorwayPractitionerRole
+InstanceOf: AuditeventPractitionerrole
 Usage: #inline
 Description: "PractitionerRoleInstance1"
 * active = true
@@ -52,7 +52,7 @@ Description: "PractitionerRoleInstance1"
 * location = Reference(PractitionerPointOfCareInstance1)
 
 Instance: EncounterPointOfCareOrganizationInstance1
-InstanceOf: AuditEventNorwayEncounterPointOfCareOrganization
+InstanceOf: AuditeventEncounterPointofcareOrganization
 Usage: #inline
 * identifier.id = "974589095" // "patients:point_of_care_patient:id"
 * identifier.system = $ORGNR // "patients:point_of_care_patient:system"
@@ -60,12 +60,12 @@ Usage: #inline
 * name = "OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK" // "patients:point_of_care_patient:name"
 
 Instance: EncounterPointOfCareInstance1
-InstanceOf: AuditEventNorwayEncounterPointOfCare
+InstanceOf: AuditeventEncounterPointofcare
 Usage: #inline
 * managingOrganization = Reference(EncounterPointOfCareOrganizationInstance1)
 
 Instance: EncounterServiceProviderOrganizationInstance1
-InstanceOf: AuditEventNorwayEncounterServiceProviderOrganization
+InstanceOf: AuditeventEncounterServiceproviderOrganization
 Usage: #inline
 * identifier.id = "109765" //  "patients:department:id"
 * identifier.system = $RESHID // "patients:department:system"
@@ -73,7 +73,7 @@ Usage: #inline
 * name = "Øye dagkir/pol 1. etasje" //  "patients:department:name"
 
 Instance: EncounterInstance1
-InstanceOf: AuditEventNorwayEncounter
+InstanceOf: AuditeventEncounter
 Usage: #inline
 //Description: 
 //"""
@@ -87,7 +87,7 @@ Usage: #inline
 
 
 Instance: PatientInstance1
-InstanceOf: NOBasisAuditeventPatient
+InstanceOf: AuditeventPatient
 Usage: #inline
 * identifier.id = "05076600324" // "patients:identifier:id"
 * identifier.system = $FNR // "patients:identifier:system"
