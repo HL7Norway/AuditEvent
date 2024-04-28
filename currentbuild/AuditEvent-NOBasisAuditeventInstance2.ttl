@@ -23,8 +23,8 @@
      fhir:id [ fhir:v "PractitionerInstance2" ] ;
      fhir:meta [
        fhir:profile ( [
-         fhir:v "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitioner"^^xsd:anyURI ;
-         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitioner>
+         fhir:v "urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner"^^xsd:anyURI ;
+         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner>
        ] )
      ] ;
      fhir:identifier ( [
@@ -57,8 +57,8 @@
      fhir:id [ fhir:v "PractitionerLegalEntityInstance2" ] ;
      fhir:meta [
        fhir:profile ( [
-         fhir:v "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerLegalEntity"^^xsd:anyURI ;
-         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerLegalEntity>
+         fhir:v "urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-legalentity"^^xsd:anyURI ;
+         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-legalentity>
        ] )
      ] ;
      fhir:identifier ( [
@@ -74,8 +74,8 @@
      fhir:id [ fhir:v "PractitionerPointOfCareInstance2" ] ;
      fhir:meta [
        fhir:profile ( [
-         fhir:v "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerPointOfCare"^^xsd:anyURI ;
-         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerPointOfCare>
+         fhir:v "urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-pointofcare"^^xsd:anyURI ;
+         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-pointofcare>
        ] )
      ] ;
      fhir:managingOrganization [
@@ -86,8 +86,8 @@
      fhir:id [ fhir:v "PractitionerRoleInstance2" ] ;
      fhir:meta [
        fhir:profile ( [
-         fhir:v "urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerRole"^^xsd:anyURI ;
-         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerRole>
+         fhir:v "urn:no-basis-auditevent/StructureDefinition/auditevent-practitionerrole"^^xsd:anyURI ;
+         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/auditevent-practitionerrole>
        ] )
      ] ;
      fhir:active [ fhir:v "true"^^xsd:boolean ] ;
@@ -105,8 +105,8 @@
      fhir:id [ fhir:v "EncounterInstance2" ] ;
      fhir:meta [
        fhir:profile ( [
-         fhir:v "urn:no-basis-auditevent/StructureDefinition/no-basis-encounter-auditevent"^^xsd:anyURI ;
-         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/no-basis-encounter-auditevent>
+         fhir:v "urn:no-basis-auditevent/StructureDefinition/auditevent-encounter"^^xsd:anyURI ;
+         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/auditevent-encounter>
        ] )
      ] ;
      fhir:status [ fhir:v "unknown" ] ;
@@ -125,8 +125,8 @@
      fhir:id [ fhir:v "PatientInstance2" ] ;
      fhir:meta [
        fhir:profile ( [
-         fhir:v "urn:no-basis-auditevent/StructureDefinition/no-basis-patient-auditevent"^^xsd:anyURI ;
-         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/no-basis-patient-auditevent>
+         fhir:v "urn:no-basis-auditevent/StructureDefinition/auditevent-patient"^^xsd:anyURI ;
+         fhir:link <urn:no-basis-auditevent/urn:no-basis-auditevent/StructureDefinition/auditevent-patient>
        ] )
      ] ;
      fhir:identifier ( [

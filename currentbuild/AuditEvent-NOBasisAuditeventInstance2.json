@@ -12,7 +12,7 @@
     "resourceType" : "Practitioner",
     "id" : "PractitionerInstance2",
     "meta" : {
-      "profile" : ["urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitioner"]
+      "profile" : ["urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner"]
     },
     "identifier" : [{
       "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
@@ -45,7 +45,7 @@
     "resourceType" : "Organization",
     "id" : "PractitionerLegalEntityInstance2",
     "meta" : {
-      "profile" : ["urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerLegalEntity"]
+      "profile" : ["urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-legalentity"]
     },
     "identifier" : [{
       "id" : "100100673",
@@ -60,7 +60,7 @@
     "resourceType" : "Location",
     "id" : "PractitionerPointOfCareInstance2",
     "meta" : {
-      "profile" : ["urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerPointOfCare"]
+      "profile" : ["urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-pointofcare"]
     },
     "managingOrganization" : {
       "reference" : "#PractitionerLegalEntityInstance2"
@@ -70,7 +70,7 @@
     "resourceType" : "PractitionerRole",
     "id" : "PractitionerRoleInstance2",
     "meta" : {
-      "profile" : ["urn:no-basis-auditevent/StructureDefinition/AuditEventNorwayPractitionerRole"]
+      "profile" : ["urn:no-basis-auditevent/StructureDefinition/auditevent-practitionerrole"]
     },
     "active" : true,
     "practitioner" : {
@@ -87,7 +87,7 @@
     "resourceType" : "Encounter",
     "id" : "EncounterInstance2",
     "meta" : {
-      "profile" : ["urn:no-basis-auditevent/StructureDefinition/no-basis-encounter-auditevent"]
+      "profile" : ["urn:no-basis-auditevent/StructureDefinition/auditevent-encounter"]
     },
     "status" : "unknown",
     "class" : {
@@ -105,7 +105,7 @@
     "resourceType" : "Patient",
     "id" : "PatientInstance2",
     "meta" : {
-      "profile" : ["urn:no-basis-auditevent/StructureDefinition/no-basis-patient-auditevent"]
+      "profile" : ["urn:no-basis-auditevent/StructureDefinition/auditevent-patient"]
     },
     "identifier" : [{
       "id" : "05076600324",

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) v0.9.1</title>
+    <title>Artifacts Summary - NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) v0.9.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;)</span>
             <br/>
-            <span style="display:inline-block;">0.9.1 - ci-build
+            <span style="display:inline-block;">0.9.2 - ci-build
 
 
             </span>
@@ -114,7 +114,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) - Local Development build (v0.9.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="urn:no-basis-auditevent/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) - Local Development build (v0.9.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="urn:no-basis-auditevent/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -152,6 +152,107 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-department.html"
+                  title="StructureDefinition/auditevent-department">auditevent-department</a>
+            </td>
+            <td>
+<p>The health care department of the health care auditevent practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-encounter.html"
+                  title="StructureDefinition/auditevent-encounter">auditevent-encounter</a>
+            </td>
+            <td>
+<p>The encounter associated with auditevent if any (Auditevent._encounter).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-encounter-pointofcare.html"
+                  title="StructureDefinition/auditevent-encounter-pointofcare">auditevent-encounter-pointofcare</a>
+            </td>
+            <td>
+<p>The point of care location of auditevent encounter (Auditevent._encounter).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-encounter-pointofcare-organization.html"
+                  title="StructureDefinition/auditevent-encounter-pointofcare-organization">auditevent-encounter-pointofcare-organization</a>
+            </td>
+            <td>
+<p>The point of care managing organization of the auditevent encounter (Auditevent._encounter)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-encounter-serviceprovider-organization.html"
+                  title="StructureDefinition/auditevent-encounter-serviceprovider-organization">auditevent-encounter-serviceprovider-organization</a>
+            </td>
+            <td>
+<p>The service provider department of auditevent encounter (Auditevent._encounter).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-patient.html"
+                  title="StructureDefinition/auditevent-patient">auditevent-patient</a>
+            </td>
+            <td>
+<p>The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).</p>
+
+<p>NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-practitioner.html"
+                  title="StructureDefinition/auditevent-practitioner">auditevent-practitioner</a>
+            </td>
+            <td>
+<p>The health care audit event practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-practitioner-legalentity.html"
+                  title="StructureDefinition/auditevent-practitioner-legalentity">auditevent-practitioner-legalentity</a>
+            </td>
+            <td>
+<p>The health care managing organization (legal entity) of the health care auditevent practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-practitioner-pointofcare.html"
+                  title="StructureDefinition/auditevent-practitioner-pointofcare">auditevent-practitioner-pointofcare</a>
+            </td>
+            <td>
+<p>The point of care location of auditevent health care practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-practitioner-pointofcare-organization.html"
+                  title="StructureDefinition/auditevent-practitioner-pointofcare-organization">auditevent-practitioner-pointofcare-organization</a>
+            </td>
+            <td>
+<p>The point of care managing organization of auditevent health care practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-practitionerrole.html"
+                  title="StructureDefinition/auditevent-practitionerrole">auditevent-practitionerrole</a>
+            </td>
+            <td>
+<p>The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-no-basis-Location.html"
@@ -203,110 +304,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/no-basis-auditevent">no-basis-auditevent</a>
             </td>
             <td>
-<p>This is the main profile that describes the mapping <a href="https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer">Norwegian Trust Framework attributes (“Tillitsrammeverk”)</a> to AuditEvent Resource.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPractitionerDepartment.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerDepartment">no-basis-auditevent-department</a>
-            </td>
-            <td>
-<p>The health care department (practitioner:department) of the health care practitioner.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayEncounterPointOfCare.html"
-                  title="StructureDefinition/AuditEventNorwayEncounterPointOfCare">no-basis-auditevent-encounter-pointofcare</a>
-            </td>
-            <td>
-<p>The encounter location with patients:point_of_care_patient:* mapping.</p>
-
-<p>Pasientens nærmeste organisasjon, dvs organisasjonsnummer til enheten hvor pasienten behandles</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayEncounterPointOfCareOrganization.html"
-                  title="StructureDefinition/AuditEventNorwayEncounterPointOfCareOrganization">no-basis-auditevent-encounter-pointofcare-organization</a>
-            </td>
-            <td>
-<p>The encounter location organization for AuditEventNorway profile</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayEncounterServiceProviderOrganization.html"
-                  title="StructureDefinition/AuditEventNorwayEncounterServiceProviderOrganization">no-basis-auditevent-encounter-serviceprovider-organization</a>
-            </td>
-            <td>
-<p>The service provider organization of auditevent encounter for AuditEventNorway profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPractitioner.html"
-                  title="StructureDefinition/AuditEventNorwayPractitioner">no-basis-auditevent-practitioner</a>
-            </td>
-            <td>
-<p>The national identity (practitioner:identifier and :name), HPR-number (practitioner:hpr-nr) and qualification (practitioner:authorization) of the health care professional.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPractitionerLegalEntity.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerLegalEntity">no-basis-auditevent-practitioner-legalentity</a>
-            </td>
-            <td>
-<p>The health care organization (practitioner:legal-entity) of the health care practitioner.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPractitionerPointOfCare.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerPointOfCare">no-basis-auditevent-practitioner-pointofcare</a>
-            </td>
-            <td>
-<p>The point of care location (practitioner:point-of-care) of health care practitioner.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPractitionerPointOfCareOrganization.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerPointOfCareOrganization">no-basis-auditevent-practitioner-pointofcare-organization</a>
-            </td>
-            <td>
-<p>The point of care organization (practitioner:point-of-care) of health care practitioner.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AuditEventNorwayPractitionerRole.html"
-                  title="StructureDefinition/AuditEventNorwayPractitionerRole">no-basis-auditevent-practitionerrole</a>
-            </td>
-            <td>
-<p>The consumer health organization (practitioner:legal-entity) and department affiliation (practitioner:department) of the health care practitioner.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-no-basis-encounter-auditevent.html"
-                  title="StructureDefinition/no-basis-encounter-auditevent">no-basis-encounter-auditevent</a>
-            </td>
-            <td>
-<p>The encounter associated with audit event mapping of care-relation:healthcare-service:* and patients:point_of_care_patient:*</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-no-basis-patient-auditevent.html"
-                  title="StructureDefinition/no-basis-patient-auditevent">no-basis-patient-auditevent</a>
-            </td>
-            <td>
-<p>The patient (patients:identifier) that is the subject of the data used/created/updated/deleted during the activity</p>
-
-<p>NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.</p>
+<p>This is the main profile that describes the mapping of <a href="https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer">Norwegian Trust Framework attributes (“Tillitsrammeverk”)</a> to AuditEvent Resource.</p>
 </td>
          </tr>
       </tbody>
@@ -355,7 +353,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-no-basis-encounter-auditevent-servicetype.html"
-                  title="ValueSet/no-basis-encounter-auditevent-servicetype">AuditEvent Encounter.servicetype valueset</a>
+                  title="ValueSet/no-basis-encounter-auditevent-servicetype">AuditEvent encounter.servicetype valueset</a>
             </td>
             <td>
 <p>Valueset for Encounter.serviceType used in context of auditevent. See <a href="https://volven.no/">volven.no</a> or <a href="https://beta.finnkode.ehelse.no/adm/collections">FinnKode</a> for definition.</p>
@@ -386,7 +384,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>
 <p>These are templates with various justifications that can be used as a basis for accessing the patient’s medical record at hospitals that utilize DIPS as their journal system.</p>
 
-<p>Templates that user can select manually are marked as ‘(Eksplisitt mal)’.</p>
+<p>Templates that user, if authorized, can select manually as reason for accessing patient’s medical record are marked as ‘(Eksplisitt mal)’.</p>
 </td>
          </tr>
       </tbody>
@@ -440,20 +438,14 @@ NO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgan
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventTokenMappingNorwayID#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Apr 6, 2024 16:49+0000">2024-04-06</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package AuditEventTokenMappingNorwayID#0.9.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Apr 28, 2024 16:36+0000">2024-04-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -480,16 +472,8 @@ NO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgan
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
   <!-- Analytics Below
   ================================================== -->
   </body>

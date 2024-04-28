@@ -5,9 +5,9 @@
   "description" : null,
   "status" : "draft",
   "package-id" : "AuditEventTokenMappingNorwayID",
-  "ig-ver" : "0.9.1",
-  "date" : "Sat, 06 Apr, 2024 16:49:55 +0000",
-  "dateISO8601" : "2024-04-06T16:49:55+00:00",
+  "ig-ver" : "0.9.2",
+  "date" : "Sun, 28 Apr, 2024 16:36:28 +0000",
+  "dateISO8601" : "2024-04-28T16:36:28+00:00",
   "errs" : 14,
   "warnings" : 28,
   "hints" : 18,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1679017088
+  "maxMemory" : 2251808728
 }
