@@ -1,5 +1,5 @@
 Profile: NOBasisPatient
-Id: no-basis-patient
+Id: no-basis-Patient
 Parent: Patient
 Title: "no-basis-Patient (shadow)"
 Description: """
@@ -24,6 +24,7 @@ This is a shadow profile that will be replaced by [no-basis-Organization](https:
 
 Profile: NoBasisPractitioner
 Parent: Practitioner
+Id: no-basis-Practitioner
 Title: "no-basis-Practitioner (shadow)"
 Description: """
 This is a shadow profile that should be replaced by [no-basis-Practitioner](https://simplifier.net/hl7norwayno-basis/nobasispractitioner)
