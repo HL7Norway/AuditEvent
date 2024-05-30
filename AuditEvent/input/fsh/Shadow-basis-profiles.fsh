@@ -1,6 +1,6 @@
 Profile: NOBasisPatient
-Id: no-basis-Patient
 Parent: Patient
+Id: no-basis-Patient
 Title: "no-basis-Patient (shadow)"
 Description: """
 This should be replaced by [no-basis-Patient](https://simplifier.net/hl7norwayno-basis/nobasispatient)

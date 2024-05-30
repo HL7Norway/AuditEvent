@@ -4,6 +4,8 @@ Title: "AuditEvent encounter.servicetype valueset"
 Description: """
 Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition.
 """
+* ^status = #active
+* ^version = "2.3.0"
 * include codes from system $VOLVEN_8655
 * include codes from system $VOLVEN_8663
 * include codes from system $VOLVEN_8451
@@ -14,6 +16,8 @@ Title: "PurposeOfEvent valueset"
 Description: """
 Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)
 """
+* ^status = #active
+* ^version = "2.3.0"
 * include codes from valueset http://terminology.hl7.org/ValueSet/v3-PurposeOfUse
 * include codes from system DIPSDecisionTemplate
 * include codes from system $VOLVEN_9151

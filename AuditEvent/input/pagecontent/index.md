@@ -1,7 +1,7 @@
-# Implementation guide for AuditEvent for trust framework in Norway ("Nasjonalt Tillitsrammeverk")
+# no-basis-AuditEvent
 
 ## Introduction
-This implementation guide describes the relationship between elements of HL7 FHIR AuditEvent and attributes defined in [Tillitsrammeverk](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#42-datamodell) in cross organization data sharing use cases, i.e. the mapping of attributes described in Tillitsrammeverk into HL7 FHIR AuditEvent elements. The guide is meant to complement other implementation guides that describes the actual audit event transactions (e.g. document read, referral created, etc.). 
+This implementation guide describes the the minimum and recommended set of informasjon that should be logged according to [Norwegian Code of Conduct ("Normen")](https://www.ehelse.no/normen/documents-in-english) 6.1 chapter 5.4.4. The guide is based on the list of attributes defined by [Tillitsrammeverk](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#42-datamodell) used in data sharing scenarios between consumer and provider organizations. 
 
 ## Background
 In a scenario where a healthcare organization (such as a hospital, GPs, etc.) needs to access patient health data from another healthcare organization or national service, both the consumer and service provider organizations are legally required to maintain proper audit logs for future analysis. 

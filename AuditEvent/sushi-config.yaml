@@ -3,8 +3,8 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: AuditEventTokenMappingNorwayID
-canonical: urn:no-basis-auditevent 
+id: hl7.fhir.no.auditevent
+canonical: http://hl7.no/fhir
 name: urn:no-basis-auditevent 
 title: NO Basis AuditEvent IG Trust Framework ("Nasjonalt tillitsrammeverk")
 # description: Example Implementation Guide for getting started with SUSHI

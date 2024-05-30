@@ -3,6 +3,8 @@ Id: auditevent-encounter-serviceprovider-organization
 Parent: NoBasisOrganization
 Title: "auditevent-encounter-serviceprovider-organization"
 Description: "The service provider department of auditevent encounter (Auditevent._encounter)."
+* ^status = #active
+* ^version = "2.3.0"
 * identifier ^short = "patients:department:id, :system and :authority"
 * identifier.id ^short = "patients:department:id"
 * identifier.system ^short = "patients:department:system"
@@ -15,11 +17,14 @@ Id: auditevent-encounter-pointofcare-organization
 Parent: NoBasisOrganization
 Title: "auditevent-encounter-pointofcare-organization"
 Description: "The point of care managing organization of the auditevent encounter (Auditevent._encounter)"
+* ^status = #active
+* ^version = "2.3.0"
 * identifier ^short = "patients:point_of_care_patient:id, :system and :authority"
 * identifier.id ^short = "patients:point_of_care_patient:id"
 * identifier.system ^short = "patients:point_of_care_patient:system"
 * identifier.assigner.display ^short = "patients:point_of_care_patient:authority"
 * name ^short = "patients:point_of_care_patient:name"
+
 
 Profile: AuditeventEncounterPointofcare
 Id: auditevent-encounter-pointofcare
@@ -28,6 +33,8 @@ Title: "auditevent-encounter-pointofcare"
 Description: """
 The point of care location of auditevent encounter (Auditevent._encounter).
 """
+* ^status = #active
+* ^version = "2.3.0"
 * managingOrganization ^short = "patients:point_of_care_patient:*"
 * managingOrganization only Reference(AuditeventEncounterPointofcareOrganization)
 
@@ -38,6 +45,8 @@ Title: "auditevent-encounter"
 Description: """
 The encounter associated with auditevent if any (Auditevent._encounter).
 """
+* ^status = #active
+* ^version = "2.3.0"
 * serviceType ^short = "care-relation:healthcare-service:*"
 * serviceType.coding.code ^short = "care-relation:healthcare-service:code"
 * serviceType.coding.system ^short = "care-relation:healthcare-service:system"
@@ -57,6 +66,8 @@ The patient (patients:identifier) that is the subject of the auditevent activity
 
 NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.
 """
+* ^status = #active
+* ^version = "2.3.0"
 * identifier ^short = "patients:identifier:id, :system and :authority"
 * identifier.id ^short = "patients:identifier:id"
 * identifier.system ^short = "patients:identifier:system"
@@ -71,6 +82,8 @@ Title: "auditevent-practitioner-pointofcare-organization"
 Description: """
 The point of care managing organization of auditevent health care practitioner actor (Auditevent.agent.who).
 """
+* ^status = #active
+* ^version = "2.3.0"
 * identifier ^short = "practitioner:point-of-care:id, :system, :authority"
 * identifier.id ^short = "practitioner:point-of-care:id"
 * identifier.system ^short = "practitioner:point-of-care:system"
@@ -84,6 +97,8 @@ Title: "auditevent-practitioner-pointofcare"
 Description: """
 The point of care location of auditevent health care practitioner actor (Auditevent.agent.who).
 """
+* ^status = #active
+* ^version = "2.3.0"
 * managingOrganization only Reference(AuditeventPractitionerPointofcareOrganization)
 * managingOrganization ^short = "practitioner:point-of-care"
 
@@ -94,6 +109,8 @@ Title: "auditevent-practitioner-legalentity"
 Description: """
 The health care managing organization (legal entity) of the health care auditevent practitioner actor (Auditevent.agent.who).
 """
+* ^status = #active
+* ^version = "2.3.0"
 * identifier ^short = "practitioner:legal-entity:id, :system, :authority"
 * identifier.system ^short = "practitioner:legal-entity:system"
 * identifier.id ^short = "practitioner:legal-entity:id"
@@ -107,6 +124,8 @@ Title: "auditevent-department"
 Description: """
 The health care department of the health care auditevent practitioner actor (Auditevent.agent.who).
 """
+* ^status = #active
+* ^version = "2.3.0"
 * identifier ^short = "practitioner:department:id, :system, :authority"
 * identifier.system ^short = "practitioner:department:system"
 * identifier.id ^short = "practitioner:department:id"
@@ -122,6 +141,8 @@ Title: "auditevent-practitioner"
 Description: """
 The health care audit event practitioner actor (Auditevent.agent.who).  
 """
+* ^status = #active
+* ^version = "2.3.0"
 * identifier ^short = "practitioner:identifier and practitioner:hpr-nr"
 * identifier.system ^short = "practitioner:identifier:system and practitioner:hpr-nr:system" 
 * identifier.value ^short = "practitioner:identifier:id and practitioner:hpr-nr:id"
@@ -138,6 +159,8 @@ Title: "auditevent-practitionerrole"
 Description: """
 The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).
 """
+* ^status = #active
+* ^version = "2.3.0"
 * practitioner only Reference(AuditEventNorwayPractitioner) 
 * practitioner ^short = "practitioner:identifier, practitioner:hpr-nr and practitioner:authorization"
 * organization only Reference(auditevent-department or AuditeventPractitionerLegalentity) 
@@ -146,12 +169,14 @@ The health care practitioner auditevent actor at managing organization (Auditeve
 * location ^short = "practitioner:point-of-care"
 
 Profile:        NOBasisAuditevent
-Id: no-basis-auditevent
+Id: no-basis-Auditevent
 Parent:         AuditEvent
 Title:          "no-basis-auditevent"
 Description: """
 This is the main profile that describes the mapping of [Norwegian Trust Framework attributes ("Tillitsrammeverk")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.
 """
+* ^status = #active
+* ^version = "2.3.0"
 * agent.who only Reference(AuditeventPractitionerrole)
 * purposeOfEvent ^short = "care-relationship:purpose-of-use:code, :system and :text and care-relationship:purpose-of-use-details:code, :system and :text"
 * purposeOfEvent.coding.code ^short = "care-relationship:purpose-of-use:code and care-relationship:purpose-of-use-details:code"

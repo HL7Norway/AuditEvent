@@ -3,6 +3,8 @@ Title: "AuditEventEncounterExtension"
 Description: "Extension that extends FHIR AuditEvent R4 with Encounter reference which was introduced in FHIR AuditEvent R5"
 * ^context.type = #element
 * ^context.expression = "AuditEvent"
+* ^status = #active
+* ^version = "2.3.0"
 * value[x] only Reference(AuditeventEncounter)
 
 Extension: AuditEventPatientExtension
@@ -10,6 +12,8 @@ Title: "AuditEventPatientExtension"
 Description: "Extension that extends FHIR AuditEvent R4 with en Patient reference which was introduced in FHIR AuditEvent R5"
 * ^context.type = #element
 * ^context.expression = "AuditEvent"
+* ^status = #active
+* ^version = "2.3.0"
 * value[x] only Reference(AuditeventPatient)
 
 Extension: CareRelationMetaData
@@ -19,6 +23,8 @@ This extension is used to carry attributes from Norwegian Trust Framework (Nasjo
 """
 * ^context.type = #element
 * ^context.expression = "AuditEvent"
+* ^status = #active
+* ^version = "2.3.0"
 * extension contains
     decision-ref-id 0..1 and
     decision-ref-description 0..1 and
