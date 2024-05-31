@@ -1,3 +1,4 @@
+/*
 Profile: NOBasisPatient
 Parent: Patient
 Id: no-basis-Patient
@@ -5,6 +6,7 @@ Title: "no-basis-Patient (shadow)"
 Description: """
 This should be replaced by [no-basis-Patient](https://simplifier.net/hl7norwayno-basis/nobasispatient)
 """
+*/
 
 Profile: NOBasisLocation
 Parent: Location

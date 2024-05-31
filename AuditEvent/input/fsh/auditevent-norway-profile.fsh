@@ -59,7 +59,7 @@ The encounter associated with auditevent if any (Auditevent._encounter).
 
 Profile: AuditeventPatient
 Id: auditevent-patient
-Parent: NOBasisPatient
+Parent: NoBasisPatient
 Title: "auditevent-patient"
 Description: """
 The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).
