@@ -244,6 +244,142 @@
 
 
 
+<div style="display:inline-block" markdown="1">
+
+<p>From versjon -6:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Category</th>
+      <th style="text-align: left">Attribute</th>
+      <th style="text-align: left">Description (Norwegian only)</th>
+      <th style="text-align: left">Resource</th>
+      <th style="text-align: left">Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">“toa”</td>
+      <td style="text-align: left">Tidspunkt (unixtid/epoch time) da attestering ble utført.</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/auditevent">AuditEvent</a></td>
+      <td style="text-align: left">This profile</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">practitioner</td>
+      <td style="text-align: left">“identifier”</td>
+      <td style="text-align: left">Helsepersonellets fødselsnummer og navn fra folkeregisteret</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-practitioner.html">auditevent-practitioner</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">practitioner</td>
+      <td style="text-align: left">“hpr-nr”</td>
+      <td style="text-align: left">Helsepersonellets HPR-nummer, dersom det finnes</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-practitioner.html">auditevent-practitioner</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">practitioner</td>
+      <td style="text-align: left">“authorization”</td>
+      <td style="text-align: left">Helsepersonellets autorisasjon, dersom den finnes</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-practitioner.html">auditevent-practitioner</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">practitioner</td>
+      <td style="text-align: left">“legal-entity”</td>
+      <td style="text-align: left">Hovedenheten (den juridisk ansvarlige virksomheten) hvor helsepersonellet jobber sitt org.nr og navn.</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/organization.html">Organization</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-practitioner-legalentity.html">auditevent-practitioner-legalentity</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">practitioner</td>
+      <td style="text-align: left">“point-of-care”</td>
+      <td style="text-align: left">Behandlingsstedets org.nr. og navn.<br />Kan være lik verdi som i “legal-entity”</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/organization.html">Organization</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-practitioner-pointofcare-organization.html">auditevent-encounter-pointofcare-organization</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">practitioner</td>
+      <td style="text-align: left">“department”</td>
+      <td style="text-align: left">Avdeling/org.enhet hvor helsepersonellet yter helsehjelp</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/organization.html">Organization</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-department.html">auditevent-department</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">care-relation</td>
+      <td style="text-align: left">“healthcare-service”</td>
+      <td style="text-align: left">Helsetjenestetyper som leveres ved virksomheten</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-encounter.html">auditevent-encounter</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">care-relation</td>
+      <td style="text-align: left">“purpose-of-use”</td>
+      <td style="text-align: left">Helsepersonellets formål med helseopplysningene (til hva de skal brukes)</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/auditevent.html">AuditEvent</a></td>
+      <td style="text-align: left">This profile</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">care-relation</td>
+      <td style="text-align: left">“purpose-of-use-details”</td>
+      <td style="text-align: left">Detaljert beskrivelse av helsepersonellets formål med helseopplysningene (til hva de skal brukes)</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/auditevent.html">AuditEvent</a></td>
+      <td style="text-align: left">This profile</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">care-relation</td>
+      <td style="text-align: left">“decision-ref”</td>
+      <td style="text-align: left">Referanse til lokal tilgangsbeslutning</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/auditevent.html">AuditEvent</a></td>
+      <td style="text-align: left">This profile</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">patient</td>
+      <td style="text-align: left">“identifier”</td>
+      <td style="text-align: left">Unik identifikator for pasienten</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/patient.html">Patient</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-patient.html">auditevent-patient</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">patient</td>
+      <td style="text-align: left">“point-of-care”</td>
+      <td style="text-align: left">Virksomheten hvor pasienten mottar behandling <br />Kan være lik verdi som i “legal-entity”</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/organization.html">Organization</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-encounter-pointofcare-organization.html">auditevent-encounter-pointofcare-organization</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">patient</td>
+      <td style="text-align: left">“department”</td>
+      <td style="text-align: left">Avdeling/org.enhet hvor pasienten mottar helsehjelp</td>
+      <td style="text-align: left"><a href="https://hl7.org/fhir/R4/organization.html">Organization</a></td>
+      <td style="text-align: left"><a href="StructureDefinition-auditevent-encounter-serviceprovider-organization.html">auditevent-encounter-serviceprovider-organization</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This implementation guide is based on R4, but adds two extentions to be forward compatible with R5:</p>
+<ul>
+  <li><a href="https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.encounter">_encounter</a></li>
+  <li><a href="https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.patient">_patient</a></li>
+</ul>
+
+<blockquote>
+  <p>NOTE! Since data type <a href="https://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a> does not have the assigner/authority, the <code class="language-plaintext highlighter-rouge">kodeverk-attributt.assigner</code> is ignored by design. See <a href="https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#4221-konvensjoner-brukt-i-datamodellen">conventions</a></p>
+</blockquote>
+
+<p><img src="AuditEvent-ClassDiagram.svg" alt="AuditEventNorwayUML" />
+It is possible to navigate by clicking directly on entities by opening the diagram in its own window by clicking <a href="AuditEvent-ClassDiagram.svg">here</a>.</p>
+
+<p>The mappings to AuditEvent fields are described in the “Description &amp; Constraint” column.</p>
+
+</div>
+
+
+
+
 <p><b>Usage:</b></p>
 <ul>
  <li>Examples for this Resource Profile: <a href="AuditEvent-NOBasisAuditeventInstance1.html">AuditEvent/NOBasisAuditeventInstance1</a>, <a href="AuditEvent-NOBasisAuditeventInstance2.html">AuditEvent/NOBasisAuditeventInstance2</a> and <a href="AuditEvent-NOBasisAuditeventInstance3.html">AuditEvent/NOBasisAuditeventInstance3</a></li>
@@ -2671,7 +2807,7 @@ Not handled yet: complex extension http://hl7.no/fhir/StructureDefinition/audite
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.auditevent#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 4, 2024 05:44+0000">2024-06-04</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.auditevent#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 4, 2024 06:11+0000">2024-06-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

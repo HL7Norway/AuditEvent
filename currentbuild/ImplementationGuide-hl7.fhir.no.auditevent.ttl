@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "urnnobasisauditevent"] ; # 
   fhir:title [ fhir:v "NO Basis AuditEvent IG Trust Framework (\"Nasjonalt tillitsrammeverk\")"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-04T05:44:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-04T06:11:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;

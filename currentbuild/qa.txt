@@ -3,8 +3,8 @@ urnnobasisauditevent : Validation Results
 
 err = 63, warn = 39, info = 21
 IG Publisher Version: 1.6.10
-Generated Tue Jun 04 05:45:13 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.auditevent#2.3.0 (canonical = http://hl7.no/fhir)
- Build Errors : 33 / 7 / 0
+Generated Tue Jun 04 06:12:18 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.auditevent#2.3.0 (canonical = http://hl7.no/fhir)
+ Build Errors : 32 / 7 / 0
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1 : 6 / 3 / 27
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance2 : 6 / 4 / 16
  /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance3 : 6 / 6 / 18
@@ -76,7 +76,6 @@ ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-
 ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 2984: The link 'RatioRange.html' for "RatioRange" cannot be resolved
 ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 3928: The link 'Availability.html' for "Availability" cannot be resolved
 ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 3974: The link 'ExtendedContactDetail.html' for "ExtendedContactDetail" cannot be resolved
-ERROR: /github/workspace/AuditEvent/output/index.html#/html/body/div/div/div/div/div/p/a at Line 188, column 17: The link 'StructureDefinition-no-basis-auditevent.html' for "no-basis-auditevent" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
