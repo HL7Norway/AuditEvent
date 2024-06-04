@@ -11,7 +11,7 @@ These audit logs necessitate some contextual information that describes the pati
 Only a small portion of the contextual information is transferred to the service provider in the form of attributes in a security token described in [Nasjonalt tillitsrammeverk](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#42-datamodell), typically JWT or SAML. That means the referenced resources metioned above need to be constructed based solely on the contents of a security token at the service provide side, and hence will be partially populated compared to the consumer provider side. In such scenarios the referenced resources will typically appear as contained resources within an AuditEvent Resource. 
 
 ## Next step
-Navigate to [no-basis-auditevent](StructureDefinition-no-basis-auditevent.html) profile.
+Navigate to [no-basis-Auditevent](StructureDefinition-no-basis-Auditevent.html) profile.
 
 ## You can also download:
 
