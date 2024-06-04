@@ -171,7 +171,7 @@ The health care practitioner auditevent actor at managing organization (Auditeve
 Profile:        NOBasisAuditevent
 Id: no-basis-Auditevent
 Parent:         AuditEvent
-Title:          "no-basis-auditevent"
+Title:          "no-basis-Auditevent"
 Description: """
 This is the main profile that describes the mapping of [Norwegian Trust Framework attributes ("Tillitsrammeverk")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.
 """
@@ -186,7 +186,7 @@ This is the main profile that describes the mapping of [Norwegian Trust Framewor
 * extension contains 
   AuditEventEncounterExtension named _encounter 0..1 MS and
   AuditEventPatientExtension named _patient 0..1 MS and 
-	CareRelationMetaData named _careRelationMetaData 0..1 MS 
+	AuditEventCareRelationMetaData named _careRelationMetaData 0..1 MS 
 * extension[_careRelationMetaData] MS  
   * ^short = "toa, care-relationship:decision-ref:id, :description, :user-selected"
   * extension[decision-ref-id] ^short = "care-relationship:decision-ref:id"

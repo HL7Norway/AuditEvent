@@ -1,4 +1,5 @@
 Extension: AuditEventEncounterExtension
+Id: auditevent-encounter-extension
 Title: "AuditEventEncounterExtension"
 Description: "Extension that extends FHIR AuditEvent R4 with Encounter reference which was introduced in FHIR AuditEvent R5"
 * ^context.type = #element
@@ -8,6 +9,7 @@ Description: "Extension that extends FHIR AuditEvent R4 with Encounter reference
 * value[x] only Reference(AuditeventEncounter)
 
 Extension: AuditEventPatientExtension
+Id: auditevent-patient-extension
 Title: "AuditEventPatientExtension"
 Description: "Extension that extends FHIR AuditEvent R4 with en Patient reference which was introduced in FHIR AuditEvent R5"
 * ^context.type = #element
@@ -16,7 +18,8 @@ Description: "Extension that extends FHIR AuditEvent R4 with en Patient referenc
 * ^version = "2.3.0"
 * value[x] only Reference(AuditeventPatient)
 
-Extension: CareRelationMetaData
+Extension: AuditEventCareRelationMetaData
+Id: auditevent-carerelation-metadata-extension
 Title: "AuditEventCareRelationMetaData"
 Description: """
 This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for.
