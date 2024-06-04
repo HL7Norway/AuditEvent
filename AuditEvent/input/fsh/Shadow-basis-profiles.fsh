@@ -1,5 +1,5 @@
 /*
-Profile: NOBasisPatient
+Profile: NoBasisPatient
 Parent: Patient
 Id: no-basis-Patient
 Title: "no-basis-Patient (shadow)"
