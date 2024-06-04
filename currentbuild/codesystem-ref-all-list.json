@@ -10,11 +10,35 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
+      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.4.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.4.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -193,9 +217,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -279,7 +303,7 @@
       "description" : "Attached is vocabulary for the record lifecycle events, as per DICOM Audit Message, ",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents"
+      "http://hl7.org/fhir/extensions/5.1.0/ValueSet-object-lifecycle-events.html" : "ObjectLifecycleEvents"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diet",
@@ -350,8 +374,8 @@
       "description" : "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-      "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents"
+      "http://hl7.org/fhir/extensions/5.1.0/ValueSet-object-lifecycle-events.html" : "ObjectLifecycleEvents",
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -581,8 +605,8 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
     },
     {
@@ -608,13 +632,13 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
     },
     {
       "url" : "https://terminology.dips.com/decisiontemplate",
-      "version" : "0.9.2",
+      "version" : "2.3.0",
       "status" : "draft",
       "name" : "DIPSDecisionTemplate",
       "title" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",

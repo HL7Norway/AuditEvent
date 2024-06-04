@@ -1,0 +1,228 @@
+urnnobasisauditevent : Validation Results
+=========================================
+
+err = 63, warn = 39, info = 21
+$--
+Generated $--. FHIR version $-- for hl7.fhir.no.auditevent#$-- (canonical = http://hl7.no/fhir)
+ Build Errors : 33 / 7 / 0
+ /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1 : 6 / 3 / 27
+ /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance2 : 6 / 4 / 16
+ /github/workspace/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance3 : 6 / 6 / 18
+ /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-decisiontemplate : 2 / 2 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.auditevent : 0 / 2 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-carerelation-metadata-extension : 1 / 0 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-department : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-encounter : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-encounter-extension : 1 / 0 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-encounter-pointofcare : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-encounter-pointofcare-organization : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-encounter-serviceprovider-organization : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-patient : 3 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-patient-extension : 1 / 0 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-practitioner : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-practitioner-legalentity : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-practitioner-pointofcare : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-practitioner-pointofcare-organization : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-auditevent-practitionerrole : 1 / 0 / 2
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-Address : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-Auditevent : 1 / 0 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-HumanName : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-Location : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-Organization : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-Patient : 5 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-Practitioner : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-PractitionerRole : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-address-official : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-middlename : 3 / 0 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-propertyinformation : 2 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/StructureDefinition-no-basis-urban-district : 1 / 1 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/ValueSet-no-basis-auditevent-purpose-of-event : 1 / 2 / 1
+ /github/workspace/AuditEvent/fsh-generated/resources/ValueSet-no-basis-encounter-auditevent-servicetype : 1 / 2 / 1
+</table>
+== n/a ==
+WARNING: Address.extension: The reference urn:oid:2.16.578.1.12.4.1.1.3403 could not be resolved
+WARNING: Patient.extension.extension.value: The reference urn:iso:std:iso:3166 could not be resolved
+WARNING: Extension.extension.value: The reference urn:oid:2.16.578.1.12.4.1.1.3402 could not be resolved
+ERROR: StructureDefinition-auditevent-patient.html: The reference integer64 could not be resolved
+ERROR: StructureDefinition-auditevent-patient.html: The reference CodeableReference could not be resolved
+ERROR: StructureDefinition-auditevent-patient.html: The reference RatioRange could not be resolved
+ERROR: StructureDefinition-auditevent-patient.html: The reference Availability could not be resolved
+ERROR: StructureDefinition-auditevent-patient.html: The reference ExtendedContactDetail could not be resolved
+ERROR: /github/workspace/AuditEvent/output/searchform.html: Unable to read attribute 'tillitsrammeverk' value on <iframe> at line 92 column 184
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3466: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3838: The link 'Bundle/Documentlist' for "Bundle/Documentlist" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 2575: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance2.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 2947: The link 'StructureDefinition/DocumentReference' for "StructureDefinition/DocumentReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance3.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3089: The link 'Device/ex-device' for "Device/ex-device" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/AuditEvent-NOBasisAuditeventInstance3.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3461: The link 'StructureDefinition/DocumentReference' for "StructureDefinition/DocumentReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 286, column 1592: The link 'integer64.html' for "integer64" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 286, column 3102: The link 'CodeableReference.html' for "CodeableReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 286, column 4424: The link 'RatioRange.html' for "RatioRange" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 286, column 5764: The link 'Availability.html' for "Availability" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 286, column 5810: The link 'ExtendedContactDetail.html' for "ExtendedContactDetail" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 548, column 1088: The link 'integer64.html' for "integer64" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 548, column 2094: The link 'CodeableReference.html' for "CodeableReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 548, column 2984: The link 'RatioRange.html' for "RatioRange" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 548, column 3928: The link 'Availability.html' for "Availability" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-auditevent-patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 548, column 3974: The link 'ExtendedContactDetail.html' for "ExtendedContactDetail" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 361, column 1592: The link 'integer64.html' for "integer64" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 361, column 3102: The link 'CodeableReference.html' for "CodeableReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 361, column 4424: The link 'RatioRange.html' for "RatioRange" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 361, column 5764: The link 'Availability.html' for "Availability" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 361, column 5810: The link 'ExtendedContactDetail.html' for "ExtendedContactDetail" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 1088: The link 'integer64.html' for "integer64" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 2094: The link 'CodeableReference.html' for "CodeableReference" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 2984: The link 'RatioRange.html' for "RatioRange" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 3928: The link 'Availability.html' for "Availability" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/StructureDefinition-no-basis-Patient-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 3974: The link 'ExtendedContactDetail.html' for "ExtendedContactDetail" cannot be resolved
+ERROR: /github/workspace/AuditEvent/output/index.html#/html/body/div/div/div/div/div/p/a at Line 188, column 17: The link 'StructureDefinition-no-basis-auditevent.html' for "no-basis-auditevent" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1.json ==
+INFORMATION: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[0]/*Practitioner/PractitionerInstance1*/.qualification[0].code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9060' could not be found, so the code cannot be validated
+WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[1]/*PractitionerRole/PractitionerRoleInstance1*/.organization: Found multiple matching profiles for #PractitionerDepartment1 among choices: http://hl7.no/fhir/StructureDefinition/auditevent-department, http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-legalentity
+WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[6]/*Encounter/EncounterInstance1*/.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[6]/*Encounter/EncounterInstance1*/.serviceType.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8655' could not be found, so the code cannot be validated
+ERROR: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.contained[10]/*Patient/PatientInstance1*/.identifier[0]: Patient.identifier:FNR.value: minimum required = 1, but only found 0 (from http://hl7.no/fhir/StructureDefinition/auditevent-patient|2.3.0)
+ERROR: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.extension[1].value.ofType(Reference): Unable to find a match for profile #PatientInstance1 among choices: http://hl7.no/fhir/StructureDefinition/auditevent-patient
+INFORMATION: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.extension[1].value.ofType(Reference): Details for #PatientInstance1 matching against profile http://hl7.no/fhir/StructureDefinition/auditevent-patient|2.3.0
+INFORMATION: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.purposeOfEvent[1]: Reference to experimental CodeSystem https://terminology.dips.com/decisiontemplate|2.3.0
+ERROR: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.source.observer: Unable to resolve resource with reference 'Device/ex-device'
+ERROR: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.entity[0].what: Unable to resolve resource with reference 'Bundle/Documentlist'
+WARNING: AuditEvent/NOBasisAuditeventInstance1: AuditEvent.entity[0].type: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: AuditEvent.text.div: Hyperlink 'Device/ex-device' at 'div/table/tr/td/a' for 'Device/ex-device' does not resolve
+ERROR: AuditEvent.text.div: Hyperlink 'Bundle/Documentlist' at 'div/table/tr/td/a' for 'Bundle/Documentlist' does not resolve
+== fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance2.json ==
+INFORMATION: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.contained[0]/*Practitioner/PractitionerInstance2*/.qualification[0].code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9060' could not be found, so the code cannot be validated
+WARNING: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.contained[3]/*PractitionerRole/PractitionerRoleInstance2*/.organization: Found multiple matching profiles for #PractitionerLegalEntityInstance2 among choices: http://hl7.no/fhir/StructureDefinition/auditevent-department, http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-legalentity
+WARNING: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.contained[4]/*Encounter/EncounterInstance2*/.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.contained[4]/*Encounter/EncounterInstance2*/.serviceType.coding[0]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8655' could not be found, so the code cannot be validated
+ERROR: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.contained[5]/*Patient/PatientInstance2*/.identifier[0]: Patient.identifier:FNR.value: minimum required = 1, but only found 0 (from http://hl7.no/fhir/StructureDefinition/auditevent-patient|2.3.0)
+ERROR: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.extension[1].value.ofType(Reference): Unable to find a match for profile #PatientInstance2 among choices: http://hl7.no/fhir/StructureDefinition/auditevent-patient
+INFORMATION: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.extension[1].value.ofType(Reference): Details for #PatientInstance2 matching against profile http://hl7.no/fhir/StructureDefinition/auditevent-patient|2.3.0
+WARNING: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.purposeOfEvent[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8655' could not be found, so the code cannot be validated
+ERROR: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.source.observer: Unable to resolve resource with reference 'Device/ex-device'
+ERROR: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.entity[0].what: Unable to resolve resource with reference 'StructureDefinition/DocumentReference'
+WARNING: AuditEvent/NOBasisAuditeventInstance2: AuditEvent.entity[0].type: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: AuditEvent.text.div: Hyperlink 'Device/ex-device' at 'div/table/tr/td/a' for 'Device/ex-device' does not resolve
+ERROR: AuditEvent.text.div: Hyperlink 'StructureDefinition/DocumentReference' at 'div/table/tr/td/a' for 'StructureDefinition/DocumentReference' does not resolve
+== fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance3.json ==
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[0]/*PractitionerRole/PractitionerRoleInstance3*/.organization: Found multiple matching profiles for #PractitionerLegalEntityInstance3 among choices: http://hl7.no/fhir/StructureDefinition/auditevent-department, http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-legalentity
+INFORMATION: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[1]/*Practitioner/PractitionerInstance3*/.qualification[0].code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9060' could not be found, so the code cannot be validated
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[5]/*Encounter/EncounterInstance3*/.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[5]/*Encounter/EncounterInstance3*/.serviceType.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.8663' could not be found, so the code cannot be validated
+ERROR: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.contained[6]/*Patient/PatientInstance3*/.identifier[0]: Patient.identifier:FNR.value: minimum required = 1, but only found 0 (from http://hl7.no/fhir/StructureDefinition/auditevent-patient|2.3.0)
+ERROR: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.extension[1].value.ofType(Reference): Unable to find a match for profile #PatientInstance3 among choices: http://hl7.no/fhir/StructureDefinition/auditevent-patient
+INFORMATION: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.extension[1].value.ofType(Reference): Details for #PatientInstance3 matching against profile http://hl7.no/fhir/StructureDefinition/auditevent-patient|2.3.0
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[1].coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9151' could not be found, so the code cannot be validated
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[1]: Unable to check whether the code is in the value set 'http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event|2.3.0' because the code system urn:oid:2.16.578.1.12.4.1.1.9151 was not found
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.purposeOfEvent[1]: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9151' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event|2.3.0' because the code system urn:oid:2.16.578.1.12.4.1.1.9151 was not found
+ERROR: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.source.observer: Unable to resolve resource with reference 'Device/ex-device'
+ERROR: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.entity[0].what: Unable to resolve resource with reference 'StructureDefinition/DocumentReference'
+WARNING: AuditEvent/NOBasisAuditeventInstance3: AuditEvent.entity[0].type: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: AuditEvent.text.div: Hyperlink 'Device/ex-device' at 'div/table/tr/td/a' for 'Device/ex-device' does not resolve
+ERROR: AuditEvent.text.div: Hyperlink 'StructureDefinition/DocumentReference' at 'div/table/tr/td/a' for 'StructureDefinition/DocumentReference' does not resolve
+== fsh-generated/resources/CodeSystem-decisiontemplate.json ==
+ERROR: CodeSystem.where(url = 'https://terminology.dips.com/decisiontemplate'): Conformance resource /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-decisiontemplate.json - the canonical URL (http://hl7.no/fhir/CodeSystem/decisiontemplate) does not match the URL (https://terminology.dips.com/decisiontemplate)
+WARNING: CodeSystem/decisiontemplate: CodeSystem.concept[5].definition: value should not start or finish with whitespace 'Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.  '
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+ERROR: /github/workspace/AuditEvent/fsh-generated/resources/CodeSystem-decisiontemplate: URL Mismatch http://hl7.no/fhir/CodeSystem/decisiontemplate vs https://terminology.dips.com/decisiontemplate
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.no.auditevent.json ==
+WARNING: ImplementationGuide/hl7.fhir.no.auditevent: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/StructureDefinition-auditevent-carerelation-metadata-extension.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/StructureDefinition-auditevent-department.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-department'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-encounter.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-encounter'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-encounter-extension.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/StructureDefinition-auditevent-encounter-pointofcare.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-encounter-pointofcare'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-encounter-pointofcare-organization.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-encounter-pointofcare-organization'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-encounter-serviceprovider-organization.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-encounter-serviceprovider-organization'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-patient.json ==
+ERROR: StructureDefinition/auditevent-patient: StructureDefinition.snapshot.element[15].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/auditevent-patient: StructureDefinition.snapshot.element[15].binding: The valueSet reference urn:iso:std:iso:3166 on element Patient.extension.extension.value[x] points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-patient'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-patient-extension.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/StructureDefinition-auditevent-practitioner.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-practitioner'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-practitioner-legalentity.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-legalentity'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-practitioner-pointofcare.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-practitioner-pointofcare-organization.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare-organization'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-auditevent-practitionerrole.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+INFORMATION: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/auditevent-practitionerrole'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-no-basis-Address.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-Address'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-no-basis-Auditevent.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/StructureDefinition-no-basis-HumanName.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-HumanName'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-no-basis-Location.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-Location'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-basis-Organization.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-Organization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-basis-Patient.json ==
+ERROR: StructureDefinition/no-basis-Patient: StructureDefinition.snapshot.element[15].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/no-basis-Patient: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/no-basis-Patient: StructureDefinition.differential.element[4].binding: The valueSet reference urn:iso:std:iso:3166 on element Patient.extension.extension.value[x] points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/no-basis-Patient: StructureDefinition.snapshot.element[15].binding: The valueSet reference urn:iso:std:iso:3166 on element Patient.extension.extension.value[x] points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-Patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-basis-Practitioner.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-basis-PractitionerRole.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-basis-address-official.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-no-basis-middlename.json ==
+ERROR: StructureDefinition/no-basis-middlename: StructureDefinition: The kind primitive-type must be the same as the kind complex-type in the base structure http://hl7.org/fhir/StructureDefinition/Extension (base type = Extension)
+ERROR: StructureDefinition/no-basis-middlename: StructureDefinition: The structure definition constrains a kind of complex-type, but has a different kind (primitive-type)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-no-basis-propertyinformation.json ==
+ERROR: StructureDefinition/no-basis-propertyinformation: StructureDefinition.differential.element[17].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-no-basis-urban-district.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-urban-district'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-no-basis-auditevent-purpose-of-event.json ==
+ERROR: ValueSet/no-basis-auditevent-purpose-of-event: ValueSet: Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: ValueSet.where(id = 'no-basis-auditevent-purpose-of-event'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.578.1.12.4.1.1.9151
+== fsh-generated/resources/ValueSet-no-basis-encounter-auditevent-servicetype.json ==
+ERROR: ValueSet/no-basis-encounter-auditevent-servicetype: ValueSet: Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.no.auditevent, jurisdiction = urn:iso:std:iso:3166#NO) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: ValueSet.where(id = 'no-basis-encounter-auditevent-servicetype'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.578.1.12.4.1.1.8655

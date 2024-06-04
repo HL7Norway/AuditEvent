@@ -1,9 +1,9 @@
 {
   "codeSystems" : [
     {
-      "url" : "urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event",
-      "version" : "0.9.2",
-      "status" : "draft",
+      "url" : "http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event",
+      "version" : "2.3.0",
+      "status" : "active",
       "name" : "NO_basis_auditevent_purpose_of_event",
       "title" : "PurposeOfEvent valueset",
       "description" : "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)",
@@ -14,9 +14,9 @@
       ]
     },
     {
-      "url" : "urn:no-basis-auditevent/ValueSet/no-basis-encounter-auditevent-servicetype",
-      "version" : "0.9.2",
-      "status" : "draft",
+      "url" : "http://hl7.no/fhir/ValueSet/no-basis-encounter-auditevent-servicetype",
+      "version" : "2.3.0",
+      "status" : "active",
       "name" : "NO_basis_encounter_auditevent_servicetype",
       "title" : "AuditEvent encounter.servicetype valueset",
       "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition.",
