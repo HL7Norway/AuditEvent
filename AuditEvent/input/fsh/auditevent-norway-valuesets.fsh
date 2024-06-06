@@ -1,3 +1,4 @@
+/*
 ValueSet: NO_basis_encounter_auditevent_servicetype
 Id: no-basis-encounter-auditevent-servicetype
 Title: "AuditEvent encounter.servicetype valueset"
@@ -9,6 +10,8 @@ Valueset for Encounter.serviceType used in context of auditevent. See [volven.no
 * include codes from system $VOLVEN_8655
 * include codes from system $VOLVEN_8663
 * include codes from system $VOLVEN_8451
+
+*/
 
 ValueSet: NO_basis_auditevent_purpose_of_event
 Id: no-basis-auditevent-purpose-of-event
