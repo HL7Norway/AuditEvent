@@ -1,4 +1,6 @@
-
+This implementation guide is based on R4, but adds two extentions to be forward compatible with R5:
+- [_encounter](https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.encounter)
+- [_patient](https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.patient) 
 
 From versjon -6:
 
@@ -20,9 +22,6 @@ From versjon -6:
 | patient          | "department"             | Avdeling/org.enhet hvor pasienten mottar helsehjelp                                        	          | [Organization](https://hl7.org/fhir/R4/organization.html)               | [auditevent-encounter-serviceprovider-organization](StructureDefinition-auditevent-encounter-serviceprovider-organization.html)|
 
 
-This implementation guide is based on R4, but adds two extentions to be forward compatible with R5:
-- [_encounter](https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.encounter)
-- [_patient](https://hl7.org/fhir/R5/auditevent-definitions.html#AuditEvent.patient) 
 
 > NOTE! Since data type [Coding](https://hl7.org/fhir/R4/datatypes.html#Coding) does not have the assigner/authority, the ``kodeverk-attributt.assigner`` is ignored by design. See [conventions](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#4221-konvensjoner-brukt-i-datamodellen)
 
