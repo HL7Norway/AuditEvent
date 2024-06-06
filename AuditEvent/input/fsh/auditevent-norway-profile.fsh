@@ -28,7 +28,7 @@ Description: "The point of care managing organization of the auditevent encounte
 
 Profile: AuditeventEncounterPointofcare
 Id: auditevent-encounter-pointofcare
-Parent: NOBasisLocation
+Parent: NoBasisLocation
 Title: "auditevent-encounter-pointofcare"
 Description: """
 The point of care location of auditevent encounter (Auditevent._encounter).
@@ -57,6 +57,7 @@ The encounter associated with auditevent if any (Auditevent._encounter).
 * serviceProvider ^short = "patients:department:*"
 * serviceProvider only Reference(AuditeventEncounterServiceproviderOrganization)
 
+
 Profile: AuditeventPatient
 Id: auditevent-patient
 Parent: NoBasisPatient
@@ -73,6 +74,7 @@ NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each 
 * identifier.system ^short = "patients:identifier:system"
 * identifier.assigner.display ^short = "patients:identifier:authority"
 * name ^short = "patients:identifier:name"
+
 
 
 Profile: AuditeventPractitionerPointofcareOrganization
@@ -92,7 +94,7 @@ The point of care managing organization of auditevent health care practitioner a
 
 Profile: AuditeventPractitionerPointofcare
 Id: auditevent-practitioner-pointofcare
-Parent: NOBasisLocation
+Parent: NoBasisLocation
 Title: "auditevent-practitioner-pointofcare"
 Description: """
 The point of care location of auditevent health care practitioner actor (Auditevent.agent.who).
