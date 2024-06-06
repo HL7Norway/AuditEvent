@@ -1,5 +1,12 @@
 [
   {
+    "id" : "no-basis-connection-type.codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type",
+    "version" : "2.3.0",
+    "name" : "NoBasisConnectionType"
+  },
+  {
     "id" : "hl7.fhir.no.auditevent",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.auditevent",
@@ -119,6 +126,13 @@
     "name" : "NOBasisAuditevent"
   },
   {
+    "id" : "no-basis-Endpoint",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint",
+    "version" : "2.3.0",
+    "name" : "NoBasisEndpoint"
+  },
+  {
     "id" : "no-basis-HumanName",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-HumanName",
@@ -130,7 +144,7 @@
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Location",
     "version" : "2.3.0",
-    "name" : "NOBasisLocation"
+    "name" : "NoBasisLocation"
   },
   {
     "id" : "no-basis-Organization",
@@ -203,11 +217,11 @@
     "name" : "NO_basis_auditevent_purpose_of_event"
   },
   {
-    "id" : "no-basis-encounter-auditevent-servicetype",
+    "id" : "no-basis-connection-type.valueset",
     "type" : "ValueSet",
-    "url" : "http://hl7.no/fhir/ValueSet/no-basis-encounter-auditevent-servicetype",
+    "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
     "version" : "2.3.0",
-    "name" : "NO_basis_encounter_auditevent_servicetype"
+    "name" : "NoBasisConnectionType"
   },
   {
     "id" : "decisiontemplate",

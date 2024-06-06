@@ -178,7 +178,7 @@
     "Organization": [
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Organization",
-        "title": "no-basis-Organization (shadow)"
+        "title": "no-basis-Organization"
       }
     ],
     "Encounter": [
@@ -190,7 +190,7 @@
     "Location": [
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Location",
-        "title": "no-basis-Location (shadow)"
+        "title": "no-basis-Location"
       }
     ],
     "Patient": [
@@ -202,19 +202,25 @@
     "Practitioner": [
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner",
-        "title": "no-basis-Practitioner (shadow)"
+        "title": "no-basis-Practitioner"
       }
     ],
     "PractitionerRole": [
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole",
-        "title": "no-basis-PractitionerRole (shadow)"
+        "title": "no-basis-PractitionerRole"
       }
     ],
     "AuditEvent": [
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Auditevent",
         "title": "no-basis-Auditevent"
+      }
+    ],
+    "Endpoint": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint",
+        "title": "no-basis-Endpoint"
       }
     ]
   },

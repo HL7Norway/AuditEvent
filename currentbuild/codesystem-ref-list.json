@@ -1,6 +1,29 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type",
+      "version" : "2.3.0",
+      "status" : "active",
+      "name" : "NoBasisConnectionType",
+      "title" : "no-basis-connection-type.codesystem",
+      "description" : "Codes to describe Norwegian message based communication protocols.",
+      "uses" : {
+      },
+      "ValueSet-no-basis-connection-type.valueset.html" : "no-basis-connection-type.valueset"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "EndpointConnectionType",
+      "title" : "Endpoint Connection Type",
+      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible connection type profile values.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1140"],
+      "uses" : {
+      },
+      "ValueSet-no-basis-connection-type.valueset.html" : "no-basis-connection-type.valueset"
+    },
+    {
       "url" : "https://terminology.dips.com/decisiontemplate",
       "version" : "2.3.0",
       "status" : "draft",

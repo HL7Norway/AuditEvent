@@ -17,20 +17,19 @@
       "StructureDefinition-no-basis-Auditevent.html" : "no-basis-Auditevent"
     },
     {
-      "url" : "http://hl7.no/fhir/ValueSet/no-basis-encounter-auditevent-servicetype",
+      "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
       "version" : "2.3.0",
       "status" : "active",
-      "name" : "NO_basis_encounter_auditevent_servicetype",
-      "title" : "AuditEvent encounter.servicetype valueset",
-      "description" : "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition.",
+      "name" : "NoBasisConnectionType",
+      "title" : "no-basis-connection-type.valueset",
+      "description" : "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type",
       "systems" : [
-        "urn:oid:2.16.578.1.12.4.1.1.8655",
-        "urn:oid:2.16.578.1.12.4.1.1.8451",
-        "urn:oid:2.16.578.1.12.4.1.1.8663"
+        "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+        "http://hl7.no/fhir/CodeSystem/no-basis-connection-type"
       ],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter.html" : "auditevent-encounter"
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -73,9 +72,9 @@
       "uses" : {
       },
       "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
-      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner (shadow)",
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
       "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient"
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-entity-type",
@@ -184,7 +183,7 @@
       "uses" : {
       },
       "StructureDefinition-auditevent-practitionerrole.html" : "auditevent-practitionerrole",
-      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)"
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -198,12 +197,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity",
-      "StructureDefinition-auditevent-department.html" : "auditevent-department",
       "StructureDefinition-auditevent-encounter-serviceprovider-organization.html" : "auditevent-encounter-serviceprovider-organization",
-      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
-      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-auditevent-department.html" : "auditevent-department",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
+      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -218,10 +217,10 @@
       "uses" : {
       },
       "StructureDefinition-auditevent-practitionerrole.html" : "auditevent-practitionerrole",
-      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
       "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare",
-      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)"
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -402,6 +401,37 @@
       "StructureDefinition-auditevent-encounter.html" : "auditevent-encounter"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/endpoint-payload-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointPayloadType",
+      "title" : "Endpoint Payload Type",
+      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible payload document types.",
+      "systems" : [
+        "urn:oid:1.3.6.1.4.1.19376.1.2.3",
+        "http://terminology.hl7.org/CodeSystem/endpoint-payload-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.496"],
+      "sources" : ["2.16.840.1.113883.4.642.3.496"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/endpoint-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointStatus",
+      "title" : "EndpointStatus",
+      "description" : "The status of the endpoint.",
+      "systems" : ["http://hl7.org/fhir/endpoint-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.494"],
+      "sources" : ["2.16.840.1.113883.4.642.3.494"],
+      "uses" : {
+      },
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -413,14 +443,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
-      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity",
-      "StructureDefinition-auditevent-department.html" : "auditevent-department",
       "StructureDefinition-auditevent-encounter-serviceprovider-organization.html" : "auditevent-encounter-serviceprovider-organization",
+      "StructureDefinition-auditevent-department.html" : "auditevent-department",
+      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
+      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
       "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization",
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient"
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner",
+      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -434,14 +466,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
-      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity",
-      "StructureDefinition-auditevent-department.html" : "auditevent-department",
       "StructureDefinition-auditevent-encounter-serviceprovider-organization.html" : "auditevent-encounter-serviceprovider-organization",
+      "StructureDefinition-auditevent-department.html" : "auditevent-department",
+      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
+      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
       "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization",
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient"
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner",
+      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -455,23 +489,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-practitionerrole.html" : "auditevent-practitionerrole",
-      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner (shadow)",
-      "StructureDefinition-no-basis-Auditevent.html" : "no-basis-Auditevent",
-      "StructureDefinition-auditevent-encounter.html" : "auditevent-encounter",
-      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization",
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
-      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
-      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity",
-      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
       "StructureDefinition-auditevent-department.html" : "auditevent-department",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
+      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner",
+      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity",
+      "StructureDefinition-auditevent-practitionerrole.html" : "auditevent-practitionerrole",
       "StructureDefinition-auditevent-encounter-serviceprovider-organization.html" : "auditevent-encounter-serviceprovider-organization",
-      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
+      "StructureDefinition-auditevent-encounter.html" : "auditevent-encounter",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
+      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization",
       "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare",
-      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)"
+      "StructureDefinition-no-basis-Auditevent.html" : "no-basis-Auditevent",
+      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -485,8 +520,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient"
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-auditevent-patient.html" : "auditevent-patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -500,9 +535,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.330"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare"
+      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -518,10 +553,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
       "StructureDefinition-auditevent-encounter.html" : "auditevent-encounter",
-      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare"
+      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -535,9 +570,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.332"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare"
+      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -554,8 +589,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient"
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-auditevent-patient.html" : "auditevent-patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -569,7 +604,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
       "StructureDefinition-no-basis-HumanName.html" : "no-basis-HumanName"
     },
     {
@@ -629,12 +663,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.414"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity",
-      "StructureDefinition-auditevent-department.html" : "auditevent-department",
       "StructureDefinition-auditevent-encounter-serviceprovider-organization.html" : "auditevent-encounter-serviceprovider-organization",
-      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization (shadow)",
-      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-auditevent-department.html" : "auditevent-department",
+      "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
+      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participation-role-type",
@@ -670,8 +704,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient"
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-auditevent-patient.html" : "auditevent-patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -689,7 +723,7 @@
       "uses" : {
       },
       "StructureDefinition-auditevent-practitionerrole.html" : "auditevent-practitionerrole",
-      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole (shadow)"
+      "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -703,13 +737,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
-      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
-      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
-      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity",
-      "StructureDefinition-auditevent-department.html" : "auditevent-department",
       "StructureDefinition-auditevent-encounter-serviceprovider-organization.html" : "auditevent-encounter-serviceprovider-organization",
-      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization"
+      "StructureDefinition-auditevent-department.html" : "auditevent-department",
+      "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
+      "StructureDefinition-auditevent-patient.html" : "auditevent-patient",
+      "StructureDefinition-auditevent-encounter-pointofcare-organization.html" : "auditevent-encounter-pointofcare-organization",
+      "StructureDefinition-auditevent-practitioner-pointofcare-organization.html" : "auditevent-practitioner-pointofcare-organization",
+      "StructureDefinition-auditevent-practitioner-legalentity.html" : "auditevent-practitioner-legalentity"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -793,9 +827,9 @@
       "sources" : ["2.16.840.1.113883.21.51"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare"
+      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -808,7 +842,7 @@
       "uses" : {
       },
       "StructureDefinition-auditevent-practitioner.html" : "auditevent-practitioner",
-      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner (shadow)"
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -865,9 +899,9 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location (shadow)",
-      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare"
+      "StructureDefinition-auditevent-practitioner-pointofcare.html" : "auditevent-practitioner-pointofcare",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-auditevent-encounter-pointofcare.html" : "auditevent-encounter-pointofcare"
     }
   ]
 }

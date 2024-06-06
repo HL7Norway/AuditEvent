@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>no-basis-Location (shadow) - Mappings - NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) v2.3.0</title>
+    <title>no-basis-Location - Mappings - NO Basis AuditEvent IG Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) v2.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.13"}
-    h3,h4,h5,h6{--heading-prefix:"2.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.14"}
+    h3,h4,h5,h6{--heading-prefix:"2.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -98,7 +98,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>no-basis-Location (shadow)</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>no-basis-Location</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -175,16 +175,16 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: NOBasisLocation - Mappings</h2>
+<h2 id="root">Resource Profile: NoBasisLocation - Mappings</h2>
 
-  <table class="colsd">
+  <table class="colsi">
     <tr>
 
       <td colspan="2">
         
-          Draft
+          Active
           
-            as of 2024-06-04
+            as of 2019-01-31
           
         
       </td>
@@ -201,7 +201,7 @@
 
 
   <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>NOBasisLocation</b></td></tr>
+ <tr><td colspan="3"><b>NoBasisLocation</b></td></tr>
  <tr><td>Location</td><td>Entity. Role, or Act, .Role[classCode=SDLC]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -216,7 +216,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;mode</td><td>.playingEntity[classCode=PLC].determinerCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>.telecom</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>.addr</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>n/a, AD</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;physicalType</td><td>.playingEntity [classCode=PLC].code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;position</td><td>.playingEntity [classCode=PLC determinerCode=INSTANCE].positionText</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -239,7 +239,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;endpoint</td><td>n/a</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>NOBasisLocation</b></td></tr>
+ <tr><td colspan="3"><b>NoBasisLocation</b></td></tr>
  <tr><td>Location</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
@@ -274,7 +274,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.auditevent#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 4, 2024 06:11+0000">2024-06-04</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.auditevent#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 18:49+0000">2024-06-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

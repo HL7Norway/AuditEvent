@@ -1,6 +1,14 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type",
+      "version" : "2.3.0",
+      "status" : "active",
+      "name" : "NoBasisConnectionType",
+      "title" : "no-basis-connection-type.codesystem",
+      "description" : "Codes to describe Norwegian message based communication protocols."
+    },
+    {
       "url" : "https://terminology.dips.com/decisiontemplate",
       "version" : "2.3.0",
       "status" : "draft",

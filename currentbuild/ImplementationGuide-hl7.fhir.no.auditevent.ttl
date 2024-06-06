@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "urnnobasisauditevent"] ; # 
   fhir:title [ fhir:v "NO Basis AuditEvent IG Trust Framework (\"Nasjonalt tillitsrammeverk\")"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-04T06:11:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-06T18:49:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -512,18 +512,6 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/ValueSet/no-basis-encounter-auditevent-servicetype> ;
-         fhir:reference [ fhir:v "ValueSet/no-basis-encounter-auditevent-servicetype" ]
-       ] ;
-       fhir:name [ fhir:v "AuditEvent encounter.servicetype valueset" ] ;
-       fhir:description [ fhir:v "Valueset for Encounter.serviceType used in context of auditevent. See [volven.no](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections) for definition." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -785,6 +773,42 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/CodeSystem/no-basis-connection-type.codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/no-basis-connection-type.codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-connection-type.codesystem" ] ;
+       fhir:description [ fhir:v "Codes to describe Norwegian message based communication protocols." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/ValueSet/no-basis-connection-type.valueset> ;
+         fhir:reference [ fhir:v "ValueSet/no-basis-connection-type.valueset" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-connection-type.valueset" ] ;
+       fhir:description [ fhir:v "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-Endpoint" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-Endpoint" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Endpoint information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Endpoing. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.\n\nResource profile for definition of electronic endpoints used by healthcare organizations to communicate using different protocols. The norwegian profile use-case is to represent endpoints for electronic communication. Fallback solutions using mail or fax has to be indexed in the norwegian master index for healthcare organizations and are not described using this profile." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:complex-type" ]
        ] ) ;
        fhir:reference [
@@ -803,8 +827,8 @@
          fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Location> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-Location" ]
        ] ;
-       fhir:name [ fhir:v "no-basis-Location (shadow)" ] ;
-       fhir:description [ fhir:v "This is a shadow profile that will be replace by [no-basis-Location](https://simplifier.net/hl7norwayno-basis/nobasislocation)" ] ;
+       fhir:name [ fhir:v "no-basis-Location" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Location information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific location information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -839,8 +863,8 @@
          fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Organization> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-Organization" ]
        ] ;
-       fhir:name [ fhir:v "no-basis-Organization (shadow)" ] ;
-       fhir:description [ fhir:v "This is a shadow profile that will be replaced by [no-basis-Organization](https://simplifier.net/hl7norwayno-basis/nobasisorganization)" ] ;
+       fhir:name [ fhir:v "no-basis-Organization" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -863,8 +887,8 @@
          fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-Practitioner" ]
        ] ;
-       fhir:name [ fhir:v "no-basis-Practitioner (shadow)" ] ;
-       fhir:description [ fhir:v "This is a shadow profile that should be replaced by [no-basis-Practitioner](https://simplifier.net/hl7norwayno-basis/nobasispractitioner)" ] ;
+       fhir:name [ fhir:v "no-basis-Practitioner" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.\n\n2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner's education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -875,8 +899,8 @@
          fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-PractitionerRole" ]
        ] ;
-       fhir:name [ fhir:v "no-basis-PractitionerRole (shadow)" ] ;
-       fhir:description [ fhir:v "Shadow profile of no-basis-PractitionerRole that will be replaced by [no-basis-PractitionerRole](https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole)" ] ;
+       fhir:name [ fhir:v "no-basis-PractitionerRole" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian PractitionerRole information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific role information is available. The basis profile is open, but derived profiles should close down the information elements according to specifications relevant to the use-case.\n\nThe main use-case of no-basis-PractitionerRole is to represent the role or function of a Practitioner wihtin an organization. The resource can include information about services performed by a Practitioner, a location where the practitioner performes the functions as well as information about the nature of the employment at an organization." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

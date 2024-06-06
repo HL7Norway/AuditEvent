@@ -267,20 +267,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-basis-Location.html"
-                  title="StructureDefinition/no-basis-Location">no-basis-Location (shadow)</a>
+               <a href="StructureDefinition-no-basis-Endpoint.html"
+                  title="StructureDefinition/no-basis-Endpoint">no-basis-Endpoint</a>
             </td>
             <td>
-<p>This is a shadow profile that will be replace by <a href="https://simplifier.net/hl7norwayno-basis/nobasislocation">no-basis-Location</a></p>
+<p>Basisprofil for Norwegian Endpoint information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Endpoing. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
+
+<p>Resource profile for definition of electronic endpoints used by healthcare organizations to communicate using different protocols. The norwegian profile use-case is to represent endpoints for electronic communication. Fallback solutions using mail or fax has to be indexed in the norwegian master index for healthcare organizations and are not described using this profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-basis-Location.html"
+                  title="StructureDefinition/no-basis-Location">no-basis-Location</a>
+            </td>
+            <td>
+<p>Basisprofil for Norwegian Location information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific location information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-no-basis-Organization.html"
-                  title="StructureDefinition/no-basis-Organization">no-basis-Organization (shadow)</a>
+                  title="StructureDefinition/no-basis-Organization">no-basis-Organization</a>
             </td>
             <td>
-<p>This is a shadow profile that will be replaced by <a href="https://simplifier.net/hl7norwayno-basis/nobasisorganization">no-basis-Organization</a></p>
+<p>Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
 </td>
          </tr>
          <tr>
@@ -295,19 +306,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-no-basis-Practitioner.html"
-                  title="StructureDefinition/no-basis-Practitioner">no-basis-Practitioner (shadow)</a>
+                  title="StructureDefinition/no-basis-Practitioner">no-basis-Practitioner</a>
             </td>
             <td>
-<p>This is a shadow profile that should be replaced by <a href="https://simplifier.net/hl7norwayno-basis/nobasispractitioner">no-basis-Practitioner</a></p>
+<p>Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
+
+<p>2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner’s education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-no-basis-PractitionerRole.html"
-                  title="StructureDefinition/no-basis-PractitionerRole">no-basis-PractitionerRole (shadow)</a>
+                  title="StructureDefinition/no-basis-PractitionerRole">no-basis-PractitionerRole</a>
             </td>
             <td>
-<p>Shadow profile of no-basis-PractitionerRole that will be replaced by <a href="https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole">no-basis-PractitionerRole</a></p>
+<p>Basisprofil for Norwegian PractitionerRole information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific role information is available. The basis profile is open, but derived profiles should close down the information elements according to specifications relevant to the use-case.</p>
+
+<p>The main use-case of no-basis-PractitionerRole is to represent the role or function of a Practitioner wihtin an organization. The resource can include information about services performed by a Practitioner, a location where the practitioner performes the functions as well as information about the nature of the employment at an organization.</p>
 </td>
          </tr>
       </tbody>
@@ -426,20 +441,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-no-basis-encounter-auditevent-servicetype.html"
-                  title="ValueSet/no-basis-encounter-auditevent-servicetype">AuditEvent encounter.servicetype valueset</a>
-            </td>
-            <td>
-<p>Valueset for Encounter.serviceType used in context of auditevent. See <a href="https://volven.no/">volven.no</a> or <a href="https://beta.finnkode.ehelse.no/adm/collections">FinnKode</a> for definition.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-no-basis-auditevent-purpose-of-event.html"
                   title="ValueSet/no-basis-auditevent-purpose-of-event">PurposeOfEvent valueset</a>
             </td>
             <td>
 <p>Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined <a href="https://volven.no/">here</a> or <a href="https://beta.finnkode.ehelse.no/adm/collections">FinnKode</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-no-basis-connection-type.valueset.html"
+                  title="ValueSet/no-basis-connection-type.valueset">no-basis-connection-type.valueset</a>
+            </td>
+            <td>
+<p>ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type</p>
 </td>
          </tr>
       </tbody>
@@ -459,6 +474,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>These are templates with various justifications that can be used as a basis for accessing the patient’s medical record at hospitals that utilize DIPS as their journal system.</p>
 
 <p>Templates that user, if authorized, can select manually as reason for accessing patient’s medical record are marked as ‘(Eksplisitt mal)’.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-no-basis-connection-type.codesystem.html"
+                  title="CodeSystem/no-basis-connection-type.codesystem">no-basis-connection-type.codesystem</a>
+            </td>
+            <td>
+<p>Codes to describe Norwegian message based communication protocols.</p>
 </td>
          </tr>
       </tbody>
@@ -519,7 +543,7 @@ NO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgan
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.auditevent#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 4, 2024 06:11+0000">2024-06-04</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.auditevent#2.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 6, 2024 18:49+0000">2024-06-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://hl7.no/fhir/CodeSystem/no-basis-connection-type,2.3.0,active,,NoBasisConnectionType,no-basis-connection-type.codesystem,"Codes to describe Norwegian message based communication protocols.",
 https://terminology.dips.com/decisiontemplate,2.3.0,draft,,DIPSDecisionTemplate,DIPS decision template codes used as basis of care relation between health care personel and patient.,"These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.  Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'. ",
