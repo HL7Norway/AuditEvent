@@ -57,7 +57,7 @@ Usage: #inline
 * identifier.assigner.display =  "https://www.skatteetaten.no" // "patients:identifier:authority"
 
 Instance: NOBasisAuditeventInstance2
-InstanceOf: NOBasisAuditevent
+InstanceOf: NoDomainTrustframeworkAuditEvent
 Title: "GP example"
 Description: """
 ENG: Example of GP as open document content.

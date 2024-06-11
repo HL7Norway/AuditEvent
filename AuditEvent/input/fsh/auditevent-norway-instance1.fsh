@@ -94,7 +94,7 @@ Usage: #inline
 * identifier.assigner.display =  "https://www.skatteetaten.no" // "patients:identifier:authority"
 
 Instance: NOBasisAuditeventInstance1
-InstanceOf: NOBasisAuditevent
+InstanceOf: NoDomainTrustframeworkAuditEvent
 Title: "Hospital example"
 Description: """
 ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.

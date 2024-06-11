@@ -3,13 +3,13 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.no.auditevent
+id: hl7.fhir.no.domain.auditevent
 canonical: http://hl7.no/fhir
-name: urn:no-basis-auditevent 
-title: NO Basis AuditEvent IG Trust Framework ("Nasjonalt tillitsrammeverk")
+name: NoDomainTrustframeworkAuditEvent
+title: NO Domain Trust Framework ("Nasjonalt tillitsrammeverk") AuditEvent Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 2.3.0
+version: 0.9.5
 fhirVersion: 4.0.1 #  https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -25,7 +25,8 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 # dependencies:
-#   hl7.fhir.us.core: 3.1.0
+#  hl7.fhir.no.basis: 2.2.0
+# hl7.fhir.us.core: 3.1.0   
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -62,8 +63,8 @@ publisher:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
-#   excludettl: true
+parameters:
+  excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

@@ -62,7 +62,7 @@ Usage: #inline
 * identifier.assigner.display =  "https://www.skatteetaten.no" // "patients:identifier:authority"
 
 Instance: NOBasisAuditeventInstance3
-InstanceOf: NOBasisAuditevent
+InstanceOf: NoDomainTrustframeworkAuditEvent
 Title: "Municipality example"
 Description: """
 ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.

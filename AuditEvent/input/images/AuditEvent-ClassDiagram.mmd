@@ -1,5 +1,6 @@
 classDiagram
    direction RL
+
    class AuditEvent { <<resource>>  }
    style AuditEvent fill:#7CB9E8
    class Practitioner { <<resource>> }
@@ -27,7 +28,7 @@ classDiagram
    style no_basis_Organization fill:#33FF55     
    style no_basis_PractitionerRole fill:#33FF55     
                
-   class no-basis-auditevent {
+   class no-domain-Trustframework-Auditevent {
      <<profile>>
      care-relation.purpose-of-use
      care-relation.purpose-of-use-details
@@ -36,78 +37,78 @@ classDiagram
    }
   
 
-   class auditevent-practitionerrole  {<<profile>>}
-   class auditevent-department { 
+   class no-domain-Trustframework-PractitioneRole  {<<profile>>}
+   class no-domain-Trustframework-Organization-PractitionerDepartment { 
      <<profile>>
      practitioner.department
    }   
   
 
-   class auditevent-practitioner  {
+   class no-domain-Trustframework-Practitioner  {
      <<profile>>
      practitioner.identifier
      practitioner.hpr-nr
      practitioner.authorization
    }
 
-   class auditevent-practitioner-legalentity {
+   class no-domain-Trustframework-Organization-PractitionerLegalentity {
      <<profile>>
      practitioner.legal-entity
    }
-   class auditevent-practitioner-pointofcare {<<profile>>}
-   class auditevent-practitioner-pointofcare-organization {
+   class no-domain-Trustframework-Location-PractitionerPointofcare {<<profile>>}
+   class no-domain-Trustframework-Organization-PractitionerPointofcare {
      <<profile>>
      practitioner.point-of-care
    }
-   class auditevent-encounter {
+   class no-domain-Trustframework-Encounter {
      <<profile>>
      care-relation.healthcare-service
    }
-   class auditevent-patient {
+   class no-domain-Trustframework-Patient {
      <<profile>>
      patient.identifier
    }
 
-   class auditevent-encounter-pointofcare {<<profile>>}
-   class auditevent-encounter-pointofcare-organization {
+   class no-domain-Trustframework-Location-EncounterPointofcare {<<profile>>}
+   class no-domain-Trustframework-Organization-EncounterPointofcare {
      <<profile>>
      patient.point-of-care     
    }
-   class auditevent-encounter-serviceprovider-organization {
+   class no-domain-Trustframework-Organization-EncounterServiceprovider {
      <<profile>>
      patient.department
    }
 
-   AuditEvent <|-- no-basis-auditevent 
-   no_basis_PractitionerRole <|-- auditevent-practitionerrole 
-   no_basis_Practitioner <|-- auditevent-practitioner
-   no_basis_Organization <|-- auditevent-department   
-   no_basis_Organization <|-- auditevent-practitioner-legalentity
-   no_basis_Organization <|-- auditevent-encounter-pointofcare-organization
-   no_basis_Organization <|-- auditevent-practitioner-pointofcare-organization
-   no_basis_Organization <|-- auditevent-encounter-serviceprovider-organization
-   no_basis_Location <|-- auditevent-encounter-pointofcare
-   no_basis_Location <|-- auditevent-practitioner-pointofcare
+   AuditEvent <|-- no-domain-Trustframework-Auditevent 
+   no_basis_PractitionerRole <|-- no-domain-Trustframework-PractitioneRole 
+   no_basis_Practitioner <|-- no-domain-Trustframework-Practitioner
+   no_basis_Organization <|-- no-domain-Trustframework-Organization-PractitionerDepartment   
+   no_basis_Organization <|-- no-domain-Trustframework-Organization-PractitionerLegalentity
+   no_basis_Organization <|-- no-domain-Trustframework-Organization-EncounterPointofcare
+   no_basis_Organization <|-- no-domain-Trustframework-Organization-PractitionerPointofcare
+   no_basis_Organization <|-- no-domain-Trustframework-Organization-EncounterServiceprovider
+   no_basis_Location <|-- no-domain-Trustframework-Location-EncounterPointofcare
+   no_basis_Location <|-- no-domain-Trustframework-Location-PractitionerPointofcare
    Location <|-- no_basis_Location
-   no_basis_Patient <|-- auditevent-patient
+   no_basis_Patient <|-- no-domain-Trustframework-Patient
    Patient <|-- no_basis_Patient
-   Encounter <|-- auditevent-encounter
+   Encounter <|-- no-domain-Trustframework-Encounter
    PractitionerRole <|-- no_basis_PractitionerRole
    Organization <|-- no_basis_Organization
    Practitioner <|--  no_basis_Practitioner
   
-    auditevent-practitioner-pointofcare-organization *-- auditevent-practitioner-pointofcare : managingOrganization
-    auditevent-practitioner-legalentity *-- auditevent-department : partOf
-    auditevent-encounter-pointofcare *-- auditevent-encounter : location.location
-    auditevent-encounter-serviceprovider-organization *-- auditevent-encounter: serviceProvider
-    auditevent-encounter-pointofcare-organization *-- auditevent-encounter-pointofcare : managingOrganization
-    auditevent-practitioner-pointofcare *-- auditevent-practitionerrole  : location
-    auditevent-department *-- auditevent-practitionerrole  : organization
-    auditevent-practitioner-legalentity *-- auditevent-practitionerrole  : organization
-    auditevent-practitioner *-- auditevent-practitionerrole  : practitioner
-    auditevent-patient *-- no-basis-auditevent  : _patient
-    auditevent-encounter *-- no-basis-auditevent  : _encounter
-    auditevent-practitionerrole  *-- no-basis-auditevent  : agent.who
+    no-domain-Trustframework-Organization-PractitionerPointofcare *-- no-domain-Trustframework-Location-PractitionerPointofcare : managingOrganization
+    no-domain-Trustframework-Organization-PractitionerLegalentity *-- no-domain-Trustframework-Organization-PractitionerDepartment : partOf
+    no-domain-Trustframework-Location-EncounterPointofcare *-- no-domain-Trustframework-Encounter : location.location
+    no-domain-Trustframework-Organization-EncounterServiceprovider *-- no-domain-Trustframework-Encounter: serviceProvider
+    no-domain-Trustframework-Organization-EncounterPointofcare *-- no-domain-Trustframework-Location-EncounterPointofcare : managingOrganization
+    no-domain-Trustframework-Location-PractitionerPointofcare *-- no-domain-Trustframework-PractitioneRole  : location
+    no-domain-Trustframework-Organization-PractitionerDepartment *-- no-domain-Trustframework-PractitioneRole  : organization
+    no-domain-Trustframework-Organization-PractitionerLegalentity *-- no-domain-Trustframework-PractitioneRole  : organization
+    no-domain-Trustframework-Practitioner *-- no-domain-Trustframework-PractitioneRole  : practitioner
+    no-domain-Trustframework-Patient *-- no-domain-Trustframework-Auditevent  : _patient
+    no-domain-Trustframework-Encounter *-- no-domain-Trustframework-Auditevent  : _encounter
+    no-domain-Trustframework-PractitioneRole  *-- no-domain-Trustframework-Auditevent  : agent.who
     
     link AuditEvent "https://hl7.org/fhir/R4/auditevent.html" 
     link Practitioner "https://hl7.org/fhir/R4/practitioner.html" 
@@ -116,19 +117,20 @@ classDiagram
     link Location "https://hl7.org/fhir/R4/location.html" 
     link Patient  "https://hl7.org/fhir/R4/patient.html" 
     link Encounter "https://hl7.org/fhir/R4/encounter.html" 
+  
 
-    link no-basis-auditevent "StructureDefinition-no-basis-auditevent.html"
-    link auditevent-practitionerrole  "StructureDefinition-auditevent-practitionerrole.html"
-    link auditevent-department "StructureDefinition-auditevent-department.html"
-    link auditevent-practitioner "StructureDefinition-auditevent-practitioner.html"
-    link auditevent-practitioner-legalentity "StructureDefinition-auditevent-practitioner-legalentity.html"
-    link auditevent-practitioner-pointofcare "StructureDefinition-auditevent-practitioner-pointofcare.html"
-    link auditevent-practitioner-pointofcare-organization "StructureDefinition-auditevent-practitioner-pointofcare-organization.html"
-    link auditevent-encounter "StructureDefinition-auditevent-encounter.html"
-    link auditevent-patient "StructureDefinition-auditevent-patient.html"
-    link auditevent-encounter-pointofcare "StructureDefinition-auditevent-encounter-pointofcare.html"
-    link auditevent-encounter-pointofcare-organization "StructureDefinition-auditevent-encounter-pointofcare-organization.html"
-    link auditevent-encounter-serviceprovider-organization "StructureDefinition-auditevent-encounter-serviceprovider-organization.html"
+    link no-domain-Trustframework-Auditevent "StructureDefinition-no-domain-Trustframework-Auditevent.html"
+    link no-domain-Trustframework-PractitioneRole  "StructureDefinition-no-domain-Trustframework-PractitioneRole.html"
+    link no-domain-Trustframework-Organization-PractitionerDepartment "StructureDefinition-no-domain-Trustframework-Organization-PractitionerDepartment.html"
+    link no-domain-Trustframework-Practitioner "StructureDefinition-no-domain-Trustframework-Practitioner.html"
+    link no-domain-Trustframework-Organization-PractitionerLegalentity "StructureDefinition-no-domain-Trustframework-Organization-PractitionerLegalentity.html"
+    link no-domain-Trustframework-Location-PractitionerPointofcare "StructureDefinition-no-domain-Trustframework-Location-PractitionerPointofcare.html"
+    link no-domain-Trustframework-Organization-PractitionerPointofcare "StructureDefinition-no-domain-Trustframework-Organization-PractitionerPointofcare.html"
+    link no-domain-Trustframework-Encounter "StructureDefinition-no-domain-Trustframework-Encounter.html"
+    link no-domain-Trustframework-Patient "StructureDefinition-no-domain-Trustframework-Patient.html"
+    link no-domain-Trustframework-Location-EncounterPointofcare "StructureDefinition-no-domain-Trustframework-Location-EncounterPointofcare.html"
+    link no-domain-Trustframework-Organization-EncounterPointofcare "StructureDefinition-no-domain-Trustframework-Organization-EncounterPointofcare.html"
+    link no-domain-Trustframework-Organization-EncounterServiceprovider "StructureDefinition-no-domain-Trustframework-Organization-EncounterServiceprovider.html"
     link no_basis_Patient "https://simplifier.net/hl7norwayno-basis/nobasispatient"
     link no_basis_Location "https://simplifier.net/hl7norwayno-basis/nobasislocation"
     link no_basis_PractitionerRole "https://simplifier.net/hl7norwayno-basis/nobasispractitionerrole"
