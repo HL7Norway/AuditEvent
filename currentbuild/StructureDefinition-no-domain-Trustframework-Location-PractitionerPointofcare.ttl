@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "AuditeventPractitionerPointofcare"] ; # 
   fhir:title [ fhir:v "no-domain-Trustframework-Location-PractitionerPointofcare"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-11T05:22:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-11T05:36:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
