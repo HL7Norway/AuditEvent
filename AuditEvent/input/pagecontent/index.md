@@ -36,7 +36,7 @@ From versjon -6:
 ![AuditEventNorwayUML](AuditEvent-ClassDiagram.svg)
 
 ### Next step
-Click here to open main [no-domain-Trustframework-AuditEvent](StructureDefinition-no-domain-Trustframework-AuditEvent.html) main profile for details or click [here](AuditEvent-ClassDiagram.svg) to navigate from diagram above.
+Click here to open main [no-domain-Trustframework-AuditEvent](StructureDefinition-no-domain-Trustframework-Auditevent.html) main profile for details or click [here](AuditEvent-ClassDiagram.svg) to navigate from diagram above.
 
 ## You can also download:
 
