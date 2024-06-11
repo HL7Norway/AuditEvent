@@ -1,6 +1,6 @@
 {
-  "version" : "2.3.0",
-  "date" : "20240606184835",
+  "version" : "0.9.5",
+  "date" : "20240611052154",
   "notForPublication" : true,
-  "name" : "hl7.fhir.no.auditevent.r4b"
+  "name" : "hl7.fhir.no.domain.auditevent.r4b"
 }

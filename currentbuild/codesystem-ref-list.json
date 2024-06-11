@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type",
-      "version" : "2.3.0",
+      "version" : "0.9.5",
       "status" : "active",
       "name" : "NoBasisConnectionType",
       "title" : "no-basis-connection-type.codesystem",
@@ -25,7 +25,7 @@
     },
     {
       "url" : "https://terminology.dips.com/decisiontemplate",
-      "version" : "2.3.0",
+      "version" : "0.9.5",
       "status" : "draft",
       "name" : "DIPSDecisionTemplate",
       "title" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",

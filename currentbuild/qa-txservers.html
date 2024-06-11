@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>urnnobasisauditevent : Terminology Server Report</title>
+  <title>NoDomainTrustframeworkAuditEvent : Terminology Server Report</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
@@ -10,8 +10,8 @@
   </style>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Terminology Server Report for urnnobasisauditevent</h1>
- <p>Generated Thu Jun 06 18:50:16 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.auditevent#2.3.0 (canonical = <a href="http://hl7.no/fhir">http://hl7.no/fhir</a> (<a href="http://hl7.no/fhir/history.html">history</a>))</p>
+ <h1>Terminology Server Report for NoDomainTrustframeworkAuditEvent</h1>
+ <p>Generated Tue Jun 11 05:23:44 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.domain.auditevent#0.9.5 (canonical = <a href="http://hl7.no/fhir">http://hl7.no/fhir</a> (<a href="http://hl7.no/fhir/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -26,9 +26,10 @@
   <li>Request for system [urn:oid:2.16.578.1.12.4.1.1.8655] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [urn:oid:2.16.578.1.12.4.1.1.8663] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [urn:oid:2.16.578.1.12.4.1.1.9151] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event|0.9.5 includes multiple systems [http://terminology.hl7.org/CodeSystem/v3-ActReason, urn:oid:2.16.578.1.12.4.1.1.9151, https://terminology.dips.com/decisiontemplate] best handled by multiple servers: [auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir, auth = , candidates=, auth = , candidates=]. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 4. Code Systems used: </p>
+<p>Use Count: 5. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -43,6 +44,22 @@
     <th>
       <b>Details</b>
     </th>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html">ActReason</a>
+    </td>
+  </tr>
+  <tr>
+    <td>https://terminology.dips.com/decisiontemplate</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="CodeSystem-decisiontemplate.html">DIPS decision template codes used as basis of care relation between health care personel and patient.</a>
+    </td>
   </tr>
   <tr>
     <td>urn:oid:2.16.578.1.12.4.1.1.8655</td>
@@ -64,7 +81,7 @@
   </tr>
   <tr>
     <td>urn:oid:2.16.578.1.12.4.1.1.9151</td>
-    <td>0</td>
+    <td>1</td>
     <td>1</td>
     <td></td>
   </tr>

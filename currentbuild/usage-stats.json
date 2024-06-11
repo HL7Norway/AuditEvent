@@ -1,6 +1,6 @@
 {
-  "package": "hl7.fhir.no.auditevent",
-  "version": "2.3.0",
+  "package": "hl7.fhir.no.domain.auditevent",
+  "version": "0.9.5",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -175,52 +175,72 @@
     }
   ],
   "profiles": {
-    "Organization": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Organization",
-        "title": "no-basis-Organization"
-      }
-    ],
-    "Encounter": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/auditevent-encounter",
-        "title": "auditevent-encounter"
-      }
-    ],
-    "Location": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Location",
-        "title": "no-basis-Location"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Patient",
-        "title": "no-basis-Patient"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner",
-        "title": "no-basis-Practitioner"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole",
-        "title": "no-basis-PractitionerRole"
-      }
-    ],
-    "AuditEvent": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Auditevent",
-        "title": "no-basis-Auditevent"
-      }
-    ],
     "Endpoint": [
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint",
         "title": "no-basis-Endpoint"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Location-EncounterPointofcare",
+        "title": "no-domain-Trustframework-Location-EncounterPointofcare"
+      },
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Location-PractitionerPointofcare",
+        "title": "no-domain-Trustframework-Location-PractitionerPointofcare"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-EncounterPointofcare",
+        "title": "no-domain-Trustframework-Organization-EncounterPointofcare"
+      },
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-EncounterServiceprovider",
+        "title": "no-domain-Trustframework-Organization-EncounterServiceprovider"
+      },
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-PractitionerDepartment",
+        "title": "no-domain-Trustframework-Organization-PractitionerDepartment"
+      },
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-PractitionerLegalentity",
+        "title": "no-domain-Trustframework-Organization-PractitionerLegalentity"
+      },
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-PractitionerPointofcare",
+        "title": "no-domain-Trustframework-Organization-PractitionerPointofcare"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Patient",
+        "title": "no-domain-Trustframework-Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Practitioner",
+        "title": "no-domain-Trustframework-Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-PractitioneRole",
+        "title": "no-domain-Trustframework-PractitioneRole"
+      }
+    ],
+    "AuditEvent": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent",
+        "title": "no-domain-Trustframework-Auditevent"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter",
+        "title": "no-domain-Trustframework-Encounter"
       }
     ]
   },

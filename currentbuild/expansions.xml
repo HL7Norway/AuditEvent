@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0be52cec-ab7b-408a-b4eb-907c05fdb582"/>
+  <id value="b8d0953e-41ab-4a9f-8124-67e6802b57d6"/>
   <meta>
-    <lastUpdated value="2024-06-06T18:49:12.755+00:00"/>
+    <lastUpdated value="2024-06-11T05:22:30.852+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -21,7 +21,7 @@
               <p>Expansion based on:</p>
               <ul>
                 <li>
-                  <a href="CodeSystem-no-basis-connection-type.codesystem.html">codesystem no-basis-connection-type.codesystem v2.3.0 (CodeSystem)</a>
+                  <a href="CodeSystem-no-basis-connection-type.codesystem.html">codesystem no-basis-connection-type.codesystem v0.9.5 (CodeSystem)</a>
                 </li>
                 <li>
                   <a href="http://terminology.hl7.org/5.5.0/CodeSystem-endpoint-connection-type.html">codesystem Endpoint Connection Type v2.1.0 (CodeSystem)</a>
@@ -328,7 +328,7 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ValueSet/no-basis-connection-type"/>
-        <version value="2.3.0"/>
+        <version value="0.9.5"/>
         <name value="NoBasisConnectionType"/>
         <title value="no-basis-connection-type.valueset"/>
         <status value="active"/>
@@ -336,8 +336,8 @@
         <date value="2019-03-13T10:48:45.936+00:00"/>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:72a0f58f-f16b-4b49-9c73-8363bd47b218"/>
-          <timestamp value="2024-06-06T18:49:52+00:00"/>
+          <identifier value="urn:uuid:02734305-5163-4299-8e4c-b52b5fcfb092"/>
+          <timestamp value="2024-06-11T05:23:15+00:00"/>
           <total value="17"/>
           <offset value="0"/>
           <parameter>
@@ -354,7 +354,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type|2.3.0"/>
+            <valueUri value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type|0.9.5"/>
           </parameter>
           <parameter>
             <name value="warning-draft"/>

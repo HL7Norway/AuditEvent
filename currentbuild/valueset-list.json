@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event",
-      "version" : "2.3.0",
+      "version" : "0.9.5",
       "status" : "active",
       "name" : "NO_basis_auditevent_purpose_of_event",
       "title" : "PurposeOfEvent valueset",
@@ -15,7 +15,7 @@
     },
     {
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
-      "version" : "2.3.0",
+      "version" : "0.9.5",
       "status" : "active",
       "name" : "NoBasisConnectionType",
       "title" : "no-basis-connection-type.valueset",

@@ -3,231 +3,231 @@
     "id" : "no-basis-connection-type.codesystem",
     "type" : "CodeSystem",
     "url" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisConnectionType"
   },
   {
-    "id" : "hl7.fhir.no.auditevent",
+    "id" : "hl7.fhir.no.domain.auditevent",
     "type" : "ImplementationGuide",
-    "url" : "http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.auditevent",
-    "version" : "2.3.0",
-    "name" : "urnnobasisauditevent"
+    "url" : "http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.domain.auditevent",
+    "version" : "0.9.5",
+    "name" : "NoDomainTrustframeworkAuditEvent"
   },
   {
     "id" : "auditevent-carerelation-metadata-extension",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-carerelation-metadata-extension",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "AuditEventCareRelationMetaData"
-  },
-  {
-    "id" : "auditevent-department",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-department",
-    "version" : "2.3.0",
-    "name" : "AuditeventDepartment"
-  },
-  {
-    "id" : "auditevent-encounter",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-encounter",
-    "version" : "2.3.0",
-    "name" : "AuditeventEncounter"
   },
   {
     "id" : "auditevent-encounter-extension",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-encounter-extension",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "AuditEventEncounterExtension"
-  },
-  {
-    "id" : "auditevent-encounter-pointofcare",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-encounter-pointofcare",
-    "version" : "2.3.0",
-    "name" : "AuditeventEncounterPointofcare"
-  },
-  {
-    "id" : "auditevent-encounter-pointofcare-organization",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-encounter-pointofcare-organization",
-    "version" : "2.3.0",
-    "name" : "AuditeventEncounterPointofcareOrganization"
-  },
-  {
-    "id" : "auditevent-encounter-serviceprovider-organization",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-encounter-serviceprovider-organization",
-    "version" : "2.3.0",
-    "name" : "AuditeventEncounterServiceproviderOrganization"
-  },
-  {
-    "id" : "auditevent-patient",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-patient",
-    "version" : "2.3.0",
-    "name" : "AuditeventPatient"
   },
   {
     "id" : "auditevent-patient-extension",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "AuditEventPatientExtension"
-  },
-  {
-    "id" : "auditevent-practitioner",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-practitioner",
-    "version" : "2.3.0",
-    "name" : "AuditEventNorwayPractitioner"
-  },
-  {
-    "id" : "auditevent-practitioner-legalentity",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-legalentity",
-    "version" : "2.3.0",
-    "name" : "AuditeventPractitionerLegalentity"
-  },
-  {
-    "id" : "auditevent-practitioner-pointofcare",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare",
-    "version" : "2.3.0",
-    "name" : "AuditeventPractitionerPointofcare"
-  },
-  {
-    "id" : "auditevent-practitioner-pointofcare-organization",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare-organization",
-    "version" : "2.3.0",
-    "name" : "AuditeventPractitionerPointofcareOrganization"
-  },
-  {
-    "id" : "auditevent-practitionerrole",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/auditevent-practitionerrole",
-    "version" : "2.3.0",
-    "name" : "AuditeventPractitionerrole"
   },
   {
     "id" : "no-basis-Address",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Address",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisAddress"
-  },
-  {
-    "id" : "no-basis-Auditevent",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Auditevent",
-    "version" : "2.3.0",
-    "name" : "NOBasisAuditevent"
   },
   {
     "id" : "no-basis-Endpoint",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisEndpoint"
   },
   {
     "id" : "no-basis-HumanName",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-HumanName",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisHumanName"
   },
   {
     "id" : "no-basis-Location",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Location",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisLocation"
   },
   {
     "id" : "no-basis-Organization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Organization",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisOrganization"
   },
   {
     "id" : "no-basis-Patient",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Patient",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisPatient"
   },
   {
     "id" : "no-basis-Practitioner",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisPractitioner"
   },
   {
     "id" : "no-basis-PractitionerRole",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisPractitionerRole"
   },
   {
     "id" : "no-basis-address-official",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisAddressOfficial"
   },
   {
     "id" : "no-basis-middlename",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisMiddlename"
   },
   {
     "id" : "no-basis-municipalitycode",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisMunicipalitycode"
   },
   {
     "id" : "no-basis-propertyinformation",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisPropertyinformation"
   },
   {
     "id" : "no-basis-urban-district",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-urban-district",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisUrbanDistrict"
+  },
+  {
+    "id" : "no-domain-Trustframework-Auditevent",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent",
+    "version" : "0.9.5",
+    "name" : "NoDomainTrustframeworkAuditEvent"
+  },
+  {
+    "id" : "no-domain-Trustframework-Encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter",
+    "version" : "0.9.5",
+    "name" : "AuditeventEncounter"
+  },
+  {
+    "id" : "no-domain-Trustframework-Location-EncounterPointofcare",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Location-EncounterPointofcare",
+    "version" : "0.9.5",
+    "name" : "AuditeventEncounterPointofcare"
+  },
+  {
+    "id" : "no-domain-Trustframework-Location-PractitionerPointofcare",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Location-PractitionerPointofcare",
+    "version" : "0.9.5",
+    "name" : "AuditeventPractitionerPointofcare"
+  },
+  {
+    "id" : "no-domain-Trustframework-Organization-EncounterPointofcare",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-EncounterPointofcare",
+    "version" : "0.9.5",
+    "name" : "AuditeventEncounterPointofcareOrganization"
+  },
+  {
+    "id" : "no-domain-Trustframework-Organization-EncounterServiceprovider",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-EncounterServiceprovider",
+    "version" : "0.9.5",
+    "name" : "AuditeventEncounterServiceproviderOrganization"
+  },
+  {
+    "id" : "no-domain-Trustframework-Organization-PractitionerDepartment",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-PractitionerDepartment",
+    "version" : "0.9.5",
+    "name" : "AuditeventDepartment"
+  },
+  {
+    "id" : "no-domain-Trustframework-Organization-PractitionerLegalentity",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-PractitionerLegalentity",
+    "version" : "0.9.5",
+    "name" : "AuditeventPractitionerLegalentity"
+  },
+  {
+    "id" : "no-domain-Trustframework-Organization-PractitionerPointofcare",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Organization-PractitionerPointofcare",
+    "version" : "0.9.5",
+    "name" : "AuditeventPractitionerPointofcareOrganization"
+  },
+  {
+    "id" : "no-domain-Trustframework-Patient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Patient",
+    "version" : "0.9.5",
+    "name" : "AuditeventPatient"
+  },
+  {
+    "id" : "no-domain-Trustframework-PractitioneRole",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-PractitioneRole",
+    "version" : "0.9.5",
+    "name" : "AuditeventPractitionerrole"
+  },
+  {
+    "id" : "no-domain-Trustframework-Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Practitioner",
+    "version" : "0.9.5",
+    "name" : "AuditEventNorwayPractitioner"
   },
   {
     "id" : "no-basis-auditevent-purpose-of-event",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NO_basis_auditevent_purpose_of_event"
   },
   {
     "id" : "no-basis-connection-type.valueset",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "NoBasisConnectionType"
   },
   {
     "id" : "decisiontemplate",
     "type" : "CodeSystem",
     "url" : "https://terminology.dips.com/decisiontemplate",
-    "version" : "2.3.0",
+    "version" : "0.9.5",
     "name" : "DIPSDecisionTemplate"
   }
 ]
