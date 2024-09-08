@@ -55,7 +55,7 @@ jobs:
       - name: run the docker script
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: ./install-no-basis-snapshots.sh 
+          args: ./install-no-basis-220-snapshots.sh 
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
