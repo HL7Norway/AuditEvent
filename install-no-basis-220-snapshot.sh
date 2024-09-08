@@ -2,7 +2,7 @@
 echo "NPM install fhir r4 core 4.0.1 from package registry"
 npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
 echo "NPM install fhir no-basis220 from local tgz"
-npm install /github/workspace/igs/snapshots/hl7.fhir.no.basis-2.2.0.tgz
+npm install /github/workspace/igs/snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
 #echo "List node_modules directory"
 #ls -al /github/workspace/node_modules
 #echo "List node_modules hl7.fhir.no.basis directory"
