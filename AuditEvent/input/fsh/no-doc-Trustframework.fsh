@@ -1,7 +1,7 @@
 Profile: AuditeventEncounterServiceproviderOrganization
-Id: no-domain-Trustframework-Organization-EncounterServiceprovider
+Id: no-doc-Trustframework-Organization-EncounterServiceprovider
 Parent: NoBasisOrganization
-Title: "no-domain-Trustframework-Organization-EncounterServiceprovider"
+Title: "no-doc-Trustframework-Organization-EncounterServiceprovider"
 Description: "The service provider department of auditevent encounter (Auditevent._encounter)."
 * ^status = #active
 //* ^version = "2.3.0"
@@ -12,9 +12,9 @@ Description: "The service provider department of auditevent encounter (Auditeven
 * name ^short = "patients:department:name"
 
 Profile: AuditeventEncounterPointofcareOrganization
-Id: no-domain-Trustframework-Organization-EncounterPointofcare
+Id: no-doc-Trustframework-Organization-EncounterPointofcare
 Parent: NoBasisOrganization
-Title: "no-domain-Trustframework-Organization-EncounterPointofcare"
+Title: "no-doc-Trustframework-Organization-EncounterPointofcare"
 Description: "The point of care managing organization of the auditevent encounter (Auditevent._encounter)"
 * ^status = #active
 // * ^version = "2.3.0"
@@ -26,9 +26,9 @@ Description: "The point of care managing organization of the auditevent encounte
 
 
 Profile: AuditeventEncounterPointofcare
-Id: no-domain-Trustframework-Location-EncounterPointofcare
+Id: no-doc-Trustframework-Location-EncounterPointofcare
 Parent: NoBasisLocation
-Title: "no-domain-Trustframework-Location-EncounterPointofcare"
+Title: "no-doc-Trustframework-Location-EncounterPointofcare"
 Description: """
 The point of care location of auditevent encounter (Auditevent._encounter).
 """
@@ -37,51 +37,10 @@ The point of care location of auditevent encounter (Auditevent._encounter).
 * managingOrganization ^short = "patients:point_of_care_patient:*"
 * managingOrganization only Reference(AuditeventEncounterPointofcareOrganization)
 
-Profile: AuditeventEncounter
-Id: no-domain-Trustframework-Encounter
-Parent: Encounter
-Title: "no-domain-Trustframework-Encounter"
-Description: """
-The encounter associated with auditevent if any (Auditevent._encounter).
-"""
-* ^status = #active
-//* ^version = "2.3.0"
-* serviceType ^short = "care-relation:healthcare-service:*"
-* serviceType.coding.code ^short = "care-relation:healthcare-service:code"
-* serviceType.coding.system ^short = "care-relation:healthcare-service:system"
-* serviceType.coding.display ^short = "care-relation:healthcare-service:text"
-// * serviceType.coding from NO_basis_encounter_auditevent_servicetype (preferred)
-* serviceType.coding ^slicing.discriminator.type = #value
-* serviceType.coding ^slicing.discriminator.path = "$this"
-* serviceType.coding ^slicing.rules = #open
-* serviceType.coding contains
-    VOLVEN_8655 0..1 and VOLVEN_8663 0..1 and VOLVEN_8451 0..1
-* serviceType.coding[VOLVEN_8655] from urn:oid:2.16.578.1.12.4.1.1.8655 
-* serviceType.coding[VOLVEN_8655] ^short = "Volven 8655"
-* serviceType.coding[VOLVEN_8655] ^definition = "Helsehjelpsområde (OID=8655)"
-* serviceType.coding[VOLVEN_8655] ^mustSupport = false
-* serviceType.coding[VOLVEN_8655] ^binding.description = "Volven"
-* serviceType.coding[VOLVEN_8663] from urn:oid:2.16.578.1.12.4.1.1.8663 
-* serviceType.coding[VOLVEN_8663] ^short = "Volven 8663"
-* serviceType.coding[VOLVEN_8663] ^definition = "Tjenestetyper for kommunal helse- og omsorgstjeneste mv. (OID=8663)"
-* serviceType.coding[VOLVEN_8663] ^mustSupport = false
-* serviceType.coding[VOLVEN_8663] ^binding.description = "Volven"
-* serviceType.coding[VOLVEN_8451] from urn:oid:2.16.578.1.12.4.1.1.8451 
-* serviceType.coding[VOLVEN_8451] ^short = "Volven 8451"
-* serviceType.coding[VOLVEN_8451] ^definition = "Fagområde (OID=8451)"
-* serviceType.coding[VOLVEN_8451] ^mustSupport = false
-* serviceType.coding[VOLVEN_8451] ^binding.description = "Volven"
-
-* location.location only Reference(AuditeventEncounterPointofcare)
-* location.location ^short = "patients:point_of_care_patient:*"
-* serviceProvider ^short = "patients:department:*"
-* serviceProvider only Reference(AuditeventEncounterServiceproviderOrganization)
-
-
 Profile: AuditeventPatient
-Id: no-domain-Trustframework-Patient
+Id: no-doc-Trustframework-Patient
 Parent: NoBasisPatient
-Title: "no-domain-Trustframework-Patient"
+Title: "no-doc-Trustframework-Patient"
 Description: """
 The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).
 
@@ -96,9 +55,9 @@ NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each 
 * name ^short = "patients:identifier:name"
 
 Profile: AuditeventPractitionerPointofcareOrganization
-Id: no-domain-Trustframework-Organization-PractitionerPointofcare
+Id: no-doc-Trustframework-Organization-PractitionerPointofcare
 Parent: NoBasisOrganization
-Title: "no-domain-Trustframework-Organization-PractitionerPointofcare"
+Title: "no-doc-Trustframework-Organization-PractitionerPointofcare"
 Description: """
 The point of care managing organization of auditevent health care practitioner actor (Auditevent.agent.who).
 """
@@ -111,9 +70,9 @@ The point of care managing organization of auditevent health care practitioner a
 * name ^short = "practitioner:point-of-care:name"
 
 Profile: AuditeventPractitionerPointofcare
-Id: no-domain-Trustframework-Location-PractitionerPointofcare
+Id: no-doc-Trustframework-Location-PractitionerPointofcare
 Parent: NoBasisLocation
-Title: "no-domain-Trustframework-Location-PractitionerPointofcare"
+Title: "no-doc-Trustframework-Location-PractitionerPointofcare"
 Description: """
 The point of care location of auditevent health care practitioner actor (Auditevent.agent.who).
 """
@@ -123,9 +82,9 @@ The point of care location of auditevent health care practitioner actor (Auditev
 * managingOrganization ^short = "practitioner:point-of-care"
 
 Profile: AuditeventPractitionerLegalentity
-Id: no-domain-Trustframework-Organization-PractitionerLegalentity
+Id: no-doc-Trustframework-Organization-PractitionerLegalentity
 Parent: NoBasisOrganization
-Title: "no-domain-Trustframework-Organization-PractitionerLegalentity"
+Title: "no-doc-Trustframework-Organization-PractitionerLegalentity"
 Description: """
 The health care managing organization (legal entity) of the health care auditevent practitioner actor (Auditevent.agent.who).
 """
@@ -138,9 +97,9 @@ The health care managing organization (legal entity) of the health care auditeve
 * name ^short = "practitioner:legal-entity:name"
 
 Profile: AuditeventDepartment
-Id: no-domain-Trustframework-Organization-PractitionerDepartment
+Id: no-doc-Trustframework-Organization-PractitionerDepartment
 Parent: NoBasisOrganization
-Title: "no-domain-Trustframework-Organization-PractitionerDepartment"
+Title: "no-doc-Trustframework-Organization-PractitionerDepartment"
 Description: """
 The health care department of the health care auditevent practitioner actor (Auditevent.agent.who).
 """
@@ -155,9 +114,9 @@ The health care department of the health care auditevent practitioner actor (Aud
 * partOf ^short = "practitioner:legal-entity:*"
 
 Profile: AuditEventNorwayPractitioner
-Id: no-domain-Trustframework-Practitioner
+Id: no-doc-Trustframework-Practitioner
 Parent: NoBasisPractitioner
-Title: "no-domain-Trustframework-Practitioner"
+Title: "no-doc-Trustframework-Practitioner"
 Description: """
 The health care audit event practitioner actor (Auditevent.agent.who).  
 """
@@ -173,9 +132,9 @@ The health care audit event practitioner actor (Auditevent.agent.who).
 * qualification.code.coding.display ^short = "practitioner:authorization:text"
 
 Profile: AuditeventPractitionerrole
-Id: no-domain-Trustframework-PractitioneRole
+Id: no-doc-Trustframework-PractitioneRole
 Parent: NoBasisPractitionerRole
-Title: "no-domain-Trustframework-PractitioneRole"
+Title: "no-doc-Trustframework-PractitioneRole"
 Description: """
 The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).
 """
@@ -187,29 +146,3 @@ The health care practitioner auditevent actor at managing organization (Auditeve
 * organization ^short = "practitioner:department"
 * location only Reference(AuditeventPractitionerPointofcare) 
 * location ^short = "practitioner:point-of-care"
-
-Profile:        NoDomainTrustframeworkAuditEvent
-Id: no-domain-Trustframework-Auditevent
-Parent:         AuditEvent
-Title:          "no-domain-Trustframework-Auditevent"
-Description: """
-This is the main profile that describes the mapping of [Norwegian Trust Framework attributes ("Tillitsrammeverk")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.
-"""
-* ^status = #active
-// * ^version = "2.3.0"
-* agent.who only Reference(AuditeventPractitionerrole)
-* purposeOfEvent ^short = "care-relationship:purpose-of-use:code, :system and :text and care-relationship:purpose-of-use-details:code, :system and :text"
-* purposeOfEvent.coding.code ^short = "care-relationship:purpose-of-use:code and care-relationship:purpose-of-use-details:code"
-* purposeOfEvent.coding.system ^short = "care-relationship:purpose-of-use:system and care-relationship:purpose-of-use-details:system"
-* purposeOfEvent.coding.display ^short = "care-relationship:purpose-of-use:text and care-relationship:purpose-of-use-details:text"
-* purposeOfEvent from NO_basis_auditevent_purpose_of_event (extensible)
-* extension contains 
-  AuditEventEncounterExtension named _encounter 0..1 MS and
-  AuditEventPatientExtension named _patient 0..1 MS and 
-	AuditEventCareRelationMetaData named _careRelationMetaData 0..1 MS 
-* extension[_careRelationMetaData] MS  
-  * ^short = "toa, care-relationship:decision-ref:id, :description, :user-selected"
-  * extension[decision-ref-id] ^short = "care-relationship:decision-ref:id"
-  * extension[decision-ref-description] ^short = "care-relationship:decision-ref:description"
-  * extension[decision-ref-user-selected] ^short = "care-relationship:decision-ref:user-selected"  
-  * extension[toa] ^short = "toa"
