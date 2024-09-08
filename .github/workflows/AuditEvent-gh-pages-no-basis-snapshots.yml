@@ -36,6 +36,17 @@ jobs:
       #- name: NPM install no-basis
       #  run: npm --registry https://packages.simplifier.net install hl7.fhir.no.basis@2.1.1
 
+
+      - name: Where am I
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: pwd
+
+      - name: List directory ..
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ls -al
+
       - name: make script executable
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
