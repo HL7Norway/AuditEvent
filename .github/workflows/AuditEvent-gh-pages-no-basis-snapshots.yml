@@ -57,6 +57,11 @@ jobs:
         with:
           args: ./install-no-basis-220-snapshot.sh 
 
+      - name: run the docker script
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package          
+  
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
         run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
