@@ -21,6 +21,6 @@ jobs:
           echo "NPM install fhir no-basis220 from local tgz"
           npm install igs/snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
           echo "List node_modules directory"
-          ls -al /github/workspace/node_modules     
+          ls -al ./node_modules     
           echo "List node_modules hl7.fhir.no.basis directory"
-          ls -al /github/workspace/node_modules/hl7.fhir.no.basis          
+          ls -al ./node_modules/hl7.fhir.no.basis          
