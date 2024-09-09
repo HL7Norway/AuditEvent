@@ -57,7 +57,7 @@ jobs:
         with:
           args: ./install-no-basis-220-snapshot.sh 
 
-      - name: run the docker script
+      - name: check that cached snapshot is availabe
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package          

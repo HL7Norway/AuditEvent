@@ -1,0 +1,20 @@
+name: AuditEvent-gh-pages-no-basis-snapshots
+
+on:
+  workflow_dispatch:
+
+env:
+  IG: igs/AuditEvent
+
+# The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
+# https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    container: hl7fhir/ig-publisher-base:latest 
+    steps:
+      - name: Step 1 - Create a file
+        run: echo "Hello, World!" > hello.txt
+
+      - name: Step 2 - Display file content
+        run: cat hello.txt      
