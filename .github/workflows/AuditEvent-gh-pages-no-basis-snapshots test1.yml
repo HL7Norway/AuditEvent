@@ -16,5 +16,5 @@ jobs:
       - uses: actions/checkout@v3    
       - name: Run multiple steps
         run: |
-          pwd
-          ls -al
+          echo "NPM install fhir r4 core 4.0.1 from package registry"
+          npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
