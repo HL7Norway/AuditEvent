@@ -14,7 +14,7 @@ jobs:
     container: hl7fhir/ig-publisher-base:latest 
     steps:
       - uses: actions/checkout@v3    
-      - name: Run multiple steps
+      - name: Install hl7.fhir.no.basis-2.2.0-snapshots and build
         run: |
           echo "NPM install fhir r4 core 4.0.1 from package registry"
           npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
@@ -31,4 +31,6 @@ jobs:
           cp -r ./node_modules/hl7.fhir.no.basis/* /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
           # ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
           echo "get latest publisher"
-          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./${{ env.IG }}/input-cache/publisher.jar --create-dirs
+          echo "Run publisher: java -jar publisher.jar publisher -ig ./${{ env.IG }}/ig.ini"
+          java -jar ./${{ env.IG }}/input-cache/publisher.jar publisher -ig ./${{ env.IG }}/ig.ini
