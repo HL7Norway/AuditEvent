@@ -17,7 +17,7 @@ jobs:
       - name: Install hl7.fhir.no.basis-2.2.0-snapshots and build
         run: |
           echo "NPM install fhir r4 core 4.0.1 from package registry"
-          npm install --prefix ./${{ env.IG }} --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
+          npm --prefix ./${{ env.IG }} --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
           echo "NPM install fhir no-basis220 from local tgz"
           npm install --prefix ./${{ env.IG }} igs/snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
           echo "List node_modules directory"
