@@ -26,7 +26,9 @@ jobs:
           # ls -al ./node_modules/hl7.fhir.no.basis         
           echo "Make home publisher .fhir packages no-basis"
           mkdir -p /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
-          ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
+          # ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
           echo "Copy no-basis to /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package"
           cp -r ./node_modules/hl7.fhir.no.basis/* /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
-          ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
+          # ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
+          echo "get latest publisher"
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
