@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     container: hl7fhir/ig-publisher-base:latest 
     steps:
-      - name: Step 1 - Create a file
-        run: echo "Hello, World!" > hello.txt
-
-      - name: Step 2 - Display file content
-        run: cat hello.txt      
+      - name: Run multiple steps
+        run: |
+          echo "Hello, World!" > hello.txt
+          cat hello.txt      
