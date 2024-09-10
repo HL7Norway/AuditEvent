@@ -37,3 +37,5 @@ jobs:
           # java -jar ./input-cache/publisher.jar publisher -ig ig.ini
           pwd
           ls -lag
+          node --version
+          npm --version
