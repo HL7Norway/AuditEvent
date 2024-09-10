@@ -3,7 +3,7 @@ This is a release candidate for a Norwegian implementation guide for AuditEvent.
 
 
 ## Build and publish on GithHub pages
-1. Run workflow [`AuditEvent-gh-pages`](https://github.com/HL7Norway/AuditEvent/actions/workflows/AuditEvent-gh-pages.yml). Wait until this workflow and [pages-build-deployment](https://github.com/HL7Norway/AuditEvent/actions/workflows/pages/pages-build-deployment) is finished.
+1. Run workflow [`AuditEvent-gh-pages`](https://github.com/HL7Norway/AuditEvent/actions/workflows/AuditEvent-gh-pages.yml). Wait until this workflow and [`pages-build-deployment`](https://github.com/HL7Norway/AuditEvent/actions/workflows/pages/pages-build-deployment) are finished.
 2. Open link to implementation guide: https://hl7norway.github.io/AuditEvent/currentbuild/
 
 
