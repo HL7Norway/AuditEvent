@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="decisiontemplate"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem decisiontemplate</b></p><a name="decisiontemplate"> </a><a name="hcdecisiontemplate"> </a><a name="decisiontemplate-en-US"> </a><p>This case-sensitive code system <code>https://terminology.dips.com/decisiontemplate</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">KONSSERIE<a name="decisiontemplate-KONSSERIE"> </a></td><td>Åpen konsultasjonsserie</td><td><div><p>Åpen konsultasjonsserie</p>
+</div></td></tr><tr><td style="white-space:nowrap">LEDSBEL<a name="decisiontemplate-LEDSBEL"> </a></td><td>Inneliggende ledsager</td><td><div><p>Ledsageren er inneliggende.</p>
+</div></td></tr><tr><td style="white-space:nowrap">VURDHENV<a name="decisiontemplate-VURDHENV"> </a></td><td>Vurdert henvisning</td><td><div><p>Henvisning som er vurdert</p>
+</div></td></tr><tr><td style="white-space:nowrap">ITSYSARB<a name="decisiontemplate-ITSYSARB"> </a></td><td>IT-Systemarbeid</td><td><div><p>IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">TILSYN<a name="decisiontemplate-TILSYN"> </a></td><td>Tilsyn på annen avdeling.</td><td><div><p>&quot;Tilsyn på annen avdeling&quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">ARBFLYT<a name="decisiontemplate-ARBFLYT"> </a></td><td>Oppgave i arbeidsflyt</td><td><div><p>Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.</p>
+</div></td></tr><tr><td style="white-space:nowrap">BEHANDLER<a name="decisiontemplate-BEHANDLER"> </a></td><td>Bruker har behandlingsansvar for pasienten</td><td><div><p>Brukeren er behandler for pasienten. Eksempler på hva som gjør at malen slår til er:
+a) Bruker er registrert som ansvarlig behandler på poliklinisk besøk.
+b) Bruker er registrert som behandler på planlagt kontakt.
+c) Bruker er registrert som ansvarlig lege på et postopphold.
+d) Bruker er registrert som ansvarlig behandler for omsorgsserie i psykiatrien.
+e) Bruker er registrert som koterapeut til en poliklinisk konsultasjon (gjelder psykiatri).
+f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasientens timebok.</p>
+</div></td></tr><tr><td style="white-space:nowrap">INFOANSV<a name="decisiontemplate-INFOANSV"> </a></td><td>Bruker er informasjonsansvarlig for pasienten</td><td><div><p>Brukeren er informasjonsansvarlig for pasienten.</p>
+</div></td></tr><tr><td style="white-space:nowrap">JOURANSV<a name="decisiontemplate-JOURANSV"> </a></td><td>Bruker er journalansvarlig for pasienten</td><td><div><p>Brukeren er journalansvarlig for pasienten.</p>
+</div></td></tr><tr><td style="white-space:nowrap">PASANSV<a name="decisiontemplate-PASANSV"> </a></td><td>Bruker er koordinator for pasienten</td><td><div><p>Brukeren er koordinator for pasienten.</p>
+</div></td></tr><tr><td style="white-space:nowrap">HENVISNING<a name="decisiontemplate-HENVISNING"> </a></td><td>Henvisning til vurdering</td><td><div><p>Henvisning som enda ikke er vurdert.</p>
+</div></td></tr><tr><td style="white-space:nowrap">BELEGG<a name="decisiontemplate-BELEGG"> </a></td><td>Innlagt pasient</td><td><div><p>Pasienten er innlagt.</p>
+</div></td></tr><tr><td style="white-space:nowrap">PLANOPP<a name="decisiontemplate-PLANOPP"> </a></td><td>Planlagt oppmøte</td><td><div><p>Planlagt oppmøte for pasienten.</p>
+</div></td></tr><tr><td style="white-space:nowrap">POLBESOK<a name="decisiontemplate-POLBESOK"> </a></td><td>Poliklinisk besøk</td><td><div><p>Poliklinisk konsultasjon.</p>
+</div></td></tr><tr><td style="white-space:nowrap">TILSYN2<a name="decisiontemplate-TILSYN2"> </a></td><td>Tilsyn med helsepersonellets virksomhet</td><td><div><p>Tilsyn med helsepersonellets virksomhet. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">INNSYN<a name="decisiontemplate-INNSYN"> </a></td><td>Pasientinnsyn</td><td><div><p>Pasientens innsyn i egen journal. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">OFFBEST<a name="decisiontemplate-OFFBEST"> </a></td><td>Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap</td><td><div><p>Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">HENV_PAS<a name="decisiontemplate-HENV_PAS"> </a></td><td>Henvendelse fra pasienten</td><td><div><p>Henvendelse fra pasienten selv. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">HENVPER<a name="decisiontemplate-HENVPER"> </a></td><td>Åpen henvisningsperiode</td><td><div><p>Åpen henvisningsperiode.</p>
+</div></td></tr><tr><td style="white-space:nowrap">PLANKONT<a name="decisiontemplate-PLANKONT"> </a></td><td>Ventende pasient</td><td><div><p>Pasienten har en planlagt kontakt som ikke er avsluttet.</p>
+</div></td></tr><tr><td style="white-space:nowrap">PRIMKONT<a name="decisiontemplate-PRIMKONT"> </a></td><td>Bruker er pasientens primærkontakt</td><td><div><p>Bruker er pasientens primærkontakt.</p>
+</div></td></tr><tr><td style="white-space:nowrap">HENV_BEH<a name="decisiontemplate-HENV_BEH"> </a></td><td>Henvendelse fra pasientens behandler</td><td><div><p>Henvendelse fra pasientens behandler. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">HENV_PAA<a name="decisiontemplate-HENV_PAA"> </a></td><td>Henvendelse fra pasientens pårørende</td><td><div><p>Henvendelse fra pasientens pårørende. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">MELDT<a name="decisiontemplate-MELDT"> </a></td><td>Meldt pasient</td><td><div><p>Meldt pasient (for eksempel fra legevakta eller ambulansen). (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">EKSTSVAR<a name="decisiontemplate-EKSTSVAR"> </a></td><td>Eksternt prøvesvar/notat til vurdering</td><td><div><p>Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">OPRPLAN<a name="decisiontemplate-OPRPLAN"> </a></td><td>Pasienten finnes på operasjonsoversikten</td><td><div><p>Pasienten finnes på operasjonsoversikten i DIPS</p>
+</div></td></tr><tr><td style="white-space:nowrap">EGENLAER<a name="decisiontemplate-EGENLAER"> </a></td><td>Egen læring/kvalitetssikring av gitt behandling</td><td><div><p>Begrunnelse forankret i Helsepersonellovens §29 c (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">DELBEHAN<a name="decisiontemplate-DELBEHAN"> </a></td><td>Deltar i behandlingen av pasienten</td><td><div><p>Deltar i behandlingen av pasienten. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">TILSYN3<a name="decisiontemplate-TILSYN3"> </a></td><td>Statlig tilsyn</td><td><div><p>Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">BLAALYS<a name="decisiontemplate-BLAALYS"> </a></td><td>Blålys</td><td><div><p>Bruk av blålys - akutt helsehjelp (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">KVAL<a name="decisiontemplate-KVAL"> </a></td><td>Internkontroll/Kvalitetssikring</td><td><div><p>Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">FORSK<a name="decisiontemplate-FORSK"> </a></td><td>Forskning</td><td><div><p>&quot;Forskning&quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Forskning. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">ETTERARB<a name="decisiontemplate-ETTERARB"> </a></td><td>Etterarbeide</td><td><div><p>&quot;Etterarbeide&quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Etterarbeide. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">UNDERVISN<a name="decisiontemplate-UNDERVISN"> </a></td><td>Undervisning</td><td><div><p>&quot;Undervisning&quot; er en besluttningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med undervisning. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">NYPAS<a name="decisiontemplate-NYPAS"> </a></td><td>Pasientadministrasjon</td><td><div><p>Pasientadministrasjon, f.eks registrering av ny pasient</p>
+</div></td></tr><tr><td style="white-space:nowrap">ROLPAS<a name="decisiontemplate-ROLPAS"> </a></td><td>Bruker har rolle overfor pasient</td><td><div><p>Bruker har rolle overfor pasient</p>
+</div></td></tr><tr><td style="white-space:nowrap">HHJELANPAS<a name="decisiontemplate-HHJELANPAS"> </a></td><td>Yte helsehjelp til annen pasient</td><td><div><p>&quot;Yte helsehjelp til annen pasient&quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b. (Eksplisitt mal)</p>
+</div></td></tr><tr><td style="white-space:nowrap">PASADM<a name="decisiontemplate-PASADM"> </a></td><td>Administrasjon</td><td><div><p>For administrative oppgaver som feks skanning av dokumenter, endring av pasientopplysninger, kodekontroll o.l.</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://terminology.dips.com/decisiontemplate"/>
+  <version value="0.9.6"/>
+  <name value="DIPSDecisionTemplate"/>
+  <title value="DIPS decision template codes used as basis of care relation between health care personel and patient."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-09-10T11:47:09+00:00"/>
+  <publisher value="HL7 Norway"/>
+  <contact>
+    <name value="HL7 Norway"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/HL7Norway"/>
+    </telecom>
+  </contact>
+  <description value="These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.&#xA;&#xA;Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.&#xA;"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="38"/>
+  <concept>
+    <code value="KONSSERIE"/>
+    <display value="Åpen konsultasjonsserie"/>
+    <definition value="Åpen konsultasjonsserie"/>
+  </concept>
+  <concept>
+    <code value="LEDSBEL"/>
+    <display value="Inneliggende ledsager"/>
+    <definition value="Ledsageren er inneliggende."/>
+  </concept>
+  <concept>
+    <code value="VURDHENV"/>
+    <display value="Vurdert henvisning"/>
+    <definition value="Henvisning som er vurdert"/>
+  </concept>
+  <concept>
+    <code value="ITSYSARB"/>
+    <display value="IT-Systemarbeid"/>
+    <definition value="IT systemarbeid er en besluttningsmal som kan benyttes for å gi tilgang til journaldata når it-personell (på sykehuset / eller personell fra DIPS ASA), må gjøre systemarbeid - feilretting o.l. - på journaldataene. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="TILSYN"/>
+    <display value="Tilsyn på annen avdeling."/>
+    <definition value="&quot;Tilsyn på annen avdeling&quot; kan benyttes når en behandler bes om å foreta et tilsyn på en annen avdeling, og behandleren av den grunn ikke har ordinær tilgang til journalen.  Det kan angis hvilken rekvirent som har bedt om at tilsyn skal foretas. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="ARBFLYT"/>
+    <display value="Oppgave i arbeidsflyt"/>
+    <definition value="Beslutning som slår til dersom det finnes en ikke utført oppgave i arbeidsflyt.  Gjelder alle oppgavetyper.  "/>
+  </concept>
+  <concept>
+    <code value="BEHANDLER"/>
+    <display value="Bruker har behandlingsansvar for pasienten"/>
+    <definition value="Brukeren er behandler for pasienten. Eksempler på hva som gjør at malen slår til er:&#xA;a) Bruker er registrert som ansvarlig behandler på poliklinisk besøk.&#xA;b) Bruker er registrert som behandler på planlagt kontakt.&#xA;c) Bruker er registrert som ansvarlig lege på et postopphold. &#xA;d) Bruker er registrert som ansvarlig behandler for omsorgsserie i psykiatrien.&#xA;e) Bruker er registrert som koterapeut til en poliklinisk konsultasjon (gjelder psykiatri).&#xA;f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasientens timebok."/>
+  </concept>
+  <concept>
+    <code value="INFOANSV"/>
+    <display value="Bruker er informasjonsansvarlig for pasienten"/>
+    <definition value="Brukeren er informasjonsansvarlig for pasienten."/>
+  </concept>
+  <concept>
+    <code value="JOURANSV"/>
+    <display value="Bruker er journalansvarlig for pasienten"/>
+    <definition value="Brukeren er journalansvarlig for pasienten."/>
+  </concept>
+  <concept>
+    <code value="PASANSV"/>
+    <display value="Bruker er koordinator for pasienten"/>
+    <definition value="Brukeren er koordinator for pasienten."/>
+  </concept>
+  <concept>
+    <code value="HENVISNING"/>
+    <display value="Henvisning til vurdering"/>
+    <definition value="Henvisning som enda ikke er vurdert."/>
+  </concept>
+  <concept>
+    <code value="BELEGG"/>
+    <display value="Innlagt pasient"/>
+    <definition value="Pasienten er innlagt."/>
+  </concept>
+  <concept>
+    <code value="PLANOPP"/>
+    <display value="Planlagt oppmøte"/>
+    <definition value="Planlagt oppmøte for pasienten."/>
+  </concept>
+  <concept>
+    <code value="POLBESOK"/>
+    <display value="Poliklinisk besøk"/>
+    <definition value="Poliklinisk konsultasjon."/>
+  </concept>
+  <concept>
+    <code value="TILSYN2"/>
+    <display value="Tilsyn med helsepersonellets virksomhet"/>
+    <definition value="Tilsyn med helsepersonellets virksomhet. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="INNSYN"/>
+    <display value="Pasientinnsyn"/>
+    <definition value="Pasientens innsyn i egen journal. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="OFFBEST"/>
+    <display value="Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap"/>
+    <definition value="Bestilling av dokumenter fra offentlige og juridiske instanser og forsikringselskap. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="HENV_PAS"/>
+    <display value="Henvendelse fra pasienten"/>
+    <definition value="Henvendelse fra pasienten selv. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="HENVPER"/>
+    <display value="Åpen henvisningsperiode"/>
+    <definition value="Åpen henvisningsperiode."/>
+  </concept>
+  <concept>
+    <code value="PLANKONT"/>
+    <display value="Ventende pasient"/>
+    <definition value="Pasienten har en planlagt kontakt som ikke er avsluttet."/>
+  </concept>
+  <concept>
+    <code value="PRIMKONT"/>
+    <display value="Bruker er pasientens primærkontakt"/>
+    <definition value="Bruker er pasientens primærkontakt."/>
+  </concept>
+  <concept>
+    <code value="HENV_BEH"/>
+    <display value="Henvendelse fra pasientens behandler"/>
+    <definition value="Henvendelse fra pasientens behandler. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="HENV_PAA"/>
+    <display value="Henvendelse fra pasientens pårørende"/>
+    <definition value="Henvendelse fra pasientens pårørende. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="MELDT"/>
+    <display value="Meldt pasient"/>
+    <definition value="Meldt pasient (for eksempel fra legevakta eller ambulansen). (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="EKSTSVAR"/>
+    <display value="Eksternt prøvesvar/notat til vurdering"/>
+    <definition value="Det er behov for å se på et eksternt prøvesvar eller notat som har kommet inn på pasienten (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="OPRPLAN"/>
+    <display value="Pasienten finnes på operasjonsoversikten"/>
+    <definition value="Pasienten finnes på operasjonsoversikten i DIPS"/>
+  </concept>
+  <concept>
+    <code value="EGENLAER"/>
+    <display value="Egen læring/kvalitetssikring av gitt behandling"/>
+    <definition value="Begrunnelse forankret i Helsepersonellovens §29 c (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="DELBEHAN"/>
+    <display value="Deltar i behandlingen av pasienten"/>
+    <definition value="Deltar i behandlingen av pasienten. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="TILSYN3"/>
+    <display value="Statlig tilsyn"/>
+    <definition value="Statlig tilsyn er forankret i  Helsetilsynsloven, Spesialisthelsetjenesteloven §6-2 og Pasientjournalloven §26. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="BLAALYS"/>
+    <display value="Blålys"/>
+    <definition value="Bruk av blålys - akutt helsehjelp (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="KVAL"/>
+    <display value="Internkontroll/Kvalitetssikring"/>
+    <definition value="Noen ansatte har som oppgave å kontrollere koder og andre registreringer i DIPS, kanskje også se på hvordan det registreres/dokumenteres m.m uten at brukeren deltar i behandling av pasient.   Da kan denne beslutningsmalen brukes. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="FORSK"/>
+    <display value="Forskning"/>
+    <definition value="&quot;Forskning&quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Forskning. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="ETTERARB"/>
+    <display value="Etterarbeide"/>
+    <definition value="&quot;Etterarbeide&quot; er en beslutningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med Etterarbeide. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="UNDERVISN"/>
+    <display value="Undervisning"/>
+    <definition value="&quot;Undervisning&quot; er en besluttningsmal som kan benyttes for å gi tilgang til pasientdata i forbindelse med undervisning. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="NYPAS"/>
+    <display value="Pasientadministrasjon"/>
+    <definition value="Pasientadministrasjon, f.eks registrering av ny pasient"/>
+  </concept>
+  <concept>
+    <code value="ROLPAS"/>
+    <display value="Bruker har rolle overfor pasient"/>
+    <definition value="Bruker har rolle overfor pasient"/>
+  </concept>
+  <concept>
+    <code value="HHJELANPAS"/>
+    <display value="Yte helsehjelp til annen pasient"/>
+    <definition value="&quot;Yte helsehjelp til annen pasient&quot; kan benyttes for å gi tilgang til pasientopplysninger på en pasient for å yte helsehjelp til annen pasient, jf. helsepersonelloven §25 b. (Eksplisitt mal)"/>
+  </concept>
+  <concept>
+    <code value="PASADM"/>
+    <display value="Administrasjon"/>
+    <definition value="For administrative oppgaver som feks skanning av dokumenter, endring av pasientopplysninger, kodekontroll o.l."/>
+  </concept>
+</CodeSystem>

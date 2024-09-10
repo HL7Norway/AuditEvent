@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>GP example - NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.18"}
+    h3,h4,h5,h6{--heading-prefix:"2.18"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>GP example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide - Local Development build (v0.9.6) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="AuditEvent-NOBasisAuditeventInstance2.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="AuditEvent-NOBasisAuditeventInstance2.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example AuditEvent: GP example</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AuditEvent NOBasisAuditeventInstance2</b></p><a name="NOBasisAuditeventInstance2"> </a><a name="hcNOBasisAuditeventInstance2"> </a><a name="NOBasisAuditeventInstance2-en-US"> </a><p><b>AuditEventEncounterExtension</b>: <a href="#hcNOBasisAuditeventInstance2/EncounterInstance2">Encounter: status = unknown; class = unknown (unknown); serviceType = Fastlege, liste uten fast lege</a></p><p><b>AuditEventPatientExtension</b>: <a href="#hcNOBasisAuditeventInstance2/PatientInstance2">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)</a></p><blockquote><p><b>AuditEventCareRelationMetaData</b></p><ul><li>toa: 1700121037</li></ul></blockquote><p><b>type</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110110">DICOM Controlled Terminology Definitions</a> 110110: Patient Record</p><p><b>action</b>: Read/View/Print</p><p><b>recorded</b>: 2024-03-19 06:45:00+0000</p><p><b>purposeOfEvent</b>: <span title="Codes:{urn:oid:2.16.578.1.12.4.1.1.8655 KX17}">Fastlege, liste uten fast lege</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td><a href="#hcNOBasisAuditeventInstance2/PractitionerRoleInstance2">PractitionerRole</a></td><td>true</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>server.example.com</td><td><a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/Device/ex-device">??</a></td><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-security-source-type.html#security-source-type-4">Audit Event Source Type</a> 4: Application Server</td></tr></table><h3>Entities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>What</b></td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><a href="https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/StructureDefinition/DocumentReference">??</a></td><td>[not stated] DocumentReference: DocumentReference</td><td>Document</td></tr></table><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Practitioner  #PractitionerInstance2</b></p><a name="NOBasisAuditeventInstance2/PractitionerInstance2"> </a><a name="hcNOBasisAuditeventInstance2/PractitionerInstance2"> </a><a name="NOBasisAuditeventInstance2/PractitionerInstance2-en-US"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/20086600138, <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144897</p><p><b>name</b>: August September</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:oid:2.16.578.1.12.4.1.1.9060 LE}">Lege</span></td></tr></table></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Organization  #PractitionerLegalEntityInstance2</b></p><a name="NOBasisAuditeventInstance2/PractitionerLegalEntityInstance2"> </a><a name="hcNOBasisAuditeventInstance2/PractitionerLegalEntityInstance2"> </a><a name="NOBasisAuditeventInstance2/PractitionerLegalEntityInstance2-en-US"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: Norsk Helsenett SF Fagersta Testlegekontor</p></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Location  #PractitionerPointOfCareInstance2</b></p><a name="NOBasisAuditeventInstance2/PractitionerPointOfCareInstance2"> </a><a name="hcNOBasisAuditeventInstance2/PractitionerPointOfCareInstance2"> </a><a name="NOBasisAuditeventInstance2/PractitionerPointOfCareInstance2-en-US"> </a><p><b>managingOrganization</b>: <a href="#hcNOBasisAuditeventInstance2/PractitionerLegalEntityInstance2">Organization Norsk Helsenett SF Fagersta Testlegekontor</a></p></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: PractitionerRole  #PractitionerRoleInstance2</b></p><a name="NOBasisAuditeventInstance2/PractitionerRoleInstance2"> </a><a name="hcNOBasisAuditeventInstance2/PractitionerRoleInstance2"> </a><a name="NOBasisAuditeventInstance2/PractitionerRoleInstance2-en-US"> </a><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="#hcNOBasisAuditeventInstance2/PractitionerInstance2">Practitioner August September</a></p><p><b>organization</b>: <a href="#hcNOBasisAuditeventInstance2/PractitionerLegalEntityInstance2">Organization Norsk Helsenett SF Fagersta Testlegekontor</a></p><p><b>location</b>: <a href="#hcNOBasisAuditeventInstance2/PractitionerPointOfCareInstance2">Location</a></p></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Encounter  #EncounterInstance2</b></p><a name="NOBasisAuditeventInstance2/EncounterInstance2"> </a><a name="hcNOBasisAuditeventInstance2/EncounterInstance2"> </a><a name="NOBasisAuditeventInstance2/EncounterInstance2-en-US"> </a>Not done yet</blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Patient  #PatientInstance2</b></p><a name="NOBasisAuditeventInstance2/PatientInstance2"> </a><a name="hcNOBasisAuditeventInstance2/PatientInstance2"> </a><a name="NOBasisAuditeventInstance2/PatientInstance2-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)</p><hr/></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.domain.auditevent#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 10, 2024 11:47+0000">2024-09-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

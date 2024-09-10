@@ -1,0 +1,458 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Hospital example - TTL Representation - NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.19"}
+    h3,h4,h5,h6{--heading-prefix:"2.19"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Hospital example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide - Local Development build (v0.9.6) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="AuditEvent-NOBasisAuditeventInstance1.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="AuditEvent-NOBasisAuditeventInstance1.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="AuditEvent-NOBasisAuditeventInstance1.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Hospital example - TTL Representation</h2>
+
+
+<p><a href="AuditEvent-NOBasisAuditeventInstance1.ttl" no-download="true">Raw ttl</a> | <a href="AuditEvent-NOBasisAuditeventInstance1.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:AuditEvent ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;NOBasisAuditeventInstance1&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: AuditEvent NOBasisAuditeventInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;AuditEventEncounterExtension&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/EncounterInstance1\&quot;&gt;Encounter: status = unknown; class = unknown (unknown); serviceType = Indremedisin&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;AuditEventPatientExtension&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/PatientInstance1\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;AuditEventCareRelationMetaData&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;toa: 1710830705&lt;/li&gt;&lt;li&gt;decision-ref-id: 23423255&lt;/li&gt;&lt;li&gt;decision-ref-description: Innlagt pasient&lt;/li&gt;&lt;li&gt;decision-ref-user-selected: false&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110110\&quot;&gt;DICOM Controlled Terminology Definitions&lt;/a&gt; 110110: Patient Record&lt;/p&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;: Read/View/Print&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorded&lt;/b&gt;: 2024-03-19 06:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;purposeOfEvent&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ActReason TREAT}\&quot;&gt;Treatment&lt;/span&gt;, &lt;span title=\&quot;Codes:{https://terminology.dips.com/decisiontemplate POLBESOK}\&quot;&gt;Poliklinisk besøk&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Agents&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Who&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Requestor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#hcNOBasisAuditeventInstance1/PractitionerRoleInstance1\&quot;&gt;PractitionerRole&lt;/a&gt;&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Site&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Observer&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;server.example.com&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/Device/ex-device\&quot;&gt;??&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-security-source-type.html#security-source-type-4\&quot;&gt;Audit Event Source Type&lt;/a&gt; 4: Application Server&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Entities&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;What&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/Bundle/Documentlist\&quot;&gt;??&lt;/a&gt;&lt;/td&gt;&lt;td&gt;[not stated] Bundle: Bundle&lt;/td&gt;&lt;td&gt;Document list&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner  #PractitionerInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/PractitionerInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.1&lt;/code&gt;/20086600138, &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.4&lt;/code&gt;/9144897&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: August September&lt;/p&gt;&lt;h3&gt;Qualifications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{urn:oid:2.16.578.1.12.4.1.1.9060 LE}\&quot;&gt;Lege&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PractitionerRole  #PractitionerRoleInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerRoleInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/PractitionerRoleInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerRoleInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/PractitionerInstance1\&quot;&gt;Practitioner August September&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/PractitionerDepartment1\&quot;&gt;Organization Anestesiologi Seksjon RH&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/PractitionerPointOfCareInstance1\&quot;&gt;Location&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization  #PractitionerLegalEntityInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerLegalEntityInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/PractitionerLegalEntityInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerLegalEntityInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.101&lt;/code&gt;/?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Oslo universitetssykehus HF&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization  #PractitionerDepartment1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerDepartment1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/PractitionerDepartment1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerDepartment1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.102&lt;/code&gt;/?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Anestesiologi Seksjon RH&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/PractitionerLegalEntityInstance1\&quot;&gt;Organization Oslo universitetssykehus HF&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Location  #PractitionerPointOfCareInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerPointOfCareInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/PractitionerPointOfCareInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerPointOfCareInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1\&quot;&gt;Organization OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization  #PractitionerPointOfCareOrganizationInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.101&lt;/code&gt;/?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter  #EncounterInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/EncounterInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterInstance1-en-US\&quot;&gt; &lt;/a&gt;Not done yet&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Location  #EncounterPointOfCareInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterPointOfCareInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/EncounterPointOfCareInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterPointOfCareInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1\&quot;&gt;Organization OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization  #EncounterServiceProviderOrganizationInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterServiceProviderOrganizationInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/EncounterServiceProviderOrganizationInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterServiceProviderOrganizationInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.102&lt;/code&gt;/?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Øye dagkir/pol 1. etasje&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization  #EncounterPointOfCareOrganizationInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.101&lt;/code&gt;/?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient  #PatientInstance1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PatientInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance1/PatientInstance1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance1/PatientInstance1-en-US\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)&lt;/p&gt;&lt;hr/&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">fhir:contained</a> ( [
+<a href="http://hl7.org/fhir/R4/practitioner.html">a</a> fhir:Practitioner ;
+<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PractitionerInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Practitioner&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Practitioner&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.1&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;20086600138&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.skatteetaten.no&quot; ]       ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.4&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;9144897&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.helsedirektoratet.no/&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">fhir:name</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;August September&quot; ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification">fhir:qualification</a> [
+<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.1.9060&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;LE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Lege&quot; ]         ] )       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/practitionerrole.html">a</a> fhir:PractitionerRole ;
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PractitionerRoleInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-PractitioneRole&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-PractitioneRole&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.practitioner">fhir:practitioner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#PractitionerInstance1&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.organization">fhir:organization</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#PractitionerDepartment1&quot; ]     ] ;
+    ( <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.location">fhir:location</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#PractitionerPointOfCareInstance1&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PractitionerLegalEntityInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerLegalentity&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerLegalentity&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;993467049&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.101&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.brreg.no&quot; ]       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Oslo universitetssykehus HF&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PractitionerDepartment1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerDepartment&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerDepartment&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;705592&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.102&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.nhn.no&quot; ]       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anestesiologi Seksjon RH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.partOf">fhir:partOf</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#PractitionerLegalEntityInstance1&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/location.html">a</a> fhir:Location ;
+<a href="http://hl7.org/fhir/R4/location.html#Location.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PractitionerPointOfCareInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/location.html#Location.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-PractitionerPointofcare&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-PractitionerPointofcare&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/location.html#Location.managingOrganization">fhir:managingOrganization</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#PractitionerPointOfCareOrganizationInstance1&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PractitionerPointOfCareOrganizationInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerPointofcare&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerPointofcare&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;874716782&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.101&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.brreg.no&quot; ]       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/encounter.html">a</a> fhir:Encounter ;
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EncounterInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;unknown&quot; ] ;
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">fhir:class</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;unknown&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceType">fhir:serviceType</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.1.8655&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;S03&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Indremedisin&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">fhir:location</a> [
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">fhir:location</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#EncounterPointOfCareInstance1&quot; ]       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">fhir:serviceProvider</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#EncounterServiceProviderOrganizationInstance1&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/location.html">a</a> fhir:Location ;
+<a href="http://hl7.org/fhir/R4/location.html#Location.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EncounterPointOfCareInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/location.html#Location.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-EncounterPointofcare&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-EncounterPointofcare&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/location.html#Location.managingOrganization">fhir:managingOrganization</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#EncounterPointOfCareOrganizationInstance1&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EncounterServiceProviderOrganizationInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterServiceprovider&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterServiceprovider&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;109765&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.102&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.nhn.no&quot; ]       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Øye dagkir/pol 1. etasje&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EncounterPointOfCareOrganizationInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterPointofcare&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterPointofcare&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;974589095&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.101&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.brreg.no&quot; ]       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
+<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PatientInstance1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Patient&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Patient&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;05076600324&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.578.1.12.4.1.4.1&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:assigner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.skatteetaten.no&quot; ]       ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/auditevent-encounter-extension&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#EncounterInstance1&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#PatientInstance1&quot; ]     ]
+  ] [
+    ( <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;toa&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;1710830705&quot;^^xsd:nonNegativeInteger ]     ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;decision-ref-id&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;23423255&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;decision-ref-description&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Innlagt pasient&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;decision-ref-user-selected&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.no/fhir/StructureDefinition/auditevent-carerelation-metadata-extension&quot;^^xsd:anyURI ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://dicom.nema.org/resources/ontology/DCM&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;110110&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient Record&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.action">fhir:action</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;R&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.recorded">fhir:recorded</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2024-03-19T06:45:00.000Z&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.purposeOfEvent">fhir:purposeOfEvent</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ActReason&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;TREAT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Treatment&quot; ]     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://terminology.dips.com/decisiontemplate&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;POLBESOK&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Poliklinisk besøk&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.agent">fhir:agent</a> ( [
+<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.agent.who">fhir:who</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#PractitionerRoleInstance1&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.agent.requestor">fhir:requestor</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source">fhir:source</a> [
+<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source.site">fhir:site</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;server.example.com&quot; ] ;
+<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source.observer">fhir:observer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Device/ex-device&quot; ]     ] ;
+    ( <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/security-source-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;4&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Application Server&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity">fhir:entity</a> ( [
+<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity.what">fhir:what</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Bundle/Documentlist&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity.type">fhir:type</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Bundle&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Document list&quot; ]
+  ] ) . # 
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.domain.auditevent#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 10, 2024 11:47+0000">2024-09-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

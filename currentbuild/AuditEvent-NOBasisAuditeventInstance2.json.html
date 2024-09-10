@@ -1,0 +1,442 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>GP example - JSON Representation - NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.18"}
+    h3,h4,h5,h6{--heading-prefix:"2.18"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>GP example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide - Local Development build (v0.9.6) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="AuditEvent-NOBasisAuditeventInstance2.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="AuditEvent-NOBasisAuditeventInstance2.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: GP example - JSON Representation</h2>
+
+
+<p><a href="AuditEvent-NOBasisAuditeventInstance2.json" no-download="true">Raw json</a> | <a href="AuditEvent-NOBasisAuditeventInstance2.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent">resourceType</a>" : "AuditEvent",
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.id">id</a>" : "NOBasisAuditeventInstance2",
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-no-domain-Trustframework-Auditevent.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: AuditEvent NOBasisAuditeventInstance2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;AuditEventEncounterExtension&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance2/EncounterInstance2\&quot;&gt;Encounter: status = unknown; class = unknown (unknown); serviceType = Fastlege, liste uten fast lege&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;AuditEventPatientExtension&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance2/PatientInstance2\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;AuditEventCareRelationMetaData&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;toa: 1700121037&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110110\&quot;&gt;DICOM Controlled Terminology Definitions&lt;/a&gt; 110110: Patient Record&lt;/p&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;: Read/View/Print&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorded&lt;/b&gt;: 2024-03-19 06:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;purposeOfEvent&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:2.16.578.1.12.4.1.1.8655 KX17}\&quot;&gt;Fastlege, liste uten fast lege&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Agents&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Who&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Requestor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#hcNOBasisAuditeventInstance2/PractitionerRoleInstance2\&quot;&gt;PractitionerRole&lt;/a&gt;&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Site&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Observer&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;server.example.com&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/Device/ex-device\&quot;&gt;??&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-security-source-type.html#security-source-type-4\&quot;&gt;Audit Event Source Type&lt;/a&gt; 4: Application Server&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Entities&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;What&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/StructureDefinition/DocumentReference\&quot;&gt;??&lt;/a&gt;&lt;/td&gt;&lt;td&gt;[not stated] DocumentReference: DocumentReference&lt;/td&gt;&lt;td&gt;Document&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner  #PractitionerInstance2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance2/PractitionerInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerInstance2-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.1&lt;/code&gt;/20086600138, &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.4&lt;/code&gt;/9144897&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: August September&lt;/p&gt;&lt;h3&gt;Qualifications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{urn:oid:2.16.578.1.12.4.1.1.9060 LE}\&quot;&gt;Lege&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization  #PractitionerLegalEntityInstance2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerLegalEntityInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance2/PractitionerLegalEntityInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerLegalEntityInstance2-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.101&lt;/code&gt;/?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Norsk Helsenett SF Fagersta Testlegekontor&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Location  #PractitionerPointOfCareInstance2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerPointOfCareInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance2/PractitionerPointOfCareInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerPointOfCareInstance2-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance2/PractitionerLegalEntityInstance2\&quot;&gt;Organization Norsk Helsenett SF Fagersta Testlegekontor&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PractitionerRole  #PractitionerRoleInstance2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerRoleInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance2/PractitionerRoleInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PractitionerRoleInstance2-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance2/PractitionerInstance2\&quot;&gt;Practitioner August September&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance2/PractitionerLegalEntityInstance2\&quot;&gt;Organization Norsk Helsenett SF Fagersta Testlegekontor&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=\&quot;#hcNOBasisAuditeventInstance2/PractitionerPointOfCareInstance2\&quot;&gt;Location&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter  #EncounterInstance2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/EncounterInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance2/EncounterInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/EncounterInstance2-en-US\&quot;&gt; &lt;/a&gt;Not done yet&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient  #PatientInstance2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PatientInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNOBasisAuditeventInstance2/PatientInstance2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NOBasisAuditeventInstance2/PatientInstance2-en-US\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)&lt;/p&gt;&lt;hr/&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">contained</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/practitioner.html">resourceType</a>" : "Practitioner",
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a>" : "PractitionerInstance2",
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="StructureDefinition-no-doc-Trustframework-Practitioner.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Practitioner"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.1",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "20086600138",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "https://www.skatteetaten.no"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.4",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "9144897",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "https://www.helsedirektoratet.no/"
+          }
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a>" : "August September"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification">qualification</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">code</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.1.9060",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LE",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Lege"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "PractitionerLegalEntityInstance2",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerLegalentity"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">id</a>" : "100100673",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.101",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "https://www.brreg.no"
+          }
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "Norsk Helsenett SF Fagersta Testlegekontor"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/location.html">resourceType</a>" : "Location",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a>" : "PractitionerPointOfCareInstance2",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-PractitionerPointofcare"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/location.html#Location.managingOrganization">managingOrganization</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#PractitionerLegalEntityInstance2"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html">resourceType</a>" : "PractitionerRole",
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.id">id</a>" : "PractitionerRoleInstance2",
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="StructureDefinition-no-doc-Trustframework-PractitioneRole.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-PractitioneRole"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.active">active</a>" : true,
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.practitioner">practitioner</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#PractitionerInstance2"
+      },
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.organization">organization</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#PractitionerLegalEntityInstance2"
+      },
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.location">location</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#PractitionerPointOfCareInstance2"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "EncounterInstance2",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="StructureDefinition-no-domain-Trustframework-Encounter.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "unknown",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "unknown"
+      },
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceType">serviceType</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.1.8655",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "KX17",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Fastlege, liste uten fast lege"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "PatientInstance2",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="StructureDefinition-no-doc-Trustframework-Patient.html" style="color: Maroon">&#x1F517;</a> "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Patient"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">id</a>" : "05076600324",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.4.1",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "https://www.skatteetaten.no"
+          }
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.no/fhir/StructureDefinition/auditevent-encounter-extension",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#EncounterInstance2"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#PatientInstance2"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "toa",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUnsignedInt</a>" : 1700121037
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.no/fhir/StructureDefinition/auditevent-carerelation-metadata-extension"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://dicom.nema.org/resources/ontology/DCM",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "110110",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient Record"
+  },
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.action">action</a>" : "R",
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.recorded">recorded</a>" : "2024-03-19T06:45:00.000Z",
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.purposeOfEvent">purposeOfEvent</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.578.1.12.4.1.1.8655",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "KX17",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Fastlege, liste uten fast lege"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.agent">agent</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.agent.who">who</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#PractitionerRoleInstance2"
+      },
+      "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.agent.requestor">requestor</a>" : true
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source">source</a>" : {
+    "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source.site">site</a>" : "server.example.com",
+    "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source.observer">observer</a>" : {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Device/ex-device"
+    },
+    "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.source.type">type</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/security-source-type",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Application Server"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity">entity</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity.what">what</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/DocumentReference"
+      },
+      "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DocumentReference"
+      },
+      "<a href="http://hl7.org/fhir/R4/auditevent.html#AuditEvent.entity.name">name</a>" : "Document"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.domain.auditevent#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 10, 2024 11:47+0000">2024-09-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

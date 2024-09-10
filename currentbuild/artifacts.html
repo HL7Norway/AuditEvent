@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide - Local Development build (v0.9.6) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html"
+                  title="StructureDefinition/no-doc-Trustframework-Location-EncounterPointofcare">no-doc-Trustframework-Location-EncounterPointofcare</a>
+            </td>
+            <td>
+<p>The point of care location of auditevent encounter (Auditevent._encounter).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html"
+                  title="StructureDefinition/no-doc-Trustframework-Location-PractitionerPointofcare">no-doc-Trustframework-Location-PractitionerPointofcare</a>
+            </td>
+            <td>
+<p>The point of care location of auditevent health care practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html"
+                  title="StructureDefinition/no-doc-Trustframework-Organization-EncounterPointofcare">no-doc-Trustframework-Organization-EncounterPointofcare</a>
+            </td>
+            <td>
+<p>The point of care managing organization of the auditevent encounter (Auditevent._encounter)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html"
+                  title="StructureDefinition/no-doc-Trustframework-Organization-EncounterServiceprovider">no-doc-Trustframework-Organization-EncounterServiceprovider</a>
+            </td>
+            <td>
+<p>The service provider department of auditevent encounter (Auditevent._encounter).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html"
+                  title="StructureDefinition/no-doc-Trustframework-Organization-PractitionerDepartment">no-doc-Trustframework-Organization-PractitionerDepartment</a>
+            </td>
+            <td>
+<p>The health care department of the health care auditevent practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html"
+                  title="StructureDefinition/no-doc-Trustframework-Organization-PractitionerLegalentity">no-doc-Trustframework-Organization-PractitionerLegalentity</a>
+            </td>
+            <td>
+<p>The health care managing organization (legal entity) of the health care auditevent practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html"
+                  title="StructureDefinition/no-doc-Trustframework-Organization-PractitionerPointofcare">no-doc-Trustframework-Organization-PractitionerPointofcare</a>
+            </td>
+            <td>
+<p>The point of care managing organization of auditevent health care practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Patient.html"
+                  title="StructureDefinition/no-doc-Trustframework-Patient">no-doc-Trustframework-Patient</a>
+            </td>
+            <td>
+<p>The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).</p>
+
+<p>NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-PractitioneRole.html"
+                  title="StructureDefinition/no-doc-Trustframework-PractitioneRole">no-doc-Trustframework-PractitioneRole</a>
+            </td>
+            <td>
+<p>The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-doc-Trustframework-Practitioner.html"
+                  title="StructureDefinition/no-doc-Trustframework-Practitioner">no-doc-Trustframework-Practitioner</a>
+            </td>
+            <td>
+<p>The health care audit event practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-domain-Trustframework-Auditevent.html"
+                  title="StructureDefinition/no-domain-Trustframework-Auditevent">no-domain-Trustframework-Auditevent</a>
+            </td>
+            <td>
+<p>This is the main profile that describes the mapping of <a href="https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer">Norwegian Trust Framework attributes ("Tillitsrammeverk")</a> to AuditEvent Resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-domain-Trustframework-Encounter.html"
+                  title="StructureDefinition/no-domain-Trustframework-Encounter">no-domain-Trustframework-Encounter</a>
+            </td>
+            <td>
+<p>The encounter associated with auditevent if any (Auditevent._encounter).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-carerelation-metadata-extension.html"
+                  title="StructureDefinition/auditevent-carerelation-metadata-extension">AuditEventCareRelationMetaData</a>
+            </td>
+            <td>
+<p>This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-encounter-extension.html"
+                  title="StructureDefinition/auditevent-encounter-extension">AuditEventEncounterExtension</a>
+            </td>
+            <td>
+<p>Extension that extends FHIR AuditEvent R4 with Encounter reference which was introduced in FHIR AuditEvent R5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-auditevent-patient-extension.html"
+                  title="StructureDefinition/auditevent-patient-extension">AuditEventPatientExtension</a>
+            </td>
+            <td>
+<p>Extension that extends FHIR AuditEvent R4 with en Patient reference which was introduced in FHIR AuditEvent R5</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-no-basis-auditevent-purpose-of-event.html"
+                  title="ValueSet/no-basis-auditevent-purpose-of-event">PurposeOfEvent valueset</a>
+            </td>
+            <td>
+<p>Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined <a href="https://volven.no/">here</a> or <a href="https://beta.finnkode.ehelse.no/adm/collections">FinnKode</a></p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-decisiontemplate.html"
+                  title="CodeSystem/decisiontemplate">DIPS decision template codes used as basis of care relation between health care personel and patient.</a>
+            </td>
+            <td>
+<p>These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.</p>
+
+<p>Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AuditEvent-NOBasisAuditeventInstance2.html"
+                  title="AuditEvent/NOBasisAuditeventInstance2">GP example</a>
+            </td>
+            <td>
+<p>ENG: Example of GP as open document content.
+NO: Eksempelet hvor en fastlege åpner dokumentinnhold.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AuditEvent-NOBasisAuditeventInstance1.html"
+                  title="AuditEvent/NOBasisAuditeventInstance1">Hospital example</a>
+            </td>
+            <td>
+<p>ENG: In this example, an anesthesiologist formally associated with Rikshospitalet is preparing to administer anesthesia to a patient undergoing eye surgery at Ullevål Hospital. The anesthesiologist needs access to read documents from previous practitioners in other institutions to determine which substances were used during prior anesthesia, as the patient reports experiencing allergic reactions.
+NO: I dette eksempelet skal en anestesilege som formelt tilhører Rikshospitalet forberede seg på å gi anestesi til en pasient som er inne for en øyeoperasjon ved Ullevål sykehus, og anestesilegen trenger derfor tilgang til å lese dokumenter fra tidligere behandlere i andre virksomheter for å finne ut hvilke virkestoffer som ble brukt under tidligere anestesi som pasienten rapporterer medførte allergiske reaksjoner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AuditEvent-NOBasisAuditeventInstance3.html"
+                  title="AuditEvent/NOBasisAuditeventInstance3">Municipality example</a>
+            </td>
+            <td>
+<p>ENG: In this example, a nursing home doctor at Madserudhjemmet needs access to a document in another organization to plan further follow-up for a patient receiving home care services from the municipality.
+NO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgang til et dokument i en annen virksomhet for å planlegge videre oppfølging av en pasient som mottar hjemmehjelpstjenester fra kommunen</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.domain.auditevent#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 10, 2024 11:47+0000">2024-09-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

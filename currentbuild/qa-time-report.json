@@ -1,0 +1,1107 @@
+{
+  "date" : "Tue, 10 Sep, 2024 11:47:09 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.auditevent.json",
+      "size" : 10409,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 12
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 56,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 56,
+          "length" : 59
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 751
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 129
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 68
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1.json",
+      "size" : 8561,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 56,
+          "length" : 335
+        },
+        {
+          "activity" : "validate",
+          "start" : 62,
+          "length" : 584
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 67
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 48
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance2.json",
+      "size" : 5269,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 56,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 63,
+          "length" : 53
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 44
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance3.json",
+      "size" : 6271,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 56,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 63,
+          "length" : 401
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 38
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 52
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-decisiontemplate.json",
+      "size" : 8477,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 14
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 56,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 59
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 79
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 1593
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-auditevent-carerelation-metadata-extension.json",
+      "size" : 4552,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "scan",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 55,
+          "length" : 21
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 56,
+          "length" : 92
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 338
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 212
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 1059
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-auditevent-encounter-extension.json",
+      "size" : 1593,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 55,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 61
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 61
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 243
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 90,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-auditevent-patient-extension.json",
+      "size" : 1578,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 55,
+          "length" : 22
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 56,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 55
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 62
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 205
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.json",
+      "size" : 1131,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 55,
+          "length" : 73
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 295
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 168
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 618
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.json",
+      "size" : 1160,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 55,
+          "length" : 61
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 323
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 167
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 482
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.json",
+      "size" : 1583,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 55,
+          "length" : 49
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 711
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 356
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 1255
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.json",
+      "size" : 1533,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 55,
+          "length" : 97
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 60
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 307
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 65,
+          "length" : 379
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 558
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 95,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.json",
+      "size" : 2129,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 63
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 266
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 65,
+          "length" : 428
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 628
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 13
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.json",
+      "size" : 1589,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 30
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 26
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 241
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 66,
+          "length" : 405
+        },
+        {
+          "activity" : "generate2",
+          "start" : 78,
+          "length" : 792
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.json",
+      "size" : 1589,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 40
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 240
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 66,
+          "length" : 345
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 439
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 13
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Patient.json",
+      "size" : 1484,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 78
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 397
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 66,
+          "length" : 455
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 941
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 18
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-PractitioneRole.json",
+      "size" : 2011,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 62
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 137
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 67,
+          "length" : 238
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 586
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-doc-Trustframework-Practitioner.json",
+      "size" : 2275,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 24
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 160
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 67,
+          "length" : 423
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 959
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-domain-Trustframework-Auditevent.json",
+      "size" : 4958,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 44
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 168
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 67,
+          "length" : 438
+        },
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 807
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 13
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-domain-Trustframework-Encounter.json",
+      "size" : 3845,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 34
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 361
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 171
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 68,
+          "length" : 375
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 728
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 109,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-no-basis-auditevent-purpose-of-event.json",
+      "size" : 841,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 55,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 55,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 57,
+          "length" : 111
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 95
+        },
+        {
+          "activity" : "generate1",
+          "start" : 68,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 5012
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 96,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

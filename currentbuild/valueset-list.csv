@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event,0.9.6,active,,NO_basis_auditevent_purpose_of_event,PurposeOfEvent valueset,"Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)",,"Internal,Other"

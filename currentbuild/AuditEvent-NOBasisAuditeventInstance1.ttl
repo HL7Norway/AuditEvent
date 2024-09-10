@@ -1,0 +1,309 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/AuditEvent/NOBasisAuditeventInstance1> a fhir:AuditEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NOBasisAuditeventInstance1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AuditEvent NOBasisAuditeventInstance1</b></p><a name=\"NOBasisAuditeventInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1\"> </a><a name=\"NOBasisAuditeventInstance1-en-US\"> </a><p><b>AuditEventEncounterExtension</b>: <a href=\"#hcNOBasisAuditeventInstance1/EncounterInstance1\">Encounter: status = unknown; class = unknown (unknown); serviceType = Indremedisin</a></p><p><b>AuditEventPatientExtension</b>: <a href=\"#hcNOBasisAuditeventInstance1/PatientInstance1\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)</a></p><blockquote><p><b>AuditEventCareRelationMetaData</b></p><ul><li>toa: 1710830705</li><li>decision-ref-id: 23423255</li><li>decision-ref-description: Innlagt pasient</li><li>decision-ref-user-selected: false</li></ul></blockquote><p><b>type</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110110\">DICOM Controlled Terminology Definitions</a> 110110: Patient Record</p><p><b>action</b>: Read/View/Print</p><p><b>recorded</b>: 2024-03-19 06:45:00+0000</p><p><b>purposeOfEvent</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActReason TREAT}\">Treatment</span>, <span title=\"Codes:{https://terminology.dips.com/decisiontemplate POLBESOK}\">Poliklinisk besøk</span></p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#hcNOBasisAuditeventInstance1/PractitionerRoleInstance1\">PractitionerRole</a></td><td>true</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>server.example.com</td><td><a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/Device/ex-device\">??</a></td><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-security-source-type.html#security-source-type-4\">Audit Event Source Type</a> 4: Application Server</td></tr></table><h3>Entities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>What</b></td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.0&amp;canonical=http://fhir.org/packages/hl7.fhir.no.basis/Bundle/Documentlist\">??</a></td><td>[not stated] Bundle: Bundle</td><td>Document list</td></tr></table><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Practitioner  #PractitionerInstance1</b></p><a name=\"NOBasisAuditeventInstance1/PractitionerInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/PractitionerInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/PractitionerInstance1-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/20086600138, <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144897</p><p><b>name</b>: August September</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.9060 LE}\">Lege</span></td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole  #PractitionerRoleInstance1</b></p><a name=\"NOBasisAuditeventInstance1/PractitionerRoleInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/PractitionerRoleInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/PractitionerRoleInstance1-en-US\"> </a><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"#hcNOBasisAuditeventInstance1/PractitionerInstance1\">Practitioner August September</a></p><p><b>organization</b>: <a href=\"#hcNOBasisAuditeventInstance1/PractitionerDepartment1\">Organization Anestesiologi Seksjon RH</a></p><p><b>location</b>: <a href=\"#hcNOBasisAuditeventInstance1/PractitionerPointOfCareInstance1\">Location</a></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization  #PractitionerLegalEntityInstance1</b></p><a name=\"NOBasisAuditeventInstance1/PractitionerLegalEntityInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/PractitionerLegalEntityInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/PractitionerLegalEntityInstance1-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: Oslo universitetssykehus HF</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization  #PractitionerDepartment1</b></p><a name=\"NOBasisAuditeventInstance1/PractitionerDepartment1\"> </a><a name=\"hcNOBasisAuditeventInstance1/PractitionerDepartment1\"> </a><a name=\"NOBasisAuditeventInstance1/PractitionerDepartment1-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.102</code>/?ngen-9?</p><p><b>name</b>: Anestesiologi Seksjon RH</p><p><b>partOf</b>: <a href=\"#hcNOBasisAuditeventInstance1/PractitionerLegalEntityInstance1\">Organization Oslo universitetssykehus HF</a></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Location  #PractitionerPointOfCareInstance1</b></p><a name=\"NOBasisAuditeventInstance1/PractitionerPointOfCareInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/PractitionerPointOfCareInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/PractitionerPointOfCareInstance1-en-US\"> </a><p><b>managingOrganization</b>: <a href=\"#hcNOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1\">Organization OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK</a></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization  #PractitionerPointOfCareOrganizationInstance1</b></p><a name=\"NOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/PractitionerPointOfCareOrganizationInstance1-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Encounter  #EncounterInstance1</b></p><a name=\"NOBasisAuditeventInstance1/EncounterInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/EncounterInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/EncounterInstance1-en-US\"> </a>Not done yet</blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Location  #EncounterPointOfCareInstance1</b></p><a name=\"NOBasisAuditeventInstance1/EncounterPointOfCareInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/EncounterPointOfCareInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/EncounterPointOfCareInstance1-en-US\"> </a><p><b>managingOrganization</b>: <a href=\"#hcNOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1\">Organization OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK</a></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization  #EncounterServiceProviderOrganizationInstance1</b></p><a name=\"NOBasisAuditeventInstance1/EncounterServiceProviderOrganizationInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/EncounterServiceProviderOrganizationInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/EncounterServiceProviderOrganizationInstance1-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.102</code>/?ngen-9?</p><p><b>name</b>: Øye dagkir/pol 1. etasje</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization  #EncounterPointOfCareOrganizationInstance1</b></p><a name=\"NOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/EncounterPointOfCareOrganizationInstance1-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Patient  #PatientInstance1</b></p><a name=\"NOBasisAuditeventInstance1/PatientInstance1\"> </a><a name=\"hcNOBasisAuditeventInstance1/PatientInstance1\"> </a><a name=\"NOBasisAuditeventInstance1/PatientInstance1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#?ngen-9?)</p><hr/></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Practitioner ;
+     fhir:id [ fhir:v "PractitionerInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Practitioner"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Practitioner>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "20086600138" ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.skatteetaten.no" ]
+       ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.4"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "9144897" ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.helsedirektoratet.no/" ]
+       ]
+     ] ) ;
+     fhir:name ( [
+       fhir:text [ fhir:v "August September" ]
+     ] ) ;
+     fhir:qualification ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.9060"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "LE" ] ;
+           fhir:display [ fhir:v "Lege" ]
+         ] )
+       ]
+     ] )
+  ] [
+     a fhir:PractitionerRole ;
+     fhir:id [ fhir:v "PractitionerRoleInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-PractitioneRole"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-PractitioneRole>
+       ] )
+     ] ;
+     fhir:active [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:practitioner [
+       fhir:reference [ fhir:v "#PractitionerInstance1" ]
+     ] ;
+     fhir:organization [
+       fhir:reference [ fhir:v "#PractitionerDepartment1" ]
+     ] ;
+     fhir:location ( [
+       fhir:reference [ fhir:v "#PractitionerPointOfCareInstance1" ]
+     ] )
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "PractitionerLegalEntityInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerLegalentity"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerLegalentity>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:id [ fhir:v "993467049" ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.brreg.no" ]
+       ]
+     ] ) ;
+     fhir:name [ fhir:v "Oslo universitetssykehus HF" ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "PractitionerDepartment1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerDepartment"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerDepartment>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:id [ fhir:v "705592" ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.nhn.no" ]
+       ]
+     ] ) ;
+     fhir:name [ fhir:v "Anestesiologi Seksjon RH" ] ;
+     fhir:partOf [
+       fhir:reference [ fhir:v "#PractitionerLegalEntityInstance1" ]
+     ]
+  ] [
+     a fhir:Location ;
+     fhir:id [ fhir:v "PractitionerPointOfCareInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-PractitionerPointofcare"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-PractitionerPointofcare>
+       ] )
+     ] ;
+     fhir:managingOrganization [
+       fhir:reference [ fhir:v "#PractitionerPointOfCareOrganizationInstance1" ]
+     ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "PractitionerPointOfCareOrganizationInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerPointofcare"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-PractitionerPointofcare>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:id [ fhir:v "874716782" ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.brreg.no" ]
+       ]
+     ] ) ;
+     fhir:name [ fhir:v "OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK" ]
+  ] [
+     a fhir:Encounter ;
+     fhir:id [ fhir:v "EncounterInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter>
+       ] )
+     ] ;
+     fhir:status [ fhir:v "unknown" ] ;
+     fhir:class [
+       fhir:code [ fhir:v "unknown" ]
+     ] ;
+     fhir:serviceType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.8655"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "S03" ] ;
+         fhir:display [ fhir:v "Indremedisin" ]
+       ] )
+     ] ;
+     fhir:location ( [
+       fhir:location [
+         fhir:reference [ fhir:v "#EncounterPointOfCareInstance1" ]
+       ]
+     ] ) ;
+     fhir:serviceProvider [
+       fhir:reference [ fhir:v "#EncounterServiceProviderOrganizationInstance1" ]
+     ]
+  ] [
+     a fhir:Location ;
+     fhir:id [ fhir:v "EncounterPointOfCareInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-EncounterPointofcare"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Location-EncounterPointofcare>
+       ] )
+     ] ;
+     fhir:managingOrganization [
+       fhir:reference [ fhir:v "#EncounterPointOfCareOrganizationInstance1" ]
+     ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "EncounterServiceProviderOrganizationInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterServiceprovider"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterServiceprovider>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:id [ fhir:v "109765" ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.102"^^xsd:anyURI ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.nhn.no" ]
+       ]
+     ] ) ;
+     fhir:name [ fhir:v "Øye dagkir/pol 1. etasje" ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "EncounterPointOfCareOrganizationInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterPointofcare"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Organization-EncounterPointofcare>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:id [ fhir:v "974589095" ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.101"^^xsd:anyURI ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.brreg.no" ]
+       ]
+     ] ) ;
+     fhir:name [ fhir:v "OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK" ]
+  ] [
+     a fhir:Patient ;
+     fhir:id [ fhir:v "PatientInstance1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Patient"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Patient>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:id [ fhir:v "05076600324" ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+       fhir:assigner [
+         fhir:display [ fhir:v "https://www.skatteetaten.no" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.no/fhir/StructureDefinition/auditevent-encounter-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:reference [ fhir:v "#EncounterInstance1" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:reference [ fhir:v "#PatientInstance1" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "toa"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1710830705"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "decision-ref-id"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "23423255" ]
+     ] [
+       fhir:url [ fhir:v "decision-ref-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Innlagt pasient" ]
+     ] [
+       fhir:url [ fhir:v "decision-ref-user-selected"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.no/fhir/StructureDefinition/auditevent-carerelation-metadata-extension"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:type [
+     fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "110110" ] ;
+     fhir:display [ fhir:v "Patient Record" ]
+  ] ; # 
+  fhir:action [ fhir:v "R"] ; # 
+  fhir:recorded [ fhir:v "2024-03-19T06:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:purposeOfEvent ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TREAT" ] ;
+       fhir:display [ fhir:v "Treatment" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.dips.com/decisiontemplate"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "POLBESOK" ] ;
+       fhir:display [ fhir:v "Poliklinisk besøk" ]
+     ] )
+  ] ) ; # 
+  fhir:agent ( [
+     fhir:who [
+       fhir:reference [ fhir:v "#PractitionerRoleInstance1" ]
+     ] ;
+     fhir:requestor [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:source [
+     fhir:site [ fhir:v "server.example.com" ] ;
+     fhir:observer [
+       fhir:link <http://hl7.no/fhir/Device/ex-device> ;
+       fhir:reference [ fhir:v "Device/ex-device" ]
+     ] ;
+     fhir:type ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/security-source-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "Application Server" ]
+     ] )
+  ] ; # 
+  fhir:entity ( [
+     fhir:what [
+       fhir:link <http://hl7.no/fhir/Bundle/Documentlist> ;
+       fhir:reference [ fhir:v "Bundle/Documentlist" ]
+     ] ;
+     fhir:type [
+       fhir:code [ fhir:v "Bundle" ]
+     ] ;
+     fhir:name [ fhir:v "Document list" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

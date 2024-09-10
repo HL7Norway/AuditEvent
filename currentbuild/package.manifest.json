@@ -1,0 +1,6 @@
+{
+  "version" : "0.9.6",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20240910114619",
+  "name" : "hl7.fhir.no.domain.auditevent"
+}
