@@ -33,11 +33,12 @@ jobs:
           cd ${{ env.IG }}
           echo "get latest publisher"
           curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
-          echo "Run publisher: java -jar publisher.jar publisher -ig ./${{ env.IG }}/ig.ini"
-          # java -jar ./input-cache/publisher.jar publisher -ig ig.ini
-          pwd
-          ls -lag
-          node --version
-          npm --version
+          #pwd
+          #ls -lag
+          #node --version
+          #npm --version
           npm install -g fsh-sushi
-          sushi help
+          # sushi help
+          echo "Run publisher: java -jar publisher.jar publisher -ig ./${{ env.IG }}/ig.ini"
+          java -jar ./input-cache/publisher.jar publisher -ig ig.ini
+
