@@ -50,6 +50,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: /home/runner/work/AuditEvent/AuditEvent/${{ env.IG }}/output
-          destination_dir: /home/runner/work/AuditEvent/AuditEvent/${{ env.IG }}/currentbuild
+          # destination_dir: /home/runner/work/AuditEvent/AuditEvent/${{ env.IG }}/currentbuild
           commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}'        
 
