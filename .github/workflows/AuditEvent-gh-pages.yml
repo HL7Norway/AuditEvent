@@ -1,4 +1,4 @@
-name: AuditEvent-gh-pages-no-basis-snapshots
+name: AuditEvent-gh-pages-no
 
 on:
   workflow_dispatch:
