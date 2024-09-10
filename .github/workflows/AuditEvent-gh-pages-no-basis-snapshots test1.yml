@@ -40,3 +40,4 @@ jobs:
           node --version
           npm --version
           npm install -g fsh-sushi
+          sushi help
