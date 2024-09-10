@@ -39,3 +39,4 @@ jobs:
           ls -lag
           node --version
           npm --version
+          npm install -g fsh-sushi
