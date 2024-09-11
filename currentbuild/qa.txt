@@ -3,7 +3,7 @@ NoDomainTrustframeworkAuditEvent : Validation Results
 
 err = 62, warn = 34, info = 57
 IG Publisher Version: 1.6.23
-Generated Wed Sep 11 05:53:50 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.domain.auditevent#0.9.7 (canonical = http://hl7.no/fhir)
+Generated Wed Sep 11 06:03:11 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.domain.auditevent#0.9.7 (canonical = http://hl7.no/fhir)
  Build Errors : 9 / 14 / 0
  /__w/AuditEvent/AuditEvent/igs/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance1 : 18 / 5 / 45
  /__w/AuditEvent/AuditEvent/igs/AuditEvent/fsh-generated/resources/AuditEvent-NOBasisAuditeventInstance2 : 9 / 6 / 25
