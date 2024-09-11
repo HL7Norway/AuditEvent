@@ -1,15 +1,16 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://terminology.dips.com/decisiontemplate",
-      "version" : "0.9.6",
-      "status" : "draft",
-      "name" : "DIPSDecisionTemplate",
-      "title" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",
-      "description" : "These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.\n\nTemplates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.\n",
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "ValueSet-no-basis-auditevent-purpose-of-event.html" : "PurposeOfEvent valueset"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.no.domain.auditevent",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "fhirVersion": "4.0.1",
   "extensions": [
     {

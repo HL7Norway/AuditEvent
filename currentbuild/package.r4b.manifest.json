@@ -1,6 +1,6 @@
 {
-  "version" : "0.9.6",
-  "date" : "20240910121002",
+  "version" : "0.9.7",
+  "date" : "20240911055216",
   "notForPublication" : true,
   "name" : "hl7.fhir.no.domain.auditevent.r4b"
 }

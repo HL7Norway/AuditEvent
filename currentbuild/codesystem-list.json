@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://terminology.dips.com/decisiontemplate",
-      "version" : "0.9.6",
+      "version" : "0.9.7",
       "status" : "draft",
       "name" : "DIPSDecisionTemplate",
       "title" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",

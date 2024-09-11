@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.domain.auditevent</b></p><a name="hl7.fhir.no.domain.auditevent"> </a><a name="hchl7.fhir.no.domain.auditevent"> </a><a name="hl7.fhir.no.domain.auditevent-en-US"> </a><h2>NoDomainTrustframeworkAuditEvent</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.domain.auditevent</pre></div>
   </text>
   <url value="http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.domain.auditevent"/>
-  <version value="0.9.6"/>
+  <version value="0.9.7"/>
   <name value="NoDomainTrustframeworkAuditEvent"/>
   <title value="NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-09-10T12:10:45+00:00"/>
+  <date value="2024-09-11T05:52:58+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -670,17 +670,6 @@
       </reference>
       <name value="no-domain-Trustframework-Encounter"/>
       <description value="The encounter associated with auditevent if any (Auditevent._encounter)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/no-basis-auditevent-purpose-of-event"/>
-      </reference>
-      <name value="PurposeOfEvent valueset"/>
-      <description value="Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

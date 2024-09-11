@@ -1,17 +1,3 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event",
-      "version" : "0.9.6",
-      "status" : "active",
-      "name" : "NO_basis_auditevent_purpose_of_event",
-      "title" : "PurposeOfEvent valueset",
-      "description" : "Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-        "urn:oid:2.16.578.1.12.4.1.1.9151",
-        "https://terminology.dips.com/decisiontemplate"
-      ]
-    }
-  ]
+  "codeSystems" : []
 }

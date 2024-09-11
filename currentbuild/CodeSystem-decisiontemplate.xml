@@ -50,12 +50,12 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
 </div></td></tr></table></div>
   </text>
   <url value="https://terminology.dips.com/decisiontemplate"/>
-  <version value="0.9.6"/>
+  <version value="0.9.7"/>
   <name value="DIPSDecisionTemplate"/>
   <title value="DIPS decision template codes used as basis of care relation between health care personel and patient."/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2024-09-10T12:10:45+00:00"/>
+  <date value="2024-09-11T05:52:58+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
