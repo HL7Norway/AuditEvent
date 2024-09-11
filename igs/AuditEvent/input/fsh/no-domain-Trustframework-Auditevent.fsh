@@ -1,13 +1,13 @@
-ValueSet: NO_basis_auditevent_purpose_of_event
-Id: no-basis-auditevent-purpose-of-event
-Title: "PurposeOfEvent valueset"
-Description: """
-Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)
-"""
-* ^status = #active
-* include codes from valueset http://terminology.hl7.org/ValueSet/v3-PurposeOfUse
-* include codes from system DIPSDecisionTemplate
-* include codes from system $VOLVEN_9151
+//ValueSet: NO_basis_auditevent_purpose_of_event
+//Id: no-basis-auditevent-purpose-of-event
+//Title: "PurposeOfEvent valueset"
+//Description: """
+//Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)
+//"""
+//* ^status = #active
+//* include codes from valueset http://terminology.hl7.org/ValueSet/v3-PurposeOfUse
+//* include codes from system DIPSDecisionTemplate
+//* include codes from system $VOLVEN_9151
 
 Extension: AuditEventEncounterExtension
 Id: auditevent-encounter-extension
@@ -63,7 +63,23 @@ This is the main profile that describes the mapping of [Norwegian Trust Framewor
 * purposeOfEvent.coding.code ^short = "care-relationship:purpose-of-use:code and care-relationship:purpose-of-use-details:code"
 * purposeOfEvent.coding.system ^short = "care-relationship:purpose-of-use:system and care-relationship:purpose-of-use-details:system"
 * purposeOfEvent.coding.display ^short = "care-relationship:purpose-of-use:text and care-relationship:purpose-of-use-details:text"
-* purposeOfEvent from NO_basis_auditevent_purpose_of_event (extensible)
+//* purposeOfEvent from NO_basis_auditevent_purpose_of_event (extensible)
+* purposeOfEvent.coding ^slicing.discriminator.type = #value
+* purposeOfEvent.coding ^slicing.discriminator.path = "$this"
+* purposeOfEvent.coding ^slicing.rules = #open
+* purposeOfEvent.coding contains
+    PURPOSE_OF_USE_VALUESET 0..1 and  DIPS_DECISIONTEMPLATE 0..1 and VOLVEN_9151 0..1
+* purposeOfEvent.coding[PURPOSE_OF_USE_VALUESET] from $PURPOSE_OF_USE_VALUESET 
+* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] from $DIPS_DECISIONTEMPLATE 
+* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^short = "DIPS Decision template terminology"
+* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^mustSupport = false
+* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^binding.description = "DIPS"
+* purposeOfEvent.coding[VOLVEN_9151] from $VOLVEN_9151 
+* purposeOfEvent.coding[VOLVEN_9151] ^short = "Volven 9151"
+* purposeOfEvent.coding[VOLVEN_9151] ^definition = "Tjenestetype i helse- og omsorgstjenesten (OID=9151)"
+* purposeOfEvent.coding[VOLVEN_9151] ^mustSupport = false
+* purposeOfEvent.coding[VOLVEN_9151] ^binding.description = "Volven"
+
 * extension contains 
   AuditEventEncounterExtension named _encounter 0..1 MS and
   AuditEventPatientExtension named _patient 0..1 MS and 

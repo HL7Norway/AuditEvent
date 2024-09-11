@@ -13,3 +13,4 @@ Alias: $VOLVEN_8451 = urn:oid:2.16.578.1.12.4.1.1.8451 // Dette kodeverket benyt
 Alias: $VOLVEN_8655 = urn:oid:2.16.578.1.12.4.1.1.8655 // https://volven.no/produkt.asp?id=515539&catID=3&subID=8
 Alias: $VOLVEN_9151 = urn:oid:2.16.578.1.12.4.1.1.9151 // https://volven.no/produkt.asp?id=515221&catID=3&subID=8
 Alias: $DIPS_DECISIONTEMPLATE = https://terminology.dips.com/decisiontemplate
+Alias: $PURPOSE_OF_USE_VALUESET = http://terminology.hl7.org/ValueSet/v3-PurposeOfUse
