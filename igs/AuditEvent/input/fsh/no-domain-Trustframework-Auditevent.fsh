@@ -71,7 +71,7 @@ This is the main profile that describes the mapping of [Norwegian Trust Framewor
     PURPOSE_OF_USE_VALUESET 0..1 and  DIPS_DECISIONTEMPLATE 0..1 and VOLVEN_9151 0..1
 * purposeOfEvent.coding[PURPOSE_OF_USE_VALUESET] from $PURPOSE_OF_USE_VALUESET 
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] from $DIPS_DECISIONTEMPLATE 
-* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^short = "DIPS Decision template terminology"
+* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^short = "[DIPS Decision template terminology](https://hl7norway.github.io/AuditEvent/currentbuild/CodeSystem-decisiontemplate.html)"
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^mustSupport = false
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^binding.description = "DIPS"
 * purposeOfEvent.coding[VOLVEN_9151] from $VOLVEN_9151 
