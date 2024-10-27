@@ -37,9 +37,9 @@ This extension is used to carry attributes from Norwegian Trust Framework (Nasjo
 * ^context.expression = "AuditEvent"
 * ^status = #active
 * extension contains
-    decision-ref-id 0..1 and
-    decision-ref-description 0..1 and
-    decision-ref-user-selected 0..1 and
+    decision-ref-id 1..1 and
+    decision-ref-description 1..1 and
+    decision-ref-user-selected 1..1 and
     toa 1..1
 * extension[decision-ref-id].value[x] only string
 * extension[decision-ref-id].value[x] ^short = "care_relationship:decision_ref:id"
@@ -58,17 +58,17 @@ Description: """
 This is the main profile that describes the mapping of [Norwegian Trust Framework attributes ("Tillitsrammeverk")](https://github.com/NorskHelsenett/Tillitsrammeverk/blob/main/specs/informasjons_og_datamodell.md#424-oppsummering-av-informasjonselementer) to AuditEvent Resource.
 """
 * ^status = #active
-* agent.who only Reference(AuditeventPractitionerrole)
+* agent.who only Reference(AuditeventPractitionerrole) 
+* agent.who 1..1
 * purposeOfEvent ^short = "care_relationship:purpose_of_use:code, :system and :text and care_relationship:purpose_of_use_details:code, :system and :text"
 * purposeOfEvent.coding.code ^short = "care_relationship:purpose_of_use:code and care_relationship:purpose_of_use_details:code"
 * purposeOfEvent.coding.system ^short = "care_relationship:purpose_of_use:system and care_relationship:purpose_of_use_details:system"
 * purposeOfEvent.coding.display ^short = "care_relationship:purpose_of_use:text and care_relationship:purpose_of_use_details:text"
-//* purposeOfEvent from NO_basis_auditevent_purpose_of_event (extensible)
 * purposeOfEvent.coding ^slicing.discriminator.type = #value
 * purposeOfEvent.coding ^slicing.discriminator.path = "$this"
 * purposeOfEvent.coding ^slicing.rules = #open
 * purposeOfEvent.coding contains
-    PURPOSE_OF_USE_VALUESET 0..1 and  DIPS_DECISIONTEMPLATE 0..1 and VOLVEN_9151 0..1
+    PURPOSE_OF_USE_VALUESET 1..1 and  DIPS_DECISIONTEMPLATE 0..1 and VOLVEN_9151 0..1
 * purposeOfEvent.coding[PURPOSE_OF_USE_VALUESET] from $PURPOSE_OF_USE_VALUESET 
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] from $DIPS_DECISIONTEMPLATE 
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^short = "DIPS Decision template terminology (see https://hl7norway.github.io/AuditEvent/currentbuild/CodeSystem-decisiontemplate.html)"
@@ -82,7 +82,7 @@ This is the main profile that describes the mapping of [Norwegian Trust Framewor
 
 * extension contains 
   AuditEventEncounterExtension named _encounter 0..1 MS and
-  AuditEventPatientExtension named _patient 0..1 MS and 
+  AuditEventPatientExtension named _patient 1..1 MS and 
 	AuditEventCareRelationMetaData named _careRelationMetaData 0..1 MS 
 * extension[_careRelationMetaData] MS  
   * ^short = "toa, care_relationship:decision_ref:id, :description, :user_selected"
