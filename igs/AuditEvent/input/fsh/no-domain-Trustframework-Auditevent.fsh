@@ -42,11 +42,11 @@ This extension is used to carry attributes from Norwegian Trust Framework (Nasjo
     decision-ref-user-selected 0..1 and
     toa 1..1
 * extension[decision-ref-id].value[x] only string
-* extension[decision-ref-id].value[x] ^short = "care-relationship:decision-ref:id"
+* extension[decision-ref-id].value[x] ^short = "care_relationship:decision_ref:id"
 * extension[decision-ref-description].value[x] only string
-* extension[decision-ref-description].value[x] ^short = "care-relationship:decision-ref:description"
+* extension[decision-ref-description].value[x] ^short = "care_relationship:decision_ref:description"
 * extension[decision-ref-user-selected].value[x] only boolean
-* extension[decision-ref-user-selected].value[x] ^short = "care-relationship:decision-ref:user-selected"
+* extension[decision-ref-user-selected].value[x] ^short = "care_relationship:decision_ref:user_selected"
 * extension[toa].value[x] only unsignedInt // valueInteger64 only in R5
 * extension[toa].value[x] ^short = "toa"
 
@@ -59,10 +59,10 @@ This is the main profile that describes the mapping of [Norwegian Trust Framewor
 """
 * ^status = #active
 * agent.who only Reference(AuditeventPractitionerrole)
-* purposeOfEvent ^short = "care-relationship:purpose-of-use:code, :system and :text and care-relationship:purpose-of-use-details:code, :system and :text"
-* purposeOfEvent.coding.code ^short = "care-relationship:purpose-of-use:code and care-relationship:purpose-of-use-details:code"
-* purposeOfEvent.coding.system ^short = "care-relationship:purpose-of-use:system and care-relationship:purpose-of-use-details:system"
-* purposeOfEvent.coding.display ^short = "care-relationship:purpose-of-use:text and care-relationship:purpose-of-use-details:text"
+* purposeOfEvent ^short = "care_relationship:purpose_of_use:code, :system and :text and care_relationship:purpose_of_use_details:code, :system and :text"
+* purposeOfEvent.coding.code ^short = "care_relationship:purpose_of_use:code and care_relationship:purpose_of_use_details:code"
+* purposeOfEvent.coding.system ^short = "care_relationship:purpose_of_use:system and care_relationship:purpose_of_use_details:system"
+* purposeOfEvent.coding.display ^short = "care_relationship:purpose_of_use:text and care_relationship:purpose_of_use_details:text"
 //* purposeOfEvent from NO_basis_auditevent_purpose_of_event (extensible)
 * purposeOfEvent.coding ^slicing.discriminator.type = #value
 * purposeOfEvent.coding ^slicing.discriminator.path = "$this"
@@ -71,7 +71,7 @@ This is the main profile that describes the mapping of [Norwegian Trust Framewor
     PURPOSE_OF_USE_VALUESET 0..1 and  DIPS_DECISIONTEMPLATE 0..1 and VOLVEN_9151 0..1
 * purposeOfEvent.coding[PURPOSE_OF_USE_VALUESET] from $PURPOSE_OF_USE_VALUESET 
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] from $DIPS_DECISIONTEMPLATE 
-* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^short = "[DIPS Decision template terminology](https://hl7norway.github.io/AuditEvent/currentbuild/CodeSystem-decisiontemplate.html)"
+* purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^short = "DIPS Decision template terminology (see https://hl7norway.github.io/AuditEvent/currentbuild/CodeSystem-decisiontemplate.html)"
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^mustSupport = false
 * purposeOfEvent.coding[DIPS_DECISIONTEMPLATE] ^binding.description = "DIPS"
 * purposeOfEvent.coding[VOLVEN_9151] from $VOLVEN_9151 
@@ -85,8 +85,8 @@ This is the main profile that describes the mapping of [Norwegian Trust Framewor
   AuditEventPatientExtension named _patient 0..1 MS and 
 	AuditEventCareRelationMetaData named _careRelationMetaData 0..1 MS 
 * extension[_careRelationMetaData] MS  
-  * ^short = "toa, care-relationship:decision-ref:id, :description, :user-selected"
-  * extension[decision-ref-id] ^short = "care-relationship:decision-ref:id"
-  * extension[decision-ref-description] ^short = "care-relationship:decision-ref:description"
-  * extension[decision-ref-user-selected] ^short = "care-relationship:decision-ref:user-selected"  
+  * ^short = "toa, care_relationship:decision_ref:id, :description, :user_selected"
+  * extension[decision-ref-id] ^short = "care_relationship:decision_ref:id"
+  * extension[decision-ref-description] ^short = "care_relationship:decision_ref:description"
+  * extension[decision-ref-user-selected] ^short = "care_relationship:decision_ref:user_selected"  
   * extension[toa] ^short = "toa"

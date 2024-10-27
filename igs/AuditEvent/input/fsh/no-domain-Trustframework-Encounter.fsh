@@ -6,10 +6,10 @@ Description: """
 The encounter associated with auditevent if any (Auditevent._encounter).
 """
 * ^status = #active
-* serviceType ^short = "care-relation:healthcare-service:*"
-* serviceType.coding.code ^short = "care-relation:healthcare-service:code"
-* serviceType.coding.system ^short = "care-relation:healthcare-service:system"
-* serviceType.coding.display ^short = "care-relation:healthcare-service:text"
+* serviceType ^short = "care_relation:healthcare_service:*"
+* serviceType.coding.code ^short = "care_relation:healthcare_service:code"
+* serviceType.coding.system ^short = "care_relation:healthcare_service:system"
+* serviceType.coding.display ^short = "care_relation:healthcare_service:text"
 // * serviceType.coding from NO_basis_encounter_auditevent_servicetype (preferred)
 * serviceType.coding ^slicing.discriminator.type = #value
 * serviceType.coding ^slicing.discriminator.path = "$this"

@@ -31,9 +31,9 @@ classDiagram
                
    class no-domain-Trustframework-Auditevent {
      <<profile>>
-     care-relation.purpose-of-use
-     care-relation.purpose-of-use-details
-     care-relation.decision-ref     
+     care-relation.purpose_of_use
+     care-relation.purpose_of_use_details
+     care-relation.decision_ref     
      toa
    }
   
@@ -48,22 +48,22 @@ classDiagram
    class no-doc-Trustframework-Practitioner  {
      <<profile>>
      practitioner.identifier
-     practitioner.hpr-nr
+     practitioner.hpr_nr
      practitioner.authorization
    }
 
    class no-doc-Trustframework-Organization-PractitionerLegalentity {
      <<profile>>
-     practitioner.legal-entity
+     practitioner.legal_entity
    }
    class no-doc-Trustframework-Location-PractitionerPointofcare {<<profile>>}
    class no-doc-Trustframework-Organization-PractitionerPointofcare {
      <<profile>>
-     practitioner.point-of-care
+     practitioner.point_of_care
    }
    class no-domain-Trustframework-Encounter {
      <<profile>>
-     care-relation.healthcare-service
+     care-relation.healthcare_service
    }
    class no-doc-Trustframework-Patient {
      <<profile>>
@@ -73,7 +73,7 @@ classDiagram
    class no-doc-Trustframework-Location-EncounterPointofcare {<<profile>>}
    class no-doc-Trustframework-Organization-EncounterPointofcare {
      <<profile>>
-     patient.point-of-care     
+     patient.point_of_care     
    }
    class no-doc-Trustframework-Organization-EncounterServiceprovider {
      <<profile>>
