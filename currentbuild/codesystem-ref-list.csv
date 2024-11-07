@@ -1,2 +1,2 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+URL,Version,Status,OIDs,Name,Title,Description,Used
 http://terminology.hl7.org/CodeSystem/v3-ActReason,3.1.0,active,"2.16.840.1.113883.5.8",ActReason,ActReason,"A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type ""has reason"" linking to another Act.    *Examples:* Example reasons that might qualify for being coded in this field might be: ""routine requirement"", ""infectious disease reporting requirement"", ""on patient request"", ""required by law"".","ValueSet/v3-PurposeOfUse"

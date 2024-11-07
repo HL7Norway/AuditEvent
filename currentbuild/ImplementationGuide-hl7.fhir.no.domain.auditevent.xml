@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.domain.auditevent</b></p><a name="hl7.fhir.no.domain.auditevent"> </a><a name="hchl7.fhir.no.domain.auditevent"> </a><a name="hl7.fhir.no.domain.auditevent-en-US"> </a><h2>NoDomainTrustframeworkAuditEvent</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.domain.auditevent</pre></div>
   </text>
   <url value="http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.domain.auditevent"/>
-  <version value="0.9.7"/>
+  <version value="0.9.8"/>
   <name value="NoDomainTrustframeworkAuditEvent"/>
   <title value="NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-09-11T06:02:16+00:00"/>
+  <date value="2024-11-07T07:29:00+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -471,7 +471,7 @@
         <reference value="StructureDefinition/auditevent-carerelation-metadata-extension"/>
       </reference>
       <name value="AuditEventCareRelationMetaData"/>
-      <description value="This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for."/>
+      <description value="This extensins carries information about a 'user session' defined as access to health information for a patient or group where the access criteria are the same and access occurs from a single logical system within a given time window."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -504,7 +504,7 @@
         <reference value="CodeSystem/decisiontemplate"/>
       </reference>
       <name value="DIPS decision template codes used as basis of care relation between health care personel and patient."/>
-      <description value="These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.&#xA;&#xA;Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'."/>
+      <description value="These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.&#xA;&#xA;Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.&#xA;&#xA;NB! This code system is currently vendor specific (DIPS) and defined in this profile temporarily until a more suitable place is found."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -622,39 +622,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/no-doc-Trustframework-Patient"/>
-      </reference>
-      <name value="no-doc-Trustframework-Patient"/>
-      <description value="The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).&#xA;&#xA;NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/no-doc-Trustframework-Practitioner"/>
-      </reference>
-      <name value="no-doc-Trustframework-Practitioner"/>
-      <description value="The health care audit event practitioner actor (Auditevent.agent.who)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/no-doc-Trustframework-PractitioneRole"/>
-      </reference>
-      <name value="no-doc-Trustframework-PractitioneRole"/>
-      <description value="The health care practitioner auditevent actor at managing organization (Auditevent.agent.who)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/no-domain-Trustframework-Auditevent"/>
       </reference>
       <name value="no-domain-Trustframework-Auditevent"/>
@@ -670,6 +637,39 @@
       </reference>
       <name value="no-domain-Trustframework-Encounter"/>
       <description value="The encounter associated with auditevent if any (Auditevent._encounter)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-domain-Trustframework-Patient"/>
+      </reference>
+      <name value="no-domain-Trustframework-Patient"/>
+      <description value="The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).&#xA;&#xA;NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-domain-Trustframework-Practitioner"/>
+      </reference>
+      <name value="no-domain-Trustframework-Practitioner"/>
+      <description value="The health care audit event practitioner actor (Auditevent.agent.who)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-domain-Trustframework-PractitioneRole"/>
+      </reference>
+      <name value="no-domain-Trustframework-PractitioneRole"/>
+      <description value="The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).&#xA;&#xA;NOTE! The organization element reference either a department that again references a legal entity as the top level (hierarchy) or legal entity directly. Small organizations, like GPs, the organization element will reference the GP's own business (legal entity), &#xA;but a clinician working in hospital will reference a department that again references its hospital (legal entity)."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

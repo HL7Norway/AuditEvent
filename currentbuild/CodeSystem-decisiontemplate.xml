@@ -50,12 +50,12 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
 </div></td></tr></table></div>
   </text>
   <url value="https://terminology.dips.com/decisiontemplate"/>
-  <version value="0.9.7"/>
+  <version value="0.9.8"/>
   <name value="DIPSDecisionTemplate"/>
   <title value="DIPS decision template codes used as basis of care relation between health care personel and patient."/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2024-09-11T06:02:16+00:00"/>
+  <date value="2024-11-07T07:29:00+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -64,7 +64,7 @@ f) Bruker er registrert som deltaker (ressurs) i en planlagt aktivitet i pasient
       <value value="https://github.com/HL7Norway"/>
     </telecom>
   </contact>
-  <description value="These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.&#xA;&#xA;Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.&#xA;"/>
+  <description value="These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.&#xA;&#xA;Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.&#xA;&#xA;NB! This code system is currently vendor specific (DIPS) and defined in this profile temporarily until a more suitable place is found. &#xA;"/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="38"/>

@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.no.domain.auditevent",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -111,24 +111,6 @@
         "title": "no-doc-Trustframework-Organization-PractitionerPointofcare"
       }
     ],
-    "Patient": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Patient",
-        "title": "no-doc-Trustframework-Patient"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-PractitioneRole",
-        "title": "no-doc-Trustframework-PractitioneRole"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Practitioner",
-        "title": "no-doc-Trustframework-Practitioner"
-      }
-    ],
     "AuditEvent": [
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent",
@@ -139,6 +121,24 @@
       {
         "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Encounter",
         "title": "no-domain-Trustframework-Encounter"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Patient",
+        "title": "no-domain-Trustframework-Patient"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-PractitioneRole",
+        "title": "no-domain-Trustframework-PractitioneRole"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Practitioner",
+        "title": "no-domain-Trustframework-Practitioner"
       }
     ]
   },

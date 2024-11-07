@@ -5,15 +5,15 @@
   "description" : null,
   "status" : "draft",
   "package-id" : "hl7.fhir.no.domain.auditevent",
-  "ig-ver" : "0.9.7",
-  "date" : "Wed, 11 Sep, 2024 06:02:16 +0000",
-  "dateISO8601" : "2024-09-11T06:02:16+00:00",
-  "errs" : 62,
+  "ig-ver" : "0.9.8",
+  "date" : "Thu, 07 Nov, 2024 07:29:00 +0000",
+  "dateISO8601" : "2024-11-07T07:29:00+00:00",
+  "errs" : 73,
   "warnings" : 34,
   "hints" : 57,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2016550632
+  "maxMemory" : 1164967936
 }

@@ -12,8 +12,11 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
+      <sch:assert test="count(f:extension[@url = 'decision-ref-id']) &gt;= 1">extension with URL = 'decision-ref-id': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'decision-ref-id']) &lt;= 1">extension with URL = 'decision-ref-id': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'decision-ref-description']) &gt;= 1">extension with URL = 'decision-ref-description': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'decision-ref-description']) &lt;= 1">extension with URL = 'decision-ref-description': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'decision-ref-user-selected']) &gt;= 1">extension with URL = 'decision-ref-user-selected': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'decision-ref-user-selected']) &lt;= 1">extension with URL = 'decision-ref-user-selected': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'toa']) &gt;= 1">extension with URL = 'toa': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'toa']) &lt;= 1">extension with URL = 'toa': maximum cardinality of 'extension' is 1</sch:assert>

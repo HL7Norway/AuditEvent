@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide v0.9.7</title>
+    <title>Artifacts Summary - NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,7 +50,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.9.7 - ci-build
+            <span style="display:inline-block;">0.9.8 - ci-build
 
 
             </span>
@@ -115,7 +115,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide - Local Development build (v0.9.7) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">NO Domain Trust Framework (&quot;Nasjonalt tillitsrammeverk&quot;) AuditEvent Implementation Guide - Local Development build (v0.9.8) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -215,35 +215,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-doc-Trustframework-Patient.html"
-                  title="StructureDefinition/no-doc-Trustframework-Patient">no-doc-Trustframework-Patient</a>
-            </td>
-            <td>
-<p>The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).</p>
-
-<p>NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-no-doc-Trustframework-PractitioneRole.html"
-                  title="StructureDefinition/no-doc-Trustframework-PractitioneRole">no-doc-Trustframework-PractitioneRole</a>
-            </td>
-            <td>
-<p>The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-no-doc-Trustframework-Practitioner.html"
-                  title="StructureDefinition/no-doc-Trustframework-Practitioner">no-doc-Trustframework-Practitioner</a>
-            </td>
-            <td>
-<p>The health care audit event practitioner actor (Auditevent.agent.who).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-no-domain-Trustframework-Auditevent.html"
                   title="StructureDefinition/no-domain-Trustframework-Auditevent">no-domain-Trustframework-Auditevent</a>
             </td>
@@ -260,6 +231,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The encounter associated with auditevent if any (Auditevent._encounter).</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-domain-Trustframework-Patient.html"
+                  title="StructureDefinition/no-domain-Trustframework-Patient">no-domain-Trustframework-Patient</a>
+            </td>
+            <td>
+<p>The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).</p>
+
+<p>NOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-domain-Trustframework-PractitioneRole.html"
+                  title="StructureDefinition/no-domain-Trustframework-PractitioneRole">no-domain-Trustframework-PractitioneRole</a>
+            </td>
+            <td>
+<p>The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).</p>
+
+<p>NOTE! The organization element reference either a department that again references a legal entity as the top level (hierarchy) or legal entity directly. Small organizations, like GPs, the organization element will reference the GP's own business (legal entity), 
+but a clinician working in hospital will reference a department that again references its hospital (legal entity).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-no-domain-Trustframework-Practitioner.html"
+                  title="StructureDefinition/no-domain-Trustframework-Practitioner">no-domain-Trustframework-Practitioner</a>
+            </td>
+            <td>
+<p>The health care audit event practitioner actor (Auditevent.agent.who).</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="2"> </a>
@@ -274,7 +277,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/auditevent-carerelation-metadata-extension">AuditEventCareRelationMetaData</a>
             </td>
             <td>
-<p>This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for.</p>
+<p>This extensins carries information about a 'user session' defined as access to health information for a patient or group where the access criteria are the same and access occurs from a single logical system within a given time window.</p>
 </td>
          </tr>
          <tr>
@@ -312,6 +315,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.</p>
 
 <p>Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.</p>
+
+<p>NB! This code system is currently vendor specific (DIPS) and defined in this profile temporarily until a more suitable place is found.</p>
 </td>
          </tr>
       </tbody>
@@ -372,7 +377,7 @@ NO: I dette eksempelet har en sykehjemslege ved Madserudhjemmet behov for tilgan
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.domain.auditevent#0.9.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 11, 2024 06:02+0000">2024-09-11</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/HL7Norway">HL7 Norway</a>.  Package hl7.fhir.no.domain.auditevent#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 7, 2024 07:29+0000">2024-11-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

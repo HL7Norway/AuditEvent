@@ -2,11 +2,11 @@
   "codeSystems" : [
     {
       "url" : "https://terminology.dips.com/decisiontemplate",
-      "version" : "0.9.7",
+      "version" : "0.9.8",
       "status" : "draft",
       "name" : "DIPSDecisionTemplate",
       "title" : "DIPS decision template codes used as basis of care relation between health care personel and patient.",
-      "description" : "These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.\n\nTemplates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.\n"
+      "description" : "These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.\n\nTemplates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.\n\nNB! This code system is currently vendor specific (DIPS) and defined in this profile temporarily until a more suitable place is found. \n"
     }
   ]
 }

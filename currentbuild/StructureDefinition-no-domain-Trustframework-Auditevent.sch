@@ -13,6 +13,7 @@
     <sch:title>f:AuditEvent</sch:title>
     <sch:rule context="f:AuditEvent">
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/auditevent-encounter-extension']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/auditevent-encounter-extension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension']) &gt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/auditevent-patient-extension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.no/fhir/StructureDefinition/auditevent-carerelation-metadata-extension']) &lt;= 1">extension with URL = 'http://hl7.no/fhir/StructureDefinition/auditevent-carerelation-metadata-extension': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
@@ -21,8 +22,11 @@
     <sch:title>f:AuditEvent/f:extension</sch:title>
     <sch:rule context="f:AuditEvent/f:extension">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'decision-ref-id']) &gt;= 1">extension with URL = 'decision-ref-id': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'decision-ref-id']) &lt;= 1">extension with URL = 'decision-ref-id': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'decision-ref-description']) &gt;= 1">extension with URL = 'decision-ref-description': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'decision-ref-description']) &lt;= 1">extension with URL = 'decision-ref-description': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'decision-ref-user-selected']) &gt;= 1">extension with URL = 'decision-ref-user-selected': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'decision-ref-user-selected']) &lt;= 1">extension with URL = 'decision-ref-user-selected': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'toa']) &gt;= 1">extension with URL = 'toa': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'toa']) &lt;= 1">extension with URL = 'toa': maximum cardinality of 'extension' is 1</sch:assert>
@@ -68,6 +72,12 @@
       <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:AuditEvent/f:agent</sch:title>
+    <sch:rule context="f:AuditEvent/f:agent">
+      <sch:assert test="count(f:who) &gt;= 1">who: minimum cardinality of 'who' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.domain.auditevent</b></p><a name=\"hl7.fhir.no.domain.auditevent\"> </a><a name=\"hchl7.fhir.no.domain.auditevent\"> </a><a name=\"hl7.fhir.no.domain.auditevent-en-US\"> </a><h2>NoDomainTrustframeworkAuditEvent</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.domain.auditevent</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.domain.auditevent"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.7"] ; # 
+  fhir:version [ fhir:v "0.9.8"] ; # 
   fhir:name [ fhir:v "NoDomainTrustframeworkAuditEvent"] ; # 
   fhir:title [ fhir:v "NO Domain Trust Framework (\"Nasjonalt tillitsrammeverk\") AuditEvent Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-11T06:02:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-07T07:29:00+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -545,7 +545,7 @@
          fhir:reference [ fhir:v "StructureDefinition/auditevent-carerelation-metadata-extension" ]
        ] ;
        fhir:name [ fhir:v "AuditEventCareRelationMetaData" ] ;
-       fhir:description [ fhir:v "This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for." ] ;
+       fhir:description [ fhir:v "This extensins carries information about a 'user session' defined as access to health information for a patient or group where the access criteria are the same and access occurs from a single logical system within a given time window." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -581,7 +581,7 @@
          fhir:reference [ fhir:v "CodeSystem/decisiontemplate" ]
        ] ;
        fhir:name [ fhir:v "DIPS decision template codes used as basis of care relation between health care personel and patient." ] ;
-       fhir:description [ fhir:v "These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.\n\nTemplates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'." ] ;
+       fhir:description [ fhir:v "These are templates with various justifications that can be used as a basis for accessing the patient's medical record at hospitals that utilize DIPS as their journal system.\n\nTemplates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.\n\nNB! This code system is currently vendor specific (DIPS) and defined in this profile temporarily until a more suitable place is found." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -718,42 +718,6 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/no-doc-Trustframework-Patient" ]
-       ] ;
-       fhir:name [ fhir:v "no-doc-Trustframework-Patient" ] ;
-       fhir:description [ fhir:v "The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).\n\nNOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-Practitioner> ;
-         fhir:reference [ fhir:v "StructureDefinition/no-doc-Trustframework-Practitioner" ]
-       ] ;
-       fhir:name [ fhir:v "no-doc-Trustframework-Practitioner" ] ;
-       fhir:description [ fhir:v "The health care audit event practitioner actor (Auditevent.agent.who)." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.no/fhir/StructureDefinition/no-doc-Trustframework-PractitioneRole> ;
-         fhir:reference [ fhir:v "StructureDefinition/no-doc-Trustframework-PractitioneRole" ]
-       ] ;
-       fhir:name [ fhir:v "no-doc-Trustframework-PractitioneRole" ] ;
-       fhir:description [ fhir:v "The health care practitioner auditevent actor at managing organization (Auditevent.agent.who)." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Auditevent> ;
          fhir:reference [ fhir:v "StructureDefinition/no-domain-Trustframework-Auditevent" ]
        ] ;
@@ -771,6 +735,42 @@
        ] ;
        fhir:name [ fhir:v "no-domain-Trustframework-Encounter" ] ;
        fhir:description [ fhir:v "The encounter associated with auditevent if any (Auditevent._encounter)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-domain-Trustframework-Patient" ]
+       ] ;
+       fhir:name [ fhir:v "no-domain-Trustframework-Patient" ] ;
+       fhir:description [ fhir:v "The patient (patients:identifier) that is the subject of the auditevent activity if any (Auditevent._patient).\n\nNOTE! Single auditevent per patient, i.e. need to duplicate auditevent for each patient in list." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-Practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-domain-Trustframework-Practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "no-domain-Trustframework-Practitioner" ] ;
+       fhir:description [ fhir:v "The health care audit event practitioner actor (Auditevent.agent.who)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-domain-Trustframework-PractitioneRole> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-domain-Trustframework-PractitioneRole" ]
+       ] ;
+       fhir:name [ fhir:v "no-domain-Trustframework-PractitioneRole" ] ;
+       fhir:description [ fhir:v "The health care practitioner auditevent actor at managing organization (Auditevent.agent.who).\n\nNOTE! The organization element reference either a department that again references a legal entity as the top level (hierarchy) or legal entity directly. Small organizations, like GPs, the organization element will reference the GP's own business (legal entity), \nbut a clinician working in hospital will reference a department that again references its hospital (legal entity)." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

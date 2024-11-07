@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient",
-      "StructureDefinition-no-doc-Trustframework-Practitioner.html" : "no-doc-Trustframework-Practitioner"
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient",
+      "StructureDefinition-no-domain-Trustframework-Practitioner.html" : "no-domain-Trustframework-Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-entity-type",
@@ -121,7 +121,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-PractitioneRole.html" : "no-doc-Trustframework-PractitioneRole"
+      "StructureDefinition-no-domain-Trustframework-PractitioneRole.html" : "no-domain-Trustframework-PractitioneRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -135,11 +135,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
       "StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html" : "no-doc-Trustframework-Organization-EncounterPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare"
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -153,9 +153,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-PractitioneRole.html" : "no-doc-Trustframework-PractitioneRole",
+      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare",
       "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare"
+      "StructureDefinition-no-domain-Trustframework-PractitioneRole.html" : "no-domain-Trustframework-PractitioneRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -347,13 +347,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient",
-      "StructureDefinition-no-doc-Trustframework-Practitioner.html" : "no-doc-Trustframework-Practitioner",
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient",
       "StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html" : "no-doc-Trustframework-Organization-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
       "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare"
+      "StructureDefinition-no-domain-Trustframework-Practitioner.html" : "no-domain-Trustframework-Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -367,13 +367,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient",
-      "StructureDefinition-no-doc-Trustframework-Practitioner.html" : "no-doc-Trustframework-Practitioner",
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient",
       "StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html" : "no-doc-Trustframework-Organization-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
       "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare"
+      "StructureDefinition-no-domain-Trustframework-Practitioner.html" : "no-domain-Trustframework-Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -387,18 +387,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
-      "StructureDefinition-no-doc-Trustframework-PractitioneRole.html" : "no-doc-Trustframework-PractitioneRole",
-      "StructureDefinition-no-domain-Trustframework-Encounter.html" : "no-domain-Trustframework-Encounter",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient",
-      "StructureDefinition-no-doc-Trustframework-Practitioner.html" : "no-doc-Trustframework-Practitioner",
-      "StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html" : "no-doc-Trustframework-Organization-EncounterPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment",
       "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
       "StructureDefinition-no-domain-Trustframework-Auditevent.html" : "no-domain-Trustframework-Auditevent",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare"
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient",
+      "StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html" : "no-doc-Trustframework-Organization-EncounterPointofcare",
+      "StructureDefinition-no-domain-Trustframework-PractitioneRole.html" : "no-domain-Trustframework-PractitioneRole",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment",
+      "StructureDefinition-no-domain-Trustframework-Encounter.html" : "no-domain-Trustframework-Encounter",
+      "StructureDefinition-no-domain-Trustframework-Practitioner.html" : "no-domain-Trustframework-Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -412,7 +412,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient"
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -426,8 +426,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.330"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare"
+      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -443,9 +443,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-no-domain-Trustframework-Encounter.html" : "no-domain-Trustframework-Encounter",
+      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare",
       "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare"
+      "StructureDefinition-no-domain-Trustframework-Encounter.html" : "no-domain-Trustframework-Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -459,8 +459,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.332"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare"
+      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -477,7 +477,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient"
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/network-type",
@@ -536,11 +536,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.414"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
       "StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html" : "no-doc-Trustframework-Organization-EncounterPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare"
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participation-role-type",
@@ -576,7 +576,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient"
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -593,7 +593,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.439"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-PractitioneRole.html" : "no-doc-Trustframework-PractitioneRole"
+      "StructureDefinition-no-domain-Trustframework-PractitioneRole.html" : "no-domain-Trustframework-PractitioneRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -607,13 +607,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
-      "StructureDefinition-no-doc-Trustframework-Patient.html" : "no-doc-Trustframework-Patient",
-      "StructureDefinition-no-doc-Trustframework-Practitioner.html" : "no-doc-Trustframework-Practitioner",
+      "StructureDefinition-no-domain-Trustframework-Patient.html" : "no-domain-Trustframework-Patient",
       "StructureDefinition-no-doc-Trustframework-Organization-EncounterPointofcare.html" : "no-doc-Trustframework-Organization-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerLegalentity.html" : "no-doc-Trustframework-Organization-PractitionerLegalentity",
+      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Organization-EncounterServiceprovider.html" : "no-doc-Trustframework-Organization-EncounterServiceprovider",
       "StructureDefinition-no-doc-Trustframework-Organization-PractitionerDepartment.html" : "no-doc-Trustframework-Organization-PractitionerDepartment",
-      "StructureDefinition-no-doc-Trustframework-Organization-PractitionerPointofcare.html" : "no-doc-Trustframework-Organization-PractitionerPointofcare"
+      "StructureDefinition-no-domain-Trustframework-Practitioner.html" : "no-domain-Trustframework-Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -697,8 +697,8 @@
       "sources" : ["2.16.840.1.113883.21.51"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare"
+      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -710,7 +710,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Practitioner.html" : "no-doc-Trustframework-Practitioner"
+      "StructureDefinition-no-domain-Trustframework-Practitioner.html" : "no-domain-Trustframework-Practitioner"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -766,8 +766,8 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare",
-      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare"
+      "StructureDefinition-no-doc-Trustframework-Location-EncounterPointofcare.html" : "no-doc-Trustframework-Location-EncounterPointofcare",
+      "StructureDefinition-no-doc-Trustframework-Location-PractitionerPointofcare.html" : "no-doc-Trustframework-Location-PractitionerPointofcare"
     }
   ]
 }
