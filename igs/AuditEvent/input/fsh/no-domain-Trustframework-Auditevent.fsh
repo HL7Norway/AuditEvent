@@ -20,7 +20,7 @@ Extension: AuditEventCareRelationMetaData
 Id: auditevent-carerelation-metadata-extension
 Title: "AuditEventCareRelationMetaData"
 Description: """
-This extensins carries information about a 'user session' defined as access to health information for a patient or group where the access criteria are the same and access occurs from a single logical system within a given time window.
+This extension carries information about a 'user session' defined as access to health information for a patient or group where the access criteria are the same and access occurs from a single logical system within a given time window.
 """
 * ^context.type = #element
 * ^context.expression = "AuditEvent"
