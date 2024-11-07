@@ -1,14 +1,3 @@
-//ValueSet: NO_basis_auditevent_purpose_of_event
-//Id: no-basis-auditevent-purpose-of-event
-//Title: "PurposeOfEvent valueset"
-//Description: """
-//Valueset for AuditEvent.purposeOfEvent valueset used in context of no-basis-auditevent. Volven.no code systems (urn:oid:2.16.578.1.12.4.1.1.x) are defined [here](https://volven.no/) or [FinnKode](https://beta.finnkode.ehelse.no/adm/collections)
-//"""
-//* ^status = #active
-//* include codes from valueset http://terminology.hl7.org/ValueSet/v3-PurposeOfUse
-//* include codes from system DIPSDecisionTemplate
-//* include codes from system $VOLVEN_9151
-
 Extension: AuditEventEncounterExtension
 Id: auditevent-encounter-extension
 Title: "AuditEventEncounterExtension"
@@ -31,7 +20,7 @@ Extension: AuditEventCareRelationMetaData
 Id: auditevent-carerelation-metadata-extension
 Title: "AuditEventCareRelationMetaData"
 Description: """
-This extension is used to carry attributes from Norwegian Trust Framework (Nasjonalt tillitsrammeverk) which there exists no natural element for.
+This extensins carries information about a 'user session' defined as access to health information for a patient or group where the access criteria are the same and access occurs from a single logical system within a given time window.
 """
 * ^context.type = #element
 * ^context.expression = "AuditEvent"
