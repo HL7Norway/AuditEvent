@@ -6,7 +6,7 @@ These are templates with various justifications that can be used as a basis for 
 
 Templates that user, if authorized, can select manually as reason for accessing patient's medical record are marked as '(Eksplisitt mal)'.
 
-NB! This code system is currently vendor specific (DIPS) and defined in this profile temporarily until a more suitable place are found. 
+NB! This code system is currently vendor specific (DIPS) and defined in this profile temporarily until a more suitable place is found. 
 
 """
 * ^url = "https://terminology.dips.com/decisiontemplate"
